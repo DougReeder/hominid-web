@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
+		<title>{{ title + " — " + metadata.title if title else metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
 		{#- Atom and JSON feeds included by default #}
@@ -28,8 +28,10 @@
 		{#- Or add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
+		{#- Renders the CSS bundle using a separate file #}
+		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
+		{#- <style>{% getBundle "css" %}</style> #}
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>

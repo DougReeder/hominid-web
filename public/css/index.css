@@ -198,6 +198,15 @@ header {
 	text-align: right;
 	margin-left: -1.5rem;
 }
+.postlist-item-body {
+	flex-grow: 1;
+	margin-left: 0.5rem;
+}
+.postlist-item-head {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
@@ -209,8 +218,6 @@ header {
 .postlist-link {
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
-	flex-basis: calc(100% - 1.5rem);
-	padding-left: .25em;
 	padding-right: .5em;
 	text-underline-position: from-font;
 	text-underline-offset: 0;
@@ -230,6 +237,11 @@ header {
 }
 .postlist-item > .post-tag {
 	align-self: center;
+}
+
+.post-description {
+	font-style: italic;
+	margin-bottom: 1em;
 }
 
 /* Tags list */

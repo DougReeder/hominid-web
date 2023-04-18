@@ -1,31 +1,24 @@
 {
-	"name": "eleventy-base-blog",
-	"version": "8.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"name": "doug-blog",
+	"version": "9.0.0",
+	"description": "Essays on using digital technology to become a better person, with detours",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+		"deploy": "scp -p -r -o PreferredAuthentications=publickey,password ~/git/blog-doug/_site/* root@hominidsoftware.com:/var/www/html/extra/doug/"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/11ty/eleventy-base-blog.git"
 	},
-	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
-	},
-	"license": "MIT",
+	"author": "Doug Reeder <reeder.29@gmail.com>",
+	"license": "GPL-3.0",
 	"engines": {
 		"node": ">=14"
-	},
-	"funding": {
-		"type": "opencollective",
-		"url": "https://opencollective.com/11ty"
 	},
 	"bugs": {
 		"url": "https://github.com/11ty/eleventy-base-blog/issues"
