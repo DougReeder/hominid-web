@@ -1,6 +1,6 @@
 ---
 title: Synergy for Tasks
-description: The webOS Tasks app should be reworked using the Palm Synergy paradigm
+description: webOS Tasks should be reworked using the Palm Synergy paradigm
 date: 2010-06-06
 tags:
   - getting things done
