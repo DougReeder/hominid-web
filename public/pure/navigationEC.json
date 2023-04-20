@@ -1,0 +1,6 @@
+[
+	{"pagename": "Features", "relurl": "/exhibitioncalc/index.html", "pageclass": "featuresEC"},
+	{"pagename": "F.A.Q.", "relurl": "/exhibitioncalc/faq.html", "pageclass": "faqEC"},
+	{"pagename": "Support", "relurl": "/exhibitioncalc/support.html", "pageclass": "supportEC"},
+	{"pagename": "License", "relurl": "/exhibitioncalc/license.html", "pageclass": "licenseEC"}
+]

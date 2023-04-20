@@ -1,11 +1,13 @@
 module.exports = {
-	title: "Tech for Personal Growth",
-	url: "https://hominidsoftware.com/extra/doug/",
+	title: "Hominid Software",
+	blogTitle: "Tech for Personal Growth",
+	blogUrl: "https://hominidsoftware.com/tech-personal-growth/",
 	language: "en",
-	description: "Essays on using digital technology to become a better person (with detours)",
+	description: "Apps from Hominid Software",
+	blogDescription: "Essays on using digital technology to become a better person (with detours)",
 	author: {
 		name: "Doug Reeder",
 		email: "reeder.29@gmail.com",
-		url: "https://github.com/DougReeder/"
+		url: "https://hominidsoftware.com/about/"
 	}
 }

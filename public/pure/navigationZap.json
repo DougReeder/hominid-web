@@ -1,0 +1,6 @@
+[
+	{"pagename": "Features", "relurl": "/zapphotoshare/index.html", "pageclass": "featuresZap"},
+	{"pagename": "F.A.Q.", "relurl": "/zapphotoshare/faq.html", "pageclass": "faqZap"},
+	{"pagename": "Support", "relurl": "/zapphotoshare/support.html", "pageclass": "supportZap"},
+	{"pagename": "License", "relurl": "/zapphotoshare/license.html", "pageclass": "licenseZap"}
+]

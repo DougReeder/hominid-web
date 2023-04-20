@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 650px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 650px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Anfangs Hilfe für Outline Tracker</title>
+	</head>
+	<body id='gettingStarted'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Anfangs Hilfe für Outline Tracker</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Zum Menü springen</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+					<h2>Terminologie</h2>
+
+<div class='palm-body-text'>
+	Ein Outline Tracker <em>Element</em> ist eine <em>Aufgabe</em> oder eine <em>Notiz</em>.
+	Eine <em>Aufgabe</em> hat eine Checkbox <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-1.png) bottom no-repeat;'></div>
+	zur Anzeige ob sie abgeschlossen ist.
+	Eine <em>Notiz</em> kann ein Memo, eine pausiert Aufgabe oder eine Verabredung sein.  Eine Aufgabe oder eine Notiz können einer Gruppe von Aufgaben übergeordnet sein.
+</div>
+<div class='palm-body-text'>
+	Elemente sind gruppiert in <em>Projekte</em>.  <em>Lokale</em> Projekte sind privat. <em>Basecamp Classic</em> Projekte können mit anderen geteilt werden.
+	Man kann alle Elemente einem Projekt zuordnern, oder ein neues Projekt für jedes Ziel mit mehr als einer Aufgabe erstellen.
+</div>
+<div class='palm-body-title'>Aufgaben Ansichten</div>
+<div class='palm-body-text'>
+	Die erste Karte in Outline Tracker zeigt die Aufgaben aller Projekten an denen gerade gearbeitet wird.
+</div>
+<div class='palm-body-text'>
+	Die <strong>Zu Erledigen</strong> Ansicht zeigt nur Aufgaben an denen gearbeitet werden kann.
+</div>
+<div id='toDoBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+	<strong>Zu Erledigen u. Zukunft</strong> zeigt zusätzlich Aufgaben an, die noch nicht bearbeitet werden können.
+</div>
+<div id='toDoFutureBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+	<strong>Zu Erledigen u. Erwartend</strong> zeigt zusätzlich Aufgaben an, die anderen Personen zugewiesen sind.
+</div>
+<div id='toDoWaitingBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+	Die <strong>Erwartend</strong> Ansicht zeigt Aufgaben an die anderen Personen zugewiesen sind.
+</div>
+<div id='waitingBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+	Die <strong>Nach Datum</strong> Ansicht zeigt alle nicht abgeschlossenen Aufgaben und alle Notizen mit Fälligkeitsdatum, sortiert nach der Fälligkeit an.
+</div>
+<div id='byDueDateBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+	Die <strong>Alle Elemente</strong> Ansicht wird für die Suche nach Elementen benutzt.
+</div>
+<div id='allItemsBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+	Um die unterschiedlichen Ansichten aus zu wählen, auf den Ansichtüberschrift tippen:
+	<div class='headerSample'>Lorem Ipsum</div>
+</div>
+<div class='palm-body-text'>
+	Um eine Aufgabe in der <em>hierarchische Ansicht</em> anzuzeigen, wählen sie die Aufgabe aus und tippen auf den Knopf „Aufgabe hierarchisch anzeigen”:
+	<img src='images/outline-icon.png' align='top' />
+</div>
+<div class='palm-body-title'>Hierarchische Ansicht</div>
+<div class='palm-body-text'>
+	Jedes Projekt hat eine eigene Karte in der alle Aufgaben und Notzien angezeigt werden.
+	Um eine <em>hierarchische Ansicht</em> aus dem Applikationsmenu heraus zu öffnen, wählen Sie <strong>Projekt Hierarchische Struktur &gt <em>Projekttitel</em></strong>.
+</div>
+<div class='palm-body-text'>
+	Untergeordnete Aufgaben sind <em>Vorraussetzungen</em> für ihre übergeordneten Aufgaben &mdash; Untergeordnete Aufgaben müssen abgeschlossen sein bevor die übergeordnete Aufgabe abgeschlossen werden kann.
+	Um ein Unterlement zu einem Element hinzu zu fügen, das Element auswählen und dann auf den „Neues Unterelement” Knopf tippen: <img src='images/new-child.png' align='absmiddle'>
+	<br />Um ein Folgeelement zu erstellen, das Element auswählen und dann auf den „Neues Folgeelement” Knopf tippen: <img src='images/new-sibling.png' align='absmiddle'>
+	<br />Unterelemente und folgende Elemente sind erben Ihre Details vom übergeordneten Element: ob Notiz oder Aufgabe, Bereich, Verantwortliche/-r, Fälligkeitsdatum und Anlaufzeit.
+</div>
+<div class='palm-body-text'>
+	Auf den kleinen Knopf neben einem Element tippen
+	(<div style='display: inline-block; vertical-align:middle; width: 48px; height: 48px; background: url(images/knob-parent.png) top no-repeat;'></div> oder
+	<div style='display: inline-block; vertical-align:middle; width: 48px; height: 48px; background: url(images/knob-content.png) top no-repeat;'></div>)
+	um es zu Aus oder Ein zu klappen (Zeigt oder versteckt den Inhaltstext und die Unterlemente).
+</div>
+<div class='palm-body-text'>
+	Um ein Element zu verschieben, es eine halbe Sekunde auswählen und dann noch oben oder unten verschieben.
+	Wird das Element <strong>auf</strong> ein andere Element verschoben, wird es zu einem Unterelement von diesem.
+	Wird das Element <strong>zwischen</strong> zwei Elemente geschoben, wird es vor das untere geschoben.
+	(Stellen Sie sicher das die <em>Mitte</em> des verschobenen Elements sich über der <em>Mitte</em> des übergeordneten Elements oder über der Linie zwischen zwei Elementen befindet.)
+</div>
+<div class='palm-body-text'>
+	Ein Element nach links oder rechts schieben um es zu löschen (wie in Listen).
+</div>
+<div class='palm-body-text'>
+	Auf den Ansichtüberschrift tippen: <div class='headerSample'>Projekt Titel</div>
+	<br />um <strong>Nicht abgeschlossene anzeigen</strong>, alle Elemente ein zu klappen, alle Elmente aus zu klappen, die <strong>Projekt Einstellungen</strong> zu verändern, oder Projekt per E-Mail exportieren.
+</div>
+
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<!--
+				<a class='desktoponlyinline' href='http://developer.palm.com/webChannel/index.php?packageid=com.outlinetracker.outlinetracker'>
+					<img src='visuals/app_catalog.png' width='361' height='110' alt='Available in the App Catalog on webOS devices' />
+				</a>
+				-->
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 700px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 700px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<link rel='prefetch' href='screenshots.html'>
+		<link rel='prefetch' href='visuals/outline_vehicle.png'>
+		<link rel='prefetch' href='visuals/to-do_home.png'>
+
+		<title>Outline Tracker Vorteile</title>
+	</head>
+	<body id='features'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Outline Tracker Vorteile</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Zum Menü springen</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+					<div style='display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-align: center;'>
+						<img src='../aux/Hot_Apps_Winner.png' width='288' height='115' alt='HP webOS Hot Apps Winner' />
+					</div>
+
+					<!-- <h2>Bar</h2> -->
+					<p>Einer
+Aufgabenliste um Lichtjahre voraus hilft Outline Tracker™ alle ihre Aufgaben
+(Tasks) und damit verbundene Notizen zu organisieren. Organisieren sie
+Projekte bei der Arbeit, planen sie einen Umzug, eine Hochzeit oder
+einfach ihren Einkauf. Erstellen sie Aufgaben mit so vielen Unteraufgaben
+wie sie benötigen. Behalten sie die Übersicht wo ihre Tasks abgearbeitet
+werden können und wer dafür Verantwortlich ist. Outline Tracker’s
+dynamische To-Do Bildschirm zweigen ihnen nur die Aufgaben an denen sie jetzt
+und hier arbeiten können.  Aufgaben und Unterprojekte können nach einem genauen Rhythmus wiederholt
+werden (z.b. vorletzer Tag jeden Monat) oder locker (z.B. wöchentlich nach
+dem letzten mal).</p>
+<p>Durch Farbkodierung sehen sie auf einen Blick
+wer für eine Aufgabe verantwortlich ist: Sie selbst, jemand in ihrer Firma
+oder niemand (das sollten sie schnell ändern). Die dynamische Warteliste
+zeigt Tasks die von anderen noch erledigt werden müssen – mit einem Tap
+auf den Eintrag gelangen sie zu dem verknüpften webOS Adressbucheintrag.
+Einträge mit einem Fälligkeitsdatum erscheinen in ihrem webOS Kalender und
+Projekt und Aufgaben erscheinen ebenfalls in der dynamischen To-Do Bildschirm.</p>
+<p>Die Änderungen
+werden hochgeladen sobald sie das nächste mal online sind.</p>
+<p>Outline Tracker™  unterstützt die David Allen’s “Getting Things Done®” (GTD) Methodic.</p>
+<p>Coordinate with others using Basecamp Classic from 37signals. Others can connect using any web browser, or custom apps available for many kinds of smartphone.
+(Outline Tracker does not support “new” Basecamp.)
+Edit Basecamp Classic items without a network connection.  Changes will be uploaded when you're next on-line.</p>
+<p>Weiterhin kann Outline Tracker genutzt werden um Projekte zum umreißen und
+anschließend im XOXO Format, welches leicht in Webseiten intrigiert werden
+kann, zu exportieren (ein Import ist auch möglich).</p>
+					<img src='visuals/outline_moveoffice.png' width='480' height='320' class='centeredBlock' alt='sample outline' />
+					<p>Die vielen Details die so oft vergessen werden immer zur Hand!</p>
+
+					<p>Outline Tracker läuft auf jedem webOS Gerät. Vom original Pre über das TouchPad bis zum Pre<sup>3</sup>.</p>
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

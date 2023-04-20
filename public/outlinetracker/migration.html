@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 650px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 650px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Migration to Outline Tracker</title>
+	</head>
+	<body id='migration'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Migration to Outline Tracker</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Skip to navigation</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+					<h2 id='Bonsai'>Natara Bonsai</h2>
+					<p>We have developed an <a href='../misc/XOXO_fifth.oxt'>export template for Natara Bonsai Outliner for Windows</a>.
+					To use, download and copy to <strong>C:\Program Files\Natara\Bonsai\</strong>.  It should then show up in Bonsai's <strong>File</strong> &gt; <strong>Export</strong> menu.</p>
+					<ul>
+						<li>Bonsai Tasks have their completion folded into done or undone.</li>
+						<li>Bonsai <em>Category</em> is mapped to <em>Place</em> in Outline Tracker. New Places will be created, as needed.</li>
+						<li>Bonsai <em>Start date</em> will be used to calculate <em>Lead Time</em>.</li>
+						<li>Bonsai <em>Contact Name</em> is folded into the text for an item, since the Outline Tracker <em>Responsible</em> field refers to a particular entry in Contacts, not a name.</li>
+						<li>All items are initially collapsed, since export templates don't allow a proper mapping to the "compact" attribute.</li>
+					</ul>
+
+					<p>Put your webOS handheld in USB Mode and copy over the HTML file.
+					In Outline Tracker, from the application menu, select <strong>New Project</strong> &gt; <strong>Import from File...</strong>.</p>
+
+					<p>If you have a Waiting or Someday/Maybe category in Bonsai, after importing, select the To-Do &amp; Future scene, and tap the Place button to select Waiting or Someday/Maybe.
+					Each item in your Waiting Place should be manually edited to add a Responsible person, so it shows up in Outline Tracker's Waiting scene.
+					Each item in your Someday/Maybe Place should be manually edited to turn Task OFF.   Then you can delete the Waiting and/or Someday/Maybe Places.</p>
+
+					<p>Kudos to Natara for developing such a flexible export mechanism!</p>
+
+					<h3>Concepts</h3>
+					<ul>
+						<li>Outline &#x2192; Project</li>
+						<li>Simple Item &#x2192; Note</li>
+						<li>To-Do &#x2192; Task</li>
+						<li>Task &#x2192; multiple Tasks</li>
+						<li>Title  &#x2192; Summary Text</li>
+						<li>Notes &#x2192; Content Text</li>
+						<li>Contact &#x2192; Responsible</li>
+						<li>Due Date &#x2192; Due Date</li>
+						<li>Start Date &#x2192; Lead Time (Lead Time = Due Date - Start Date)</li>
+					</ul>
+
+					<p>Instead of creating one Bonsai Task with a percentage completion, you'll need to create multiple Outline Tracker Tasks (possibly as children of a new Task to group them).
+					We believe naming the steps will clarify your thinking and communication.</p>
+
+
+					<h2 id='ShadowPlan'>CodeJedi Shadow Plan</h2>
+					<p>There are two ways to export from Shadow Plan (Desktop), depending on how you use your Shadow Plan outline:</p>
+					<ul>
+						<li>If you don't use the Shadow Plan checkboxes, select the menu item <strong>File</strong> &gt; <strong>Save As</strong>,
+						and set the format to <strong>HTML Simple Export</strong>.
+							<ul>
+								<li>All items will be <em>Notes</em> in Outline Tracker.</li>
+								<li>All item details (including Shadow Plan <em>Note Text</em>)
+									will be folded into <em>Summary Text</em> in Outline Tracker.</li>
+							</ul>
+						</li>
+
+						<li>If you use the Shadow Plan checkboxes, use the <a href='../misc/Shadow_export_XOXO_unified.txt'>Shadow_export_XOXO_unified.txt export template</a>.
+							<ol>
+								<li>Save the template to the Templates directory, which should be
+									<a href='http://www.codejedi.com/shadowplan/sd_templates.html#files'>in the same directory as the Shadow application</a>.
+									OS X users must control-click on the Shadow application, select <strong>Show Package Contents</strong>,
+									navigate to <strong>Contents/MacOS</strong>, and
+									<a href='http://blog.gmane.org/gmane.comp.handhelds.palm.shadow/month=20051101/page=7'>create the Templates directory</a>.</li>
+								<li>In the Shadow application, select the menu item <strong>File</strong> &gt; <strong>Template Export</strong>,
+									and set the format to <strong>Shadow_export_XOXO_unified</strong>.</li>
+								<li>Give your exported file an extension of .html</li>
+							</ol>
+						After importing into Outline Tracker:
+							<ul>
+								<li>All items will be <em>Tasks</em> in Outline Tracker, and not done.</li>
+								<li>Shadow Plan <em>Note Text</em> will be mapped to <em>Content Text</em> in Outline Tracker.</li>
+								<li><em>Target date</em> will be mapped to <em>Due Date</em> in Outline Tracker.</li>
+								<li><em>Start date</em> will be used to calculate <em>Lead Time</em> in Outline Tracker 1.6.2 and later.</li>
+								<li><em>Prime tag</em> will be mapped to Place in Outline Tracker.
+									New Places will be created, as needed.</li>
+								<li>All items are initially collapsed.</li>
+							</ul>
+						</li>
+					</ul>
+
+					<p>Put your webOS handheld in USB Mode and copy over the HTML file.
+					In Outline Tracker, from the application menu, select <strong>New Project</strong> &gt; <strong>Import from File...</strong>.</p>
+
+					<p>If you have a Waiting or Someday/Maybe prime tag in Shadow Plan, after importing, select the To-Do &amp; Future scene, and tap the Place button to select Waiting or Someday/Maybe.
+					Each item in your Waiting Place should be manually edited to add a Responsible person, so it shows up in Outline Tracker's Waiting scene.
+					Each item in your Someday/Maybe Place should be manually edited to turn Task OFF.   Then you can delete the Waiting and/or Someday/Maybe Places.</p>
+
+					<h3>Concepts</h3>
+					<ul>
+						<li>Outline &#x2192; Project</li>
+						<li>Item &#x2192; Item (Note or Task)</li>
+						<li>Item using Progress percentage &#x2192; multiple Tasks</li>
+						<li>Title Text &#x2192; Summary Text</li>
+						<li>Note Text &#x2192; Content Text</li>
+						<li>Target Date&#x2192; Due Date</li>
+						<li>Start Date &#x2192; Lead Time (Lead Time = Due Date - Start Date)</li>
+					</ul>
+
+					<p>Instead of creating one Shadow Plan item with a <em>Percentage Progress</em>, you'll need to create multiple Outline Tracker Tasks
+					(possibly as children of a new Task to group them).
+					We believe naming the steps will clarify your thinking and communication.</p>
+
+
+					<h2 id='BrainForest'>Ultrasoft BrainForest</h2>
+					<p>Trees can be exported from BrainForest Deluxe for Mac OS or Windows.
+					You <em>must set “End repeat”</em> for all Action Items that repeat, or <em>BrainForest will generate an invalid OPML file</em>.
+					 Select <strong>OPML</strong> format when exporting.</p>
+
+					<p>Put your webOS handheld in USB Mode and copy over the OPML file.
+					In Outline Tracker, from the application menu, select <strong>New Project</strong> &gt; <strong>Import from File...</strong>.</p>
+
+					<p>Start Dates will be converted to Lead Time.  Action items from Project Trees will be marked complete if they are more than 50% complete.
+					</p>
+
+					<h3>Concepts</h3>
+					<ul>
+						<li>Tree &#x2192; Project</li>
+						<li>Plain Item &#x2192; Note</li>
+						<li>Action Item &#x2192; Task</li>
+						<li>Note &#x2192; Content Text</li>
+						<li>Due Date &#x2192; Due Date</li>
+						<li>Duration &#x2192; Lead Time</li>
+					</ul>
+
+					<p>Instead of creating one BrainForest Action Item (in a Project Tree) with a percentage completion, you'll need to create multiple Outline Tracker Tasks (possibly as children of a new Task to group them).
+					We believe naming the steps will clarify your thinking and communication.</p>
+
+
+
+					<h2 id='OmniOutliner'>Other Outliners, including OmniOutliner</h2>
+					<p>If you can export to OPML format, Outline Tracker can import it.</p>
+
+					<p>Put your webOS handheld in USB Mode and copy over the OPML file.
+					In Outline Tracker, from the application menu, select <strong>New Project</strong> &gt; <strong>Import from File...</strong>.
+					If you display the OmniOutliner status checkboxes, set the default to Tasks.  If you don't display the status checkboxes, set the default to Notes.</p>
+
+					<p>"note", "_note", "description" and "url" fields will be concatenated as Content Text.
+					"place"/"context"/"category" fields will be converted to Place.  New Places will be created, as needed.
+					Due or end dates will be mapped to Due Date.
+					Start or Begin Dates will be converted to Lead Time.
+					</p>
+
+
+					<h2 id='FreeMind'>FreeMind</h2>
+					<p>Export as HTML or XHTML.  The tree structure and text will be preserved, but links, icons and other formatting won't transfer.
+					All items will be Notes.</p>
+
+					<p>Put your webOS handheld in USB Mode and copy over the HTML file.
+					In Outline Tracker, from the application menu, select <strong>New Project</strong> &gt; <strong>Import from File...</strong>.
+					</p>
+
+
+					<h2 id='LifeBalance'>Llamagraphics Life Balance</h2>
+					<h3>Concepts</h3>
+					<ul>
+						<li>Goal, TLI &#x2192; Project</li>
+						<li>Project, Task &#x2192; Task or Note</li>
+						<li>Note &#x2192; Content Text</li>
+						<li>Place &#x2192; Place</li>
+						<li>Date &#x2192; Due Date</li>
+						<li>Lead Time &#x2192; Lead Time</li>
+					</ul>
+
+					<p>Outline Tracker gives you the freedom to mix Notes (non-Task items) in with your Tasks.</p>
+
+
+					<h2 id='ThoughtManager'>ThoughtManager from Hands High Software</h2>
+					<h3>Concepts</h3>
+					<ul>
+						<li>Outline &#x2192; Project</li>
+						<li>Outline List &#x2192; To-Do scene</li>
+						<li>Item without checkbox &#x2192; Note</li>
+						<li>Item with checkbox &#x2192; Task</li>
+						<li>Note &#x2192; Content Text</li>
+						<li>Template &#x2192; Project stored as XOXO or HTML file on handheld</li>
+					</ul>
+					<p>Text in Outline Tracker may have line breaks, unlike ThoughtManager</p>
+
+					<h2 id='ToDoMatrix'>ToDoMatrix from REXwireless</h2>
+					<h3>Concepts</h3>
+					<ul>
+						<li>Drawer &#x2192; Project</li>
+						<li>Folder &#x2192; top-level Note in Project</li>
+						<li>Context &#x2192; Place</li>
+						<li>Due &#x2192; Due Date</li>
+						<li>Delegation &#x2192; Who's Responsible</li>
+						<li>Delegation drawer &#x2192; Waiting scene</li>
+						<li>Next Action view &#x2192; To-Do scene</li>
+						<li>Due Today, Due Within 3 Days &amp; Due This Week views &#x2192; webOS Calendar</li>
+						<li>Alert &#x2192; Reminder and/or Lead Time</li>
+					</ul>
+					<p>Outline Tracker allows you to mix Notes in with your Tasks, so you don't need a separate application like IdeaMatrix.</p>
+
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<!--
+				<a class='desktoponlyinline' href='http://developer.palm.com/webChannel/index.php?packageid=com.outlinetracker.outlinetracker'>
+					<img src='visuals/app_catalog.png' width='361' height='110' alt='Available in the App Catalog on webOS devices' />
+				</a>
+				-->
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+					<p><em>Ultrasoft, the Ultrasoft logo, BrainForest, and the BrainForest logo are trademarks of Ultrasoft Digital Media.
+					Life Balance is a trademark of Llamagraphics, Inc.
+					Hands High, the Hands High logo, and ThoughtManager are registered trademarks of Hands High Software, Inc.
+					All other brands and product names may be trademarks or registered trademarks of their respective owners.</em></p>
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

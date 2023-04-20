@@ -1,0 +1,12 @@
+[
+	{"pagename": "Vorteile", "relurl": "/outlinetracker/index.html", "pageclass": "features"},
+	{"pagename": "Screen Shots", "relurl": "/outlinetracker/screenshots.html", "pageclass": "screenshots"},
+	{"pagename": "Support", "relurl": "/outlinetracker/support.html", "pageclass": "support"},
+	{"pagename": "Anfangs Hilfe", "relurl": "/outlinetracker/getting_started.html", "pageclass": "gettingStarted"},
+	{"pagename": "Einfach Lostippen", "relurl": "/outlinetracker/just_type.html", "pageclass": "justType"},
+	{"pagename": "Details", "relurl": "/outlinetracker/details.html", "pageclass": "details"},
+	{"pagename": "Kurze Einführung", "relurl": "/outlinetracker/methodologies.html", "pageclass": "methodologies"},
+	{"pagename": "F.A.Q.", "relurl": "/outlinetracker/faq.html", "pageclass": "faq"},
+	{"pagename": "Migration", "relurl": "/outlinetracker/migration.html", "pageclass": "migration"},
+	{"pagename": "License", "relurl": "/outlinetracker/license.html", "pageclass": "license"}
+]

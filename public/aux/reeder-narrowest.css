@@ -1,0 +1,67 @@
+/* for handhelds AND narrow windows on desktops */
+/* <???> Menu slides below, minimize padding --- */
+
+/* general-purpose styling */
+
+.floatright300 {
+	float: none;
+	padding: 0;
+}
+
+.floatright300 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.floatright200 {
+	float: none;
+	padding: 0;
+}
+
+table, tbody, tr, td, th { 
+	display: block; 
+}
+
+table.medium {
+}
+
+table.medium td, table.medium th {
+	padding: 0.1em;
+	/*width: 5em;*/
+}
+
+
+/* structure and related styling */
+#outer {
+	position: static;
+	min-width: 10em;
+}
+
+#header {
+	margin: 0;
+	padding: 0.25em;
+}
+
+.onlyif1col {
+	display: block;
+	text-align: center;
+	padding: 0.25em;
+}
+
+#content {
+	margin: 0;
+	padding: 0.25em;
+}
+
+#nav {
+	position: static;
+	margin: 0;
+	padding: 0.25em;
+	width: auto;
+	border-style: none;
+}
+
+#nav ul {
+	margin: 0 0 0 1.25em;
+}

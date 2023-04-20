@@ -109,6 +109,8 @@ Deploy this Eleventy site in just a few clicks on these services:
 - This project uses three [Eleventy Layouts](https://www.11ty.dev/docs/layouts/):
 	- `_includes/layouts/base.njk`: the top level HTML structure
 	- `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-	- `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
+	- `_includes/layouts/blog-base.njk`: the blog top level HTML structure
+	- `_includes/layouts/blog-home.njk`: the blog home page template (wrapped into `blog-base.njk`)
+	- `_includes/layouts/post.njk`: the blog post template (wrapped into `blog-base.njk`)
 - `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
 

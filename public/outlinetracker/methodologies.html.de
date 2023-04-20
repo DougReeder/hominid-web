@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 650px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 650px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Outline Tracker Kurze Einführung</title>
+	</head>
+	<body id='methodologies'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Outline Tracker Kurze Einführung</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Zum Menü springen</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+
+					<p>Different people have different priorities and constraints &mdash; experience will help you refine how you use Outline Tracker.
+					Whether you plan and work top down, bottom up, or inside-out, Outline Tracker works with you.
+					Here we sketch how to implement various work methodologies in Outline Tracker. </p>
+
+					<hr />
+					<h2>David Allen's Getting Things Done®</h2>
+
+					<p>GTD is described in the book <a href='https://books.google.com/books?id=WXcHwzaUd4MC&printsec=frontcover&dq=%22Getting+things+done%22&cd=1#v=onepage&q=&f=false'>Getting Things Done</a>.
+					An overview is available
+					<a href='https://en.wikipedia.org/wiki/Getting_Things_Done'>on Wikipedia</a>.</p>
+
+					<h3>Buckets</h3>
+                    <ul>
+                        <li>
+                            Project list &#x2192; Anwendungsmenü &gt; Projekt Hierarchische Struktur
+                        </li>
+                        <li>
+                            Project Plans &#x2192; hierarchische struktur Bildschirm für Projekt
+                        </li>
+                        <li>
+                            Waiting list &#x2192; Erwartend Bildschirm
+                        </li>
+                        <li>
+                            Calendar &#x2192; Calendar app (tasks are shown on their Due Date)
+                        </li>
+                        <li>
+                            Next Actions list &#x2192; Zu Erledigen Bildschirm
+                        </li>
+                        <li>
+                            Reference material &#x2192; Notes [Notizen] (If you like, you can create Projects with “REFERENCE” in the name.)
+                        </li>
+                        <li>
+                            Tickler file &#x2192 setzen Anlaufzeit (u. Fälligkeitsdatum) für Aufgabe. It will appear in the Zu Erledigen scene on the appropriate date.
+                        </li>
+                        <li>
+                            Someday/Maybe &#x2192; Notes [Notizen] (If you like, you can create Projects with “SOMEDAY” in the name.)
+                        </li>
+                        <li>
+                            Trash &#x2192; delete items
+                        </li>
+                    </ul>
+
+					<h3>Where's the Inbox?</h3>
+					<p>Die webOS E-Mail, Messaging und Telefon Anwendungen sind Eingangsboxen und sie haben wahrscheinlich noch weitere.<br /><br />
+					Sie können eine komplette Nachricht aus einer anderen Anwendung nach <a href='just_type.html'><strong>Einfach Lostippen</strong></a> kopieren.
+					Unter <strong>Schnellaktionen</strong> wählen sie <strong>Neues Element</strong>.
+					(Eventuell müssen sie die Einfach Lostippen-Einstellungen anpassen, um das <strong>Neue Element</strong> Kommando zuzufügen.)
+					Outline Tracker wird den Text in Kurztext und Inhalt teilen und den ersten Teil nach einem Fälligkeitsdatum durchsuchen.<br /><br />
+					Sie können auf die Schnelle ein neues Element erstellen, welches einem Alten ähnelt,
+						indem sie das alte Element auswählen und den „Neues Folgeelement” Knopf tippen: <img src='images/new-sibling.png' align='top'>
+					</p>
+
+					<h3>How do I set the Context for a task?</h3>
+					<p>Set the Place [Bereich].  Places don't need to be physical locations.</p>
+
+
+					<hr />
+
+<div class='palm-body-title'>Tägliches Review</div>
+<div class='palm-body-text'>Als Teil des täglichen Reviews sollten Sie den aktuellen Tag im webOS-Kalender auf Termine und Fristen prüfen.</div>
+<div class='palm-body-text'>Calendar entries for today can also be seen by selecting <strong>Agenda</strong> in Exhibition Mode. (Exhibition Mode starts when a webOS 2 or 3 device is asleep on a Touchstone.)</div>
+<div id='launchCalendarBtn' x-mojo-element='Button'></div>
+
+<div class='palm-body-text'>Prüfen Sie die Aufgaben in der <strong>Zu Erledigen</strong> Ansicht, mit dem Bereich „Alle Bereiche”.
+Aufgaben, deren Anlaufzeit heute startet (inklusive wiederholende Aufgaben), erscheinen automatisch.</div>
+<div class='palm-body-text'>Falls Aufgaben erledigt wurden, haken Sie sie ab und wählen erneut „Alle Bereiche”, um die Liste zu aktualisieren.</div>
+
+<div class='palm-body-text'>Falls Sie heute <em>nicht</em> an einer Aufgabe arbeiten konnten, fragen Sie sich „Warum?”.
+Falls vorher etwas anderes getan werden muss, erstellen Sie eine Aufgabe als Unterelement.
+Falls jemand anders für die Aufgabe verantwortlich ist, wählen Sie <strong>Verantwortliche/-r</strong>,
+um die Aufgabe in die <strong>Erwartend</strong> Ansicht zu verschieben.
+Falls Sie darauf warten, dass zuerst jemand anderes etwas tut,
+erstellen Sie eine Aufgabe als Unterelement und wählen Sie <strong>Verantwortliche/-r</strong> entsprechend.
+Falls es noch einige Zeit dauert, bis Sie mit einer Aufgabe beginnen können,
+öffnen Sie die Detailansicht und wählen Sie eine Anlaufzeit (und einen Fälligkeitstermin).
+Um eine Aufgabe bis auf weiteres zu unterbrechen, ändern Sie sie in der Detailansicht in eine Notiz.
+</div>
+<div id='toDoBtn' x-mojo-element='Button'></div>
+
+<div class='palm-body-title'>Wöchentliches Review</div>
+<div class='palm-body-text'>Sie sollten die Aufgaben in der <strong>Erwartend</strong> Ansicht mindestens wöchentlich prüfen.
+Eventuell müssen Sie diejenigen kontaktieren, die für eine Aufgabe verantwortlich sind.
+(Derjenige kann seine Aufgabe in den Basecamp-Classic-Projekten, nicht aber in den lokalen Projekten sehen.)
+Um anzurufen, eine E-Mail oder Nachricht zu schicken, tippen Sie auf den Namen in der <strong>Erwartend</strong> Ansicht,
+dann auf die Telefonnummer, E-Mail- oder Messaging-Adresse.</div>
+<div class='palm-body-text'>Falls Aufgaben erledigt wurden, haken Sie sie ab und wählen erneut <strong>Erwartend</strong> um die Liste zu aktualisieren,
+damit Folgeaufgaben sichtbar werden.</div>
+<div id='waitingBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>Um schnell ein Projekt zu prüfen, wählen Sie die <strong>Zu Erledigen u. Zukunft</strong> Ansicht.
+Diese zeigt alle zu erledigenden Aufgaben.</div>
+<div id='toDoFutureBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+Öffnen Sie für eine gründliche Prüfung die hierarchische Ansicht für dieses Projekt und benutzen Sie das <strong>Nicht abgeschlossene anzeigen</strong> Kommando.
+Dies zeigt die Struktur des Projekts, sowie unerledigte Aufgaben, für die andere verantwortlich sind.
+Notizen und erledigte Aufgaben können ebenfalls eingesehen werden.</div>
+<div class='palm-body-text'>Aufgaben und Projekte, die nicht mehr relevant sind, sollten gelöscht werden.</div>
+
+<div class='palm-body-title'>Backups</div>
+<div class='palm-body-text'>Mindestens einmal in der Woche sollten Sie die Funktion <strong>Backup via E-Mail</strong> nutzten,
+oder (unter webOS 2 bzw 3)  Ihr Gerät in den USB Modus setzen und die letzte nächtliche Sicherung aus dem „outlines” Ordner auf Ihren Computer kopieren.
+Sollte Ihnen Ihr Gerät gestohlen werden oder es verloren gehen, nützen Ihnen die Sicherungsdateien on Ihr Gerät sonst herzlich wenig.</div>
+<div class='palm-body-text'>Eine wöchentliche Aufgabe dafür, zu erstellen ist keine schlechte Idee. :-) </div>
+
+
+					<hr />
+					<h2 id='mimickingPriorities'>Mimicking Priorities</h2>
+					<p>In Local projects, it is possible to use the Responsible field to mimic three levels of priority.
+					Set Responsible as “me” for highest priority, “my organization” as middle priority, and “no one” as lowest priority.
+					You could even set Responsible to “select from Contacts” as an even lower priority, at the expense of making the Waiting scene useless.
+					</p>
+					<p>Re-ordering tasks in outline scenes will affect the order in To-Do scenes.</p>
+
+
+					<hr />
+					<h2 id='generalReccomendations'>General Reccomendations</h2>
+					<h3>New Tasks</h3>
+					<p>Many things could trigger creating a new task: a phone call, an email, working on something else.
+					It's usually worthwhile to create a task in the right place in your outline.
+					If it's a sibling to a task in a task scene, select the sibling then tap the „Neues Folgeelement” button: <img src='images/new-sibling.png' align='absmiddle'>
+					If it's a prerequisite to a task in a task scene, select the parent then tap the „Neues Unterelement” button: <img src='images/new-child.png' align='absmiddle'>
+					Otherwise, tap either the „Neues Folgeelement” or „Neues Unterelement” button.
+					In the Details scene, tap the <strong>Überelement</strong> selector and select the appropriate parent from the list of Favorite Parents, or select „Aus allen auswählen...” to choose any item as the parent.
+					</p>
+					<p>You can copy and paste text from an e-mail, message or web page.  The Inhalt field is a good place to put this.</p>
+					<p>If you have a minute, details like Bereich, Verantwortliche/-r, Fälligkeitsdatum and Anlaufzeit can be filled in right away.
+					If you're in the middle of something, you can edit the details when you next check a task scene for the next task to work on.</p>
+
+					<h3>Managing Projects and Goals</h3>
+					<p>When you first create a project (or a goal within a project), you don't need a complete plan with all the tasks.
+					Just enter the tasks on your mind.
+					As you work on a project or goal, you may find that other tasks need to be done first.
+					Create them as children of existing tasks (prerequisities).
+					The <strong>Zu Erledigen</strong> scenes will update to show that you can work on the prerequisite, but not its parent.</p>
+					<p>If you need a complete plan, for a presentation, or to prepare a budget, enter everything into the outline.
+					(You may find it useful to Export the Project so you can view it on a larger screen, or print it out.)
+					The <strong>Zu Erledigen u. Zukunft</strong> scene shows all the undone tasks, including tasks with undone prerequisites,
+						while the <strong>Zu Erledigen u. Erwartend</strong> scene shows the actionable tasks for everyone.</p>
+
+					<h3>Meetings</h3>
+					<p>It's useful to switch to the <strong>Erwartend</strong> scene for meetings -- you can see at a glance who should be working on what.
+					The <strong>Zu Erledigen u. Erwartend</strong> scene is also useful, to see actionable tasks for everone on a project.</p>
+
+					<h3>Working with Dates</h3>
+					<p>
+					A task you could work on right away, and has no deadline, should set <em>Fälligkeitsdatum</em> to off.
+						It will show up in task scenes right away and never be flagged overdue.
+					A task you could work on right away, and has a deadline, should have Fälligkeitsdatum set to the deadline, and Anlaufzeit set to „Unbegrenzt”.
+					A task you can't work on yet, and has a deadline, should have Fälligkeitsdatum set to the deadline, and Anlaufzeit set to some appropriate value.
+					A task you can't work on yet, and has no deadline, should have Fälligkeitsdatum set to a year after the start date, and Anlaufzeit set to „1 Jahr”.
+					(Formally, this is not correct.  But if you haven't made time to complete the task in a year, you should reconsider how important it is to you.)
+					</p>
+					<p>If an item has a time as well as a date, you can set the Dauer -- but that only affects how the item is displayed in the Calendar app.</p>
+					<p>Your calendar should reflect the "hard landscape" of your life -- only the things that <em>must</em> be done on a day should appear there.
+					That's why tasks are only displayed in the Calendar if they're still undone on their due date.
+					(If your top-level tasks represent mileposts, you can change the Preferences to see completed top-level tasks in the Calendar.
+					Lower-level tasks, too, if that's how you work.)</p>
+
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<p><em>GTD and Getting Things Done are trademarks of David Allen &amp; Co.</em></p>
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

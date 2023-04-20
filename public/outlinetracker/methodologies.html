@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 650px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 650px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Outline Tracker Methodologies</title>
+	</head>
+	<body id='methodologies'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Outline Tracker Methodologies</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Skip to navigation</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+
+					<p>Different people have different priorities and constraints &mdash; experience will help you refine how you use Outline Tracker.
+					Whether you plan and work top down, bottom up, or inside-out, Outline Tracker works with you.
+					Here we sketch how to implement various work methodologies in Outline Tracker. </p>
+
+					<hr />
+					<h2>David Allen's Getting Things Done®</h2>
+
+					<p>GTD is described in the book <a href='https://books.google.com/books?id=WXcHwzaUd4MC&printsec=frontcover&dq=%22Getting+things+done%22&cd=1#v=onepage&q=&f=false'>Getting Things Done</a>.
+					An overview is available
+					<a href='https://en.wikipedia.org/wiki/Getting_Things_Done'>on Wikipedia</a> or
+					<a href='http://www.43folders.com/2004/09/08/getting-started-with-getting-things-done'>by Merlin Mann</a></p>
+
+					<h3>Buckets</h3>
+                    <ul>
+                        <li>
+                            Project list &#x2192; application menu &gt; Show Project Outline
+                        </li>
+                        <li>
+                            Project Plans &#x2192; Outline scene for project
+                        </li>
+                        <li>
+                            Waiting list &#x2192; Waiting scene
+                        </li>
+                        <li>
+                            Calendar &#x2192; Calendar app (tasks are shown on their Due Date)
+                        </li>
+                        <li>
+                            Next Actions list &#x2192; To-Do scene
+                        </li>
+                        <li>
+                            Reference material &#x2192; Notes (If you like, you can create Projects with “REFERENCE” in the name.)
+                        </li>
+                        <li>
+                            Tickler file &#x2192; set Lead Time (&amp; Due Date) on Task &mdash; it will appear in the To-Do scene on the appropriate date
+                        </li>
+                        <li>
+                            Someday/Maybe &#x2192; Notes (If you like, you can create Projects with “SOMEDAY” in the name.)
+                        </li>
+                        <li>
+                            Trash &#x2192; delete items
+                        </li>
+                    </ul>
+
+
+					<h3>Where's the Inbox?</h3>
+					<p>The webOS Email, Messaging and Phone applications are inboxes, and you probably have others as well.</p>
+					<p>
+					You can type a new item into <a href='just_type.html'><strong>Just Type</strong></a>, or copy a whole message from another application and paste it in.  From <strong>Quick Actions</strong> select <strong>New Item</strong>.
+					(You may need to use the Just Type Preferences to add Outline Tracker's <strong>New Item</strong> command.)
+					Outline Tracker will split your text into summary and content text, and search the first part of the text for a due date.
+					</p>
+					<p>You can quickly create a new item that's similar to an old item by selecting the old item and tapping the New Sibling button: <img src='images/new-sibling.png' align='top'></p>
+
+					<h3>How do I set the Context for a task?</h3>
+					<p>Set the Place.  Places don't need to be physical locations.</p>
+
+
+					<hr />
+
+<div class='palm-body-title'>Daily Review</div>
+<div class='palm-body-text'>As part of your daily review, check the webOS Calendar for today, to see appointments and deadlines.</div>
+<div class='palm-body-text'>Calendar entries for today can also be seen by selecting <strong>Agenda</strong> in Exhibition Mode. (Exhibition Mode starts when a webOS 2 or 3 device is asleep on a Touchstone.)</div>
+<div id='launchCalendarBtn' x-mojo-element='Button'></div>
+
+<div class='palm-body-text'>Review the Tasks in the <strong>To-Do</strong> scene, with Place set to “All Places”.
+Tasks with a Lead Time that starts today (including Repeating Tasks) will automatically appear.</div>
+<div class='palm-body-text'>If any listed Tasks have been completed, check them off and select “All Places” again, to refresh the list.</div>
+
+<div class='palm-body-text'>If a Task is listed that you <em>couldn't</em> work on today, ask “Why?”.
+If it's actually a goal or sub-project, determine what the next step is, and create a child Task (prerequisite).
+If the Task is someone else's responsibility, open the Details scene and set <strong>Responsible</strong>, to move the task to the <strong>Waiting</strong> scene.
+If you're waiting for someone to do something first, create a child Task and set <strong>Responsible</strong>.
+If it's a just a matter of time before you could work on it, open the Details scene and set Lead Time (and Due Date, if that's not ON).
+To put a task “on hold” indefinitely, open the Details scene and change it to a Note.
+</div>
+<div id='toDoBtn' x-mojo-element='Button'></div>
+
+<div class='palm-body-title'>Weekly Review</div>
+<div class='palm-body-text'>At least weekly, you should review the Tasks in the <strong>Waiting</strong> scene.
+You may need to contact someone about the Tasks he or she is Responsible for.
+(He or she can see his or her tasks in Basecamp Classic projects, but not in Local projects.)
+Tap his or her name in the <strong>Waiting</strong> scene, then tap his or her phone number, e-mail address, or messaging address.</div>
+<div class='palm-body-text'>If any listed Tasks have been completed, check them off and re-select the <strong>Waiting</strong> scene, so parent tasks can appear.</div>
+<div id='waitingBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>To quickly review a Project, use the <strong>To-Do &amp; Future</strong> scene.  This shows all your incomplete Tasks.</div>
+<div id='toDoFutureBtn' x-mojo-element='Button'></div>
+<div class='palm-body-text'>
+For an in-depth review, open the outline scene for the project and use the <strong>Show Incomplete Tasks</strong> command.
+This shows the structure of the Project, and also displays incomplete Tasks that others are Responsible for.
+Notes and completed Tasks can also be accessed.</div>
+<div class='palm-body-text'>Tasks and projects that are no longer relevant should be deleted.</div>
+
+<div class='palm-body-title'>Backups</div>
+<div class='palm-body-text'>Every week, you should use the <strong>Backup via E-Mail</strong> command, or (under webOS 2 or 3) put your device in USB mode and copy the latest nightly backup from the “outlines” folder to your desktop computer.
+If your device is lost or stolen, backup files on the device are of little use!</div>
+<div class='palm-body-text'>Creating a repeating weekly Task for this would be no bad idea. :-)</div>
+
+
+					<hr />
+					<h2 id='mimickingPriorities'>Mimicking Priorities</h2>
+					<p>In Local projects, it is possible to use the Responsible field to mimic three levels of priority.
+					Set Responsible as “me” for highest priority, “my organization” as middle priority, and “no one” as lowest priority.
+					You could even set Responsible to “select from Contacts” as an even lower priority, at the expense of making the Waiting scene useless.
+					</p>
+					<p>Re-ordering Tasks in outline scenes will affect the order in To-Do scenes.</p>
+
+
+					<hr />
+					<h2 >Reading</h2>
+					<p><a href='http://www.43folders.com/2005/09/12/building-a-smarter-to-do-list-part-i'>Building a Smarter To-Do List</a> by Merlin Mann</p>
+
+
+					<hr />
+					<h2 id='generalReccomendations'>General Reccomendations</h2>
+					<h3>New Tasks</h3>
+					<p>Many things could trigger creating a new Task: a phone call, an email, working on something else.
+					It's usually worthwhile to create a Task in the right place in your outline.
+					If it's a sibling to a Task in a task scene, select the sibling then tap the New Sibling button: <img src='images/new-sibling.png' align='absmiddle'>
+					If it's a prerequisite to a Task in a task scene, select the parent then tap the New Child button: <img src='images/new-child.png' align='absmiddle'>
+					Otherwise, tap either the New Sibling or New Child button.
+					In the Details scene, tap the <strong>PARENT</strong> selector and select the appropriate parent from the list of Favorite Parents, or select “Select from all...” to choose any item as the parent.
+					</p>
+					<p>You can copy and paste text from an e-mail, message or web page.  The content text field is a good place to put this.</p>
+					<p>If you have a minute, details like Place, Responsible, Due Date and Lead Time can be filled in right away.
+					If you're in the middle of something, you can edit the details when you next check a task scene for the next task to work on.</p>
+
+					<h3>Managing Projects and Goals</h3>
+					<p>When you first create a project (or a goal within a project), you don't need a complete plan with all the Tasks.
+					Just enter the Tasks on your mind.
+					As you work on a project or goal, you may find that other Tasks need to be done first.
+					Create them as children of existing tasks (prerequisities).
+					The <strong>To-Do</strong> scenes will update to show that you can work on the prerequisite, but not its parent.</p>
+					<p>If you need a complete plan, for a presentation, or to prepare a budget, enter everything into the outline.
+					(You may find it useful to Export the Project so you can view it on a larger screen, or print it out.)
+					The <strong>To-Do &amp; Future</strong> scene shows all the undone Tasks, including Tasks with undone prerequisites,
+						while the <strong>To-Do &amp; Waiting</strong> scene shows the actionable Tasks for everyone.</p>
+
+					<h3>Meetings</h3>
+					<p>It's useful to switch to the <strong>Waiting</strong> scene for meetings -- you can see at a glance who should be working on what.
+					The <strong>To-Do &amp; Waiting</strong> scene is also useful, to see actionable tasks for everone on a project.</p>
+
+					<h3>Working with Dates</h3>
+					<p>
+					A Task you could work on right away, and has no deadline, should set <em>Due Date</em> to off.
+						It will show up in task scenes right away and never be flagged overdue.
+					A Task you could work on right away, and has a deadline, should have Due Date set to the deadline, and Lead Time set to “unlimited”.
+					A Task you can't work on yet, and has a deadline, should have Due Date set to the deadline, and Lead Time set to some appropriate value.
+					A Task you can't work on yet, and has no deadline, should have Due Date set to a year after the start date, and Lead Time set to “1 year”.
+					(Formally, this is not correct.  But if you haven't made time to complete the Task in a year, you should reconsider how important it is to you.)
+					</p>
+					<p>If an item has a time as well as a date, you can set the Duration -- but that only affects how the item is displayed in the Calendar app.</p>
+					<p>Your calendar should reflect the "hard landscape" of your life -- only the things that <em>must</em> be done on a day should appear there.
+					That's why Tasks are only displayed in the Calendar if they're still undone on their due date.
+					(If your top-level Tasks represent mileposts, you can change the Preferences to see completed top-level Tasks in the Calendar.
+					Lower-level Tasks, too, if that's how you work.)</p>
+
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<p><em>GTD and Getting Things Done are trademarks of David Allen &amp; Co.</em></p>
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

@@ -1,0 +1,252 @@
+[
+{	"category": "Tastaturkürzel",
+	"question":	"Welche Tastaturkürzel gibt es?",
+	"answer":	"<table class='realTable'><caption>Alle Ansichten</caption><tr><td>2-Finger Wischer<br />(Finger auseinander)</td><td>Direkt zu Anfang/Ende</td></tr></table><table class='realTable'><caption>Aufgaben Ansicht</caption><tr><td>meta-F</td><td>Wechsle feste/freie Bildschirmausrichtung</td></tr><tr><td>meta-N</td><td>Neues Folgeelement</td></tr><tr><td>meta-comma</td><td>Neues Unterelement</td></tr><tr><td>meta-D,<br />Vorwärts-Geste</td><td>Zeige Detailansicht</td></tr></table><table class='realTable'><caption>Hierarchische Strukturansicht: als Aufgaben Ansicht, plus:</caption><tr><td>meta-Leertaste</td><td>Weiter zu nächstem sichtbaren Element</td></tr><tr><td>meta-Punkt</td><td>Wechsle Inhalt für gewähltes Element</td></tr><tr><td>meta-L</td><td>Wechsle, ob neue Elemente das Inhaltsfeld anzeigen</td></tr><tr><td>meta-T</td><td>Zeige Aufgaben Ansicht</td></tr></table>“meta-” bedeutet: Halten Sie den Gestenbereich gedrückt und drücken Sie die Taste",
+	"keywords":	"Tastatur, Gesten"
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Wie erstelle ich eine Aufgabe welches von einem anderen Abhängt?",
+	"answer": 	"Die Aufgabe muss als Unterelement erstellt werden.<br /><br />Die zweite Aufgabe erscheint nicht in dem Zu Erledigen, Zu Erledigen u. Erwartend oder Erwartend Bildschirm bis die erste Aufgabe abgeschlossen ist. Sie erscheint in die Bildchirme Zu Erledigen u. Zukunft und Nach Datum.",
+	"keywords": "Zu Erledigen, neue Aufgabe, neues Element Aufgabe erstellen, Element erstellen, unvollständig, nicht abgeschlossen "
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Wie lege ich fest das drei Aufgaben der reihe nach abgeschlossen werden müssen?",
+	"answer":	"Die zweite Aufgabe als Unterelement der dritten erstellen und die Erste als Unterelement der zweiten.<br /><br />Die zweite und dritte Aufgabe erscheinen nicht in dem Zu Erledigen, Zu Erledigen u. Erwartend oder Erwartend Bildschirm bis die erste Aufgabe abgeschlossen ist. Dies gilt analog auch für die dritte Aufgabe. Die zweite und dritte Aufgabe sind in die Bildchirme Zu Erledigen u. Zukunft und Nach Datum zu sehen. ",
+	"keywords": "Zu Erledigen, neue Aufgabe, neues Element, Aufgabe erstellen, Element erstellen, unvollständig, nicht abgeschlossen "
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Warum erscheint meine Aufgabe nicht in dem Zu Erledigen, Zu Erledigen u. Zukunft, Zu Erledigen u. Erwartend oder Erwartend Bildschirm? ",
+	"answer": 	"<ul><li>Sie hat Unterelemente die noch nicht abgeschlossen sind. [It may have descendant tasks which are not complete.] (Zu Erledigen, Zu Erledigen u. Erwartend oder Erwartend)</li><li>Der Bereich der Aufgabe stimmt nicht mit dem derzeitigen Bereich überein. (Zu Erledigen, Zu Erledigen u. Zukunft oder Zu Erledigen u. Erwartend)</li><li>Jemand anders, „Ich”, „meine Organization”, oder „niemand” ist für die Aufgabe verantwortlich: <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-4.png) top no-repeat;'></div> (Zu Erledigen oder Zu Erledigen u. Zukunft)</li><li>Der Aufgabe Schalter ist in der Detailsbildschirm nicht ein.</li></ul>",
+	"keywords": "Zu Erledigen, unvollständig, nicht abgeschlossen"
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Wie kann verhindert werden das eine Aufgabe in dem Zu Erledigen Bildschirm erscheint?",
+	"answer":	"<ul><li>Auf den Bereich Knopf tippen: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />dann den derzeitigen Bereich auswählen. </li><li>Der Element Details Bildschirm öffnen und das Element auf einen passenderen Bereich verschieben. </li><li>Der Element Details Bildschirm öffnen und die verwantwortliche Person ändern in jemand anders, ihre Organisation order Niemanden. (Und ein andere Bildschirm als Erwartend oder Zu Erledigen u. Erwartend auswählen))</li><li>Wenn etwas anderes zuerst abgeschlossen warden muss, ein Unterelement erstellen. (Und wenn jemand anders diese erledigen muss sicherstellen das der Verantwortliche gesetzt ist.)</li><li>Wenn zur Zeit nicht an der Aufgabe gearbeitet werden kann (und es kein Basecamp Classic Element ist), der Aufgaben Details Bildschirm öffnen und tippen Sie „Notiz”.  „Aufgabe” kann wieder gestellt werden wenn wieder an ihr gearbeitet wird. </li></ul>",
+	"keywords":	"Zu Erledigen, unvollständig, nicht abgeschlossen"
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question":	"Wie können abgehackte Aufgaben aus dem Zu Erledigen Bildschirm ausgeblendet werden?",
+	"answer":	"Auf den Bereich Knopf tippen: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />und den aktuellen Bereich erneut auswählen.",
+	"keywords":	"Zu Erledigen, neu laden"
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question":	"Ich habe eine Aufgabe abgehackt. Warum erscheint die nächste Aufgabe nicht in dem Zu Erledigen Bildschirm? ",
+	"answer":	"Auf den Bereich Knopf tippen: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />und den aktuellen Bereich erneut auswählen.<br /><br />Sollte die nächste Aufgabe nicht erscheinen hat sie evtl. einen noch nicht abgeschlossenen Vorgänger, oder der Bereich oder die verantwortliche Person ist falsch eingestellt. ",
+	"keywords":	"Zu Erledigen"	
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Ich habe ähnliche Aufgaben. Kann ich deren Details gleichzeitig ändern?", 
+	"answer": 	"Ja. Eine Aufgabe erstellen und die Details einstellen. Um eine ähnliche Aufgabe zu erstellen die erste Aufgabe auswählen und dann den „Neues Folgeelement” Knopf antippen: <img src='images/new-sibling.png' align='top'><br /><br />Der „Neues Unterelement” Knopf: <img src='images/new-child.png' align='top'><br />kopiert die Details ebenfalls in das Unterelement. ",
+	"keywords": "Zu Erledigen, neue Aufgabe, neues Element, neue Aufgabe erstellen, neues Element erstellen, mehrere"
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Wie markiere ich eine Aufgabe als teilweise abgeschlossen?", 
+	"answer": 	"Eine zweite Aufgabe erstellen und die erste Aufgabe als abgeschlossen markieren. ",
+	"keywords":	"Zu Erledigen, abgeschlossen"
+},
+{	"category": "Zu Erledigen/Erwartend",
+	"question": "Wie suche ich nach einer Notiz oder einer abgeschlossene Aufgabe?",
+	"answer":	"<ol><li>Wechseln Sie zur <strong>Alle Elemente</strong> Ansicht.</li><li>Wählen sie <strong>Alle Bereiche</strong>.</li><li>Auf den Suchen Knopf tippen: <img src='images/sample/icon-search.png' width=32 height=32 align='top'></li><li>Schreiben sie ein Wort oder einen Satz.</li></ol>",
+	"keywords": "Zu Erledigen, unvollständig"
+},
+{	"category":	"Zu Erledigen/Erwartend",
+	"question":	"Warum sind einige Aufgaben in die Zu Erledigen u. Zukunft oder Nach Datum Bildschirme grau dargestellt? ",
+	"answer":	"Diese Aufgaben haben nicht abgeschlossene Unterelemente, oder die Anlaufzeit hat nicht begonnen.",
+	"keywords":	"unvollständig, grau"
+},
+{	"category":	"Zu Erledigen/Erwartend",
+	"question":	"How do I set a Start Date for my Tasks?",
+	"answer":	"Gesetzte Anlaufzeit um den Details Bildschirm.<br /><br />When importing from XOXO/HTML/OPML files, Outline Tracker converts Start Dates to Lead Time.",
+	"keywords":	"start time"
+},
+{	"category": "Hierarchische Struktur",
+	"question": "Wie lösche ich ein Projekt?",
+	"answer": 	"<ol><li>In dem Hierarchische Struktur Bildschirm des Projektes auf der Bildschirmüberschrift drücken: <div class='headerSample'>Projekt Titel</div></li><li><strong>Projekt Einstellungen</strong> auswählen.</li><li>Den Papierkorb Knopf unten rechts antippen.</li></ol>",
+	"keywords":	"Projekt löschen "
+},
+{	"category": "Hierarchische Struktur",
+	"question": "Wie durchsuche ich eine Hierarchische Struktur?",
+	"answer":	"<ol><li>Wechseln Sie zur <strong>Alle Elemente</strong> Ansicht</li><li>Wählen sie <strong>Alle Bereiche</strong>.</li><li>Auf den Suchen Knopf tippen: <img src='images/sample/icon-search.png' width=32 height=32 align='top'></li><li>Schreiben sie ein Wort oder einen Satz.</li><li>Wählen sie ein Element aus.</li><li>Tippen sie auf den „Zeige in hierarchische Struktur” Knopf: <img src='images/outline-icon.png' align='top' /></li></ol>",
+	"keywords": "zu erledigen, suchen, unvollständig, erledigt"
+},
+{	"category": "Hierarchische Struktur",
+	"question": "Ich habe viele ähnliche Listen. Kann ich eine Schablone erstellen?",
+	"answer":	"Nicht direkt.<ul><li>Repeating tasks can have children (prerequisites), which are updated when the parent task repeats.</li><li>Dennoch kann ein generisches lokales Projekt erstellt werden. Dieses dann exportieren und anschliessend mehrfach mit unterschiedlichen Namen importieren.</li></ul>",
+	"keywords":	"wiederholen"
+},
+{	"category": "Hierarchische Struktur",
+	"question":	"Kann abgeschlossene Aufgaben innerhalb einer Hierarchischen Struktur ausgeblendet werden?", 
+	"answer":	"Der Befehl <strong>Nicht abgeschlossene anzeigen</strong> klappt Elemente die keine nicht abgeschlossene Aufgaben haben ein.<ol><li>In der Hierarchische Struktur Ansicht des Projektes, auf die Bildschirmüberschrift drücken: <div class='headerSample'>Projekt Titel</div></li><li><strong>Nicht abgeschlossene anzeigen</strong> auswählen.</li></ol>Die Ansicht <strong>Nach Datum</strong> Zeigt alle nicht abgeschlossenen Aufgaben."
+},
+{	"category": "Hierarchische Struktur",
+	"question": "Wie kann ich etwas Ausdrucken?",
+	"answer":	"Es gibt keinen eingebaute Druckfunktion,  es geht aber durch: <ol><li>Antippen Bildschirmüberschrift in der Hierarchische Struktur Ansicht des Projektes:<div class='headerSample'>Projekt Titel</div></li><li><strong>Export via E-Mail</strong> auswählen.</li><li>E-Mail an sich selbst senden</li><li>E-Mail ausdrucken</li></ol>"
+},
+{	"category":	"Kontakte",
+	"question": "Wie kontaktiere ich eine verantworliche Person? ",
+	"answer":	"<ol><li>In der Zu Erledigen, Zu Erledigen u. Zukunft, Zu Erledigen u. Erwartend, Nach Datum, oder Alle Elemente Ansicht, auf der Bildschirmüberschrift tippen: <div class='headerSample'>Lorem Ipsum</div>um zum <strong>Erwartend</strong> Bildschirm zu wechseln.</li><li>Den Namen der Person antippen. Dies öffnet die Kontakte Anwendung mit dem entsprechenden Eintrag.</li></ol>",
+	"keywords":	"Verantwortlicher, Telefon, eMail, Nachricht, IM "
+},
+{	"category":	"Kontakte",
+	"question":	"Wie weise ich eine Aufgabe jemanden zu von dem ich keine Kontaktdaten habe? (Lokales Projekt, webOS 1)",
+	"answer":	"In der Kontakte Anwendung einen Kontakt nur mit dem Namen erstellen. Diese wird dann nicht erscheinen wenn man eine eMail-Addresse sucht (in der E-Mail Anwendung), ebenfalls nicht wenn man eine Telefonnummer sucht (in der Telefon Anwendung), als auch wenn man eine SMS oder IM Nachricht erstellen will (in Messaging).",
+	"keywords": "Verantwortlicher"
+},
+{	"category": "Bereiche",
+	"question": "Warum sind einige Bereiche in der einfügen Liste deaktiviert? ",
+	"answer": 	"Der deaktiviert Bereich <em>beinhaltet</em> den ausgewählten Bereich.<br /><br /><em>Zum Beispiel:</em> Wenn der Bereich Geschäftlich den Bereich Desktop Rechner beinhaltet dann ist der Bereich Geschäftlich deaktiviert wenn man Desktop Rechner ausgewählt hat.",
+	"keywords":	"dekativiert, grau"
+},
+{	"category": "Bereiche",
+	"question": "Sind Bereiche untereinander recursiv?",
+	"answer": 	"Nein.<br /><br /><em>Zum Beispiel:</em> Wenn der Bereich Geschäftlich den Bereich Desktop Rechner enthält und der Bereich Privat enthält den Bereich Geschäftlich aber nicht den Bereich Desktop Rechner. Dann werden Aufgaben die dem Desktop Rechner zugwiesen sind nicht unter Wohnort angezeigt."
+},
+{	"category": "Bereiche",
+	"question": "Wie erstelle ich neue Bereiche?",
+	"answer":	"<ol><li>Aus dem Anwendungsmenü <strong>Bereiche, Einstellg. u. Konten</strong> auswählen, dann <strong>Bereiche bearbeiten</strong>.</li><li>Den „neuen Bereich” Knopf unten links antippen: <img src='images/new-place.png' align='absmiddle'></li><li>Den Berichnamen eingeben</li><li>OK antippen.</li></ol>",
+	"keywords": "Bereich erstellen"
+},
+{	"category": "Bereiche",
+	"question": "Wie lösche ich einen Bereich?",
+	"answer":	"<ol><li>Aus dem Anwendungsmenü <strong>Bereiche, Einstellg. u. Konten</strong> auswählen, dann <strong>Bereiche bearbeiten</strong>.</li><li>Den Bereich durch antippen des Knopfes oben rechts auswählen. </li><li>Den Papierkorb Knopf unten rechts antippen.</li></ol>",
+	"keywords": "Bereich löschen "
+},
+{	"category": "Kalender",
+	"question":	"Wie bearbeite ich einen Kalendereintrag der von Outline Tracker erstellt worden ist?",
+	"answer":	"Dein Eintrag in Outline Tracker auswählen und auf <strong>Details</strong> Knopf tippen um den Details Bildschirm zu öffnen.  Datum und Uhzeit über die Knöpfe verändern."
+},
+{	"category": "Kalender",
+	"question":	"Wie kann ich einstellen welche Einträge in der Kalenderanwendung angezeigt warden?",
+	"answer":	"Es gibt einen Kalender für locale Projekte und einen für jedes Konto. <ol><li>In der Kalenderanwendung den Kalender auswahl Knopf in der Kopfzeile antippen.</li><li><strong>Kalenderanzeigeoptionen...</strong> auswählen.</li><li>Für den entsprechenden Kalender den Schalter <strong>In der Ansicht „Alle Kalender” anzeigen</strong> auf aus stellen.</li></ol><br />Abgeschlossene Aufgaben werden normalerweise nicht im Kalender angezeigt. In dem Einstellungen Bildschirm kann dies über die Option <strong>Fertige obersten Ebene Aufgaben</strong> und/oder <strong>Fertige unteren Ebene Aufgaben</strong> aktiviert warden.",
+	"keywords":	"deaktivieren"
+},
+{	"category": "Kalender",
+	"question":	"Wie verhindere ich das ein Element mit einem Datum in der Kalenderanwendung angezeigt wird?",
+	"answer":	"Das Datum in den Kurztext oder in Inhalt schreiben (und die Option Fälligkeitsdatum auf AUS stellen).",
+	"keywords":	"deaktivieren"
+},
+{	"category":	"Kalender",
+	"question":	"Wie stele ich die Erinnerungszeit für einen Ganztagesevent ein?",
+	"answer":	"<ol><li>un-check <strong>Ganztägiges Ereignis</strong></li><li>Set the time</li><li>re-check <strong>Ganztägiges Ereignis</strong></li><li>Set the Reminder for 1 Day or more</li></ol>",
+	"keywords":	"Alarm"
+},
+{	"category": "Kalender",
+	"question": "If I keep getting the “Doppeltes Kalender Konto” error, and deleting the listed account doesn't fix the problem, what do I try next?",
+	"answer":	"<ol><li>From the Outline Tracker app menu, select <strong>Backup in Datei</strong>.</li><li>Launch the <strong>Konten</strong> app and delete all Outline Tracker accounts.</li><li>In the Startbildschirm, delete Outline Tracker.</li><li>Launch the <strong>Geräteinfos</strong> app, select <strong>Optionen zum Zurücksetzen</strong>, then <strong>Neu starten</strong>.</li><li>Re-install Outline Tracker from the App Catalog.</li><li>In Outline Tracker, from the app menu, select <strong>Neues Projekt &gt; Import aus Datei</strong> and select the latest backup file.</li></ol>",
+	"keywords": "dialog, alert"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Wie erstelle ich eine Basecamp Classic Konto?",
+	"answer":	"Gehen Sie auf <a href='https://signup.37signals.com/basecamp/Free/signup/'>https://signup.37signals.com/basecamp/Free/signup/</a>. Die Basecamp Classic API (Application Program Interface) erlaubt as erstellen von Konten nicht.",
+	"keywords": "Konto erstellen, neues Konto"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Wie erstelle ich ein Basecamp Classic Projekt?",
+	"answer":	"Um ein Basecamp Classic Projekt zu erstellen muss Ihr Basecamp Classic Konto ein Administrator-Konto sein. Ein Administrator kann Ihr Konto in einen Administrator-Konto umstellen.<br /><br />Wenn Sie ein kostenlos Basecamp Classic Konto haben, können Sie nur ein Basecamp Classic Projekt erstellen.<br /><br />Die Basecamp Classic API (<em>Application Program Interface</em>) erlaubt kein direktes Erstellen von Projekten; Sie müssen einen Webbrowser benutzen um ein Projekt erstellen zu können. Vielleicht empfinden Sie es leichter ein Webbrowser an Ihrem Desktop PC zu benutzen.<ol><li>Melden Sie sich mit Ihrem Basecamp Classic Konto an.</li><li>Im <em>Dashboard</em> von Ihrer Basecamp Classic Seite klicken Sie auf <strong>Neues Projekt erstellen</strong>.</li><li>Geben Sie einen Namen für das Projekt ein.</li><li>Klicken Sie <strong>Dieses Projekt anlegen</strong>.</li></ol>",
+	"keywords": "neues Projekt, Projekt erstellen"
+},
+{	"category": "Basecamp Classic",
+	"question": "Warum werden die Änderungen die ich local mache nicht auf unserer Basecamp Classic Webseite angezeigt?",
+	"answer":	"<ul><li>Outline Tracker muss wissen das Sie mit dem Editieren fertig sind. <ul><li>In einem Zu Erledigen oder hierarchische struktur Bildschirm, auf etwas anders als das aktuelle Element tippen (zum Beispiel zwei mal auf der Bildschirmüberschrift)</li><li>In dem Details Bildschirm, auf <strong>OK</strong> tippen.</li></ul></li><li>Die Netzwerkverbindung des Gerätes überprüfen.</li></ul>"
+},
+{	"category": "Basecamp Classic",
+	"question": "Warum erscheinen die &Auml;nderungen auf der Basecamp Classic Webseite nicht lokal?",
+	"answer":	"<ul><li>In dem Projekt Einstellungen Bildschirm (oder Konten Bildschirm), überprüfen was zuletzt heruntergeladen worden ist (oder das Konto für das Projekt).</li><li>In dem Konten Bildschirm, das intervall für die Downloads überprüfen.</li><li>Outline Tracker Free hat ein Limit von 50 Elementen.</li><li>Die Netzwerkverbindung des Ger&auml;tes &uuml;berpr&uuml;fen.</li></ul>"
+},
+{	"category":	"Basecamp Classic",
+	"question":	"Wie erstelle ich eine Basecamp Classic Aufgabe im Aufgaben-Bildschirm?",
+	"answer":	"<ol><li>Auf den „Neues Folgeelement” Knopf unten links tippen: <img src='images/new-sibling.png' align='absmiddle'></li><li>Tippen sie auf das <strong>Überelement</strong> popup und wählen die entsprechende Basecamp Classic Aufgabenliste aus dem Popup-Menu aus, oder tippen sie auf <strong>Aus Allen auswählen...</strong></li></ol>",
+	"keywords": "Aufgaben, Aufgabenlisten"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Wie kann ich eine Basecamp Classic Konto deaktiveren/löschen?",
+	"answer":	"Um ein Konto komplett zu löschen muss der Webbowser genutz werden.<br /><br />Um ein Basecamp Classic Konto innerhalb Outline Tracker zu deaktivieren:<ol><li>Im Anwendungsmenü, <strong>Bereiche, Einstellg. u. Konten</strong> auswählen, dann <strong>Konten</strong>.</li><li>Das Konto in der Liste antippen.</li><li>Den Papierkorb Knopf unten rechts antippen.</li></ol>Die entfernt alle Projekte dieses Kontos aus dem Gerät.",
+	"keywords":	"Konto löschen"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Wie benenne ich ein Basecamp Classic Projekt um? / Warum ist das Titel Feld in dem Projekt Einstellungs Bildschirm für ein Basecamp Classic Projekt deaktiviert.?",
+	"answer":	"Dies kann nur mit dem Webbrowser auf der Basecamp Classic Webseite gemacht werden.  Die Basecamp Classic API (Application Program Interface) erlaubt das umbennen von Projekten nicht.",
+	"keywords":	"umbenennen, ausgegraut, deaktiviert"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Warum sind die „Notiz/Aufgaben” Knöpfe für Basecamp Classic Aufgaben und Meilensteine deaktiviert?",
+	"answer":	"Basecamp Classic Aufgaben und Meilensteine sind per Definition Aufgaben.",
+	"keywords":	"Aufgabe, ausgegraut, deaktiviert"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Warum ist der „Fälligkeitsdatum” Knopf bei Basecamp Classic Meilensteine deaktiviert? ",
+	"answer":	"Basecamp Classic Meilensteine müssen per definition ein Fälligkeitsdatum haben.",
+	"keywords":	"grau, ausgegraut, deaktivert"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Wie kann eine Zeit für einen Basecamp Classic Aufgabe oder Meilenstein eingestellt werden? / Warum ist die „Ganztägiges Ereignis“ Funktion dekativiert?",
+	"answer":	"Basecamp Classic Aufgaben und Meilensteine haben keine Zeit. So ist läuft Basecamp Classic halt.",
+	"keywords":	"Zu Erledigen Elemente, grau, ausgegraut, deaktiviert"
+},
+{	"category":	"Basecamp Classic",
+	"question": "Why can't I set a  Basecamp Classic item to repeat?",
+	"answer":	"Basecamp Classic doesn't support repeating items.",
+	"keywords":	"wiederholen"
+},
+{	"category":	"Basecamp Classic",
+	"question": "Warum kann ich keine Erinnerung für Basecamp Classic Elemente einstellen?",
+	"answer":	"Basecamp Classic unterstützt diese art von Erinnerung nicht.",
+	"keywords":	"Alarm"
+},
+{	"category":	"Basecamp Classic",
+	"question":	"Wie gebe ich mein Basecamp Classic Autentifzierungs Token ein?",
+	"answer":	"Nach der Eingabe des Basecamp Classic Benutzernamens und Passworts läd Outline Tracker das Token automatisch. Sollte dies nicht gewünscht sein kann das Token auch anstelle des Benutzernamens eingegeben werden. Das Password muss dann „X“ lauten!"
+},
+{	"category":	"Basecamp Classic",
+	"question":	"Wie kann der Bereich für alle Elemente eines Basecamp Classic Projektes geändert warden? ",
+	"answer":	"[Netztwerkverbindung nötig.]<ol><li>In dem Projekt Hierarchische Struktur Bildschirm, auf der Bildschirmüberschrift tippen:<div class='headerSample'>Projekt Titel</div></li><li><strong>Projekt Einstellungen</strong> auswählen.</li><li>Den Papierkorb Knopf antippen um das Projekt local zu löschen. </li><li>Aus dem Anwendungsmenü <strong>Bereiche, Einstellg. u. Konten</strong> auswählen &gt; <strong>Konten</strong>.</li><li>Das Konto des Projektes antippen </li><li>Einen neuen Bereich auswählen und dann <strong>OK</strong> antippen.</li><li><strong>Änderungen jetzt Herrunterladen</strong> antippen</li></ol>Es ist nötig die verwantworliche Person des Projektes (in den Projekteinstellungen) erneut zu setzten, da dies nicht auf dem Basecamp Classic Server gespeichert wird. <br /><br />Danach kann der Bereich auf einen anderen Bereich geändert warden. &mdash er wird dann für neue Basecamp Classic Projekte genutzt."
+}, 
+{	"category": "Basecamp Classic",
+	"question": "Datum-Vorgaben in Basecamp Classic-Projekten werden um einen Tag früher an Outline Tracker übertragen.",
+	"answer":	"Basecamp Classic setzt Datumsvorgaben nicht korrekt um. Bitte stellen Sie die Zeitzone in Basecamp Classic auf „(GMT-06:00) Central Time (US &amp; Canada)”" ,
+	"keywords":	"time zone, timezone"
+},
+{  "category":	"Import, Export u. Sicherung",
+    "question": "Warum erscheint beim HTML-Import die Meldung „Keine hierarchische Strukturen oder Listen in der Datei”?",
+	"answer":	"Outline Tracker benutzt die <em>Struktur</em> von HTML-Dateien um hierarchische Strukturen und Listen zu identifizieren, nicht das Design. Nur HTML Listen (sortiert und unsortiert) sowie hierarchische Strukturen (Listen die Listen enthalten können) werden aus HTML Dateien importiert.  HTML Listen benutzen die &lt;ol&gt;, &lt;ul&gt; and &lt;li&gt; Tags. Inhalt der zwar wie eine Liste formatiert ist aber diese Tags nicht benutzt kann icht Importiert werden. Tabellen können nicht importiert werden. ",
+	"keywords":	"Fehler"
+},
+{	"category":	"Import, Export u. Sicherung",
+	"question":	"Wie editiere ich ein Projekt mit einer anderen Anwendung?",
+	"answer":	"<ol><li>In dem Projekt Hierarchische Struktur Bildschirm auf den Bildschirmüberschrift tippen:<div class='headerSample'>Projekt Titel</div></li><li><strong>Export via E-Mail</strong> auswählen</li><li>eMail Adresse eingeben und auf den senden Knopf tippen </li><li>Im Desktop-eMail Client die eMails als HTML Datei speichern. Sollte die eMail über einen Webbrowser gelesen warden dann die Seite speichern oder den “Seiten Code”. </li><li>Dann im anderen Hierarchische Struktur Editor (oder HTML Editor) die Datei als XOXO Format oder HTML Format öffnen bzw importieren.</li></ol>"
+},
+{	"category": "Import, Export u. Sicherung",
+	"question":	"Wie kann eingestellt warden welche Informationen exportiert werden?",
+	"answer":	"Über den Export ist es möglich ein Projekt/Hierarchische Struktur in einem anderem Editor zu bearbeiten oder eine Sicherheitskopie zu erstellen. Unterstützung zur Erstellung von Präsentationen ist für eine zukünftige Version von Outline Tracker geplant. <br /><br />Die eMail kann manuell vor dem versenden editiert werden."
+},
+{	"category": "Import, Export u. Sicherung",
+	"question": "Werden die Projekte über das HP webOS Account (Palm Profil) gesichert?",
+	"answer":	"Nein, HP unterstütz keine Fremdanwendungen. ",
+	"keywords":	"backup"
+},
+{	"category": "Import, Export u. Sicherung",
+	"question":	"Wie können alle lokalen Projekte gesichert werden? (webOS 2 u. 3)",
+	"answer":	"Methode 1: <ol><li>Im Anwendungsmenü <strong>Backup/Backup in Datei</strong> auswählen.</li><li>Ihr Gerät per USB-Kabel an den Computer anschließen und <strong>USB-Laufwerk</strong> auswählen.</li><li>Backup Datei aus dem Verzeichniss „outlines” zum Computer Kopieren</li></ol>Methode 2:<ol><li>Im Anwendungsmenü <strong>Backup/Backup via E-Mail</strong> auswählen.</li><li>E-mail Adresse eingeben und auf den senden Knopf tippen. </li><li> Im Desktop-eMail Client die eMail-Zubehör als HTML Datei speichern.</li></ol>Basecamp Classic Projekte warden auf dem Basecamp Classic Server gesichert, sie brauchen also nicht seperat gesichert warden.",
+	"keywords":	"backup, webOS 3.0"
+},
+{	"category": "Import, Export u. Sicherung",
+	"question":	"Wie sichere ich ein einzelnes Projekt?",
+	"answer":	"<ol><li>In dem Hierarchische Struktur Bildschirm des Projektes auf der Bildschirmüberschrift drücken: <div class='headerSample'>Projekt Titel</div></li><li><strong>Export via E-Mail</strong> auswählen.</li><li> Email Adresse eingeben und auf den senden Knopf tippen. </li><li> Im Desktop-eMail Client die eMails als HTML Datei speichern. Sollte die eMail über einen Webbrowser gelesen warden dann die Seite speichern oder den “Seiten Code”. </li></ol>Basecamp Classic Projekte warden auf dem Basecamp Classic Server gesichert, sie brauchen also nicht seperat gesichert warden.",
+	"keywords":	"backup"
+},
+{	"category": "Import, Export u. Sicherung",
+	"question":	"Wie wird ein Projekt au seiner Sicherung wiederhergestellt? ",
+	"answer":	"<strong>Lokales Projekt</strong>, Methode 1:<ol><li>Die HTML Sicherungsdatei über den USB-Modus auf das Gerät kopieren.</li><li>Im Outline Tracker Anwendungsmenü auf <strong>Neues Projekt</strong> gehen und <strong>Import von Datei</strong></li><li>Die HTML Datei auswählen </li></ol><strong>Lokales Projekt</strong>, Methode 2:<ol><li>Die HTML Datei auf einen Webserver, WebDAV Server oder FTP Server kopieren.</li><li>Die URL an das Gerät per eMail senden.</li><li> Im Outline Tracker Anwendungsmenü auf <strong>Neue Projekt</strong> gehen <strong>Import von URL</strong></li><li>Die URL der HTML Datei per copy &amp; past einfügen </li></ol><strong>Basecamp Classic Projekte</strong>: In dem Konten Bildschirm:<ol><li>Wenn das Konto gelöscht worden ist auf <strong>Basecamp Classic Konto Hinzufügen</strong> tippen und die Basecamp Classic Account Information erneut eingeben.</li><li>Dann <strong>Änderungen jetzt herrunterladen</strong> antippen.</li></ol>",
+	"keywords":	"backup, restore"
+},
+{	"category":	"Import, Export u. Sicherung",
+	"question":	"Can I back up Outline Tracker using the application Save/Restore from webOS Internals?",
+	"answer":	"Save/Restore is neither developed nor supported by Hominid Software, and is beta software.  We reccomend you use Outline Tracker's <strong>Backup via E-mail</strong> as your primary backup.  You can use Save/Restore v. 0.9.3 or later with the following precautions:<ul><li><strong>You MUST close Outline Tracker before running Save/Restore</strong></li><li>After restoring, delete all Basecamp Classic projects, then in the Accounts scene, tap <strong>Download Changes Now</strong> to restore up-to-date copies.</li></ul>",
+	"keywords":	"backup"
+},
+{	"category": "Tablets",
+	"question": "Was ist auf einem Tablet unterschiedlich?",
+	"answer":	"<ul><li>webOS 3.0.x breaks the People Picker, so the “aus Kontakte auswählen” menu selection is disabled.</li><li>Das koppeln einer bluetooth Tastatur verhindert das öffnen der Bildschirm Tastatur.</li><li>Outline Tracker kann den grösseren Bildschirm im Querformat nutzen.</li></li>",
+	"keywords":	"TouchPad, webOS 3.0"
+}
+]

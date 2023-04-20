@@ -1,7 +1,7 @@
 {
-	"name": "doug-blog",
+	"name": "hominid-web",
 	"version": "9.0.0",
-	"description": "Essays on using digital technology to become a better person, with detours",
+	"description": "Hominid Software website",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
@@ -9,7 +9,7 @@
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
 		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
-		"deploy": "scp -p -r -o PreferredAuthentications=publickey,password ~/git/blog-doug/_site/* root@hominidsoftware.com:/var/www/html/extra/doug/"
+		"rsync": "rsync -v --rsh=ssh --recursive --links --hard-links --safe-links --times --delete --delete-after --exclude '.DS_Store' --prune-empty-dirs --human-readable _site/ root@hominidsoftware.com:/var/www/html-new/"
 	},
 	"repository": {
 		"type": "git",

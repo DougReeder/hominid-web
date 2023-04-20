@@ -1,0 +1,6 @@
+[
+	{"pagename": "Features", "relurl": "/popupcalc/index.html", "pageclass": "featuresPC"},
+	{"pagename": "F.A.Q.", "relurl": "/popupcalc/faq.html", "pageclass": "faqPC"},
+	{"pagename": "Support", "relurl": "/popupcalc/support.html", "pageclass": "supportPC"},
+	{"pagename": "License", "relurl": "/popupcalc/license.html", "pageclass": "licensePC"}
+]

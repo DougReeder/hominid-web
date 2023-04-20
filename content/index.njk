@@ -1,28 +1,45 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Home
+  key: Apps
   order: 1
-numberOfLatestPostsToShow: 10
 ---
-{% set postsCount = collections.post | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h1>Hominid Software</h1>
 
-{% set postslist = collections.post | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+<h2>Consulting</h2>
+<a href="mailto:support@hominidsoftware.com?subject=Consulting">Contact me</a> about availability and rates.
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
+<h2>Productivity Webapp</h2>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<h3><a href="notes-together">Notes Together</a></h3>
+<p>Free your mind from mundane details!
+	Toss in text and pictures.
+	Be confident you can find any note on any device.
+	Take control of your data with <a href="https://remotestorage.io/">remoteStorage</a>. Never spend time tidying up — unless you want to!</p>
+
+<h2>Web Games</h2>
+
+<h3><a href="https://dougreeder.github.io/elfland-glider/">Elfland Glider</a></h3>
+<p>Fly through fantastic worlds, help the merry and mischievous light elves, & avoid the surly and mischievous dark elves. </p>
+<p><i>Best on mobile or VR</i></p>
+
+<h3><a href="https://dougreeder.github.io/barrier-mage/">Barrier Mage</a></h3>
+<p>Draw mystic symbols to burn, protect, or detect & drive off fantastic creatures!</p>
+<p><i>Requires a VR headset and two 6-DOF controllers</i></p>
+
+<h2>Multi-user Worlds</h2>
+
+<h3><a href="https://xalot.surge.sh/">Xalot</a></h3>
+<p>After you've started a session, share the link from the URL bar to invite others.</p>
+
+<h2>Support</h2>
+<a href="mailto:support@hominidsoftware.com?subject=Support">Contact me</a> about difficulties, or raise an issue on the appropriate repository on <a href="https://github.com/DougReeder">GitHub</a>.
+
+
+{#<h2>Content Pages</h2>#}
+{# Lists every content page in the project #}
+{#<ul>#}
+{#	{%- for entry in collections.all %}#}
+{#	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>#}
+{#	{%- endfor %}#}
+{#</ul>#}

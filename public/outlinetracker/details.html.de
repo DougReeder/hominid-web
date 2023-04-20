@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 650px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 650px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Details in Outline Tracker</title>
+	</head>
+	<body id='details'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Details in Outline Tracker</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Zum Menü springen</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+
+
+<div class='palm-body-title'>Bereiche</div>
+<div class='palm-body-text'>
+	Einige Aufgaben können nur Zuhause, nicht auf der Arbeite oder während Besorgungen gemacht werden (und umgekehrt).
+	Um den <em>Bereich</em> für eine Aufgabe festzulegen die Aufgabe auswählen (antippen) dann auf den <strong>Details</strong> Knopf tippen und den entsprechenden <strong>Bereich</strong> auswählen.
+</div>
+<div class='palm-body-text'>
+	Bereich helfen die Aufgabenliste übersichtlich zu halten.
+	In der Aufgaben Bildschirm auf den Bereichs Knopf unten rechts tippen: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div>
+	und den derzeitigen Bereich auswählen.  Nur Aufgaben die dem Bereich entsprechen (oder Bereiche die diesen <em>enthalten</em>) werden jetzt angezeigt.
+</div>
+<div class='palm-body-title'>Wer ist verantwortlich?</div>
+<div class='palm-body-text'>
+	Aufgaben können einem selbst, einer Organisation, niemandem oder jemand anders zugewiesen werden.
+	Um den <em>Verantwortliche/-r</em> einer Aufgabe fest zu legen die Aufgabe antippen um sie zu markieren.
+	Dann auf den <strong>Details</strong> Knopf tippen,
+	und den entsprechenden <strong>Verantworliche/-r</strong> auswählen.
+</div>
+<div class='palm-body-text'>
+	In eine „Zu Erledigen” Bildschirm haben Aufgaben die einem selber zugeordnet sind eine hell blaue Checkbox: <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-1.png) top no-repeat;'></div>
+	<br />Aufgaben an die Organisation haben eine lila Checkbox: <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-2.png) top no-repeat;'></div>
+	<br />Aufgaben die niemandem zugeordnet sind haben eine grüne Checkbox: <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-3.png) top no-repeat;'></div>
+</div>
+<div class='palm-body-text'>
+	Aufgaben die jemand anderem zugeordnet sind erscheinen nur in eine „Erwartend” Bildschirm und haben eine orange Checkbox: <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-4.png) top no-repeat;'></div>
+</div>
+<div class='palm-body-title' id='dueDateSection'>Fälligkeitsdatum, Anlaufzeit u. Wiederholungen</div>
+<div class='palm-body-text'>
+	Um eine Deadline für eine Aufgabe zu setzten oder um eine Notiz zu einer Verabredung zu ändern:
+	<ol>
+		<li>Das Element zum auswählen antippen</li>
+		<li>Auf den <strong>Details</strong> Knopf tippen</li>
+		<li>Der <strong>Fälligkeitsdatum</strong> Schalter auf EIN setzten</li>
+		<li>Das Datum setzen</li>
+	</ol>
+</div>
+<div class='palm-body-text'>
+	Notizen und nicht abgeschlossene Aufgaben werden in der webOS-Kalender Applikation an ihrem Fälligkeitsdatum angezeigt.
+	Einige oder alle überfällige Aufgaben können an heute im webOS-Kalender angezeigt werden wenn dies in den Projekt Einstellungen unter <strong>ÜBERFÄLLIGEN</strong> gesetzt ist.
+</div>
+<div class='palm-body-text'>
+	Wenn die <em>Anlaufzeit</em> eine Aufgabe auf <strong>Unbegrenzt</strong> (der Standart) gesetzt ist, wird sie umgehend in der Aufgaben Bildschirm erscheinen.
+	Wenn die Anlaufzeit kleiner gewählt wurde, wird sie erst erscheinen wenn das Intervall abgelaufen ist.
+	<em>Zum Beispiel:</em> Das Fälligkeitsdatum ist auf den 10. Mai gesetzt und die Anlaufzeit beträgt 3 Tage. Dann wird die Aufgabe erst am 7. Mai angezeigt.
+</div>
+<div class='palm-body-text'>
+	Die Anlaufzeit sorgt dafür das eine Aufgaben Bildschirm frei bleibt von Aufgaben an denen jetzt nicht gearbeitet werden kann.
+</div>
+<div class='palm-body-text'>
+	Einige Aufgaben werden nach einem Plan wiederholt.
+	Zum Beispiel wird ihre Miete immer zum ersten des Monats fällig. So ist die Miete auch am 1. Juni fällig egal wie spät oder früh im Mai gezahlt worden ist.
+	Wenn man drei Monate ausser Landes ist so schuldet man dem Vermieter im Anschluss auch drei Mieten.
+	Diese Aufgaben müssen auf <em>Genaue Wiederholung</em> (ohne „Locker” im Namen) gesetzte werden.
+</div>
+<div class='palm-body-text'>
+	Andere Aufgaben müssen regelmässig erledigt werden aber die Intervalle können sich verändern.
+	Zum Beispiel wenn jeden Montag der Teppich gesaugt wird. Wird der Teppich erst am Freitag gesaugt so ist das nächste Saugen auch erst wieder am Freitag der folgenden Woche notwendig.
+	Wenn man für drei Wochen im Urlaub ist dann muss man anschliessend nicht drei mal Staubsaugen.
+	Diese Aufgaben müssen auf <em>Lockere Wiederholung</em> gesetzt werden.  Typischer weise setzt men das Intervall etwas länger.
+	Z.B. Staubsaugen alle 6&ndash;8 Tage mit einer „Benutzerdefiniert Locker Täglich” wiederholung alle 8 Tage und einer Anlaufzeit von 2 Tagen.
+</div>
+
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<!--
+				<a class='desktoponlyinline' href='http://developer.palm.com/webChannel/index.php?packageid=com.outlinetracker.outlinetracker'>
+					<img src='visuals/app_catalog.png' width='361' height='110' alt='Available in the App Catalog on webOS devices' />
+				</a>
+				-->
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

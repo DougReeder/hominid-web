@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* reeder-print.css */
+
+#nav {
+	display: none;
+}
+
+.skiptonav {
+	display: none;
+}
+
+#content {
+	margin: 0em 0em 0em 0em;
+}
+
+#outer {
+	position: static;
+}
+
+#main {
+	position: static;
+}
+
+
+html {
+	background: white;
+}
+
+
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#content a:link:after, #content a:visited:after ,#footer a:link:after, #footer a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+}

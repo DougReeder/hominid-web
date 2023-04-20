@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 650px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 650px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Einfach Lostippen und Outline Tracker</title>
+	</head>
+	<body id='justType'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Einfach Lostippen und Outline Tracker</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Zum Menü springen</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+					(Requires webOS 2.x or 3.x)
+
+<div class='palm-body-title'>
+	Suchen u. Schnellaktion Aktivieren auf Smartphones (webOS 2.x)
+</div>
+<div class='palm-body-text'>
+<ol>
+	<li>In den Einstellungen für Einfach Lostippen, unter <strong>Starten und Suchen</strong>, tippen Sie <strong>Weitere Suchen hinzufügen</strong>.</li>
+	<li>Tippen Sie <strong>Outline Tracker</strong>.</li>
+	<li>In der Liste <strong>Starten und Suchen</strong>, tippen und halten sie <strong>Outline Tracker</strong> für eine halbe Sekunde gedrückt, dann ziehen sie es zum Anfang der Liste.</li>
+	<li>Tippen Sie auf <strong>Schnellaktionen hinzufügen</strong>.</li>
+	<li>Tippen Sie auf <strong>Neues Element</strong>.</li>
+	<li>In der Liste der Schnellaktionen, tippen und halten sie <strong>Neues Element</strong> für eine halbe Sekunde gedrückt, dann ziehen sie es zum Anfang der Liste.</li>
+</ol>
+</div>
+<div class='palm-body-title'>
+	Suchen u. Schnellaktion Aktivieren auf TouchPad (webOS 3.x)
+</div>
+<div class='palm-body-text'>
+<ol>
+	<li>In the Preferences for Einfach Lostippen, under <strong>Suchen mit</strong>, check the <strong>Outline Tracker</strong> box.</li>
+	<li>Under <strong>Aktionen</strong>, check the <strong>Neues Element</strong> box.</li>
+</ol>
+</div>
+
+<div class='palm-body-title'>
+	Suchen Benutzen
+</div>
+<div class='palm-body-text'>
+<ol>
+	<li>Schreiben oder fügen sie ihre Suche in „Einfach Lostippen” ein.</li>
+	<li>Unter <strong>Suchen mit</strong> (oder <strong>Starten und Suchen</strong>), tippen Sie <strong>Outline Tracker</strong>.</li>
+	<li>Outline Tracker wird alle passenden Elemente anzeigen.</li>
+</ol>
+<ul>
+	<li>Falls ihr gesuchtes Element nicht angezeigt wird, tippen sie die Rücktaste um den Suchbegriff zu verkürzen.</li>
+	<li>Falls zuviele Elemente angezeigt werden, schreiben sie mehr Buchstaben, um die Suche einzugrenzen.</li>
+</ul>
+</div>
+
+<div class='palm-body-title'>
+	Schnellaktion Benutzen
+</div>
+<div class='palm-body-text'>
+Sie können eine komplette Nachricht aus einer anderen Anwendung nach
+<strong>Einfach Lostippen</strong> kopieren.
+Unter <strong>Schnellaktionen</strong> wählen sie <strong>Neues
+Element</strong>.</div>
+<div class='palm-body-text'>
+Outline Tracker wird den Text in Kurztext und Inhalt teilen und den
+ersten Teil nach einem Fälligkeitsdatum durchsuchen.
+</div>
+<div class='palm-body-text'>
+Falls die Nachricht nicht mit einem guten Kurztext beginnt, schreiben sie
+einen Kurztext in das <strong>Einfach lostippen</strong> Feld, wählen sie
+<strong>Neues Element</strong> und fügen sie den Nachrichtentext in das
+Inhalt-Feld ein.
+</div>
+
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<!--
+				<a class='desktoponlyinline' href='http://developer.palm.com/webChannel/index.php?packageid=com.outlinetracker.outlinetracker'>
+					<img src='visuals/app_catalog.png' width='361' height='110' alt='Available in the App Catalog on webOS devices' />
+				</a>
+				-->
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>

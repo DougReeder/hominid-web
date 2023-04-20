@@ -1,0 +1,249 @@
+[
+{	"category": "Shortcuts",
+	"question":	"What shortcuts are available?",
+	"answer":	"<table class='realTable'><caption>All Scenes</caption><tr><td>2-finger flick<br />(fingers apart)</td><td>jump to bottom/top</td></tr></table><table class='realTable'><caption>Task List Scenes</caption><tr><td>meta-F</td><td>toggle fixed/free screen orientation</td></tr><tr><td>meta-N</td><td>new sibling</td></tr><tr><td>meta-comma</td><td>new child</td></tr><tr><td>meta-D,<br />forward-gesture</td><td>show Details scene</td></tr></table><table class='realTable'><caption>Outline Scenes: as Task List Scenes, plus:</caption><tr><td>meta-space</td><td>advance to next visible item</td></tr><tr><td>meta-period</td><td>toggle display of content text for selected item</td></tr><tr><td>meta-L</td><td>toggle whether new items display content text field</td></tr><tr><td>meta-T</td><td>show To-Do scene</td></tr></table>“meta-” means hold the gesture area while typing the key",
+	"keywords":	"keyboard, gestures"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "How do I make one task a prerequisite of a second?",
+	"answer": 	"Create the prerequisite task as a child of the second.<br /><br />The second task won't show up in the To-Do, To-Do &amp; Waiting, or Waiting scenes until the first task is checked complete.   It will show up in the To-Do &amp; Future and By Due Date scenes.",
+	"keywords": "to do, new task, new item, create task, create item, incomplete, undone"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "How do I specify that three tasks need to be done in order?",
+	"answer":	"Create the second task as a child of the third, and the first task as a child of the second.<br /><br />The second and third tasks won't show up in the To-Do, To-Do &amp; Waiting, or Waiting scenes until the first task is checked complete, and the third task won't show up until the first and second tasks are checked complete.  The second and third tasks will show up in the To-Do &amp; Future and By Due Date scenes.",
+	"keywords": "to do, new task, new item, create task, create item, incomplete, undone"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "Why isn't my task showing up in the To-Do, To-Do &amp; Future, To-Do &amp; Waiting, or Waiting scenes?",
+	"answer": 	"<ul><li>It may have descendant tasks which are not complete. (To-Do, To-Do &amp; Waiting, or Waiting)</li><li>The task's place may not match the place set in the upper right corner, or a place it includes. (To-Do, To-Do &amp; Future or To-Do &amp; Waiting)</li><li>Someone other than you, your organization, or No One, may be responsible for it: <div style='display: inline-block; vertical-align:middle; width: 33px; height: 27px; background: url(images/checkbox-responsible-class-4.png) top no-repeat;'></div>  (To-Do or To-Do &amp; Future)</li><li>It may have Lead Time set.</li><li>Item may be set to “Note” in the Item Details scene.</li></ul>",
+	"keywords": "to do, incomplete, undone"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "How can I keep a task from showing up in a To-Do scene?",
+	"answer":	"<ul><li>Tap the Place (context) button in the upper right: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />and select the Place you actually are.</li><li>Open the item Details scene, and set the item's Place to a more appropriate one</li><li>Open the item Details scene, and set the Responsible person to someone other than yourself, your organization, or “No One”. (And select a scene other than Waiting or To-Do &amp; Waiting.)</li><li>If something else needs to be done first, create a child task in the project Outline scene. (And if someone else needs to do this, be sure to set Responsible.)</li><li>If you can't work on the Task until some future time, open the Details scene and set the Lead Time.</li><li>To put a Task “on hold”, open the task's Details scene and change it to a Note. (Can't be done for Basecamp Classic Tasks.)  You can change it back to a Task when you can actually work on the task.</li></ul>",
+	"keywords":	"to do, incomplete"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question":	"How do I make checked items disappear from a To-Do scene?",
+	"answer":	"Tap the Place button in the header: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />and re-select the Place you're at",
+	"keywords":	"to do, refresh"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question":	"I've checked a task complete. Why doesn't its dependent task appear in a To-Do scene?",
+	"answer":	"Tap the Place button in the header: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />and re-select the Place you're at.<br /><br />If the dependent task still doesn't appear, it may have another undone prerequisite (child), it may have its Place or Responsible person set to the wrong value, or it may have Lead Time set.",
+	"keywords":	"to do"	
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "I have many similar tasks. Can I enter the details only once?",
+	"answer": 	"Yes.  Create one task and set the details on it.  To create a similar task, select the first task and then tap the New Sibling button: <img src='images/new-sibling.png' align='top'><br /><br />The New Child button also copies details from the parent item to the child item: <img src='images/new-child.png' align='top'>",
+	"keywords": "to do, new task, new item, create task, create item, many"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "How do I mark a task as partially complete?",
+	"answer": 	"Create a second task and mark the first task complete.",
+	"keywords":	"to do, done"
+},
+{	"category": "To-Do/Waiting Scenes",
+	"question": "How do I search for a note or a completed task?",
+	"answer":	"<ol><li>Switch to the <strong>All Items</strong> scene.</li><li>Select <strong>All Places</strong>.</li><li>Tap the search button: <img src='images/sample/icon-search.png' width=32 height=32 align='top'></li><li>Type a word or phrase.</li></ol>",
+	"keywords": "to do, find, incomplete, done"
+},
+{	"category":	"To-Do/Waiting Scenes",
+	"question":	"Why are some tasks displayed in gray, in the To-Do &amp; Future and By Due Date scenes?",
+	"answer":	"These tasks have undone descendants (prerequisites), or the Lead Time has not yet started.",
+	"keywords":	"to do, incomplete, grey, lead time, start date"
+},
+{	"category":	"To-Do/Waiting Scenes",
+	"question":	"How do I set a Start Date for my Tasks?",
+	"answer":	"Set the Lead Time in the Details scene.<br /><br />When importing from XOXO/HTML/OPML files, Outline Tracker converts Start Dates to Lead Time.",
+	"keywords":	"start time"
+},
+{	"category": "Outline",
+	"question": "How do I delete a project?",
+	"answer": 	"<ol><li>In the project's Outline scene, tap the scene header: <div class='headerSample'>Project Title</div></li><li>Select <strong>Project Settings</strong>.</li><li>Tap the trash can button in the lower right.</li></ol>",
+	"keywords":	"delete project"
+},
+{	"category": "Outline",
+	"question": "How do I search an outline?",
+	"answer":	"<ol><li>Switch to the <strong>All Items</strong> scene.</li><li>Select <strong>All Places</strong>.</li><li>Tap the search button: <img src='images/sample/icon-search.png' width=32 height=32 align='top'></li><li>Type a word or phrase.</li><li>Select an item.</li><li>tap the “Show In Outline” button: <img src='images/outline-icon.png' align='top' /></li></ol>",
+	"keywords": "to do, find, incomplete, done"
+},
+{	"category": "Outline",
+	"question": "I have many similar lists. Can I create a template?",
+	"answer":	"Not as such.  <ul><li>Repeating tasks can have children (prerequisites), which are updated when the parent task repeats.</li><li>You can create a generic Local project, export it, then re-import it several times with different names.</li><ul>",
+	"keywords":	"repeat, recur"
+},
+{	"category": "Outline",
+	"question": "Can I hide completed tasks in an outline scene?",
+	"answer":	"The <strong>Show Incomplete Tasks</strong> command compacts items that don't contain incomplete tasks.<ol><li>In the project's Outline scene, tap the scene header: <div class='headerSample'>Project Title</div></li><li>Select <strong>Show Incomplete Tasks</strong>.</li></ol>The <strong>By Due Date</strong> scene displays all your incomplete Tasks."
+},
+{	"category": "Outline",
+	"question": "How do I print an outline?",
+	"answer":	"There's no printing mechanism built in, but you can:<ol><li>in the project's outline scene, tap the scene header: <div class='headerSample'>Project Title</div></li><li>select <strong>Export via E-Mail</strong>.</li><li>send the e-mail to yourself</li><li>print the e-mail</li></ol>"
+},
+{	"category":	"Contacts",
+	"question": "How do I contact the person responsible for a task?",
+	"answer":	"If the person was selected from the Contacts app:<ol><li>If you're not in the Waiting scene, switch to the first card and tap the scene header: <div class='headerSample'>Lorem Ipsum</div>to switch to the <strong>Waiting</strong> scene.</li><li>Tap the person's name.   This opens the Contacts application to his or her entry.</li></ol>",
+	"keywords":	"phone, e-mail, message, IM"
+},
+{	"category":	"Contacts",
+	"question":	"How do I assign a task to someone I don't have contact info for? (Local project, webOS 1)",
+	"answer":	"Create an entry in the Contacts application with just his or her name. He or she won't show up when looking up an e-mail address (in the Mail application), won't show up when looking up a phone number (in the Phone application), and won't show up when looking for SMS number or IM address (in Messaging).",
+	"keywords": "responsible"
+},
+{	"category": "Places",
+	"question": "Why are some places disabled in the Includes list?",
+	"answer": 	"The disabled places <em>include</em> the selected place.<br /><br /><em>Example:</em> If place Work includes place Desktop Computer, you're not allowed to say that the place Desktop Computer includes the place Work.",
+	"keywords":	"gray, grey"
+},
+{	"category": "Places",
+	"question": "Are included places recursive?",
+	"answer": 	"No.<br /><br /><em>Example:</em> If the place Work includes the place Desktop Computer, and the place Hometown includes the place Work, but not the place Desktop Computer, then tasks which must be done at a Desktop Computer will <strong>not</strong> show up when you select the place Hometown in the To-Do scene."
+},
+{	"category": "Places",
+	"question": "How do I create a new place?",
+	"answer":	"<ol><li>From the application menu, select <strong>Places, Prefs &amp; Accounts</strong> &gt; <strong>Edit Places</strong>.</li><li>Tap the New Place button: <img src='images/new-place.png' align='absmiddle'></li><li>Type the name of the place</li><li>Tap OK</li></ol>",
+	"keywords": "create place"
+},
+{	"category": "Places",
+	"question": "How do I delete a place?",
+	"answer":	"<ol><li>From the application menu, select <strong>Places, Prefs &amp; Accounts</strong> &gt; <strong>Edit Places</strong>.</li><li>Select the place by tapping the button in the upper right.</li><li>Tap the trash can button in the lower right.</li></ol>",
+	"keywords": "delete place"
+},
+{	"category": "Calendar",
+	"question":	"How do I edit a Calendar event created by Outline Tracker?",
+	"answer":	"Use Just Type (or the All Items scene) to find the Item by name.  Select the item and tap the <strong>Details</strong> button to open the Details scene.  Set the date and time using the Date pickers."
+},
+{	"category": "Calendar",
+	"question":	"How do I control which items are displayed in the Calendar application?",
+	"answer":	"There is one calendar for local projects and one for each account.<ol><li>In the Calendar application, tap the calendar select button in the scene header</li><li>Select <strong>Calendar View Options...</strong>.</li><li>For the appropriate calendar, switch “Display in \"All Calendars\" view” to OFF</li></ol><br />By default, completed tasks are not shown in the Calendar.  In the Preferences scene, you can enable showing top-level tasks and/or lower-level tasks.  Then, as you update them, completed tasks will be shown in the Calendar.",
+	"keywords":	"disable"
+},
+{	"category": "Calendar",
+	"question":	"How do I prevent one item with a Due Date from showing up in the Calendar application?",
+	"answer":	"Set Due Date to OFF (and write the date in the summary text or content text).",
+	"keywords":	"disable"
+},
+{	"category":	"Calendar",
+	"question":	"How do I set the time of day for a Reminder for an All Day event?",
+	"answer":	"<ol><li>un-check <strong>All Day</strong></li><li>Set the time</li><li>re-check <strong>All Day</strong></li><li>Set the Reminder for 1 Day or more</li></ol>",
+	"keywords":	"alarm"
+},
+{	"category": "Calendar",
+	"question": "If I keep getting the “Duplicate Calendar Account” error, and deleting the listed account doesn't fix the problem, what do I try next?",
+	"answer":	"<ol><li>From the Outline Tracker app menu, select <strong>Backup To File</strong>.</li><li>Launch the <strong>Accounts</strong> app and delete all Outline Tracker accounts.</li><li>In the Launcher, delete Outline Tracker.</li><li>Launch the <strong>Device Info</strong> app, select <strong>Reset Options</strong>, then <strong>Restart</strong>.</li><li>Re-install Outline Tracker from the App Catalog.</li><li>In Outline Tracker, from the app menu, select <strong>New Project &gt; Import From File</strong> and select the latest backup file.</li></ol>",
+	"keywords": "dialog, alert"
+},
+{	"category": "Basecamp Classic",
+	"question":	"How do I sign up for a Basecamp Classic account?",
+	"answer":	"Use a web browser to visit <a href='https://signup.37signals.com/basecamp/Free/signup/'>https://signup.37signals.com/basecamp/Free/signup/</a>.  The Basecamp Classic API (Application Program Interface) does not allow the creation of accounts.",
+	"keywords": "create account, new account"
+},
+{	"category": "Basecamp Classic",
+	"question":	"How do I create a Basecamp Classic project?",
+	"answer":	"Use a web browser to access your Basecamp Classic site.  The Basecamp Classic API (Application Program Interface) does not allow the creation of projects.<br /><br />To create Basecamp Classic projects, your Basecamp Classic account must be an <em>administrator</em> account.  An administrator can make your account an administrator account.  <ol><li>Log into your Basecamp Classic account.</li><li>In the Dashboard of your Basecamp Classic site, click the <strong>Create a new project</strong> link.</li><li>Enter a name for the project</li><li>Click the <strong>Create this project</strong> button</li></ol>",
+	"keywords": "new project, create project"
+},
+{	"category": "Basecamp Classic",
+	"question": "Why don't the changes I make locally show up on our Basecamp Classic website?",
+	"answer":	"<ul><li>Let Outline Tracker know you've finished editing the item.<ul><li>In a To-Do or Outline scene, tap on something other than the item (such as tapping twice on the scene header)</li><li>In a Details scene, tap <strong>OK</strong>.</li></ul></li><li>Check your handheld's network connection.</li></ul>"
+},
+{	"category": "Basecamp Classic",
+	"question": "Why don't the changes I make on our Basecamp Classic website show up locally?",
+	"answer":	"<ul><li>In the Project Settings scene (or the Accounts scene), check when the project (or account for that project) was last downloaded.</li><li>In the Accounts scene, check the Download Changes Frequency.</li><li>Outline Tracker Free has a limit of 50 items</li><li>Check your handheld's network connection.</li></ul>"
+},
+{	"category":	"Basecamp Classic",
+	"question":	"How do I create a Basecamp Classic To-do item, from a Task List scene?",
+	"answer":	"<ol><li>Tap the New Sibling button: <img src='images/new-sibling.png' align='absmiddle'></li><li>Tap the <strong>PARENT</strong> popup, and select the appropriate To-do List from the pop-up menu, or tap <strong>Select from all...</strong></li></ol>",
+	"keywords": "to do item, to do list"
+},
+{	"category": "Basecamp Classic",
+	"question":	"How do I stop using/delete a Basecamp Classic account?",
+	"answer":	"To completely delete the account, you must use a web browser.<br /><br />To stop using a Basecamp Classic account with Outline Tracker:<ol><li>From the application menu, select <strong>Places, Prefs &amp; Accounts</strong> &gt; <strong>Accounts</strong>.</li><li>Tap on the account in the list.</li><li>Tap the trash can button in the lower right.</li></ol>This will remove the projects in this account from your handheld.",
+	"keywords":	"delete account"
+},
+{	"category": "Basecamp Classic",
+	"question":	"How do I rename a Basecamp Classic project? / Why is the title field disabled in the Project Settings scene for a Basecamp Classic project?",
+	"answer":	"Use a web browser to visit your Basecamp Classic site.  The Basecamp Classic API (Application Program Interface) does not allow renaming projects.",
+	"keywords":	"re-name, gray, grey"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Why are the “Note/Task” radio buttons disabled for Basecamp Classic Milestones and To-Do items?",
+	"answer":	"Basecamp Classic Milestones and To-Do Items are tasks, by definition.",
+	"keywords":	"to do item, gray, grey"
+},
+{	"category": "Basecamp Classic",
+	"question":	"Why is the “Due Date” toggle button disabled for Basecamp Classic Milestones?",
+	"answer":	"Basecamp Classic Milestones must have a date, by definition",
+	"keywords":	"gray, grey"
+},
+{	"category": "Basecamp Classic",
+	"question":	"How do I set the time for a Basecamp Classic Milestone or To-Do item? / Why is the “All Day” checkbox disabled?",
+	"answer":	"Basecamp Classic Milestones and To-Do items don't have a time.  That's just the way Basecamp Classic works.",
+	"keywords":	"to do item, date, gray, grey"
+},
+{	"category":	"Basecamp Classic",
+	"question": "Why can't I set a  Basecamp Classic item to repeat?",
+	"answer":	"Basecamp Classic doesn't support repeating items.",
+	"keywords":	"repeat, recur"
+},
+{	"category":	"Basecamp Classic",
+	"question": "Why can't I set a Reminder for Basecamp Classic items?",
+	"answer":	"Basecamp Classic doesn't support this kind of reminder.",
+	"keywords":	"alarm"
+},
+{	"category":	"Basecamp Classic",
+	"question":	"How do I enter my Basecamp Classic authentication token?",
+	"answer":	"If you enter your username and password for Basecamp Classic, Outline Tracker will fetch and use your token for you.  If you prefer to enter it yourself, just enter your authentication token as your username, and “X” as your password."
+},
+{	"category":	"Basecamp Classic",
+	"question":	"How do I change the Place for all existing items in a Basecamp Classic project?",
+	"answer":	"(requires a network connection)<ol><li>In the project's Outline scene, tap the scene header: <div class='headerSample'>Project Title</div></li><li>Select <strong>Project Settings</strong>.</li><li>Tap the trash can button to delete the project locally.</li><li>From the application menu, select <strong>Places, Prefs &amp; Accounts</strong> &gt; <strong>Accounts</strong>.</li><li>Tap the account for the project</li><li>Set the Default Place to the desired Place and tap <strong>OK</strong>.</li><li>Tap “Download Changes Now”</li></ol>You will need to set the default responsible person for the project (in the Project Settings) again, as this is not saved on the Basecamp Classic server.<br /><br />Afterwards, you may want to set the account Default Place to another value &mdash; it will be used for any new Basecamp Classic projects."
+},
+{	"category": "Basecamp Classic",
+	"question":	"Why are dates in Basecamp Classic projects off by a day?",
+	"answer":	"Basecamp Classic doesn't handle time zones properly. Please set the time zone in Basecamp Classic to “(GMT-06:00) Central Time (US &amp; Canada)”",
+	"keywords":	"time zone, timezone"
+},
+{	"category":	"Import, Export & Backup",
+	"question": "Why did importing an HTML file get the message “no outlines nor lists in file”?",
+	"answer":	"Outline Tracker uses the <em>structure</em> of HTML files, not the appearance, to identify lists and outlines.  Only HTML ordered lists, unordered lists and outlines (lists containing lists) are imported from HTML files.  HTML lists use the &lt;ol&gt;, &lt;ul&gt; and &lt;li&gt; tags.  Content that is formatted as a list, but does not use these tags, can not be imported.  Tables cannot be imported.",
+	"keywords":	"error"
+},
+{	"category":	"Import, Export & Backup",
+	"question":	"How do I edit a project with another application?",
+	"answer":	"<ol><li>In the project's Outline scene, tap the scene header: <div class='headerSample'>Project Title</div></li><li>Select <strong>Export via E-Mail</strong></li><li>Enter your e-mail address and tap the send button</li><li>In your desktop e-mail client, save the e-mail as an HTML file.  You may need to consult your e-mail application's documentation.  If you read your e-mail using a web browser, saving the page as “page source” may work.</li><li>In your other outline editor or HTML editor, open or import the file as an XOXO format file or HTML file</li></ol>"
+},
+{	"category": "Import, Export & Backup",
+	"question":	"How do I change what information gets exported?",
+	"answer":	"The Export command allows you to move a project/outline to another outline editor, or save a backup copy. Support for making a presentation from an outline is planned for a future release of Outline Tracker.<br /><br />You can edit the e-mail by hand before you send it.",
+	"keywords": "format"
+},
+{	"category": "Import, Export & Backup",
+	"question": "Are my projects backed-up in my HP webOS Account (Palm Profile)?",
+	"answer":	"No, HP does not support that for third-party applications."
+},
+{	"category": "Import, Export & Backup",
+	"question":	"How do I back up all my Local projects? (webOS 2 &amp; 3)",
+	"answer":	"Method 1: <ol><li>From the application menu, select <strong>Backup/Backup to File</strong>.</li><li>Connect your device to a computer with a USB cable, and select <strong>USB Drive</strong>.</li><li>Copy the backup file, from the directory “outlines”, to your computer.</li></ol>Method 2: <ol><li>From the application menu, select <strong>Backup/Backup via E-Mail</strong>.</li><li>Enter your e-mail address and tap the send button.</li><li>In your desktop e-mail client, save the attachment as an HTML file.</li></ol>Basecamp Classic projects are stored on the Basecamp Classic server, so you may not need to make a separate backup.",
+	"keywords":	"webOS 3.0"
+},
+{	"category": "Import, Export & Backup",
+	"question":	"How do I back up a single project?",
+	"answer":	"<ol><li>In the project's Outline scene, tap the scene header: <div class='headerSample'>Project Title</div></li><li>Select <strong>Export via E-Mail</strong></li><li>Enter your e-mail address and tap the send button.</li><li>In your desktop e-mail client, save the e-mail as an HTML file.  You may need to consult your e-mail application's documentation.</li></ol>Basecamp Classic projects are stored on the Basecamp Classic server, so you may not need to make a separate backup."
+},
+{	"category": "Import, Export & Backup",
+	"question":	"How do I restore a project?",
+	"answer":	"<strong>Local project</strong>, method 1:<ol><li>Copy the HTML backup file to your handheld in USB mode.</li><li>From the Outline Tracker application menu, select <strong>New Project</strong> &gt; <strong>Import from File</strong></li><li>Select the HTML file</li></ol><strong>Local project</strong>, method 2:<ol><li>Copy the HTML file to a web server, WebDAV server or FTP server.</li><li>E-mail the URL of the file to your handheld.</li><li>From the Outline Tracker application menu, select <strong>New Project</strong> &gt; <strong>Import from URL</strong></li><li>Copy and paste the URL of your HTML backup file</li></ol><strong>Basecamp Classic project</strong>: In the Accounts scene:<ol><li>If the account info has been deleted, tap the <strong>Add Basecamp Classic Account...</strong> button and re-enter your Basecamp Classic account information.</li><li>Tap the <strong>Download Changes Now</strong> button.</li></ol>"
+},
+{	"category":	"Import, Export & Backup",
+	"question":	"Can I back up Outline Tracker using the application Save/Restore from webOS Internals?",
+	"answer":	"Save/Restore is neither developed nor supported by Hominid Software, and is beta software.  We reccomend you use Outline Tracker's <strong>Backup via E-mail</strong> as your primary backup.  You can use Save/Restore v. 0.9.3 or later with the following precautions:<ul><li><strong>You MUST close Outline Tracker before running Save/Restore</strong></li><li>After restoring, delete all Basecamp Classic projects, then in the Accounts scene, tap <strong>Download Changes Now</strong> to restore up-to-date copies.</li><li>To restore entries in the webOS Calendar, you must edit each Item that has a Due Date</li></ul>"
+},
+{	"category": "Tablets",
+	"question": "Does Outline Tracker work differently on tablets?",
+	"answer":	"<ul><li>webOS 3.0.x breaks the People Picker, so the “select from contacts” menu selection is disabled.</li><li>Connecting a Bluetotooth keyboard will keep the on-screen keyboard from popping up.</li><li>Outline Tracker can use more of the screen in portrait orientation</li></li>",
+	"keywords":	"TouchPad, webOS 3.0"
+}
+]

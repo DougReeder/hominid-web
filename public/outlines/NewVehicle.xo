@@ -1,0 +1,252 @@
+
+<h1>Buying New Vehicle</h1>
+<ul class="xoxo">
+	<li>
+		Requirements
+		<dl>
+			<dt>place</dt>
+			<dd id="placeId1073741824">Anywhere</dd>
+		</dl>
+		<ul>
+			<li>
+				Capacity
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+				<ul compact="compact">
+					<li>
+						Commuting: 1 person, no cargo
+						<dl>
+							<dt>place</dt>
+							<dd id="placeId1073741824">Anywhere</dd>
+						</dl>
+					</li>
+					<li>
+						Vacation: 2 people, 4 bags
+						<dl>
+							<dt>place</dt>
+							<dd id="placeId1073741824">Anywhere</dd>
+						</dl>
+					</li>
+					<li>
+						Hauling: 1 person, 12 boxes x 50 lbs
+						<dl>
+							<dt>place</dt>
+							<dd id="placeId1073741824">Anywhere</dd>
+						</dl>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Fuel Efficiency: 30 MPG
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Auto Web Sites
+		<dl>
+			<dt>place</dt>
+			<dd id="placeId1073741824">Anywhere</dd>
+		</dl>
+		<ul compact="compact">
+			<li>
+				Kelley Blue Book https://kbb.com
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Models
+		<dl>
+			<dt>place</dt>
+			<dd id="placeId1073741824">Anywhere</dd>
+		</dl>
+		<ul>
+			<li>
+				Ford Taurus
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+				<ul>
+					<li>
+						get data on Taurus
+						<input type="checkbox" name="doneBox" value="done" checked="checked">
+							<dl>
+								<dt>responsible</dt>
+								<dd id="contactId4336">me</dd>
+								<dt>place</dt>
+								<dd id="placeId2">Home</dd>
+								<dt>content text</dt>
+								<dd>18 MPG, 263 HP 3.5 L V6, 6-speed, 21.2 cu. ft. trunk
+									space, 5* crash rating</dd>
+							</dl>
+					</li>
+					<li>
+						get costs on Taurus
+						<input type="checkbox" name="doneBox" value="done" checked="checked">
+							<dl>
+								<dt>responsible</dt>
+								<dd id="contactId4336">me</dd>
+								<dt>place</dt>
+								<dd id="placeId2">Home</dd>
+								<dt>content text</dt>
+								<dd>$25,170</dd>
+							</dl>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Honda Accord
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+				<ul>
+					<li>
+						get data on Accord
+						<input type="checkbox" name="doneBox" value="done" checked="checked">
+							<dl>
+								<dt>responsible</dt>
+								<dd id="contactId4336">me</dd>
+								<dt>place</dt>
+								<dd id="placeId2">Home</dd>
+								<dt>content text</dt>
+								<dd>22 MPG, 271 HP, 3.5 L V6, 5-speed, 14 cu. ft. trunk space,
+									5* crash rating</dd>
+							</dl>
+					</li>
+					<li>
+						get costs on Accord
+						<input type="checkbox" name="doneBox" value="done">
+							<dl>
+								<dt>responsible</dt>
+								<dd id="contactId4336">me</dd>
+								<dt>place</dt>
+								<dd id="placeId2">Home</dd>
+							</dl>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Chevy S-10
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+				<ul compact="compact">
+					<li>
+						get data on S-10
+						<input type="checkbox" name="doneBox" value="done">
+							<dl>
+								<dt>responsible</dt>
+								<dd id="contactId8432">my organization</dd>
+								<dt>place</dt>
+								<dd id="placeId2">Home</dd>
+							</dl>
+					</li>
+					<li>
+						get costs on S-10
+						<input type="checkbox" name="doneBox" value="done">
+							<dl>
+								<dt>responsible</dt>
+								<dd id="contactId8432">my organization</dd>
+								<dt>place</dt>
+								<dd id="placeId2">Home</dd>
+							</dl>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Finance
+		<dl>
+			<dt>place</dt>
+			<dd id="placeId1073741824">Anywhere</dd>
+		</dl>
+		<ul compact="compact">
+			<li>
+				my budget
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+			</li>
+			<li>
+				calculate affordable monthly payment
+				<input type="checkbox" name="doneBox" value="done">
+					<dl>
+						<dt>responsible</dt>
+						<dd id="contactId4336">me</dd>
+						<dt>place</dt>
+						<dd id="placeId2">Home</dd>
+					</dl>
+			</li>
+			<li>
+				Mich. Edu. CU calc. https://www.michedcu.org
+				<dl>
+					<dt>place</dt>
+					<dd id="placeId1073741824">Anywhere</dd>
+				</dl>
+			</li>
+			<li>
+				talk to bank about car loan
+				<input type="checkbox" name="doneBox" value="done">
+					<dl>
+						<dt>responsible</dt>
+						<dd id="contactId4336">me</dd>
+						<dt>place</dt>
+						<dd id="placeId8">Running Errands</dd>
+					</dl>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Dealers
+		<dl>
+			<dt>place</dt>
+			<dd id="placeId1073741824">Anywhere</dd>
+		</dl>
+	</li>
+	<li>
+		Get Rid of Old Car
+		<dl>
+			<dt>place</dt>
+			<dd id="placeId1073741824">Anywhere</dd>
+		</dl>
+		<ul compact="compact">
+			<li>
+				look up Blue Book value of old car
+				<input type="checkbox" name="doneBox" value="done">
+					<dl>
+						<dt>responsible</dt>
+						<dd id="contactId4336">me</dd>
+						<dt>place</dt>
+						<dd id="placeId2">Home</dd>
+					</dl>
+			</li>
+			<li>
+				donate old car
+				<input type="checkbox" name="doneBox" value="done">
+					<dl>
+						<dt>responsible</dt>
+						<dd id="contactId4336">me</dd>
+						<dt>place</dt>
+						<dd id="placeId2">Home</dd>
+					</dl>
+			</li>
+		</ul>
+	</li>
+</ul>
+<p style="font-family: arial, sans-serif; font-size: 12px;color: #999999;">-- Exported from Outline Tracker for Palm webOS, version
+	1.1.0</p>
+

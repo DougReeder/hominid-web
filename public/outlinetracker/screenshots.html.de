@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<script src="../pure/prototype.js"></script>
+		<script src="../pure/pure.js"></script>
+		<script src="../pure/navigation.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=480" />
+
+		<link href='../aux/reeder-main.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-height: 56.5em) and (min-width: 700px)' href='../aux/reeder-short.css' type='text/css' rel='stylesheet' />
+		<link media='only all and (max-width: 53em)' href='../aux/reeder-narrower.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld, only all and (max-width: 700px)' href='../aux/reeder-narrowest.css'
+			type='text/css' rel='stylesheet' />
+		<link media='handheld' href='../aux/reeder-handheld.css' type='text/css'
+			rel='stylesheet' />
+		<link media='print' href='../aux/reeder-print.css' type='text/css'
+			rel='stylesheet' />
+
+		<title>Outline Tracker Screen Shots</title>
+	</head>
+	<body id='screenshots'>
+		<div id='outer'>
+
+			<div id='header'>
+				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<h1>Outline Tracker Screen Shots</h1>
+				<p>The leading task list manager for HP webOS!</p>
+			</div>
+
+			<div class='onlyif1col'>
+				<a href='#nav'>Zum Menü springen</a>
+			</div>
+
+			<div id='main'>
+				<div id='content'>
+					<div class='floatright300'><img src='visuals/outline_vehicle.png' width='320' height='480' alt='project outline' /></div>
+					<p>Organize your projects into tasks and sub-tasks as many layers deep as you need.  Add notes to tasks or tasks to notes.  Whether you work top-down, bottom-up, or inside-out, Outline Tracker works with you.</p>
+					<p>Outline items can be collapsed to show the big picture, or expanded to show detail.</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/to-do_home.png' width='320' height='480' alt='dynamic to-do scene' /></div>
+					<p>Select the Place you're at, and the dynamic to-do scene shows only the tasks you can work on here and now.
+					Today's tasks are hilighted in yellow; past-due tasks in red.
+					The color-coded checkbox shows at a glance who's responsible for a task -- you, your organization, or no one.  Tasks are organized by project.</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/by_due_date.png' width='320' height='480' alt='dynamic By Due Date list' /></div>
+					<p>Switch to the <strong>Nach Datum</strong> scene to see upcoming tasks and events.</p>
+					<p>These items also appear in the webOS Calendar (see below).</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/waiting.png' width='480' height='320' alt='dynamic waiting list' /></div>
+					<p>The dynamic waiting list shows tasks that are waiting for action by someone else, organized by person. Tapping a person's name takes you to his or her entry in the webOS Contacts application, where you can phone, e-mail or instant message him or her.</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/places.png' width='320' height='480' alt='places scene' /></div>
+					<p>A Place can represent a physical place, like your home, or a context like “botengänge machen”.  Places are independent of projects, so when you're running errands, you can see tasks for your job and your personal life.</p>
+					<p>Places can include other Places.  Here, the place “Geschäftlich” includes the place “Desktop Rechner”. When you're at work, you'll see tasks that require a desktop computer, but if you're at a computer elsewhere, you won't see your work tasks.</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/details.png' width='320' height='480' alt='details scene' /></div>
+					<p>Keep track of where you can work on a task, who's responsible and when it's due.</p>
+					<p>Items with a Fälligkeitsdatum will appear in the webOS Calendar (see below).</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/card_view.png' width='320' height='480' alt='card view of Outline Tracker' /></div>
+					<p>Use card view to switch between the dynamic to-do list and project cards.</p>
+					<p>Add a new tasks or notes quickly (even if Outline Tracker isn't open) using Einfach Lostippen. (requires webOS 2.x or 3.x)</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/calendar.png' width='320' height='480' alt='Outline Tracker items in webOS Calendar' /></div>
+					<p>Outline Tracker items with a date appear in the webOS Calendar. Completed tasks show a checkmark, incomplete tasks an empty box and notes have neither.</p>
+					<p>By default, completed tasks are not shown &mdash; preferences allow you to show top-level tasks, lower-level tasks, or both.</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/searchable_faq.png' width='320' height='480' alt='searchable FAQ' /></div>
+					<p>Search the FAQ (accessed from the Help scene) for tips and techniques on a subject.</p>
+
+					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/content_text.png' width='320' height='480' alt='content text' /></div>
+					<p>Content text lets you add notes to an item, without cluttering the dynamic to-do list or Outline scene.
+					In an outline scene, tap the knobs to show or hide.
+					In the dynamic to-do list, just rotate your handheld!</p>
+
+ 					<p class='clearboth'> </p>
+					<div class='floatright300'><img src='visuals/tp_outline_crop480.png' width='480' height='797' /></div>
+					<p>Outline Tracker uses the full screen height on tablets.</p>
+				</div> <!-- End #content -->
+				<div id='nav'>
+					<div class='navHead'>Notes Together</div>
+					<ul id='navNotesTogether'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Zap Photoshare</div>
+					<ul id='navZap'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>Outline Tracker</div>
+					<ul id='navOT'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>PopupCalc</div>
+					<ul id='navPC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+					<div class='navHead'>ExhibitionCalc</div>
+					<ul id='navEC'>
+						<li class='page pageclass@class'>
+							<a class='pagename relurl@href' href='http://example.com'></a>
+						</li>
+					</ul>
+				</div> <!-- End #nav -->
+			</div> <!-- End #main -->
+
+			<div id='footer'>
+				<!--
+				<a class='desktoponlyinline' href='http://developer.palm.com/webChannel/index.php?packageid=com.outlinetracker.outlinetracker'>
+					<img src='visuals/app_catalog.png' width='361' height='110' alt='Available in the App Catalog on webOS devices' />
+				</a>
+				-->
+				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+					Available via Preware
+				</a>
+				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
+				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+			</div> <!-- End #footer -->
+
+		</div> <!-- End #outer -->
+	</body>
+</html>
