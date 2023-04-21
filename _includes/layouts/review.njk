@@ -1,0 +1,28 @@
+---
+layout: layouts/review-base.njk
+---
+{# Only include the syntax highlighter CSS on reviews #}
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+{%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+<h1>{{ title }}</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	{%- for tag in tags | filterTagList %}
+		{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+		<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+	{%- endfor %}
+</ul>
+
+{{ content | safe }}
+
+{%- if collections.review %}
+	{%- set previousReview = collections.review | getPreviousCollectionItem %}
+	{%- set nextReview = collections.review | getNextCollectionItem %}
+	{%- if nextReview or previousReview %}
+		<ul class="links-nextprev">
+			{%- if previousReview %}<li>Previous: <a href="{{ previousReview.url }}">{{ previousReview.data.title }}</a></li>{% endif %}
+			{%- if nextReview %}<li>Next: <a href="{{ nextReview.url }}">{{ nextReview.data.title }}</a></li>{% endif %}
+		</ul>
+	{%- endif %}
+{%- endif %}

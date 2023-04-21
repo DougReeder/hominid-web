@@ -1,4 +1,4 @@
 [
-	{"pagename": "Features", "relurl": "/notes-together/", "pageclass": "featuresNotesTogether"},
-	{"pagename": "Privacy &amp; License", "relurl": "/notes-together/license/", "pageclass": "licenseNotesTogether"}
+	{"pagename": "Features", "relurl": "/notes-together/index.html", "pageclass": "featuresNotesTogether"},
+	{"pagename": "Privacy &amp; License", "relurl": "/notes-together/license.html", "pageclass": "licenseNotesTogether"}
 ]

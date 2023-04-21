@@ -4,12 +4,12 @@
 	"description": "Hominid Software website",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
+		"postbuild": "rsync -v --rsh=ssh --recursive --links --hard-links --safe-links --times --exclude '.DS_Store' --prune-empty-dirs --human-readable _site/ root@hominidsoftware.com:/var/www/html/",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
-		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
-		"rsync": "rsync -v --rsh=ssh --recursive --links --hard-links --safe-links --times --delete --delete-after --exclude '.DS_Store' --prune-empty-dirs --human-readable _site/ root@hominidsoftware.com:/var/www/html-new/"
+		"benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
 	},
 	"repository": {
 		"type": "git",

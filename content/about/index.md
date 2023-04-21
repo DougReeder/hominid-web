@@ -3,7 +3,7 @@ title: About Doug Reeder
 layout: layouts/blog-base.njk
 eleventyNavigation:
   key: About Me
-  order: 4
+  order: 5
 ---
 # About Doug Reeder
 

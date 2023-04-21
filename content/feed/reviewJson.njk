@@ -1,0 +1,29 @@
+---
+# Metadata comes from _data/metadata.js
+permalink: /feed/reviewFeed.json
+---
+{
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "{{ metadata.reviewTitle }}",
+	"language": "{{ metadata.language }}",
+	"home_page_url": "{{ metadata.reviewUrl | addPathPrefixToFullUrl }}",
+	"feed_url": "{{ permalink | htmlBaseUrl(metadata.reviewUrl) }}",
+	"description": "{{ metadata.reviewDescription }}",
+	"author": {
+		"name": "{{ metadata.author.name }}",
+		"url": "{{ metadata.author.url }}"
+	},
+	"items": [
+		{%- for review in collections.review | reverse %}
+		{%- set absoluteReviewUrl = review.url | htmlBaseUrl(metadata.reviewUrl) %}
+		{
+			"id": "{{ absoluteReviewUrl }}",
+			"url": "{{ absoluteReviewUrl }}",
+			"title": "{{ review.data.title }}",
+			"content_html": {% if review.templateContent %}{{ review.templateContent | transformWithHtmlBase(absoluteReviewUrl, review.url) | dump | safe }}{% else %}""{% endif %},
+			"date_published": "{{ review.date | dateToRfc3339 }}"
+		}
+		{% if not loop.last %},{% endif %}
+		{%- endfor %}
+	]
+}

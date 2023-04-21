@@ -131,7 +131,7 @@ seleccione <strong>Nuevo elemento</strong>, y pege el texto completo en el campo
 					<img src='visuals/app_catalog.png' width='361' height='110' alt='Available in the App Catalog on webOS devices' />
 				</a>
 				-->
-				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+				<a href='https://www.webos-internals.org/wiki/Application:Preware'>
 					Available via Preware
 				</a>
 				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />

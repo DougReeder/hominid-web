@@ -224,7 +224,7 @@ Recuerde que si le roban o pierde su dispositivo, las copias de seguridad que no
 			</div> <!-- End #main -->
 
 			<div id='footer'>
-				<a href='http://www.webos-internals.org/wiki/Application:Preware'>
+				<a href='https://www.webos-internals.org/wiki/Application:Preware'>
 					Available via Preware
 				</a>
 				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />

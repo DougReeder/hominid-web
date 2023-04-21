@@ -3,7 +3,7 @@ title: A User-Empowering Architecture for WebVR Discovery
 description: A better way to find VR & AR content on the Web is needed.
 date: 2019-03-29
 tags:
-  - virtual reality
+  - VR
   - webXR
   - feed
   - user experience

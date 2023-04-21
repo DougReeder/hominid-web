@@ -1,0 +1,19 @@
+---
+layout: layouts/review-base.njk
+eleventyNavigation:
+  key: Reviews
+  order: 3
+numberOfLatestReviewsToShow: 12
+---
+{% set reviewCount = collections.review | length %}
+{% set latestReviewsCount = reviewCount | min(numberOfLatestReviewsToShow) %}
+<h1>Latest {{ latestReviewsCount }} Review{% if latestReviewsCount != 1 %}s{% endif %}</h1>
+
+{% set postslist = collections.review | head(-1 * numberOfLatestReviewsToShow) %}
+{% set postslistCounter = reviewCount %}
+{% include "postslist.njk" %}
+
+{% set moreReviews = reviewCount - numberOfLatestReviewsToShow %}
+{% if moreReviews > 0 %}
+	<p>{{ moreReviews }} more review{% if moreReviews != 1 %}s{% endif %} can be found in <a href="/archive/">the archive</a>.</p>
+{% endif %}
