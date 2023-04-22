@@ -24,7 +24,7 @@
 		<div id='outer'>
 
 			<div id='header'>
-				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<a href="/"><img src='../aux/icon64_2.png' class='headerIcon' /></a>
 				<h1>Outline Tracker Methodologies</h1>
 				<p>The leading task list manager for Palm webOS!</p>
 			</div>
@@ -229,7 +229,7 @@ Recuerde que si le roban o pierde su dispositivo, las copias de seguridad que no
 				</a>
 				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
 				<p><em>GTD and Getting Things Done are trademarks of David Allen &amp; Co.</em></p>
-				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+				<address><a href="/">hominidsoftware.com</a> &mdash; Software by hominids, for hominids</address>
 			</div> <!-- End #footer -->
 
 		</div> <!-- End #outer -->

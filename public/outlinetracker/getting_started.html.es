@@ -24,7 +24,7 @@
 		<div id='outer'>
 
 			<div id='header'>
-				<img src='../aux/icon64_2.png' class='headerIcon' />
+				<a href="/"><img src='../aux/icon64_2.png' class='headerIcon' /></a>
 				<h1>Primeros Pasos con Outline Tracker</h1>
 				<p>The leading task list manager for Palm webOS!</p>
 			</div>
@@ -145,7 +145,7 @@
 					Available via Preware
 				</a>
 				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />
-				<address>hominidsoftware.com &mdash; Software by hominids, for hominids</address>
+				<address><a href="/">hominidsoftware.com</a> &mdash; Software by hominids, for hominids</address>
 			</div> <!-- End #footer -->
 
 		</div> <!-- End #outer -->
