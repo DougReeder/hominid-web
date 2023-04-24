@@ -107,6 +107,13 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addShortcode("hamburgerIcon", function() {
+		return `
+<svg viewBox="4 4 14 14" width="1em" focusable="false" aria-hidden="true">
+	<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+</svg>`;
+	});
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line

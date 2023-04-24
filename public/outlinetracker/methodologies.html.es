@@ -190,12 +190,6 @@ Recuerde que si le roban o pierde su dispositivo, las copias de seguridad que no
 
 				</div> <!-- End #content -->
 				<div id='nav'>
-					<div class='navHead'>Notes Together</div>
-					<ul id='navNotesTogether'>
-						<li class='page pageclass@class'>
-							<a class='pagename relurl@href' href='http://example.com'></a>
-						</li>
-					</ul>
 					<div class='navHead'>Zap Photoshare</div>
 					<ul id='navZap'>
 						<li class='page pageclass@class'>

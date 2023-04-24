@@ -74,19 +74,4 @@ document.observe("dom:loaded", function () {
 				}
 			}
 	);
-	new Ajax.Request("/pure/navigationNotesTogether.json",
-			{
-				method:"get",
-				onSuccess: function(response){
-					var obj = JSON.parse(response.responseText);
-					$("navNotesTogether").autoRender({page:obj});
-				},
-				onFailure: function(response){
-					$("navNotesTogether").innerHTML = "Failed to load navigation";
-				},
-				onException: function(request, ex) {
-					$("navNotesTogether").innerHTML = "Exception loading navigation: " + ex;
-				}
-			}
-	);
 });
