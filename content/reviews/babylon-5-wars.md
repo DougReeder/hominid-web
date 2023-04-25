@@ -2,7 +2,6 @@
 title: “Babylon-5 Wars” from Agents of Gaming
 date: 1997-09-02
 tags:
-  - board game
   - game
   - science fiction
 ---

@@ -2,7 +2,6 @@
 title: “Glyder 2” for webOS
 date: 2011-11-05
 tags:
-  - videogame
   - game
   - webOS
 ---

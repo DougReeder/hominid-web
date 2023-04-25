@@ -3,9 +3,8 @@ title: A User-Empowering Architecture for WebVR Discovery
 description: A better way to find VR & AR content on the Web is needed.
 date: 2019-03-29
 tags:
-  - VR
   - webXR
-  - feed
+  - VR
   - user experience
 ---
 Currently, it’s hard to browse the VR web. Sites are available over HTTP but hard to find. If you know the URL, you can laboriously type it in on a virtual keyboard, but that’s not something most users are willing to do.
