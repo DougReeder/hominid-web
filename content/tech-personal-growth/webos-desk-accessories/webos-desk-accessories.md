@@ -5,6 +5,10 @@ date: 2011-10-25
 tags:
   - user experience
   - webOS
+previewImage:
+  url: /img/PopupCalc-Calendar.png
+  width: 1024
+  height: 768
 ---
 
 _**Editor’s note:** This week we are featuring a guest challenge from rockstar webOS developer Doug Reeder. He has pioneered an app interface that he calls Desk Accessories. Your challenge this week is to create an app that uses this kind of interface. Take it away, Doug!_

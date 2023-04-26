@@ -2,6 +2,7 @@ module.exports = {
 	title: "Hominid Software",
 	blogTitle: "Tech for Personal Growth",
 	reviewTitle: "Reviews by Doug Reeder",
+	origin: "https://hominidsoftware.com",
 	blogUrl: "https://hominidsoftware.com/tech-personal-growth/",
 	reviewUrl: "https://hominidsoftware.com/reviews/",
 	language: "en",

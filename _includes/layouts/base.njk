@@ -5,6 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title + " — " + metadata.title if title else metadata.title }}</title>
 	<meta name="description" content="{{ description or metadata.description }}">
+	<meta property="og:title" content="{{ title if title else metadata.title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
+	<meta property="og:site_name" content="{{ metadata.title }}" />
+	{% if description or metadata.description -%}
+		<meta property="og:description" content="{{ description or metadata.description }}" />
+	{%- endif %}
+	{% if previewImage.url -%}
+		<meta property="og:image" content="{{ metadata.origin + previewImage.url }}" />
+	{%- endif %}
+	{% if previewImage.width -%}
+		<meta property="og:image.width" content="{{ previewImage.width }}" />
+	{%- endif %}
+	{% if previewImage.height -%}
+		<meta property="og:image.height" content="{{ previewImage.height }}" />
+	{%- endif %}
 
 	{#-
 	CSS bundles are provided via the `eleventy-plugin-bundle` plugin:

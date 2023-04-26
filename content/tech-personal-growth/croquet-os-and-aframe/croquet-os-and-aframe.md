@@ -5,6 +5,10 @@ date: 2023-04-25
 tags:
   - webXR
   - VR
+previewImage:
+  url: /img/xalot-world.png
+  width: 747
+  height: 513
 ---
 [_Croquet OS_](https://croquet.studio/docs/) is real-time synchronization-as-a-service (and not restricted to WebXR). You don't run your own synchronization server; large traffic volumes require payment.
 

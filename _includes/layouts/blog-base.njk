@@ -5,6 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title + " — " + metadata.blogTitle if title else metadata.blogTitle }}</title>
 		<meta name="description" content="{{ description or metadata.blogDescription }}">
+		<meta property="og:title" content="{{ title if title else metadata.blogTitle }}" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="{{ metadata.origin + page.url }}" />
+		<meta property="og:site_name" content="{{ metadata.blogTitle }}" />
+		{% if description -%}
+			<meta property="og:description" content="{{ description }}" />
+		{%- endif %}
+		{% if previewImage.url -%}
+			<meta property="og:image" content="{{ metadata.origin + previewImage.url }}" />
+		{%- endif %}
+		{% if previewImage.width -%}
+			<meta property="og:image.width" content="{{ previewImage.width }}" />
+		{%- endif %}
+		{% if previewImage.height -%}
+			<meta property="og:image.height" content="{{ previewImage.height }}" />
+		{%- endif %}
+		<meta property="article:published_time" content="{{ page.date }}" />
+		<meta property="article:author" content="{{ author.name or metadata.author.name }}">
+		{% for tag in tags -%}
+		<meta property="article:tag" content="{{ tag }}">
+		{% endfor %}
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.blogTitle }}">
