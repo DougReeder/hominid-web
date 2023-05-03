@@ -5,6 +5,10 @@ date: 2011-10-11
 tags:
   - user experience
   - webOS
+previewImage:
+  url: /img/popupcalc.webp
+  width: 339
+  height: 388
 ---
 
 There are several places where speech output might be useful in a touchscreen calculator.
@@ -19,7 +23,7 @@ Thus, a calculation is spoken as the phrases
 "two times", "three plus", "four equals ten", rather than the natural "two times three", "plus four", "equals ten". While an interesting user interface experiment, I judged this to not be useful for end users.
 
 <div class="center-horizontal">
-	<video controls width="320" height="404" src="/video/PopupCalc speech 3.mp4" playsinline preload="metadata">
+	<video controls width="320" height="404" src="/video/PopupCalc speech 3.mp4" poster="/img/popupcalc.webp" playsinline preload="metadata">
 			Download the <a href="/video/PopupCalc speech 3.mp4">MP4</a> video.
 	</video>
 </div>
