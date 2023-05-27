@@ -12,3 +12,5 @@ Uses non-euclidean geometry so the character traverses a huge space, while the p
 Controls and weapons need a bit more documentation, and it would be good to have more indication of progress. It’s shaping up to be a landmark game.
 
 4/5
+
+[App Lab entry](https://www.oculus.com/experiences/quest/3762343440541585/)

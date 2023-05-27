@@ -27,3 +27,5 @@ The “Navigate > End” command does not appear to work.
 It does not appear possible to set the style, and then type text in that style (aside from bold, italic and underline) – you must enter text, then apply styling. Styling is by default applied to “this block”. There’s no indication of what a “block” is.
 
 If there’s a problem exporting to Google Docs, the spinner keeps spinning after the dialog goes away, so it’s difficult to know that you should type a correction in your username or password, rather than wait. After exporting is successful, you’re left at the export scene, as you might want to export again (to e-mail?) – you must use the “back” gesture to get back to your document.
+
+[entry in the webOS App Museum](https://appcatalog.webosarchive.org/showMuseumDetails.php?search=scratch&safe=on&app=2481)
