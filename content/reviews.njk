@@ -17,3 +17,9 @@ numberOfLatestReviewsToShow: 12
 {% if moreReviews > 0 %}
 	<p>{{ moreReviews }} more review{% if moreReviews != 1 %}s{% endif %} can be found in <a href="/archive/">the archive</a>.</p>
 {% endif %}
+
+<div class="flex-center-center">
+	<a href="/feed/reviewFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/reviewFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>

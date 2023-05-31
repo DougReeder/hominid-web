@@ -59,6 +59,15 @@ body {
 	max-width: 40em;
 }
 
+.flex-center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-center-center h1 {
+	margin-bottom: 0;
+}
+
 .center-horizontal {display: flex; justify-content: center;}
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
