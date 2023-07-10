@@ -38,3 +38,26 @@ share the other design characteristics of the Mastermyr chest as well.
 From this, I conclude that many, if not most, chests were designed to function well as seats.
 This may go some way toward explaining the paucity of chairs and stools discovered.
 
+However, the Mästermyr chest has no carrying handles, making it inconvenient as a portable
+seat.  Either
+
+1. It was expected to be placed in a good place for a seat indoors,
+and something _different_ was used outdoors and for any task where you
+needed to move your seat.  Or,
+
+2. It was not expected to be used as a portable seat very often.
+
+
+Adding the info that there are lots of partial finds of stools, this suggests
+the following hierarchy of seating:
+
+1) Built in benches and/or several chests as the fixed indoor seats; enough
+	 (or almost enough) for the usual residents of the farm.
+
+2) Stools for moveable indoor seats and usual outdoor seats.
+
+3) Chests as extra seating for guests at feasts, weddings, and all the
+	 other big gatherings that were a significant part of Norse culture.
+
+This would avoid the needs for lots of stools, benches, or chairs which
+would only get used at feasts, and would need to be stored in-between times.
