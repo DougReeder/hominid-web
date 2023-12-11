@@ -6,6 +6,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin, EleventyI18nPlugin } = require("@11ty/eleventy");
+const readingTime = require('eleventy-plugin-reading-time');
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -40,6 +41,7 @@ module.exports = function(eleventyConfig) {
 		// any valid BCP 47-compatible language tag is supported
 		defaultLanguage: "en", // Required, this site uses "en"
 	});
+	eleventyConfig.addPlugin(readingTime);
 
 	// Special collection
 	eleventyConfig.addCollection("archive", function(collectionApi) {
