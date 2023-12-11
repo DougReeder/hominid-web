@@ -47,7 +47,7 @@ Other To-Do apps likewise allow text that isn't explicitly a task, in various pl
 
 ## Notes Together
 
-After the demise of webOS, I started a line of work that eventually led to [_Notes Together_], a note-taking app.
+After the demise of webOS, I started a line of research that eventually led to [_Notes Together_], a note-taking app.
 It's marquee feature is full-text search (using Indexed DB under the hood),
 eliminating the need to curate notes with categories or explicit tags.
 Users are encouraged to toss in snippets of text or pictures and get back to whatever they were doing.
