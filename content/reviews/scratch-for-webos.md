@@ -1,5 +1,5 @@
 ---
-title: Scratch! for webOS review
+title: “Scratch!” for webOS review
 date: 2010-11-04
 tags:
   - application

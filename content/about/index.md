@@ -8,9 +8,10 @@ eleventyNavigation:
 ---
 # About Doug Reeder
 
-I am a full-stack web developer, VR enthusiast, and part-time viking.
+I am a full-stack web developer, VR enthusiast, and sometime viking.
+I push back against gatekeepers and work to give users a “bicycle for the mind”.
 
-Contact me at [reeder.29@gmail.com](mailto:reeder.29@gmail.com?subject=Your%20Blog)
+Contact me at [reeder.29@gmail.com](mailto:reeder.29@gmail.com?subject=Tech%20for%20Personal%20Growth)
 
 Free your head from mundane details with [Notes Together](https://notestogether.hominidsoftware.com/)! Toss in text and pictures. Be confident you can find any note on any device. Take control of your data with remoteStorage. Never spend time tidying up — unless you want to!
 

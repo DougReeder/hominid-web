@@ -6,7 +6,7 @@ module.exports = {
 	blogUrl: "https://hominidsoftware.com/tech-personal-growth/",
 	reviewUrl: "https://hominidsoftware.com/reviews/",
 	language: "en",
-	description: "Apps from Hominid Software",
+	description: "",
 	blogDescription: "Essays on using digital technology to become a better person (with detours)",
 	reviewDescription: "mostly science fiction",
 	author: {

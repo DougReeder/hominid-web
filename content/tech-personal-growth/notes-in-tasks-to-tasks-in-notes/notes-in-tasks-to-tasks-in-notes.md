@@ -4,6 +4,7 @@ date: 2023-06-08
 tags:
   - getting things done
   - application
+  - PWA
   - webOS
 ---
 ## Outline Tracker

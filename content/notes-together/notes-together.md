@@ -1,7 +1,7 @@
 ---
 title: Notes Together
 layout: layouts/base.njk
-draft: true
+description: Free your mind from mundane details! Toss in text and pictures. Be confident you can find any note on any device. Take control of your data with remoteStorage. Never spend time tidying up — unless you want to!
 ---
 {%- css %} h1#notes-together img { width:2.2ex; height:2.2ex; position:relative; top:0.4ex} {% endcss -%}
 # ![](/img/NotesTogether-Icon-36x36.png) [*Notes Together*](https://notestogether.hominidsoftware.com/)

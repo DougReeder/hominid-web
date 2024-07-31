@@ -1,5 +1,5 @@
 ---
-title: “The Mind Pool“ by Charles Sheffield
+title: “The Mind Pool” by Charles Sheffield
 date: 1993-06-20
 tags:
   - novel

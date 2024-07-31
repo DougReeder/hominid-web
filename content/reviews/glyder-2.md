@@ -4,6 +4,7 @@ date: 2011-11-05
 tags:
   - game
   - webOS
+  - application
 ---
 
 Extremely immersive despite small screen! The interface almost disappears! A tranquil action game.

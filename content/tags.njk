@@ -12,6 +12,7 @@ pagination:
 layout: layouts/blog-home.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
+  description: list of blog posts and reviews with keyword “{{ tag }}”
 permalink: /tags/{{ tag | slugify }}/
 ---
 <h1>Tagged “{{ tag }}”</h1>

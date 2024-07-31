@@ -5,6 +5,7 @@ tags:
   - VR
   - Oculus Quest
   - game
+  - application
 ---
 
 Uses non-euclidean geometry so the character traverses a huge space, while the player walks around their physical space. Excellent concept, very immersive. Manages to be both claustrophobic and spacious!

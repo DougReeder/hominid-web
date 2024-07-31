@@ -21,7 +21,7 @@ There are four scenes in Outline Tracker which use FilterLists, and the hint or 
 
 [//]: # (There were several FAQs on how to search in the)
 
-While adding [support for the on-screen keyboard](https://developer.palm.com/distribution/viewtopic.php?f=11&t=17285) to my Mojo app  I rediscovered that the status message list is a FilterList.
+While adding [support for the on-screen keyboard](https://web.archive.org/web/20141022130716/https://developer.palm.com/distribution/viewtopic.php?f=11&t=17285) to my Mojo app  I rediscovered that the status message list is a FilterList.
 
 I have often had trouble finding the status message I was looking for. The typedown filter would have been great for this. But this is so non-discoverable, that I didn't know it existed in code I wrote myself.
 

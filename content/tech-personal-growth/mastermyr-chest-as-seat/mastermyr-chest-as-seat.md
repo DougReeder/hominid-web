@@ -1,5 +1,6 @@
 ---
 title: The Mästermyr chest and ‘What did Vikings sit on?’
+description: The Mästermyr chest has several unexpected design features which point toward it being a seat.
 date: 2002-07-03
 tags:
   - reenactment
