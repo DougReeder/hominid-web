@@ -21,12 +21,15 @@ Just search for any words in your note, then skim the list by date.
 
 Quickly capture info on your phone, using voice dictation or the camera, regardless if you have a data connection.
 [RemoteStorage](https://remotestorage.io/) automatically syncs your data between devices when your device is back online.
-Review it on your personal computer, and clean it up if you like.
-RemoteStorage keeps you in control of your data - you're never locked into one provider.
+Or, use system share to pass in URLs, text and files. (Requires Notes Together to be installed.)
+Review notes on your personal computer, and clean them up if you like.
+RemoteStorage keeps you in control of your data - you're never locked into one storage provider.
 
-* Works with text in any Latin alphabet.
+* Works with text in any Latin alphabet or Greek.
 
 * Works well on phones, tablets, personal computers and Chromebooks.
+
+* It's a PWA that can be installed on most platforms.
 
 *Notes Together* is a web app for modern browsers; [**try it now!**](https://notestogether.hominidsoftware.com/)
 
