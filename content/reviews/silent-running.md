@@ -1,5 +1,5 @@
 ---
-title: Silent Running
+title: Silent Running (1972)
 date: 2020-11-07
 tags:
   - movie
@@ -11,7 +11,7 @@ The sets are good (interiors are the decommissioned aircraft carrier _Valley For
 
 Sadly, that’s all that’s good about this movie. The writing and acting paint Lowell as a Hollywood hippie - mad about the lack of nature in people’s lives, but a blank beyond that. The other characters are ciphers beyond their jobs (and are quickly offstage).
 
-The editing is incoherent --- it’s not clear how much Lowell is responsible for the events that leave him alone with the last nature dome.
+The editing is incoherent — it’s not clear how much Lowell is responsible for the events that leave him alone with the last nature dome.
 
 The later challenge of saving the dying plants is dumbed down for the audience so much that Lowell not immediately seeing the answer makes him grossly incompetent at his job and passion.
 

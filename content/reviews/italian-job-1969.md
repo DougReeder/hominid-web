@@ -5,7 +5,6 @@ date: 2024-07-30
 tags:
 - movie
 - caper
-- car action
 ---
 
 review © 2024 by P. Douglas Reeder
