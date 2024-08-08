@@ -4,11 +4,11 @@ description: about the author
 layout: layouts/base.njk
 eleventyNavigation:
   key: About Me
-  order: 5
+  order: 6
 ---
 # About Doug Reeder
 
-I am a full-stack web developer, VR enthusiast, and sometime viking.
+I am a full-stack web developer, WebXR consultant, VR enthusiast, and sometime viking.
 I push back against gatekeepers and work to give users a “bicycle for the mind”.
 
 Contact me at [reeder.29@gmail.com](mailto:reeder.29@gmail.com?subject=Tech%20for%20Personal%20Growth)

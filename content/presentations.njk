@@ -1,0 +1,25 @@
+---
+layout: layouts/presentation-base.njk
+eleventyNavigation:
+  key: Talks
+  order: 4
+numberOfLatestPresentationsToShow: 12
+---
+{% set presentationCount = collections.presentation | length %}
+{% set latestPresentationsCount = presentationCount | min(numberOfLatestPresentationsToShow) %}
+<h1>Latest {{ latestPresentationsCount }} Talk{% if latestPresentationsCount != 1 %}s{% endif %}</h1>
+
+{% set postslist = collections.presentation | head(-1 * numberOfLatestPresentationsToShow) %}
+{% set postslistCounter = presentationCount %}
+{% include "postslist.njk" %}
+
+{% set morePresentations = presentationCount - numberOfLatestPresentationsToShow %}
+{% if morePresentations > 0 %}
+	<p>{{ morePresentations }} more presentation{% if morePresentations != 1 %}s{% endif %} can be found in <a href="/archive/">the archive</a>.</p>
+{% endif %}
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>

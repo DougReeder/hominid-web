@@ -46,7 +46,7 @@ module.exports = function(eleventyConfig) {
 	// Special collection
 	eleventyConfig.addCollection("archive", function(collectionApi) {
 		return collectionApi.getAllSorted().filter(function(item) {
-			return item.data.tags?.includes('post') || item.data.tags?.includes('review');
+			return item.data.tags?.includes('post') || item.data.tags?.includes('review') || item.data.tags?.includes('presentation');
 		});
 	});
 
@@ -88,7 +88,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "review"].indexOf(tag) === -1);
+		return (tags || []).filter(tag => ["all", "nav", "post", "posts", "review", "presentation"].indexOf(tag) === -1);
 	});
 
 	eleventyConfig.addFilter("sortAlphabetically", strings =>

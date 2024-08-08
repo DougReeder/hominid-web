@@ -1,0 +1,27 @@
+---
+# Metadata comes from _data/metadata.js
+permalink: /feed/presentationFeed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.language }}">
+	<title>{{ metadata.presentationTitle }}</title>
+	<subtitle>{{ metadata.presentationDescription }}</subtitle>
+	<link href="{{ permalink | htmlBaseUrl(metadata.presentationUrl) }}" rel="self"/>
+	<link href="{{ metadata.presentationUrl | addPathPrefixToFullUrl }}"/>
+	<updated>{{ collections.presentation | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>{{ metadata.presentationUrl }}</id>
+	<author>
+		<name>{{ metadata.author.name }}</name>
+		<email>{{ metadata.author.email }}</email>
+	</author>
+	{%- for presentation in collections.presentation | reverse %}
+	{% set absolutePresentationUrl %}{{ presentation.url | htmlBaseUrl(metadata.presentationUrl) }}{% endset %}
+	<entry>
+		<title>{{ presentation.data.title }}</title>
+		<link href="{{ absolutePresentationUrl }}"/>
+		<updated>{{ presentation.date | dateToRfc3339 }}</updated>
+		<id>{{ absolutePresentationUrl }}</id>
+		<content type="html">{{ presentation.templateContent | transformWithHtmlBase(absolutePresentationUrl, presentation.url) }}</content>
+	</entry>
+	{%- endfor %}
+</feed>
