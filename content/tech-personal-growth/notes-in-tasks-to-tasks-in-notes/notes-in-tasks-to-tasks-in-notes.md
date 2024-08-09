@@ -3,6 +3,7 @@ title: From Notes-in-tasks to Tasks-in-notes
 date: 2023-06-08
 tags:
   - getting things done
+  - memos/notes
   - application
   - PWA
   - webOS

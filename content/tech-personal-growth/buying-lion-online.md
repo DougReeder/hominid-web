@@ -5,6 +5,7 @@ date: 2014-08-24
 tags:
   - MacOS
   - user experience
+  - Apple
 ---
 Steps:
 1) "buy" from Apple store

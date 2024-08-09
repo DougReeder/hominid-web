@@ -4,7 +4,8 @@ description: My productivity path into PDAs
 date: 2009-06-21
 tags:
   - mobile
-  - pda
+  - PDA
+  - memos/notes
 ---
 I’ve been using handheld computers for nine years now (not counting an earlier stint programming for the Newton back in ‘94, nor writing packages for the TI-89 calculator, which has some symbolic mathematic features that MATLAB doesn’t, nor using my Casio Data Bank wristwatch). First a Palm III, briefly a Visor Prism, then a Kyocera 7135 and a Treo 650. I’ve had to handle tech support for several Windows Mobile devices, and have handled an iPhone just enough to be intrigued. (Sorry, Symbian, you just never came my way here in the States.) While I like gadgets as much as the next guy, I try to maintain an engineer’s perspective: what does this allow people to do, what does it let them do better? Much as we compare devices to each other, it’s still not clear that handhelds are gaining ground on the 900-pound gorilla: paper and pencil.
 

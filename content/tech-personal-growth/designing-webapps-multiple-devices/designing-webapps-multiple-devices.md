@@ -7,6 +7,7 @@ tags:
   - user experience
   - mobile
   - personal computer
+  - memos/notes
 canonicalUrl: https://hacks.mozilla.org/2013/11/designing-web-apps-for-multiple-devices/
 ---
 
