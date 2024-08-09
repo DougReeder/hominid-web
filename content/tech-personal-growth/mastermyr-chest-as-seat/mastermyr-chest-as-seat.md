@@ -3,8 +3,11 @@ title: The Mästermyr chest and ‘What did Vikings sit on?’
 description: The Mästermyr chest has several unexpected design features which point toward it being a seat.
 date: 2002-07-03
 tags:
-  - reenactment
+  - viking
 ---
+
+_originally posted to the Norsefolk email list_
+
 While constructing a chest based on the Mästermyr find, I have noticed
 several odd features. The bottom fits into a dado on the ends, which
 extend downward to form the feet, and is also mortised into the ends,
