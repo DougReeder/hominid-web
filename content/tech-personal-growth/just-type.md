@@ -5,6 +5,7 @@ date: 2011-08-13
 tags:
   - user experience
   - webOS
+  - indexing/search
 ---
 
 When a user needs to select one item out of hundreds (the typical case on a handheld device), there are a number user interface approaches. "Browse" approaches work when items fit in a hierarchy the user can remember, for example *Artist > Album > Song* or *Account > Mailbox > Message*.

@@ -11,7 +11,7 @@ module.exports = {
 	description: "",
 	blogDescription: "Essays on using digital technology to become a better person (with detours)",
 	reviewDescription: "Mostly science fiction",
-	presentationDescription: "Technical presentations at ColumbusJS and VRColumbus",
+	presentationDescription: "Technical presentations at ColumbusJS, VRColumbus & various companies",
 	author: {
 		name: "Doug Reeder",
 		email: "reeder.29@gmail.com",

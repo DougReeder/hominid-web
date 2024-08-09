@@ -5,6 +5,7 @@ date: 2010-06-06
 tags:
   - getting things done
   - webOS
+  - DB8
 ---
 
 ## Background

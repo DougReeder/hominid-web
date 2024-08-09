@@ -8,6 +8,8 @@ tags:
 - map‐reduce
 - webOS
 - MongoDB
+- DB8
+- indexing/search
 ---
 
 _Delivered to [ColumbusJS](https://columbusjs.org/) in May 2011_
