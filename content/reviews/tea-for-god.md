@@ -14,4 +14,4 @@ Controls and weapons need a bit more documentation, and it would be good to have
 
 4/5
 
-[App Lab entry](https://www.oculus.com/experiences/quest/3762343440541585/)
+[App Lab entry](https://www.meta.com/experiences/3762343440541585/)

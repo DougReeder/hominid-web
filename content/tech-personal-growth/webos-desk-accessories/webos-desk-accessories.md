@@ -33,7 +33,7 @@ System popup alerts (don’t confuse them with popups, toasters, and alerts mana
 
 You can put any kind of widget in a Dashboard or System Popup, but there is a big limitation—neither receives keyboard events.
 
-Here are two example apps. [Dashboard Utilities](https://web.archive.org/web/20111107030722/http://developer.palm.com/appredirect/?packageid=com.machiapps.dashboardutilities&applicationid=7009) is a desk accessory that primarily uses a Dashboard. [PopupCalc](https://hominidsoftware.com/popupcalc/index.html) is a desk accessory that primarily uses a System popup.
+Here are two example apps. [Dashboard Utilities](https://web.archive.org/web/20141022053747/https://developer.palm.com/appredirect/?packageid=com.machiapps.dashboardutilities&applicationid=7009) is a desk accessory that primarily uses a Dashboard. [PopupCalc](https://hominidsoftware.com/popupcalc/index.html) is a desk accessory that primarily uses a System popup.
 
 {% image "./ph_1.png", "Dashboard Utilities dashboards" %}
 
@@ -49,7 +49,7 @@ webOS has neither a Dock nor a Taskbar to provide ready access to apps. The only
 
 Another UI issue for Popups is how to close them. The Center button on tablets and classic Pres will close them. An up-swipe on a phone will close a Popup and go to card mode, but on a tablet it just switches to card mode. A number of users find the Center button on TouchPads to be awkward, so it’s well to include another way to close. Unlike cards, the system does not support swipe-to-remove popups. A button labeled “Close” is easy, but uses precious screen real estate. One solution is some kind of swipe gesture, such as a dragging from inside the Popup to outside the Popup. This echoes the swipe-card-away gesture.
 
-The system does not close a Popup when it goes to Exhibition mode, but desk accessories generally should close themselves, since the user has by definition not interacted with them for a while. If the screen turns off, your Popup should close itself so it won’t display on the lock screen, where it would displace the dashboard notifications the user expects to see. To do this, your Popup should subscribe to the [Display Manager service](https://web.archive.org/web/20111107030722/https://developer.palm.com/content/api/reference/services/display-manager.html) and close itself if `inResponse.event === "displayOff"` or `inResponse.dockMode === true`
+The system does not close a Popup when it goes to Exhibition mode, but desk accessories generally should close themselves, since the user has by definition not interacted with them for a while. If the screen turns off, your Popup should close itself so it won’t display on the lock screen, where it would displace the dashboard notifications the user expects to see. To do this, your Popup should subscribe to the [Display Manager service](https://web.archive.org/web/20140921053848/https://developer.palm.com/content/api/reference/services/display-manager.html) and close itself if `inResponse.event === "displayOff"` or `inResponse.dockMode === true`
 
 Many Dashboard desk accessories will set the window attribute `clickableWhenLocked`, to allow the user to interact with them on the lock screen. Alas, Popups don’t have that option, so you should not set `clickableWhenLocked` for the Dashboard for a Popup desk accessory.
 
@@ -58,9 +58,9 @@ Many Dashboard desk accessories will set the window attribute `clickableWhenLock
 Users expect desk accessories to maintain state, that is, to re-open exactly as they closed. Enyo maintains the object enyo.application in sync across all windows, so properties of enyo.application are a good place to store state variables for a Popup.
 Documentation
 
-[enyo.windows](https://web.archive.org/web/20111107030722/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.windows) allows you to directly create Dashboards and System popups. [enyo.Dashboard](https://web.archive.org/web/20111107030722/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.Dashboard) is a Kind that supports notifications in a Dashboard; typically a “desk accessory” will not use it.
+[enyo.windows](https://web.archive.org/web/20141022050005/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.windows) allows you to directly create Dashboards and System popups. [enyo.Dashboard](https://web.archive.org/web/20141022050005/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.Dashboard) is a Kind that supports notifications in a Dashboard; typically a “desk accessory” will not use it.
 
-An overview of Mojo dashboards is on [this page](https://web.archive.org/web/20111107030722/https://developer.palm.com/content/api/dev-guide/mojo/dashboards-notifications.html). Mojo “Dashboard Applications” are covered in the second part of [this page](https://web.archive.org/web/20111107030722/https://developer.palm.com/content/content/api/dev-guide/mojo/background-applications.html).
+An overview of Mojo dashboards is on [this page](https://web.archive.org/web/20111111083909/https://developer.palm.com/content/api/dev-guide/mojo/dashboards-notifications.html). Mojo “Dashboard Applications” are covered in the second part of [this page](https://web.archive.org/web/20141022052239/https://developer.palm.com/content/content/api/dev-guide/mojo/background-applications.html).
 
 ## Demo App
 

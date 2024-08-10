@@ -7,6 +7,7 @@ const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin, EleventyI18nPlugin } = require("@11ty/eleventy");
 const readingTime = require('eleventy-plugin-reading-time');
+const brokenLinksPlugin = require("eleventy-plugin-broken-links");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -42,6 +43,12 @@ module.exports = function(eleventyConfig) {
 		defaultLanguage: "en", // Required, this site uses "en"
 	});
 	eleventyConfig.addPlugin(readingTime);
+	eleventyConfig.addPlugin(brokenLinksPlugin, {
+		excludeUrls: ["https://connect.mozilla.org/t5/ideas/standardize-amp-localize-user-education-re-install-pwa-command/idi-p/46661",
+			"https://www.meetup.com/vr-columbus/events/*", "https://www.meetup.com/columbusjs/events/*",
+			"https://connectsdk.com/", "https://www.youtube.com/watch*", "https://en.wikipedia.org/wiki/OpenGL_ES*",
+			"https://mobileopportunity.blogspot.com/2007/01/*"]
+	});
 
 	// Special collection
 	eleventyConfig.addCollection("archive", function(collectionApi) {

@@ -53,7 +53,7 @@ Development was eased by creative use of the List widget of Enyo 2 (though any l
 
 ### Memo app (Serene Notes)
 
-The second example is a deceptively simple memo app, which can be [used on-line](https://serenenotes.hominidsoftware.com/) ~~or installed [on Firefox OS from the Marketplace](https://marketplace.firefox.com/app/searchable-memos/)~~.
+The second example is a deceptively simple memo app, which can be [used on-line](https://serenenotes.hominidsoftware.com/) ~~or installed on Firefox OS from the Marketplace~~.
 
 
 {% image "./Memos_ss_phab_land_2col.png", "Serene Notes: phablet landscape (two columns)", ["608"] %}
