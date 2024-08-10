@@ -32,15 +32,15 @@
 {	"category": "Zu Erledigen/Erwartend",
 	"question":	"Ich habe eine Aufgabe abgehackt. Warum erscheint die nächste Aufgabe nicht in dem Zu Erledigen Bildschirm? ",
 	"answer":	"Auf den Bereich Knopf tippen: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />und den aktuellen Bereich erneut auswählen.<br /><br />Sollte die nächste Aufgabe nicht erscheinen hat sie evtl. einen noch nicht abgeschlossenen Vorgänger, oder der Bereich oder die verantwortliche Person ist falsch eingestellt. ",
-	"keywords":	"Zu Erledigen"	
+	"keywords":	"Zu Erledigen"
 },
 {	"category": "Zu Erledigen/Erwartend",
-	"question": "Ich habe ähnliche Aufgaben. Kann ich deren Details gleichzeitig ändern?", 
+	"question": "Ich habe ähnliche Aufgaben. Kann ich deren Details gleichzeitig ändern?",
 	"answer": 	"Ja. Eine Aufgabe erstellen und die Details einstellen. Um eine ähnliche Aufgabe zu erstellen die erste Aufgabe auswählen und dann den „Neues Folgeelement” Knopf antippen: <img src='images/new-sibling.png' align='top'><br /><br />Der „Neues Unterelement” Knopf: <img src='images/new-child.png' align='top'><br />kopiert die Details ebenfalls in das Unterelement. ",
 	"keywords": "Zu Erledigen, neue Aufgabe, neues Element, neue Aufgabe erstellen, neues Element erstellen, mehrere"
 },
 {	"category": "Zu Erledigen/Erwartend",
-	"question": "Wie markiere ich eine Aufgabe als teilweise abgeschlossen?", 
+	"question": "Wie markiere ich eine Aufgabe als teilweise abgeschlossen?",
 	"answer": 	"Eine zweite Aufgabe erstellen und die erste Aufgabe als abgeschlossen markieren. ",
 	"keywords":	"Zu Erledigen, abgeschlossen"
 },
@@ -75,7 +75,7 @@
 	"keywords":	"wiederholen"
 },
 {	"category": "Hierarchische Struktur",
-	"question":	"Kann abgeschlossene Aufgaben innerhalb einer Hierarchischen Struktur ausgeblendet werden?", 
+	"question":	"Kann abgeschlossene Aufgaben innerhalb einer Hierarchischen Struktur ausgeblendet werden?",
 	"answer":	"Der Befehl <strong>Nicht abgeschlossene anzeigen</strong> klappt Elemente die keine nicht abgeschlossene Aufgaben haben ein.<ol><li>In der Hierarchische Struktur Ansicht des Projektes, auf die Bildschirmüberschrift drücken: <div class='headerSample'>Projekt Titel</div></li><li><strong>Nicht abgeschlossene anzeigen</strong> auswählen.</li></ol>Die Ansicht <strong>Nach Datum</strong> Zeigt alle nicht abgeschlossenen Aufgaben."
 },
 {	"category": "Hierarchische Struktur",
@@ -137,7 +137,7 @@
 },
 {	"category": "Basecamp Classic",
 	"question":	"Wie erstelle ich eine Basecamp Classic Konto?",
-	"answer":	"Gehen Sie auf <a href='https://signup.37signals.com/basecamp/Free/signup/'>https://signup.37signals.com/basecamp/Free/signup/</a>. Die Basecamp Classic API (Application Program Interface) erlaubt as erstellen von Konten nicht.",
+	"answer":	"Gehen Sie auf <a href='https://signup.37signals.com/basecamp/Free/signup/' rel=\"noreferrer nofollow noopener external\">https://signup.37signals.com/basecamp/Free/signup/</a>. Die Basecamp Classic API (Application Program Interface) erlaubt as erstellen von Konten nicht.",
 	"keywords": "Konto erstellen, neues Konto"
 },
 {	"category": "Basecamp Classic",
@@ -200,7 +200,7 @@
 {	"category":	"Basecamp Classic",
 	"question":	"Wie kann der Bereich für alle Elemente eines Basecamp Classic Projektes geändert warden? ",
 	"answer":	"[Netztwerkverbindung nötig.]<ol><li>In dem Projekt Hierarchische Struktur Bildschirm, auf der Bildschirmüberschrift tippen:<div class='headerSample'>Projekt Titel</div></li><li><strong>Projekt Einstellungen</strong> auswählen.</li><li>Den Papierkorb Knopf antippen um das Projekt local zu löschen. </li><li>Aus dem Anwendungsmenü <strong>Bereiche, Einstellg. u. Konten</strong> auswählen &gt; <strong>Konten</strong>.</li><li>Das Konto des Projektes antippen </li><li>Einen neuen Bereich auswählen und dann <strong>OK</strong> antippen.</li><li><strong>Änderungen jetzt Herrunterladen</strong> antippen</li></ol>Es ist nötig die verwantworliche Person des Projektes (in den Projekteinstellungen) erneut zu setzten, da dies nicht auf dem Basecamp Classic Server gespeichert wird. <br /><br />Danach kann der Bereich auf einen anderen Bereich geändert warden. &mdash er wird dann für neue Basecamp Classic Projekte genutzt."
-}, 
+},
 {	"category": "Basecamp Classic",
 	"question": "Datum-Vorgaben in Basecamp Classic-Projekten werden um einen Tag früher an Outline Tracker übertragen.",
 	"answer":	"Basecamp Classic setzt Datumsvorgaben nicht korrekt um. Bitte stellen Sie die Zeitzone in Basecamp Classic auf „(GMT-06:00) Central Time (US &amp; Canada)”" ,

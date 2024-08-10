@@ -105,7 +105,7 @@ kann, zu exportieren (ein Import ist auch möglich).</p>
 			</div> <!-- End #main -->
 
 			<div id='footer'>
-				<a href='https://www.webos-internals.org/wiki/Application:Preware'>
+				<a href='https://www.webos-internals.org/wiki/Application:Preware' rel="noreferrer nofollow noopener external">
 					Available via Preware
 				</a>
 				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />

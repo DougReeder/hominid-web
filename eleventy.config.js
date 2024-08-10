@@ -8,6 +8,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const { EleventyHtmlBasePlugin, EleventyI18nPlugin } = require("@11ty/eleventy");
 const readingTime = require('eleventy-plugin-reading-time');
 const brokenLinksPlugin = require("eleventy-plugin-broken-links");
+const externalLinks = require("@aloskutov/eleventy-plugin-external-links");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -49,6 +50,8 @@ module.exports = function(eleventyConfig) {
 			"https://connectsdk.com/", "https://www.youtube.com/watch*", "https://en.wikipedia.org/wiki/OpenGL_ES*",
 			"https://mobileopportunity.blogspot.com/2007/01/*"]
 	});
+	eleventyConfig.addPlugin(externalLinks, {url: 'hominidsoftware.com', enableTarget: false,
+		excludedDomains: ['notestogether.hominidsoftware.com', 'serenenotes.hominidsoftware.com']});
 
 	// Special collection
 	eleventyConfig.addCollection("archive", function(collectionApi) {

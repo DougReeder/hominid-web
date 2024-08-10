@@ -32,7 +32,7 @@
 {	"category": "Escena de Tareas",
 	"question":	"He marcado una tarea como completada. ¿Porqué sus tareas dependientes no aparecen en la escena de Tareas?",
 	"answer":	"Pulse el botón Ámbito en la cabecera: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />y vuelva a seleccionar el Ámbito en el que se encuentra.<br /><br />Si las tareas dependientes todavía no aparecen, puede haber otro requisito previo inacabado (hijo), o pueden estar mal configurados el Ámbito o la persona Responsable.",
-	"keywords":	"tarea"	
+	"keywords":	"tarea"
 },
 {	"category": "Escena de Tareas",
 	"question": "Tengo muchas tareas parecidas. ¿Puedo introducir los detalles una sola vez?",
@@ -64,11 +64,11 @@
 	"answer": 	"<ol><li>En la escena del esquema del proyecto, pulse la cabecera de la escena: <div class='headerSample'>Nombre del proyecto</div></li><li>Seleccione <strong>Preferencias Proyecto</strong>.</li><li>Pulse el botón papelera en la esquina inferior derecha.</li></ol>",
 	"keywords":	"borrar proyecto, eliminar proyecto"
 },
-{	"category": "Esquemas", 
-	"question": "¿Cómo busco en un esquema?", 
-	"answer":	"<ol><li>Cambie a la escena <strong>Todos los elementos</strong>.</li><li>Seleccione <strong>Todos</strong> (ámbitos).</li><li>Pulse el botón Buscar: <img src='images/sample/icon-search.png' width=32 height=32 align='top'></li><li>Escriba una palabra o frase.</li><li>Seleccione un elemento.</li><li>Pulse el botón “Mostrar en Esquema”: <img src='images/outline-icon.png' align='top' /></li></ol>", 
-	"keywords": "tarea, buscar, incompleta, acabada" 
-}, 
+{	"category": "Esquemas",
+	"question": "¿Cómo busco en un esquema?",
+	"answer":	"<ol><li>Cambie a la escena <strong>Todos los elementos</strong>.</li><li>Seleccione <strong>Todos</strong> (ámbitos).</li><li>Pulse el botón Buscar: <img src='images/sample/icon-search.png' width=32 height=32 align='top'></li><li>Escriba una palabra o frase.</li><li>Seleccione un elemento.</li><li>Pulse el botón “Mostrar en Esquema”: <img src='images/outline-icon.png' align='top' /></li></ol>",
+	"keywords": "tarea, buscar, incompleta, acabada"
+},
 {	"category": "Esquemas",
 	"question": "Tengo muchas listas parecidas. ¿Puedo crear una plantilla?",
 	"answer":	"No directamente.<ul><li>Las tareas periódicas pueden tener hijos (prerrequisitos), que son actualizados cuando la tarea padre se repite.</li><li>Aunque puede crear un proyecto local genérico, exportarlo y luego re-importarlo varias veces con distintos nombres.</li></ul>",
@@ -137,7 +137,7 @@
 },
 {	"category": "Basecamp Classic",
 	"question":	"¿Cómo me inscribo en una cuenta de Basecamp Classic?",
-	"answer":	"Use un navegador web para visitar <a href='https://signup.37signals.com/basecamp/Free/signup/'>https://signup.37signals.com/basecamp/Free/signup/</a>.  El API Basecamp Classic (Application Program Interface) no permite la creación de cuentas.",
+	"answer":	"Use un navegador web para visitar <a href='https://signup.37signals.com/basecamp/Free/signup/' rel=\"noreferrer nofollow noopener external\">https://signup.37signals.com/basecamp/Free/signup/</a>.  El API Basecamp Classic (Application Program Interface) no permite la creación de cuentas.",
 	"keywords": "crear cuenta, nueva cuenta"
 },
 {	"category": "Basecamp Classic",
@@ -240,9 +240,9 @@
 	"question":	"¿Puedo hacer una copía de seguridad de Outline Tracker usando la aplicación Save/Restore de webOS Internals?",
 	"answer":	"Save/Restore no está desarrollado ni soportado por Hominid Software, y es un programa beta.  Recomendamos el uso de la opción del menú de Outline Tracker <strong>Backup via correo</strong> como copía de seguridad principal.  Puede usar Save/Restore v. 0.9.3 o posterior con las siguientes precauciones:<ul><li><strong>DEBE cerrar Outline Tracker antes de ejecutar Save/Restore</strong>.</li><li>Después de restaurar, borre todos los proyectos Basecamp Classic, luego en la escena de Cuentas, pulse <strong>Descargar cambios ahora</strong> para restaurar copias actualizadas.</li></ul>"
 },
-{	"category": "Tabletas", 
-	"question": "¿Trabaja Outline Tracker de forma diferente en tabletas?", 
-	"answer":	"<ul><li>webOS 3.0.x breaks the People Picker, so the “seleccionar de contactos” menu selection is disabled.</li><li>Conectar un teclado Bluetotooth evitará que el teclado en pantalla aparezca.</li><li>Outline Tracker puede aprovechar más la pantalla con la orientación vertical.</li></li>", 
-	"keywords":	"TouchPad, webos 3.0" 
+{	"category": "Tabletas",
+	"question": "¿Trabaja Outline Tracker de forma diferente en tabletas?",
+	"answer":	"<ul><li>webOS 3.0.x breaks the People Picker, so the “seleccionar de contactos” menu selection is disabled.</li><li>Conectar un teclado Bluetotooth evitará que el teclado en pantalla aparezca.</li><li>Outline Tracker puede aprovechar más la pantalla con la orientación vertical.</li></li>",
+	"keywords":	"TouchPad, webos 3.0"
 }
 ]

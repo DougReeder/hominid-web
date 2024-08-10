@@ -43,9 +43,9 @@
 					<hr />
 					<h2>David Allen's Getting Things Done®</h2>
 
-					<p>GTD is described in the book <a href='https://books.google.com/books?id=WXcHwzaUd4MC&printsec=frontcover&dq=%22Getting+things+done%22&cd=1#v=onepage&q=&f=false'>Getting Things Done</a>.
+					<p>GTD is described in the book <a href='https://books.google.com/books?id=WXcHwzaUd4MC&printsec=frontcover&dq=%22Getting+things+done%22&cd=1#v=onepage&q=&f=false' rel="noreferrer nofollow noopener external">Getting Things Done</a>.
 					An overview is available
-					<a href='https://en.wikipedia.org/wiki/Getting_Things_Done'>on Wikipedia</a>.</p>
+					<a href='https://en.wikipedia.org/wiki/Getting_Things_Done' rel="noreferrer nofollow noopener external">on Wikipedia</a>.</p>
 
 					<h3>«Buckets» (Cubos)</h3>
                     <ul>
@@ -218,7 +218,7 @@ Recuerde que si le roban o pierde su dispositivo, las copias de seguridad que no
 			</div> <!-- End #main -->
 
 			<div id='footer'>
-				<a href='https://www.webos-internals.org/wiki/Application:Preware'>
+				<a href='https://www.webos-internals.org/wiki/Application:Preware' rel="noreferrer nofollow noopener external">
 					Available via Preware
 				</a>
 				<br /><img src='../aux/cu.png' width='310' height='20' alt='' />

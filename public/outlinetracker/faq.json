@@ -32,7 +32,7 @@
 {	"category": "To-Do/Waiting Scenes",
 	"question":	"I've checked a task complete. Why doesn't its dependent task appear in a To-Do scene?",
 	"answer":	"Tap the Place button in the header: <div class='headerInsetSample'><div class='headerInsetWrapperSample'>Lorem</div></div><br />and re-select the Place you're at.<br /><br />If the dependent task still doesn't appear, it may have another undone prerequisite (child), it may have its Place or Responsible person set to the wrong value, or it may have Lead Time set.",
-	"keywords":	"to do"	
+	"keywords":	"to do"
 },
 {	"category": "To-Do/Waiting Scenes",
 	"question": "I have many similar tasks. Can I enter the details only once?",
@@ -137,7 +137,7 @@
 },
 {	"category": "Basecamp Classic",
 	"question":	"How do I sign up for a Basecamp Classic account?",
-	"answer":	"Use a web browser to visit <a href='https://signup.37signals.com/basecamp/Free/signup/'>https://signup.37signals.com/basecamp/Free/signup/</a>.  The Basecamp Classic API (Application Program Interface) does not allow the creation of accounts.",
+	"answer":	"Use a web browser to visit <a href='https://signup.37signals.com/basecamp/Free/signup/' rel=\"noreferrer nofollow noopener external\">https://signup.37signals.com/basecamp/Free/signup/</a>.  The Basecamp Classic API (Application Program Interface) does not allow the creation of accounts.",
 	"keywords": "create account, new account"
 },
 {	"category": "Basecamp Classic",
