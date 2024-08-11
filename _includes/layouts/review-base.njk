@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title + " — " + metadata.reviewTitle if title else metadata.reviewTitle }}</title>
-	<meta property="og:title" content="{{ title if title else metadata.reviewTitle }}" />
+	<meta name="author" content="{{ author.name or metadata.author.name }}" />
+	{% if description %}
+	<meta name="description" content="{{ description }}">
+	{%- endif %}
+	<meta property="og:title" content="{{ title or metadata.reviewTitle }}" />
+	<meta property="og:description" content="{{ description or metadata.reviewDescription }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
 	<meta property="og:site_name" content="{{ metadata.reviewTitle }}" />
-	{% if description -%}
-		<meta name="description" content="{{ description }}">
-		<meta property="og:description" content="{{ description }}" />
-	{%- endif %}
 	{% if previewImage.url -%}
 		<meta property="og:image" content="{{ metadata.origin + previewImage.url }}" />
 	{%- endif %}

@@ -7,6 +7,10 @@ tags:
   - application
   - PWA
   - webOS
+previewImage:
+  url: /img/j1WkIpo6hY-320.jpeg
+  width: 320
+  height: 569
 ---
 ## Outline Tracker
 

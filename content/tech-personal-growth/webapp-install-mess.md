@@ -1,5 +1,6 @@
 ---
 title: The Mess That Is Installing a WebApp
+description: Almost all platforms support installing a PWA, but prompting the user is still fragmented.
 date: 2023-12-06
 tags:
 - webapp

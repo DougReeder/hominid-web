@@ -5,6 +5,10 @@ date: 2014-09-17
 tags:
 - iOS
 - Android
+previewImage:
+  url: /img/lDs-ydmFC6-608.avif
+  width: 608
+  height: 784
 ---
 
 _Delivered to [ColumbusJS](https://columbusjs.org/) in [September 2014](https://columbusjs.org/09-17-2014/javascript-hardware-night.html)_

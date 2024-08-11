@@ -5,10 +5,6 @@ date: 2024-08-03
 tags:
 - romantic comedy
 - movie
-previewImage:
-  url: https://upload.wikimedia.org/wikipedia/en/e/e6/Whilesleepingposter.jpg
-  width: 258
-  height: 386
 ---
 review © 2024 by P. Douglas Reeder
 

@@ -4,6 +4,10 @@ description: The Mästermyr chest has several unexpected design features which p
 date: 2002-07-03
 tags:
   - viking
+previewImage:
+  url: /img/sb3-qSivQq-504.avif
+  width: 504
+  height: 360
 ---
 
 _originally posted to the Norsefolk email list_
