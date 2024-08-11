@@ -5,6 +5,15 @@ tags:
   - novel
   - science fiction
   - Poul Anderson
+itemReviewed:
+  "@type": Book
+  name: The Avatar
+  author: { "@type": "Person", "familyName": "Anderson", "givenName": "Poul" }
+  publisher: { "@type": "Organization", "name": "Berkley Publishing Corp." }
+  copyrightYear: 1978
+  numberOfPages: 380
+  isbn: 0-399-12228-1
+  genre: SF
 ---
 review ©️ 1995 by P. Douglas Reeder
 

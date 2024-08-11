@@ -4,6 +4,10 @@ date: 2022-11-20
 tags:
   - manga
   - Kishōtenketsu
+itemReviewed:
+  "@type": Book
+  name: I Want to Eat your Pancreas
+  author: { "@type": "Person", "familyName": "Sumino", "givenName": "Yoru" }
 ---
 review Copyright © 2022 by Doug Reeder
 

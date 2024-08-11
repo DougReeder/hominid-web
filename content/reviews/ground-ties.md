@@ -4,6 +4,14 @@ date: 1993-05-15
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: Ground-Ties
+  author: { "@type": "Person", "familyName": "Fancher", "givenName": "Jane", "additionalName": "S." }
+  publisher: { "@type": "Organization", "name": "Warner Books, Inc." }
+  copyrightYear: 1991
+  numberOfPages: 376
+  genre: SF
 ---
 
 review ©️ 1993 by P. Douglas Reeder

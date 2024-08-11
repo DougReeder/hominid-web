@@ -5,6 +5,15 @@ tags:
   - novel
   - science fiction
   - Iain M. Banks
+itemReviewed:
+  "@type": Book
+  name: Excession
+  author: { "@type": "Person", "familyName": "Banks", "givenName": "Iain", "additionalName": "M." }
+  publisher: { "@type": "Organization", "name": "Bantam Books" }
+  copyrightYear: 1996
+  numberOfPages: 390
+  isbn: 0-553-37460-5
+  genre: SF
 ---
 
 Review copyright 1998 by P. Douglas Reeder

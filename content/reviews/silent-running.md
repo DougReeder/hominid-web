@@ -4,6 +4,13 @@ date: 2020-11-07
 tags:
   - movie
   - science fiction
+itemReviewed:
+  "@type": Movie
+  name: Silent Running
+  image: https://upload.wikimedia.org/wikipedia/en/4/46/Silent_running.jpg
+  copyrightYear: 1972
+  director: { "@type": "Person", "giveName": "Douglas", "familyName": "Trumbull" }
+  genre: SF
 ---
 Review ©️ 2020 by P. Douglas Reeder
 

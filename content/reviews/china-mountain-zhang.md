@@ -4,6 +4,15 @@ date: 1993-06-14
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: China Mountain Zhang
+  author: { "@type": "Person", "familyName": "McHugh", "givenName": "Maureen", "additionalName": "F." }
+  publisher: { "@type": "Organization", "name": "Tom Doherty Associates" }
+  copyrightYear: 1992
+  numberOfPages: 312
+  isbn: ISBN 0-812-50892-0
+  genre: SF
 ---
 
 review ©️ 1993 by P. Douglas Reeder

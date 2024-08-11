@@ -4,6 +4,14 @@ date: 1995-05-29
 tags:
   - movie
   - science fiction
+itemReviewed:
+  "@type": Movie
+  name: Johnny Mnemonic
+  image: https://upload.wikimedia.org/wikipedia/en/7/7b/Johnny_mnemonic_ver1.jpg
+  copyrightYear: 1995
+  director: { "@type": "Person", "familyName": "Longo", "givenName": "Robert" }
+  actor: { "@type": "Person", "familyName": "Reeves", "givenName": "Keanu"  }
+  genre: Cyberpunk
 ---
 
 review © 1995 by P. Douglas Reeder

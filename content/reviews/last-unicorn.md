@@ -1,10 +1,18 @@
 ---
 title: “The Last Unicorn” by Peter S. Beagle
+description: A Post-modern, but not fractured, fairy-tale
 date: 2021-12-17
 tags:
   - post-modernism
   - novel
   - fantasy
+itemReviewed:
+  "@type": Book
+  name: The Last Unicorn
+  author:
+    "@type": Person
+    name: Peter S. Beagle
+  genre: fantasy
 ---
 
 Review © 2021 Doug Reeder

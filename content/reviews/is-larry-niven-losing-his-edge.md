@@ -7,6 +7,20 @@ tags:
   - collection
   - science fiction
   - Larry Niven
+itemReviewed:
+  - "@type": Book
+    name: Rainbow Mars
+    author: { "@type": "Person", "familyName": "Niven", "givenName": "Larry" }
+    genre: SF
+    publisher: { "@type": "Organization", "name": "Tom Doherty Assoc." }
+    copyrightYear: 1999
+    numberOfPages: 316
+    isPartOf: { "@type": "BookSeries", "name": "Svetz series" }
+  - "@type": Book
+    name: The Ringworld Throne
+    author: { "@type": "Person", "familyName": "Niven", "givenName": "Larry" }
+    genre: SF
+    isPartOf: { "@type": "BookSeries", "name": "Ringworld series" }
 ---
 
 A review of _The Ringworld Throne_ and _Rainbow Mars_

@@ -5,6 +5,44 @@ tags:
   - magazine
   - short story
   - science fiction
+  - Charles Sheffield
+itemReviewed:
+  "@type": PublicationIssue
+  issueNumber: 1
+  editor: { "@type": "Person", "familyName": "Edelman", "givenName": "Scott" }
+  author:
+    - { "@type": "Person", "familyName": "Edelman", "givenName": "Scott" }
+    - { "@type": "Person", "familyName": "Andrews", "givenName": "Arlan" }
+    - { "@type": "Person", "familyName": "Baker", "givenName": "Eric", "additionalName": "T." }
+    - { "@type": "Person", "familyName": "Bishop", "givenName": "Michael" }
+    - { "@type": "Person", "familyName": "Castro", "givenName": "Adam-Troy" }
+    - { "@type": "Person", "familyName": "Chezem", "givenName": "Doug" }
+    - { "@type": "Person", "familyName": "Crispin", "givenName": "Ann" }
+    - { "@type": "Person", "familyName": "Cross", "givenName": "Ronald", "additionalName": "Anthony" }
+    - { "@type": "Person", "familyName": "Di Fate", "givenName": "Vincent" }
+    - { "@type": "Person", "familyName": "Di Filippo", "givenName": "Paul" }
+    - { "@type": "Person", "familyName": "Ellison", "givenName": "Harlan" }
+    - { "@type": "Person", "familyName": "Gardner", "givenName": "Craig", "additionalName": "Shaw" }
+    - { "@type": "Person", "familyName": "Goulart", "givenName": "Ron" }
+    - { "@type": "Person", "familyName": "Kamajiyan", "givenName": "Al" }
+    - { "@type": "Person", "familyName": "Kessel", "givenName": "John" }
+    - { "@type": "Person", "familyName": "Landis", "givenName": "Geoffrey", "additionalName": "A." }
+    - { "@type": "Person", "familyName": "Lunsford", "givenName": "Annie" }
+    - { "@type": "Person", "familyName": "Malzberg", "givenName": "Barry" }
+    - { "@type": "Person", "familyName": "Morissey", "givenName": "Pat" }
+    - { "@type": "Person", "familyName": "Nelson", "givenName": "Resa" }
+    - { "@type": "Person", "familyName": "O’Neill", "givenName": "Gene" }
+    - { "@type": "Person", "familyName": "Pournelle", "givenName": "Jerry" }
+    - { "@type": "Person", "familyName": "Sterling", "givenName": "Bruce" }
+    - { "@type": "Person", "familyName": "Sheffield", "givenName": "Charles" }
+    - { "@type": "Person", "familyName": "Webb", "givenName": "Don" }
+    - { "@type": "Person", "familyName": "Whelan", "givenName": "Michael" }
+  isPartOf:
+    "@type": [ "PublicationVolume", "Periodical" ]
+    name: Science Fiction Age
+    volumeNumber: 1
+  datePublished: 1992-11-01
+  genre: SF
 ---
 
 review Copyright © 1992 by Doug Reeder

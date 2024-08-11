@@ -4,6 +4,15 @@ date: 1992-07-08
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: The Universe Maker
+  author: { "@type": "Person", "familyName": "Van Vogt", "givenName": "A.", "additionalName": "E." }
+  publisher: { "@type": "Organization", "name": "Carrol & Graf" }
+  copyrightYear: 1953
+  numberOfPages: 192
+  isbn: ISBN 0-88184-841-7
+  genre: SF
 ---
 
 review © 1992 by Doug Reeder

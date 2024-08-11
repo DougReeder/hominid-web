@@ -4,6 +4,12 @@ date: 2022-01-02
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: Slan
+  author: { "@type": "Person", "familyName": "Van Vogt", "givenName": "A.", "additionalName": "E." }
+  copyrightYear: 1946
+  genre: SF
 ---
 
 Review © 2022 by Doug Reeder

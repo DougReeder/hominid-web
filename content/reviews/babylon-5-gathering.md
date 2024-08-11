@@ -4,6 +4,18 @@ date: 1993-03-01
 tags:
   - television
   - science fiction
+  - Babylon-5
+itemReviewed:
+  "@type": TVEpisode
+  name: The Gathering
+  director: { "@type": "Person", "name": "J. Michael Straczynski" }
+  episodeNumber: 1
+  partOfSeason: 1
+  partOfSeries:
+    "@type": CreativeWorkSeries
+    name: Babylon-5
+  datePublished: 1993-02-22
+  genre: SF
 ---
 
 review by P. Douglas Reeder, ©️ 1993

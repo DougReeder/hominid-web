@@ -4,6 +4,13 @@ date: 1993-03-03
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: A Woman of the Iron People
+  author: { "@type": "Person", "familyName": "Arnason", "givenName": "Eleanor" }
+  publisher: { "@type": "Organization", "name": "William Morrow & Co." }
+  copyrightYear: 1991
+  genre: SF
 ---
 
 review ©️ 1993 by P. Douglas Reeder

@@ -13,6 +13,7 @@ module.exports = {
 	reviewDescription: "A critical review",
 	presentationDescription: "A technical presentation at ColumbusJS, VRColumbus or elsewhere",
 	author: {
+		"@type": "Person",
 		name: "Doug Reeder",
 		email: "reeder.29@gmail.com",
 		url: "https://hominidsoftware.com/about/"

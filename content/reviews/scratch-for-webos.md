@@ -4,6 +4,16 @@ date: 2010-11-04
 tags:
   - application
   - webOS
+itemReviewed:
+  "@type": MobileApplication
+  name: Scratch!
+  author: { "@type": "Organization", "name": "No Insult Software" }
+  applicationCategory: productivity
+  applicationSubCategory: word processor
+  availableOnDevice: Palm Pre
+  operatingSystem: Palm webOS
+  reviewRating: {"@type": "Rating", "ratingValue": 3, "bestRating": 5, "worstRating":  1}
+  archivedAt: https://appcatalog.webosarchive.org/showMuseumDetails.php?app=2481
 ---
 
 The necessary functions for a word processor are here, but the user interface could use some thought.

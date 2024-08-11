@@ -4,6 +4,13 @@ date: 1995-08-08
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: The Last Starship from Earth
+  author: { "@type": "Person", "familyName": "Boyd", "givenName": "John" }
+  publisher: { "@type": "Organization", "name": "Weybright & Talley, Inc." }
+  copyrightYear: 1968
+  genre: SF
 ---
 Review by P. Douglas Reeder
 

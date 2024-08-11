@@ -5,6 +5,13 @@ tags:
   - novel
   - science fiction
 draft: true
+itemReviewed:
+  "@type": Book
+  name: Hastur Lord
+  author:
+    - { "@type": "Person", "familyName": "Bradley", "givenName": "Marion", "additionalName": "Zimmer" }
+    - { "@type": "Person", "familyName": "Ross", "givenName": "Deborah", "additionalName": "J." }
+  genre: SF
 ---
 
 review copyright © 2010 by P. Douglas Reeder

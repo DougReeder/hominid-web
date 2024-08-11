@@ -28,6 +28,25 @@
 		<meta property="article:tag" content="{{ tag }}">
 	{% endfor %}
 
+	{% if itemReviewed -%}
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "Review",
+			"name": "{{ title }}",
+			"author": {{ author or metadata.author | dump | safe }},
+			"itemReviewed": {{ itemReviewed | dump | safe }},
+	{% if description -%}
+			"description": "{{ description }}",
+	{%- endif %}
+	{% if previewImage.url -%}
+			"image": "{{ metadata.origin + previewImage.url }}",
+	{%- endif %}
+			"datePublished": "{{ date | htmlDateString }}"
+		}
+	</script>
+	{%- endif %}
+
 	{#- Atom and JSON feeds included by default #}
 	<link rel="alternate" href="/feed/reviewFeed.xml" type="application/atom+xml" title="{{ metadata.reviewTitle }}">
 	<link rel="alternate" href="/feed/reviewFeed.json" type="application/json" title="{{ metadata.reviewTitle }}">

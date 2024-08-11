@@ -4,6 +4,13 @@ date: 1995-01-02
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: The Cult of Loving Kindness
+  author: { "@type": "Person", "familyName": "Park", "givenName": "Paul" }
+  copyrightYear: 1991
+  genre: SF
+  isPartOf: { "@type": "BookSeries", "name": "Starbridge Chronicles" }
 ---
 
 review ©️1995 by P. Douglas Reeder

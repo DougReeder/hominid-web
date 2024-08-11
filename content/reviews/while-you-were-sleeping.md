@@ -5,6 +5,13 @@ date: 2024-08-03
 tags:
 - romantic comedy
 - movie
+itemReviewed:
+  "@type": Movie
+  name: While You Were Sleeping
+  image: https://upload.wikimedia.org/wikipedia/en/e/e6/Whilesleepingposter.jpg
+  copyrightYear: 1995
+  director: { "@type": "Person", "name": "Jon Turteltaub" }
+  actor: { "@type": "Person", "name": "Sandra Bullock" }
 ---
 review © 2024 by P. Douglas Reeder
 

@@ -4,6 +4,15 @@ date: 1993-07-11
 tags:
   - novella
   - parable
+itemReviewed:
+  "@type": Book
+  name: City of Truth
+  author: { "@type": "Person", "familyName": "Morrow", "givenName": "James" }
+  publisher: { "@type": "Organization", "name": "St. Martin’s" }
+  copyrightYear: 1990
+  numberOfPages: 104
+  isbn: 0-312-07672-X
+  genre: SF
 ---
 
 Review © 1993 by P. Douglas Reeder

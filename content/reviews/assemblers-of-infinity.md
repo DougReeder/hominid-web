@@ -1,9 +1,25 @@
 ---
 title: “Assemblers of Infinity” by Kevin J. Anderson & Doug Beason
+description: alien nanomachines assemble artifact on the Moon
 date: 1992-11-17
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Article
+  name: Assemblers of Infinity
+  author:
+    - { "@type": "Person", "familyName": "Anderson", "givenName": "Kevin", "additionalName": "J." }
+    - { "@type": "Person", "familyName": "Beason", "givenName": "Doug" }
+  isPartOf:
+    "@type": PublicationIssue
+    issueNumber: [11, 12, 13, 14]
+    isPartOf:
+      "@type": [ "PublicationVolume", "Periodical" ]
+      name: Analog Science Fiction and Fact
+      volumeNumber: 112
+  datePublished: 1992-09-01
+  genre: SF
 ---
 
 review by P. Douglas Reeder

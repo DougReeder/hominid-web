@@ -4,6 +4,16 @@ date: 1998-07-02
 tags:
   - novel
   - science fiction
+  - Charles Sheffield
+itemReviewed:
+  "@type": Book
+  name: Proteus Unbound
+  author: { "@type": "Person", "familyName": "Sheffield", "givenName": "Charles" }
+  publisher: { "@type": "Organization", "name": "Del Ray/Ballantine" }
+  copyrightYear: 1989
+  numberOfPages: 262
+  isbn: 0-345-34434-0
+  genre: SF
 ---
 
 Review © 1998 P. Douglas Reeder

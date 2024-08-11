@@ -4,6 +4,16 @@ date: 1993-09-19
 tags:
   - novel
   - science fiction
+  - robot
+itemReviewed:
+  "@type": Book
+  name: Virtual Girl
+  author: { "@type": "Person", "familyName": "Thomson", "givenName": "Amy" }
+  publisher: { "@type": "Organization", "name": "Ace Books / The Berkely Publishing Group" }
+  copyrightYear: 1993
+  numberOfPages: 248
+  isbn: 0-441-86500-3
+  genre: SF
 ---
 
 review © 1993 by P. Douglas Reeder

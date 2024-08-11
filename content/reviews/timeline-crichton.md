@@ -4,6 +4,13 @@ date: 2003-08-20
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: Timeline
+  author: { "@type": "Person", "familyName": "Crichton", "givenName": "Michael" }
+  publisher: { "@type": "Organization", "name": "Random House" }
+  copyrightYear: 1999
+  isbn: 0-375-40873-8
 ---
 
 Review ©️ 2003 by P. Douglas Reeder

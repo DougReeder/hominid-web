@@ -4,6 +4,16 @@ date: 1993-06-20
 tags:
   - novel
   - science fiction
+  - Charles Sheffield
+itemReviewed:
+  "@type": Book
+  name: The Mind Pool
+  author: { "@type": "Person", "familyName": "Sheffield", "givenName": "Charles" }
+  publisher: { "@type": "Organization", "name": "Baen Publishing enterprises" }
+  copyrightYear: 1993
+  numberOfPages: 420
+  isbn: 0-671-72165-8
+  genre: SF
 ---
 
 Review ©️ 1993 by P. Douglas Reeder

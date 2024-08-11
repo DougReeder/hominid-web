@@ -4,6 +4,10 @@ date: 2021-03-30
 tags:
   - post-modernism
   - novel
+itemReviewed:
+  "@type": Book
+  name: The French Lieutenant’s Woman
+  author: { "@type": "Person", "familyName": "Fowles", "givenName": "John" }
 ---
 
 Review copyright © 2021 by Doug Reeder

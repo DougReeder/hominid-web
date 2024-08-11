@@ -5,6 +5,14 @@ date: 2024-07-30
 tags:
 - movie
 - caper
+itemReviewed:
+  "@type": Movie
+  name: The Italian Job
+  image: https://en.wikipedia.org/wiki/The_Italian_Job#/media/File:The_Italian_Job_1969_poster.jpg
+  copyrightYear: 1969
+  director: { "@type": "Person", "familyName": "Collinson", "givenName": "Peter" }
+  actor: { "@type": "Person", "familyName": "Caine", "givenName": "Michael" }
+  genre: crime
 ---
 
 review © 2024 by P. Douglas Reeder

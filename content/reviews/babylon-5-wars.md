@@ -4,6 +4,14 @@ date: 1997-09-02
 tags:
   - game
   - science fiction
+  - Babylon-5
+itemReviewed:
+  "@type": Game
+  name: Babylon-5 Wars
+  author: { "@type": "Organization", "name": "Agents of Gaming" }
+  copyrightYear: 1997
+  genre: SF
+  gameLocation: Babylon-5
 ---
 
 Review Copyright 1997 by P. Douglas Reeder
@@ -26,6 +34,6 @@ Production values are generally good: the counters are printed in full color, bu
 
 The only change I would make to the rules is to allow the energy normally allocated to a weapon that has been destroyed to be used for something else. This allows ships with a moderate amount of damage to escape into hyperspace, bringing the game in line with the TV series, and making it less bloody.
 
-Little role-playing is possible within the scope of the B-5 Wars rules, although there is provision for exceptional helmsmen, engineers and fighter pilots, and telepaths could give a bonus to initiative. RPG fans may want to investigate "Babylon Project" an RPG from Chameleon Eclectic. If you want to combine role-playing with spaceship combat, I recommend you use the GURPS Space supplement from Steve Jackson Games, which gives excellent rules to play space battles in an RPG, and allows maximum scope for individual action.
+Little role-playing is possible within the scope of the B-5 Wars rules, although there is provision for exceptional helmsmen, engineers and fighter pilots, and telepaths could give a bonus to initiative. RPG fans may want to investigate "Babylon Project", an RPG from Chameleon Eclectic. If you want to combine role-playing with spaceship combat, I recommend you use the GURPS Space supplement from Steve Jackson Games, which gives excellent rules to play space battles in an RPG, and allows maximum scope for individual action.
 
 All in all, Babylon-5 Wars is a playable but complex game.

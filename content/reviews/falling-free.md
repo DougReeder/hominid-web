@@ -5,6 +5,15 @@ tags:
   - novel
   - science fiction
   - Lois McMaster Bujold
+itemReviewed:
+  "@type": Book
+  name: Falling Free
+  author: { "@type": "Person", "familyName": "Bujold", "givenName": "Lois", "additionalName": "McMaster" }
+  publisher: { "@type": "Organization", "name": "Baen Books" }
+  copyrightYear: 1988
+  numberOfPages: 307
+  isbn: 0-671-65398-9
+  genre: SF
 ---
 
 review ©️ 1993 by P. Douglas Reeder

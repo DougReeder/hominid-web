@@ -1,9 +1,19 @@
 ---
 title: “The Peace War” by Vernor Vinge
+description: melodramatic SF action-adventure
 date: 1996-05-05
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: The Peace War
+  author: { "@type": "Person", "familyName": "Vinge", "givenName": "Vernor" }
+  publisher: { "@type": "Organization", "name": "Bluejay Books, Inc." }
+  copyrightYear: 1984
+  numberOfPages: 286
+  isbn: 0-312-94342-3
+  genre: SF
 ---
 
 Review ©️ 1996 by P. Douglas Reeder

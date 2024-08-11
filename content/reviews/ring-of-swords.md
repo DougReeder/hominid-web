@@ -4,6 +4,15 @@ date: 1995-07-11
 tags:
   - novel
   - science fiction
+itemReviewed:
+  "@type": Book
+  name: Ring of Swords
+  author: { "@type": "Person", "familyName": "Arnason", "givenName": "Eleanor" }
+  publisher: { "@type": "Organization", "name": "Tom Doherty Associates, Inc." }
+  copyrightYear: 1993
+  numberOfPages: 262
+  isbn: 0-312-85518-4
+  genre: SF
 ---
 
 review by P. Douglas Reeder
@@ -12,7 +21,7 @@ Two things are indisputable about Arnason’s writing: she is a writer of skill 
 
 Ring of Swords is about sexuality, gender, and society. It takes place in a future where humans and the only other known intelligent species, the hwarath, have been skirmishing for forty years since their initial contact. Now peace negotiations are under way.
 
-Anna is a researcher,studying some possibly intelligent jellyfish, caught up in events. Nicholas Sanders was on a spying expedition into Hwarath space, captured, and turned. First Defender Ettin Gwarha is a leader of the Hwarath. The text consists of third-person narration from Anna’s point of view and numerous extended excerpts from Sanders’s journal commented upon by Gwarha.
+Anna is a researcher, studying some possibly intelligent jellyfish, caught up in events. Nicholas Sanders was on a spying expedition into Hwarath space, captured, and turned. First Defender Ettin Gwarha is a leader of the Hwarath. The text consists of third-person narration from Anna’s point of view and numerous extended excerpts from Sanders’s journal commented upon by Gwarha.
 
 The oldest Hwarath symbol for themselves is a hearth-fire of women and children, surrounded by a ring of warlike men. In modern Hwarath society, most men are out in space, exploring and skirmishing with aliens, and almost all women and children are on the home planet. Homosexual sex is considered normal, heterosexual sex is forbidden, and the Hwarath reproduce by artificial insemination. Naturally, Hwarath and humans are troubled by each other's existence.
 
