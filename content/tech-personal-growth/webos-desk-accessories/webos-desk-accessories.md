@@ -5,6 +5,7 @@ date: 2011-10-25
 tags:
   - user experience
   - webOS
+  - mobile
 previewImage:
   url: /img/PopupCalc-Calendar.png
   width: 1024

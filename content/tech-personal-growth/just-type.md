@@ -5,6 +5,7 @@ date: 2011-08-13
 tags:
   - user experience
   - webOS
+  - mobile
   - indexing/search
 ---
 

@@ -2,7 +2,9 @@
 title: Transitions
 description: Palm OS → webOS 1.x → webOS 2.x → ?
 date: 2011-02-11
-tags: webOS
+tags:
+  - webOS
+  - mobile
 ---
 HP/Palm's presentation yesterday showed some solid hardware and innovative user interfaces.  The new Enyo framework presented to developers is in position to make webOS live up to its initial promise of developing like developing for the web, rather than merely making use of web technologies.
 

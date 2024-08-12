@@ -3,7 +3,8 @@ title: "Maps — Digital vs. Paper"
 description: Limitations of digital maps
 date: 2009-07-03
 tags:
-	- maps
+  - maps
+  - mobile
 ---
 My pre-electronic handheld mapping tool was a Rand-McNally road atlas.  50 states, 12 provinces, and Mexico if I ever needed it.  I always made sure I had human-written directions for the last few streets.  And, you know, the only problems I had were bad signs (and my poor ability to spot small signs while driving). It only took a few seconds to flip to the right page, and the detail maps were there, too.   Of course, the detail for cities was limited, and often there was no detail map at all where I was headed.  But it got me there.
 

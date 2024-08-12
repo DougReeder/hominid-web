@@ -4,6 +4,7 @@ date: 2010-11-04
 tags:
   - application
   - webOS
+  - mobile
 itemReviewed:
   "@type": MobileApplication
   name: Scratch!

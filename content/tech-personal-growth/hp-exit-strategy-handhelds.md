@@ -3,7 +3,8 @@ title: HP's Exit Strategy for Handhelds
 description: It's easier to sell a going concern
 date: 2011-08-19
 tags:
-	- webOS
+  - webOS
+  - mobile
 ---
 
 There is wide agreement that HP's hardware (and before that, Palm's hardware) for webOS was not as good as it needed to be, to compete.  HP failed, over the course of a year, to use its "scale" to properly sell the devices it did have.  So, it's reasonable for HP to stop making webOS hardware.

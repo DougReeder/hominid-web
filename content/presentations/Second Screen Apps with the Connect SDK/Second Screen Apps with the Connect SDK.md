@@ -5,6 +5,7 @@ date: 2014-09-17
 tags:
 - iOS
 - Android
+- mobile
 previewImage:
   url: /img/lDs-ydmFC6-608.avif
   width: 608

@@ -4,6 +4,7 @@ description: The Apple Newton ecosystem is maturing, but the Newton isn't a grea
 date: 1994-05-18
 tags:
 - PDA
+- mobile
 - Apple
 - memos/notes
 ---
