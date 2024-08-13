@@ -53,6 +53,8 @@
 
 	{%- if canonicalUrl %}
 		<link rel="canonical" href="{{ canonicalUrl }}" />
+	{% else %}
+		<link rel="canonical" href="{{ metadata.origin + page.url }}" />
 	{%- endif %}
 
 	{#-

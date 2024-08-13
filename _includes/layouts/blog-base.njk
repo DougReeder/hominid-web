@@ -34,6 +34,8 @@
 
 		{%- if canonicalUrl %}
 		<link rel="canonical" href="{{ canonicalUrl }}" />
+		{% else %}
+		<link rel="canonical" href="{{ metadata.origin + page.url }}" />
 		{%- endif %}
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}

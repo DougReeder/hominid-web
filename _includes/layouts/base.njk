@@ -39,6 +39,12 @@
 
 	{#- Renders the CSS bundle using a separate file #}
 	<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+
+	{%- if canonicalUrl %}
+		<link rel="canonical" href="{{ canonicalUrl }}" />
+	{% else %}
+		<link rel="canonical" href="{{ metadata.origin + page.url }}" />
+	{%- endif %}
 </head>
 <body>
 <a href="#skip" class="visually-hidden">Skip to main content</a>
