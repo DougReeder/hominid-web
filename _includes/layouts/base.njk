@@ -21,6 +21,7 @@
 	{% if previewImage.height -%}
 		<meta property="og:image.height" content="{{ previewImage.height }}" />
 	{%- endif %}
+	<meta name="generator" content="{{ eleventy.generator }}">
 
 	{#-
 	CSS bundles are provided via the `eleventy-plugin-bundle` plugin:

@@ -13,6 +13,8 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
 	<meta property="og:site_name" content="{{ metadata.reviewTitle }}" />
+	<meta name="generator" content="{{ eleventy.generator }}">
+
 	{% if previewImage.url -%}
 		<meta property="og:image" content="{{ metadata.origin + previewImage.url }}" />
 	{%- endif %}

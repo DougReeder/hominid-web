@@ -27,6 +27,7 @@
 		{% for tag in tags -%}
 		<meta property="article:tag" content="{{ tag }}">
 		{% endfor %}
+		<meta name="generator" content="{{ eleventy.generator }}">
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.blogTitle }}">
