@@ -9,6 +9,7 @@ const { EleventyHtmlBasePlugin, EleventyI18nPlugin } = require("@11ty/eleventy")
 const readingTime = require('eleventy-plugin-reading-time');
 const brokenLinksPlugin = require("eleventy-plugin-broken-links");
 const externalLinks = require("@aloskutov/eleventy-plugin-external-links");
+const { eleventyPluginContentDates } = require('@web-alchemy/eleventy-plugin-content-dates');
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -52,6 +53,7 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(externalLinks, {url: 'hominidsoftware.com', enableTarget: false,
 		excludedDomains: ['notestogether.hominidsoftware.com', 'serenenotes.hominidsoftware.com']});
+	eleventyConfig.addPlugin(eleventyPluginContentDates);
 
 	// Special collection
 	eleventyConfig.addCollection("archive", function(collectionApi) {

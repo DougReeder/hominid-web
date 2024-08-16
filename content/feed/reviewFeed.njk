@@ -14,12 +14,14 @@ permalink: /feed/reviewFeed.xml
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
+	<generator version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
 	{%- for review in collections.review | reverse %}
 	{% set absoluteReviewUrl %}{{ review.url | htmlBaseUrl(metadata.reviewUrl) }}{% endset %}
 	<entry>
 		<title>{{ review.data.title }}</title>
 		<link href="{{ absoluteReviewUrl }}"/>
-		<updated>{{ review.date | dateToRfc3339 }}</updated>
+		<published>{{ review.date | dateToRfc3339 }}</published>
+		<updated>{{ review.data.dateLastModified | dateToRfc3339 }}</updated>
 		<id>{{ absoluteReviewUrl }}</id>
 		<content type="html">{{ review.templateContent | transformWithHtmlBase(absoluteReviewUrl, review.url) }}</content>
 	</entry>

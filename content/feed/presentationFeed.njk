@@ -14,12 +14,14 @@ permalink: /feed/presentationFeed.xml
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
+	<generator version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
 	{%- for presentation in collections.presentation | reverse %}
 	{% set absolutePresentationUrl %}{{ presentation.url | htmlBaseUrl(metadata.presentationUrl) }}{% endset %}
 	<entry>
 		<title>{{ presentation.data.title }}</title>
 		<link href="{{ absolutePresentationUrl }}"/>
-		<updated>{{ presentation.date | dateToRfc3339 }}</updated>
+		<published>{{ presentation.date | dateToRfc3339 }}</published>
+		<updated>{{ presentation.data.dateLastModified | dateToRfc3339 }}</updated>
 		<id>{{ absolutePresentationUrl }}</id>
 		<content type="html">{{ presentation.templateContent | transformWithHtmlBase(absolutePresentationUrl, presentation.url) }}</content>
 	</entry>

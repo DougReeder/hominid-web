@@ -14,12 +14,14 @@ permalink: /feed/feed.xml
 		<name>{{ metadata.author.name }}</name>
 		<email>{{ metadata.author.email }}</email>
 	</author>
+	<generator version="{{ eleventy.version }}">{{ eleventy.generator }}</generator>
 	{%- for post in collections.post | reverse %}
 	{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.blogUrl) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }}</title>
 		<link href="{{ absolutePostUrl }}"/>
-		<updated>{{ post.date | dateToRfc3339 }}</updated>
+		<published>{{ post.date | dateToRfc3339 }}</published>
+		<updated>{{ post.data.dateLastModified | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content>
 	</entry>

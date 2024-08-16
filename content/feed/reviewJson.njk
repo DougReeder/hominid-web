@@ -13,6 +13,7 @@ permalink: /feed/reviewFeed.json
 		"name": "{{ metadata.author.name }}",
 		"url": "{{ metadata.author.url }}"
 	},
+	"favicon": "{{ metadata.origin }}/favicon.ico",
 	"items": [
 		{%- for review in collections.review | reverse %}
 		{%- set absoluteReviewUrl = review.url | htmlBaseUrl(metadata.reviewUrl) %}
@@ -20,8 +21,10 @@ permalink: /feed/reviewFeed.json
 			"id": "{{ absoluteReviewUrl }}",
 			"url": "{{ absoluteReviewUrl }}",
 			"title": "{{ review.data.title }}",
+			{% if review.data.description %}"summary": "{{ review.data.description }}",{% endif %}
 			"content_html": {% if review.templateContent %}{{ review.templateContent | transformWithHtmlBase(absoluteReviewUrl, review.url) | dump | safe }}{% else %}""{% endif %},
-			"date_published": "{{ review.date | dateToRfc3339 }}"
+			"date_published": "{{ review.date | dateToRfc3339 }}",
+			"date_modified": "{{ review.data.dateLastModified | dateToRfc3339 }}"
 		}
 		{% if not loop.last %},{% endif %}
 		{%- endfor %}
