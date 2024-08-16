@@ -7,6 +7,8 @@ tags:
 - JavaScript
 - VR
 - AR
+abstract: Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don't normally use. I'll cover what's needed and where XR on the WWW is going.
+teaches: WebXR
 ---
 
 _Delivered to [VRColumbus](https://www.meetup.com/vr-columbus/) in [May 2024](https://www.meetup.com/vr-columbus/events/300924576/) and [ColumbusJS](https://columbusjs.org/) in [August 2024](https://www.meetup.com/columbusjs/events/302520579/)_
@@ -14,13 +16,7 @@ _Delivered to [VRColumbus](https://www.meetup.com/vr-columbus/) in [May 2024](ht
 ## [Slides](../../keynote/WebXR%20for%20Web%20Developers)
 
 
-## Abstract
-
-Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don't normally use. I'll cover what's needed and where XR on the WWW is going.
-
-
 ## vs. native
-
 
 * Native apps can fully utilize hardware, but are siloed in development and distributed by gatekeepers
 * Web apps can reach anyone, but you must allow for differing capabilities and can't achieve the performance of native

@@ -7,15 +7,11 @@ tags:
 - PWA
 - user experience
 - webOS
+abstract: The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps. But can these APIs meet your needs?
+teaches: ["Web Share API", "Web Share Target API"]
 ---
 
 _Delivered to [ColumbusJS](https://columbusjs.org/) in [March 2024](https://www.meetup.com/columbusjs/events/299341757/)_
-
-
-## Abstract
-
-The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps. But can these APIs meet your needs?
-
 
 ## Bio
 

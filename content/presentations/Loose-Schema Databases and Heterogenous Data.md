@@ -10,15 +10,13 @@ tags:
 - MongoDB
 - DB8
 - indexing/search
+abstract: Traditional databases are designed around homogenous data. Heterogenous data can be shoehorned into a homogenous format, but constraints are hard to enforce.  A new generation of databases is emerging, which embraces data in varying formats from varying sources.  Access may be with familiar relational operations, or radically different operations such as Map-Reduce.
+teaches: NoSQL
 ---
 
 _Delivered to [ColumbusJS](https://columbusjs.org/) in May 2011_
 
 ## [Slides](../../Loose-Schema%20Databases.pdf)
-
-Abstract
---------
-Traditional databases are designed around homogenous data. Heterogenous data can be shoehorned into a homogenous format, but constraints are hard to enforce.  A new generation of databases is emerging, which embraces data in varying formats from varying sources.  Access may be with familiar relational operations, or radically different operations such as Map-Reduce.
 
 
 Outline

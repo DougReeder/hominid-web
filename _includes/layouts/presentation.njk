@@ -14,6 +14,11 @@ layout: layouts/presentation-base.njk
 	{%- endfor %}
 </ul>
 
+{% if abstract -%}
+	<h2>Abstract</h2>
+	<p>{{ abstract | safe }}</p>
+{%- endif %}
+
 {{ content | safe }}
 
 {%- if collections.presentation %}

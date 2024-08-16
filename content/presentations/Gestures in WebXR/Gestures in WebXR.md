@@ -9,6 +9,8 @@ previewImage:
   url: /img/gRjo8IvDea-608.jpeg
   width: 608
   height: 405
+abstract: The game Barrier Mage implements gesture-based Virtual Reality game play.  The user draws mystic symbols with 6-DOF VR controllers. Each symbol has a different effect. This novel game mechanic eliminates an abstraction layer usual in fantasy games, making this game more immersive.
+teaches: WebXR
 ---
 
 
