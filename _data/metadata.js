@@ -9,9 +9,9 @@ module.exports = {
 	presentationUrl: "https://hominidsoftware.com/presentations/",
 	language: "en",
 	description: "The professional website of Doug Reeder",
-	blogDescription: "An essay on using digital technology to become a better person",
-	reviewDescription: "A critical review",
-	presentationDescription: "A technical presentation at ColumbusJS, VRColumbus or elsewhere",
+	blogDescription: "Essays on using digital technology to become a better person",
+	reviewDescription: "Critical reviews of work in any medium",
+	presentationDescription: "Technical presentations at ColumbusJS, VRColumbus and elsewhere",
 	author: {
 		"@type": "Person",
 		name: "Doug Reeder",

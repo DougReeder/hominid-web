@@ -12,7 +12,7 @@
 	<meta property="og:description" content="{{ description or metadata.reviewDescription }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
-	<meta property="og:site_name" content="{{ metadata.reviewTitle }}" />
+	<meta property="og:site_name" content="{{ metadata.title }}" />
 	<meta name="generator" content="{{ eleventy.generator }}">
 
 	{% if previewImage.url -%}
@@ -31,7 +31,7 @@
 	{% for tag in tags -%}
 		<meta property="article:tag" content="{{ tag }}">
 	{% endfor %}
-   <meta property="article:section" content="{{ metadata.reviewTitle }}">
+	{% if not eleventyNavigation -%} <meta property="article:section" content="{{ metadata.reviewTitle }}"> {%- endif %}
 
 	{% if itemReviewed -%}
 	<script type="application/ld+json">
@@ -48,6 +48,19 @@
 			"image": "{{ metadata.origin + previewImage.url }}",
 	{%- endif %}
 			"datePublished": "{{ date | htmlDateString }}",
+			"dateModified": "{{ dateLastModified | htmlDateString }}",
+			"keywords": [{% for tag in tags | filterTagList -%}"{{ tag }}" {%- if not loop.last %}, {% endif %}{% endfor %}]
+		}
+	</script>
+	{%- elseif eleventyNavigation -%}
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "CollectionPage",
+			"name": "{{ metadata.reviewTitle }}",
+			"author": {{ author or metadata.author | dump | safe }},
+			{% if description -%} "description": "{{ description }}", {%- endif %}
+			"mainContentOfPage": {"@type": "WebPageElement", "cssSelector": ".postlist"},
 			"dateModified": "{{ dateLastModified | htmlDateString }}",
 			"keywords": [{% for tag in tags | filterTagList -%}"{{ tag }}" {%- if not loop.last %}, {% endif %}{% endfor %}]
 		}

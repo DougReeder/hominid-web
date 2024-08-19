@@ -1,10 +1,25 @@
----
-title: About Doug Reeder
-description: about the author
-layout: layouts/base.njk
-eleventyNavigation:
-  key: About Me
+---js
+{
+title: "About Doug Reeder",
+description: "about the website author",
+layout: "layouts/person.njk",
+eleventyNavigation: {
+  key: "About Me",
   order: 6
+},
+tags: [],
+eleventyComputed: {
+  linkedData: function(data) {
+    return Object.assign({
+			"@context": "https://schema.org/",
+			description: data.description,
+			givenName: "Doug",
+			familyName: "Reeder",
+			jobTitle: "WebXR Consultant & Full-stack Developer"
+		}, data.metadata.author);
+  },
+},
+}
 ---
 # About Doug Reeder
 

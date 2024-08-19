@@ -12,7 +12,7 @@
 		<meta property="og:description" content="{{ description or metadata.blogDescription }}" />
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="{{ metadata.origin + page.url }}" />
-		<meta property="og:site_name" content="{{ metadata.blogTitle }}" />
+		<meta property="og:site_name" content="{{ metadata.title }}" />
 		{% if previewImage.url -%}
 			<meta property="og:image" content="{{ metadata.origin + previewImage.url }}" />
 		{%- endif %}
@@ -27,7 +27,23 @@
 		{% for tag in tags -%}
 		<meta property="article:tag" content="{{ tag }}">
 		{% endfor %}
+		{% if not eleventyNavigation -%} <meta property="article:section" content="{{ metadata.blogTitle }}"> {%- endif %}
 		<meta name="generator" content="{{ eleventy.generator }}">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "{{ "Blog" if eleventyNavigation else "BlogPosting" }}",
+			"name": "{{ title or metadata.blogTitle }}",
+			"author": {{ author or metadata.author | dump | safe }},
+			{% if description -%} "description": "{{ description }}", {%- endif %}
+			{% if previewImage.url -%} "image": "{{ metadata.origin + previewImage.url }}", {%- endif %}
+			{% if not eleventyNavigation %} "datePublished": "{{ date | htmlDateString }}", {%- endif %}
+			"dateModified": "{{ dateLastModified | htmlDateString }}",
+			{% if not eleventyNavigation -%} "articleSection": "{{ metadata.blogTitle }}", {%- endif %}
+			"keywords": [{% for tag in tags | filterTagList -%}"{{ tag }}" {%- if not loop.last %}, {% endif %}{% endfor %}]
+		}
+	</script>
 
 		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.blogTitle }}">

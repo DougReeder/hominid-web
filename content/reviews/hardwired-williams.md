@@ -13,7 +13,7 @@ itemReviewed:
   copyrightYear: 1986
   numberOfPages: 343
   isbn: 0-812-93303-7
-  genre: SF
+  genre: [SF, Cyberpunk]
 ---
 
 Review ©️ 1995 by P. Douglas Reeder

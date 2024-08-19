@@ -1,12 +1,13 @@
 ---
-description: Essays on using digital technology, reviews, and detours
-layout: layouts/blog-home.njk
+title: Archive
+description: Essays on using digital technology, reviews, talks, and detours
+layout: layouts/base.njk
 eleventyNavigation:
   key: Archive
-  parentXXX: Blog
   order: 5
+linkedDataType: CollectionPage
 ---
-<h1>Archive</h1>
+<h1>{{ title }}</h1>
 
 {% set postslist = collections.archive %}
 {% include "postslist.njk" %}

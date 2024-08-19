@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
+<!-- comment -->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title + " — " + metadata.title if title else metadata.title }}</title>
 	<meta name="description" content="{{ description or metadata.description }}">
 	<meta property="og:title" content="{{ title if title else metadata.title }}" />
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="profile" />
 	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
 	<meta property="og:site_name" content="{{ metadata.title }}" />
 	{% if description or metadata.description -%}
@@ -24,21 +25,7 @@
 	<meta name="generator" content="{{ eleventy.generator }}">
 
 	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org/",
-			"@type": "{{ linkedDataType if linkedDataType else "WebPage" }}",
-			"name": "{{ metadata.title if page.url === "/" else title }}",
-			"url": "{{ url if url else metadata.origin + page.url }}",
-			{% if page.url === "/" %}
-				"description": "{{ metadata.description }}",
-			{% else  %}
-			{% if description -%} "description": "{{ description }}", {%- endif %}
-			{% endif %}
-			"author": {{ author or metadata.author | dump | safe }},
-			{% if previewImage.url -%} "image": "{{ metadata.origin + previewImage.url }}", {%- endif %}
-			{% if page.url !== "/" -%} "mainContentOfPage": {"@type": "WebPageElement", "cssSelector": "main"}, {%- endif %}
-			"keywords": [{% for tag in tags | filterTagList -%}"{{ tag }}" {%- if not loop.last %}, {% endif %}{% endfor %}]
-		}
+		{{ linkedData | dump | safe }}
 	</script>
 
 	{#-

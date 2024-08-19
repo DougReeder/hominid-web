@@ -30,11 +30,8 @@ used to calculate difference between drawn endpoints & template endpoints
 
 ## Barrier Mage basic play
 
-<video controls width="608">
-  <source src="/barrier-mage-basic-play-4.mp4" type="video/mp4" />
-
-	Download the <a href="/barrier-mage-basic-play-4.mp4">MP4</a> video.
+<video controls playsinline preload="metadata">
+	<source src="/no-multiviews/barrier-mage-basic-play-4.mp4" type="video/mp4" />
+	Download the <a href="/no-multiviews/barrier-mage-basic-play-4.mp4">MP4</a> video.
 </video>
 
-
-<video-player  source="/barrier-mage-basic-play-4.mp4"></video-player>

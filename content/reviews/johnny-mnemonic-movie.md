@@ -11,7 +11,7 @@ itemReviewed:
   copyrightYear: 1995
   director: { "@type": "Person", "familyName": "Longo", "givenName": "Robert" }
   actor: { "@type": "Person", "familyName": "Reeves", "givenName": "Keanu"  }
-  genre: Cyberpunk
+  genre: [SF, Cyberpunk]
 ---
 
 review © 1995 by P. Douglas Reeder

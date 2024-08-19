@@ -6,14 +6,13 @@ tags:
   - webOS
   - application
 itemReviewed:
-  "@type": ["VideoGame", "GameApplication"]
+  "@type": [VideoGame, MobileApplication]
   name: Glyder 2
   author: { "@type": "Organization", "name": "Glu Mobile" }
   gamePlatform: Palm Pre
   playMode: SinglePlayer
   applicationCategory: GameApplication
   operatingSystem: Palm webOS
-  reviewRating: {"@type": "Rating", "ratingValue": 5, "bestRating": 5, "worstRating":  1}
 ---
 
 Extremely immersive despite small screen! The interface almost disappears! A tranquil action game.

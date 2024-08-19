@@ -16,7 +16,7 @@ teaches: NoSQL
 
 _Delivered to [ColumbusJS](https://columbusjs.org/) in May 2011_
 
-## [Slides](../../Loose-Schema%20Databases.pdf)
+## [Slides](../../no-multiviews/Loose-Schema%20Databases.pdf)
 
 
 Outline
@@ -28,7 +28,7 @@ Outline
 		* to-do items: due date as floating/julian day number vs. absolute times/timestamp, responsible person vs. associated people, source-code management system
 		* medical tests: range of BP values not same as range of blood glucose, systolic must be greater than diastolic
 
-* heterogenous data, homogenous format
+* heterogeneous data, homogenous format
 	* converting to homogenous format generally involves a loss of data, or at least an alteration of data.  Contact: title+given+ornamental+family+suffix name -> given+family
 	* round-trip data to external sources: alteration generates a spurious change notification, losing data is unacceptable
 
@@ -36,7 +36,7 @@ Outline
 	* DB can't search, only payload
 	* DB can't enforce relations or business constraints
 
-* heterogenous data, manual union schema
+* heterogeneous data, manual union schema
 	* schema must be updated before new data can be stored
 	* storage may be inefficient
 	* works fine for music meta-data, fails for medical tests

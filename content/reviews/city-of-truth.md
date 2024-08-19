@@ -12,7 +12,7 @@ itemReviewed:
   copyrightYear: 1990
   numberOfPages: 104
   isbn: 0-312-07672-X
-  genre: SF
+  genre: [SF, parable]
 ---
 
 Review © 1993 by P. Douglas Reeder

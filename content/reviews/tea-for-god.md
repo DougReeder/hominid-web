@@ -7,15 +7,13 @@ tags:
   - game
   - application
 itemReviewed:
-  "@type": ["VideoGame", "GameApplication"]
+  "@type": [VideoGame, SoftwareApplication]
   name: Tea For God
   author: { "@type": "Person", "name": "void room" }
   gamePlatform: Oculus Quest
   playMode: SinglePlayer
   applicationCategory: GameApplication
   operatingSystem: Meta Horizon OS
-  download: https://void-room.itch.io/tea-for-god
-  reviewRating: {"@type": "Rating", "ratingValue": 4, "bestRating": 5, "worstRating":  1}
 ---
 
 Uses non-euclidean geometry so the character traverses a huge space, while the player walks around their physical space. Excellent concept, very immersive. Manages to be both claustrophobic and spacious!

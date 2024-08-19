@@ -12,7 +12,7 @@
 	<meta property="og:description" content="{{ description or metadata.presentationDescription }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
-	<meta property="og:site_name" content="{{ metadata.presentationTitle }}" />
+	<meta property="og:site_name" content="{{ metadata.title }}" />
 	{% if previewImage.url -%}
 		<meta property="og:image" content="{{ metadata.origin + previewImage.url }}" />
 	{%- endif %}
@@ -29,14 +29,15 @@
 	{% for tag in tags -%}
 		<meta property="article:tag" content="{{ tag }}">
 	{% endfor %}
-	<meta property="article:section" content="{{ metadata.presentationTitle }}">
+	{% if not eleventyNavigation -%} <meta property="article:section" content="{{ metadata.presentationTitle }}"> {%- endif %}
 	<meta name="generator" content="{{ eleventy.generator }}">
 
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org/",
-			"@type": "PresentationDigitalDocument",
-			"name": "{{ title }}",
+			"@type": "{{ "CollectionPage" if eleventyNavigation else "PresentationDigitalDocument" }}",
+			{% if eleventyNavigation %} "mainContentOfPage": {"@type": "WebPageElement", "cssSelector": ".postlist"}, {% endif %}
+			"name": "{{ title or metadata.presentationTitle }}",
 			"author": {{ author or metadata.author | dump | safe }},
 	{% if abstract -%}
 			"abstract": {{ abstract | dump | safe }},
@@ -50,7 +51,7 @@
 	{% if previewImage.url -%}
 			"image": "{{ metadata.origin + previewImage.url }}",
 	{%- endif %}
-			"datePublished": "{{ date | htmlDateString }}",
+			{% if not eleventyNavigation -%} "datePublished": "{{ date | htmlDateString }}", {%- endif %}
 			"dateModified": "{{ dateLastModified | htmlDateString }}",
 			"keywords": [{% for tag in tags | filterTagList -%}"{{ tag }}" {%- if not loop.last %}, {% endif %}{% endfor %}]
 		}

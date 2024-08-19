@@ -299,3 +299,9 @@ p > picture {
 	display: flex;
 	justify-content: center;
 }
+
+/* added */
+
+video {
+	width: 100%;
+}
