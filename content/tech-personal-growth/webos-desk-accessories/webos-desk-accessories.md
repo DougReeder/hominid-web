@@ -1,6 +1,6 @@
 ---
 title: webOS “Desk Accessories”
-description: A guest post on the HP webOS Developer Blog
+description: This post originally appeared on the webOS Developer Relations blog
 date: 2011-10-25
 tags:
   - user experience
