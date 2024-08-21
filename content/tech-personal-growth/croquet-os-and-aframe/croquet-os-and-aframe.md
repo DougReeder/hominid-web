@@ -40,7 +40,7 @@ The [A-Frame Croquet Component] allows a world to define an [HTML Template] for 
 [HTML Template]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
 [gltf-model]: https://aframe.io/docs/1.4.0/components/gltf-model.html
 
-[{% image "./xalot-world.png", "Xalot world", ["608"] %}](https://xalot.surge.sh/ "Xalot world")
+[{% image "./xalot-world.png", "Xalot world", [750, "auto"] %}](https://xalot.surge.sh/ "Xalot world")
 
 For other users to join the same session, a current user must share the URL, including the query string.
 

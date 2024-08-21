@@ -7,6 +7,10 @@ tags:
 - PWA
 - user experience
 - webOS
+previewImage:
+  url: /img/VFSExchange-ScreenShot130-320w.png
+  width: 320
+  height: 320
 abstract: The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps. But can these APIs meet your needs?
 teaches: ["Web Share API", "Web Share Target API"]
 ---
@@ -40,7 +44,9 @@ Doug Reeder has been programming professionally for a quarter century on a wide 
 	* SiEd lets you receive and edit .c, .html, and .php files
 	* VFSExchange (2006) — used mostly for ringtones & Java Midlets
 
-{% image "./VFSExchange-ScreenShot130.png", "screen shot of VFS Exchange", ["608"] %}
+<div class="flex-center-center">
+{% image "./VFSExchange-ScreenShot130.png", "screen shot of VFS Exchange" %}
+</div>
 
 * Non-enthusiasts didn't use Beaming — unclear why.
 

@@ -13,20 +13,20 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-base-blog.git"
+		"url": "https://github.com/DougReeder/hominid-web.git"
 	},
 	"author": "Doug Reeder <reeder.29@gmail.com>",
 	"license": "GPL-3.0",
 	"engines": {
-		"node": ">=14"
+		"node": ">=18"
 	},
 	"bugs": {
-		"url": "https://github.com/11ty/eleventy-base-blog/issues"
+		"url": "https://github.com/DougReeder/hominid-web/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"homepage": "https://github.com/DougReeder/hominid-web#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
-		"@11ty/eleventy-img": "^3.1.0",
+		"@11ty/eleventy-img": "^4.0.2",
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-bundle": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",

@@ -6,7 +6,7 @@ tags:
 - webXR
 - VR
 previewImage:
-  url: /img/gRjo8IvDea-608.jpeg
+  url: /img/pentacle-ViolentCloud-750w.jpeg
   width: 608
   height: 405
 abstract: The game Barrier Mage implements gesture-based Virtual Reality game play.  The user draws mystic symbols with 6-DOF VR controllers. Each symbol has a different effect. This novel game mechanic eliminates an abstraction layer usual in fantasy games, making this game more immersive.
@@ -18,7 +18,7 @@ teaches: WebXR
 
 ## Drawing a symbol
 
-{% image "./pentacle-ViolentCloud.jpg", "drawing pentacle to protect from The Violent Cloud", ["608"] %}
+{% image "./pentacle-ViolentCloud.jpg", "drawing pentacle to protect from The Violent Cloud", [750, "auto"] %}
 
 
 ## Root-mean-square
@@ -82,7 +82,7 @@ used to calculate difference between drawn endpoints & template endpoints
 
 ## Barrier Mage basic play
 
-<video controls playsinline preload="metadata">
+<video class="square" controls playsinline preload="metadata">
 	<source src="/no-multiviews/barrier-mage-basic-play-4.mp4" type="video/mp4" />
 	Download the <a href="/no-multiviews/barrier-mage-basic-play-4.mp4">MP4</a> video.
 </video>

@@ -7,7 +7,7 @@ tags:
 - Android
 - mobile
 previewImage:
-  url: /img/lDs-ydmFC6-608.avif
+  url: /img/compatibility-matix-750w.png
   width: 608
   height: 784
 ---
@@ -60,7 +60,7 @@ Media,
 System Controls,
 TV Controls
 
-{% image "./compatibility-matix.png", "Compatibility matrix", ["608"] %}
+{% image "./compatibility-matix.png", "Compatibility matrix", [750, "auto"] %}
 
 Broad support for
 * Launching app w/ known ID

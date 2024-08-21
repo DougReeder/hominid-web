@@ -8,7 +8,7 @@ tags:
   - PWA
   - webOS
 previewImage:
-  url: /img/j1WkIpo6hY-320.jpeg
+  url: /img/Notes-Together-Task-List-750w.jpeg
   width: 320
   height: 569
 ---
@@ -73,7 +73,10 @@ A very few clicks can paste in anything that resembles a list and transform it t
 so it's easy to recover from a fat-fingered tap.)
 Thus, a note-taking app became a lower-friction place than a To-Do app to keep simple to-do lists.
 
-{% image "./Notes-Together-Task-List.jpeg", "a Task List in Notes Together", ["320"] %}
+<div class="center-horizontal">
+{% css %} img[width="750"] { max-width: 300px; } }{% endcss -%}
+{% image "./Notes-Together-Task-List.jpeg", "a Task List in Notes Together" %}
+</div>
 
 Text associated with a task is not confined to certain fields —
 you write a document and place the checklist anywhere you like, even in a table cell.

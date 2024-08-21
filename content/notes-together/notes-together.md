@@ -2,6 +2,10 @@
 title: Notes Together
 layout: layouts/base.njk
 description: Free your mind from mundane details! Toss in text and pictures. Be confident you can find any note on any device. Take control of your data with remoteStorage. Never spend time tidying up — unless you want to!
+previewImage:
+  url: /img/NotesTogether-search-2pane-750w.png
+  width: 750
+  height: 628
 linkedDataType: WebApplication
 url: https://notestogether.hominidsoftware.com/
 ---
@@ -12,8 +16,7 @@ url: https://notestogether.hominidsoftware.com/
 
 Free your mind from mundane details! Toss in text and pictures. Be confident you can find any note on any device. Take control of your data with remoteStorage. Never spend time tidying up — unless you want to!
 
-{% css %} picture > img { max-width: 100vw; } }{% endcss -%}
-{% image "./NotesTogether-search-2pane.png", "typing a few characters will filter down to a few matching notes", [400], "(min-width: 30em) 50vw, 100vw" %}
+{% image "./NotesTogether-search-2pane.png", "typing a few characters will filter down to a few matching notes", [750, "auto"] %}
 
 Do you struggle to remember what was discussed at the meetup in February or the staff meeting last Tuesday?
 Did you learn something at the conference in Columbus that's only relevant now?

@@ -4,6 +4,10 @@ description: Runestones & skaldic poetry help us understand how vikings describe
 date: 2002-02-15
 tags:
 - viking
+previewImage:
+  url: /img/Strouds-Run-0709-2867-750w.jpeg
+  width: 750
+  height: 500
 ---
 
 _originally posted to the Viking Age Vessels email group_
@@ -16,7 +20,7 @@ From *Ships & Men in the Late Viking Age*, by Judith Jesch, a book which studies
 
 Jesch confirms that **knorr** is more often used for a ship of trade, but notes the many places where it refers to a ship used for war. She quotes Ole Crumlin-Pedersen (1997a, 189-90 [does anyone have a copy of this?]) “that the relative beam of ships ‘changed drastically in the early phase of the process of adapting ships to carry sail, in order to provide sufficient stability at the initial stage’”. Thus, since early Viking warships such as Tune and Gokstad [anyone have length-to-beam ratios for these?] had similar proportions to cargo ships, and later ones were more slender, early overlap of knorr and terms for warship giving way to a later (late- or post-Viking) distinction is consistent with shipbuilding practice.
 
-{% image "./Stroud's Run 0709 2867.JPG", "the Blackbird at Stroud's Run", ["608"] %}
+{% image "./Stroud's Run 0709 2867.JPG", "the Blackbird sailing at Stroud's Run", [750, "auto"] %}
 
 **Anchors** are mentioned several times in the skaldic corpus, perhaps explained by [lacuna]. Crumlin-Pedersen (1997b, 146) makes the point that anchors are ‘the largest examples of forged ironwork’ known from the Viking Age and that, because of their cost, they were used only on the largest ships.” So, perhaps having an iron anchor on our boats would be a sign of their high quality.
 

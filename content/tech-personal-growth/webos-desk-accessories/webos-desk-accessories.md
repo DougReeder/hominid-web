@@ -24,19 +24,25 @@ While webOS supports true multitasking, it only lets you interact with one card 
 
 Dashboards persist until dismissed by the user, and the user can display them with a single swipe at any time. However, they are always exactly 320 pixels wide and 52 pixels tall. The user can display and interact with multiple Dashboards simultaneously.
 
-{% image "./notifications-dashboard.png", "three dashboards on Touchpad" %}
+{% image "./notifications-dashboard.png", "three dashboards on Touchpad", [750, "auto"] %}
 
 System popup alerts (don’t confuse them with popups, toasters, and alerts managed by Enyo or Mojo) must be 320 pixels wide, but the height is configurable. Once closed, they are gone. Only one can be displayed at a time. While they’re available on both phones and tablets, Popups that are taller than about 240 pixels take up a majority of the screen on a phone, typically making the other app unusable – and if you can’t use the other app, you’re better off putting your app in a card.
 
-{% image "./notes_portrait.png", "Popup Calc over Memos", ["608"] %}
+{% image "./notes_portrait.png", "Popup Calc over Memos", [750, "auto"] %}
 
-{% image "./ss_pre3_emu.png", "Popup Calc on phone", ["320"] %}
+<div class="center-horizontal">
+{% css %} img[width="480"] { max-width: 300px; } }{% endcss -%}
+{% image "./ss_pre3_emu.png", "Popup Calc on phone" %}
+</div>
 
 You can put any kind of widget in a Dashboard or System Popup, but there is a big limitation—neither receives keyboard events.
 
 Here are two example apps. [Dashboard Utilities](https://web.archive.org/web/20141022053747/https://developer.palm.com/appredirect/?packageid=com.machiapps.dashboardutilities&applicationid=7009) is a desk accessory that primarily uses a Dashboard. [PopupCalc](https://hominidsoftware.com/popupcalc/index.html) is a desk accessory that primarily uses a System popup.
 
-{% image "./ph_1.png", "Dashboard Utilities dashboards" %}
+<div class="center-horizontal">
+{% css %} img[width="320"] { max-width: 300px; } }{% endcss -%}
+{% image "./ph_1.png", "Dashboard Utilities dashboards", [750, "auto"] %}
+</div>
 
 ## Flow of Activity
 
@@ -44,7 +50,7 @@ Dashboards and System popups are simple to create, but you must consider all the
 
 Any window can be dismissed by the user at any time, so your app must deal with this. webOS keeps track of a “root window” for each app, where it sends events such as applicationRelaunch. For standard apps that don’t specify `"noWindow": true` in appinfo.json, the root window is initially the first card opened, but if that card is tossed away, another window becomes the root window. For headless apps, that specify `"noWindow": true` in appinfo.json, the root window is a headless, non-displayed window. You must deal with the situation where your app has only a Dashboard or Popup in existence when the user taps the app icon in the Launcher—the current root window will receive an applicationRelaunch event. One good way to respond to this is to re-display the card with basic orientation info. Your app icon may be tapped by a user who has no idea that your app is a desk accessory that’s already running.
 
-{% image "./popupcalc_2011-01-09_153312.png", "Popup Calc instruction card", ["608"] %}
+{% image "./popupcalc_2011-01-09_153312.png", "Popup Calc instruction card", [750, "auto"] %}
 
 webOS has neither a Dock nor a Taskbar to provide ready access to apps. The only instant access is a swipe or tap to open all current Dashboards. Desk accessories must be closeable at any time, and users will expect them to open exactly as they closed. Thus, a Popup desk accessory will typically need a Dashboard to provide an “open” button. As long as either the Popup, Dashboard or card exist, the app will continue running and global variables will be preserved.
 
@@ -73,19 +79,19 @@ The Makefile requires `gmake`. The first time, and after running `make clean`, y
 
 If your development environment includes Miller’s JavaScript Lint, uncomment the Makefile line
 
-```shell
+```
 jsl -conf jsl-Enyo-emptyok.conf -nologo -nofilelisting -process $@
 ```
 
 If your development environment includes YUI, uncomment the Makefile `#ifdef` after
 
-```Makefile
+```
 # App source files are copied for debug builds and minified for production builds.
 ```
 
 and the line after
 
-```Makefile
+```
 # Always minifies CSS.
 ```
 

@@ -5,7 +5,7 @@ date: 2002-07-03
 tags:
   - viking
 previewImage:
-  url: /img/sb3-qSivQq-504.avif
+  url: /img/Skapti-Mastermyr-chest-504w.png
   width: 504
   height: 360
 ---
@@ -30,7 +30,7 @@ finicky.
 the whole rest of the chest and decreases the utility of the chest as
 a work surface and makes it harder to stack.
 
-{% image "./Skapti-Mastermyr-chest.png", "Mästermyr chest replica", ["504"] %}
+{% image "./Skapti-Mastermyr-chest.png", "Mästermyr chest replica" %}
 
 The one thing these three design points do enhance is the ability of
 the chest to carry weight on top of the lid, at some expense to the

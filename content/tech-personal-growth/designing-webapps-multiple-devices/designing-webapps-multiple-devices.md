@@ -8,6 +8,10 @@ tags:
   - mobile
   - personal computer
   - memos/notes
+previewImage:
+  url: /img/Memos_ss_phab_land_2col-750w.png
+  width: 750
+  height: 422
 canonicalUrl: https://hacks.mozilla.org/2013/11/designing-web-apps-for-multiple-devices/
 ---
 
@@ -27,7 +31,7 @@ It is difficult to achieve a good user experience for all devices and screen siz
 
 The photo gallery is half of a photo sharing app. ~~[A sample album of the gallery](http://hominidsoftware.com:1234/) can be seen online.~~ ([The application described as a whole](https://hominidsoftware.com/zapphotoshare/index.html) is worth seeing.)
 
-{% image "./ss_tablet_en_3_1.1.9.png", "photo gallery: thumbnail grid", ["608"] %}
+{% image "./ss_tablet_en_3_1.1.9.png", "photo gallery: thumbnail grid", [750, "auto"] %}
 
 The photo gallery follows the paradigm used by a number of prior photo browsing apps. Thumbnails are presented in a grid which scrolls vertically. The number and width of columns depends on the screen width. Grid cells could be small or large; I chose the minimum cell size to be the smallest common screen width for smartphones: 320 CSS pixels. Thus, the number of columns is `floor(windowWidth / 320)` and the cell size is `windowWidth / number of columns`. Columns normally are from 320 to 639 pixels wide.
 
@@ -42,7 +46,7 @@ The number of columns is capped at four, so scrolling doesn’t outpace data tra
 
 One approach would use fixed size thumbnails of 300×300 and increase the padding as cells get larger. However, the image library available (libjpeg) only supports half-, quarter- and eighth-size reductions, so padding is fixed and images are resized to fill. The web app requests a photo of appropriate size and the server (written in node.js, and normally running on a phone) returns the smallest version of the photo that fills the requested size cell.
 
-{% image "./ss_tablet_en_4_1.1.9.png", "photo gallery: carousel", ["608"] %}
+{% image "./ss_tablet_en_4_1.1.9.png", "photo gallery: carousel", [750, "auto"] %}
 
 
 Tapping on a thumbnail switches to a carousel which fills the window. The user can zoom in further by double-tapping the image or using the mousewheel. Originally, full-screen mode was engaged when the carousel was displayed; however, changing to full-screen takes several seconds on many devices, so now full-screen mode must be manually set. Touchscreen users can swipe to navigate forward and backward, while desktop users can use the keyboard. A weakness is that a mouse user can click on a picture to navigate forward, but must swipe (or use the keyboard) to navigate backward. Mouse users could benefit from visible navigation buttons, but mice aren’t easy for a web app to detect.
@@ -56,11 +60,14 @@ Development was eased by creative use of the List widget of Enyo 2 (though any l
 The second example is a deceptively simple memo app, which can be [used on-line](https://serenenotes.hominidsoftware.com/) ~~or installed on Firefox OS from the Marketplace~~.
 
 
-{% image "./Memos_ss_phab_land_2col.png", "Serene Notes: phablet landscape (two columns)", ["608"] %}
+{% image "./Memos_ss_phab_land_2col.png", "Serene Notes: phablet landscape (two columns)", [750, "auto"] %}
 
 The fundamental layout is two panels side-by-side. In windows narrower than 640 CSS pixels, the second panel slides in on top of the first. Collapse is based solely on window width, not device class, so phablet users will have one column in portrait mode and two columns in landscape mode.
 
-{% image "./Memos_ss_phab_port_1col.png", "Serene Notes: phablet portrait (one column)", ["342"] %}
+<div class="flex-center-center">
+{% css %} img[width="540"] { max-width: 300px; } }{% endcss -%}
+{% image "./Memos_ss_phab_port_1col.png", "Serene Notes: phablet portrait (one column)" %}
+</div>
 
 Tablet and desktop users don’t need to muck with dialogs or layers, while phone users have fast transitions. Most importantly, the shift in mental models is easy when going from a phone to a larger device. While this app does not currently sync user data between devices, adding that would give a seamless experience across devices. [The successor app [Notes Together](https://notestogether.hominidsoftware.com/#) does sync between devices.]
 
@@ -70,8 +77,9 @@ The collapsing panels use the Enyo Panels widget. Another instance of Panels is 
 
 To maximize display of user data the list foregoes controls on items in favor of direct manipulation: items can be swiped (or double-clicked) for operations such as Delete. Reordering is done by hold-then-drag. Discoverability was traded off for power – many apps will need to strike a different balance. A possible future enhancement on larger screens would be to add visible controls or at least tool tips.
 
-{% image "./Memos_ss_phab_port_1col_search.png", "Serene Notes: live search (phone)", ["342"] %}
-
+<div class="flex-center-center">
+{% image "./Memos_ss_phab_port_1col_search.png", "Serene Notes: live search (phone)" %}
+</div>
 
 Fixed groupings such as folders or notebooks would require the user to navigate an extra level to access data. Search allows a memo to be in multiple groupings, and requires less UI. (However, it is not appropriate for users who rely on spatial memory.)
 
