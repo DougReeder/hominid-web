@@ -23,7 +23,59 @@ teaches: WebXR
 
 ## Root-mean-square
 
-{% image "./root-mean-square.gif", "drawing pentacle to protect from The Violent Cloud", ["608"] %}
+<math display="block" class="tml-display" style="display:block math;">
+  <msqrt>
+    <mfrac>
+      <mrow>
+        <mo form="prefix" stretchy="false" lspace="0em" rspace="0em">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>x</mi>
+          <mn>2</mn>
+        </msub>
+        <msup>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mo form="prefix" stretchy="false">(</mo>
+        <msub>
+          <mi>y</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>y</mi>
+          <mn>2</mn>
+        </msub>
+        <msup>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mo form="prefix" stretchy="false">(</mo>
+        <msub>
+          <mi>z</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>z</mi>
+          <mn>2</mn>
+        </msub>
+        <msup>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+      <mn>3</mn>
+    </mfrac>
+  </msqrt>
+</math>
 
 used to calculate difference between drawn endpoints & template endpoints
 
