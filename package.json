@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"postbuild": "rsync -v --rsh=ssh --recursive --links --hard-links --safe-links --times --exclude '.DS_Store' --prune-empty-dirs --human-readable _site/ root@hominidsoftware.com:/var/www/html/",
+		"check-links": "npx check-html-links _site",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",

@@ -14,7 +14,7 @@ teaches: WebXR
 ---
 
 
-## [Slides](../../keynote/Gestures%20in%20WebXR)
+## [Slides](../../keynote/Gestures%20in%20WebXR/)
 
 ## Drawing a symbol
 

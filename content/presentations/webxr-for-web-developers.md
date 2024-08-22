@@ -13,7 +13,7 @@ teaches: WebXR
 
 _Delivered to [VRColumbus](https://www.meetup.com/vr-columbus/) in [May 2024](https://www.meetup.com/vr-columbus/events/300924576/) and [ColumbusJS](https://columbusjs.org/) in [August 2024](https://www.meetup.com/columbusjs/events/302520579/)_
 
-## [Slides](../../keynote/WebXR%20for%20Web%20Developers)
+## [Slides](../../keynote/WebXR%20for%20Web%20Developers/)
 
 
 ## vs. native

@@ -12,7 +12,7 @@ teaches: Service Worker API
 
 _Delivered to [ColumbusJS](https://columbusjs.org/) in [September 2017](https://columbusjs.org/09-20-2017/doug-reeder-service-workers.html)_
 
-## [Slides](../../keynote/JavaScript%20Service%20Worker%20Design%20Patterns%20for%20Better%20UX)
+## [Slides](../../keynote/JavaScript%20Service%20Worker%20Design%20Patterns%20for%20Better%20UX/)
 
 
 ## Web pages used in talk
