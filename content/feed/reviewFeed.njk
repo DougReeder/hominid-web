@@ -22,6 +22,7 @@ permalink: /feed/reviewFeed.xml
 		<link href="{{ absoluteReviewUrl }}"/>
 		<published>{{ review.date | dateToRfc3339 }}</published>
 		<updated>{{ review.data.dateLastModified | dateToRfc3339 }}</updated>
+		{% if review.data.description -%}<summary>{{ review.data.description }}</summary>{%- endif %}
 		<id>{{ absoluteReviewUrl }}</id>
 		<content type="html">{{ review.templateContent | transformWithHtmlBase(absoluteReviewUrl, review.url) }}</content>
 	</entry>

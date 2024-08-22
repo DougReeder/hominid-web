@@ -22,6 +22,7 @@ permalink: /feed/feed.xml
 		<link href="{{ absolutePostUrl }}"/>
 		<published>{{ post.date | dateToRfc3339 }}</published>
 		<updated>{{ post.data.dateLastModified | dateToRfc3339 }}</updated>
+		{% if post.data.description -%}<summary>{{ post.data.description }}</summary>{%- endif %}
 		<id>{{ absolutePostUrl }}</id>
 		<content type="html">{{ post.templateContent | transformWithHtmlBase(absolutePostUrl, post.url) }}</content>
 	</entry>

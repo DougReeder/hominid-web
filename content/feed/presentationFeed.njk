@@ -22,6 +22,7 @@ permalink: /feed/presentationFeed.xml
 		<link href="{{ absolutePresentationUrl }}"/>
 		<published>{{ presentation.date | dateToRfc3339 }}</published>
 		<updated>{{ presentation.data.dateLastModified | dateToRfc3339 }}</updated>
+		{% if presentation.data.description -%}<summary>{{ presentation.data.description }}</summary>{%- endif %}
 		<id>{{ absolutePresentationUrl }}</id>
 		<content type="html">{{ presentation.templateContent | transformWithHtmlBase(absolutePresentationUrl, presentation.url) }}</content>
 	</entry>
