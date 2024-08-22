@@ -10,23 +10,30 @@ eleventyNavigation: {
 tags: [],
 eleventyComputed: {
   linkedData: function(data) {
-    return Object.assign({
+		return {
 			"@context": "https://schema.org/",
+			"@type": "ProfilePage",
 			description: data.description,
-			givenName: "Doug",
-			familyName: "Reeder",
-			jobTitle: "WebXR Consultant & Full-stack Developer"
-		}, data.metadata.author);
+			url: data.metadata.origin + data.page.url,
+			dateCreated: "2023-04-18T12:00Z",
+			dateModified: data.dateLastModified,
+			mainEntity: Object.assign({
+				givenName: "Doug",
+				familyName: "Reeder",
+				description: "I am a full-stack web developer, WebXR consultant, VR enthusiast, and sometime viking. I push back against gatekeepers and work to give users a “bicycle for the mind”",
+				jobTitle: "WebXR Consultant & Full-stack Developer"
+				}, data.metadata.author),
+			mainContentOfPage: {"@type": "WebPageElement", "cssSelector": "main"}
+		};
   },
 },
 }
 ---
 # About Doug Reeder
 
-I am a full-stack web developer, WebXR consultant, VR enthusiast, and sometime viking.
-I push back against gatekeepers and work to give users a “bicycle for the mind”.
+{{ linkedData.mainEntity.description }}
 
-Contact me at [reeder.29@gmail.com](mailto:reeder.29@gmail.com?subject=Tech%20for%20Personal%20Growth)
+Contact me at [{{ metadata.author.email }}](mailto:{{ metadata.author.email }}?subject=Tech%20for%20Personal%20Growth)
 
 Free your head from mundane details with [Notes Together](https://notestogether.hominidsoftware.com/)! Toss in text and pictures. Be confident you can find any note on any device. Take control of your data with remoteStorage. Never spend time tidying up — unless you want to!
 
