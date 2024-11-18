@@ -4,13 +4,14 @@ description: Days of sifting through details produced a simple solution.
 date: 2024-10-28
 tags:
 - Hubs
+- Kubernetes
 - VR
 - webXR
 - application
-	previewImage:
-	url: /img/kubernetes-debug-flowchart-750w.png
-	width: 750
-	height: 1061
+previewImage:
+  url: /img/kubernetes-debug-flowchart-750w.png
+  width: 750
+  height: 1061
 ---
 
 [skip to solution](#my-final-configuration)
@@ -120,7 +121,7 @@ DigitalOcean notes that you can increase `capacity.storage` and re-apply at any 
 Unfortunately, the *filesystem* on the volume isn’t necessarily re-sized, so it might make sense to set a larger capacity from the start.
 More research will be required. :-S
 
-## My Final Configuration
+## My Final Configuration [but see my next post!]
 
 As I haven’t yet set up an external PostgresQL database, for simplicity and cost savings, I went back to the StorageClass of `do-block-storage-xfs-retain` for now:
 
