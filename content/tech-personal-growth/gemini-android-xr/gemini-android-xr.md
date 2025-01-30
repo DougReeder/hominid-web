@@ -43,6 +43,7 @@ Any developer who lived through that will think carefully before betting signifi
 Meta has a commanding lead in VR games.
 If Google can convince enough of the largest social VR networks to port their apps, they could achieve near-parity there, but no more.
 XR productivity and lifestyle apps are not drawing many users yet.
+\[My contribution there is [Model Presenter](https://hominidsoftware.com/model-presenter/).\]
 
 Meta's Horizon OS can run Android apps.
 Android app developers can spatialize their apps using Meta's API, and get access to tens of millions of headsets now, or Google's and get access to however many (or few) Project Moohan headsets sell next year.
