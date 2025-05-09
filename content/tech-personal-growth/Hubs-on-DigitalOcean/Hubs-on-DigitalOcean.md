@@ -24,7 +24,7 @@ The free Hubs service from Mozilla has been shut down, along with Hubs Cloud.
 Fortunately, the Community Edition of Hubs Cloud is now straightforward to set up.
 The number of steps is large, but that’s hard to avoid with a freestanding consumer-ready service.
 
-I followed the [Beginner’s Guide to CE](https://docs.google.com/document/d/1BXSxTNFLjx8dtz26_OAFJParGdz8qTE2XvVAxwoJwrQ/edit?tab=t.0), with the changes noted below.
+I followed the [Beginner’s Guide to CE](https://docs.hubsfoundation.org/beginners-guide-to-CE.html), with the changes noted below.
 It wasn’t clear that Kubernetes commands haven’t necessarily taken effect when the command exits (which is not obvious if you’re new to Kubernetes).
 
 It’s not documented in the Beginner’s Guide, but Hubs works fine with a subdomain like `hubs.hominidsoftware.com`, so I could use my existing domain.

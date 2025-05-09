@@ -11,12 +11,12 @@ pagination:
   addAllPagesToCollections: true
 layout: layouts/home.njk
 eleventyComputed:
-  title: Tagged “{{ tag }}”
+  title: Pages Tagged “{{ tag }}”
   description: list of blog posts, reviews and talks with keyword “{{ tag }}”
 permalink: /tags/{{ tag | slugify }}/
 linkedDataType: CollectionPage
 ---
-<h1>Tagged “{{ tag }}”</h1>
+<h1>Pages Tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}

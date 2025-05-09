@@ -5,11 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title + " — " + metadata.blogTitle if title else metadata.blogTitle }}</title>
 		<meta name="author" content="{{ author.name or metadata.author.name }}" />
-		{% if description %}
-		<meta name="description" content="{{ description }}" />
+		{% if description or metadata.blogDescription %}
+		<meta name="description" property="og:description" content="{{ description or metadata.blogDescription }}" />
 		{%- endif %}
 		<meta property="og:title" content="{{ title or metadata.blogTitle }}" />
-		<meta property="og:description" content="{{ description or metadata.blogDescription }}" />
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="{{ metadata.origin + page.url }}" />
 		<meta property="og:site_name" content="{{ metadata.title }}" />
@@ -34,7 +33,7 @@
 		{
 			"@context": "https://schema.org/",
 			"@type": "{{ "Blog" if eleventyNavigation else "BlogPosting" }}",
-			"name": "{{ title or metadata.blogTitle }}",
+			"headline": "{{ title or metadata.blogTitle }}",
 			"author": {{ author or metadata.author | dump | safe }},
 			{% if description -%} "description": "{{ description }}", {%- endif %}
 			{% if previewImage.url -%} "image": "{{ metadata.origin + previewImage.url }}", {%- endif %}

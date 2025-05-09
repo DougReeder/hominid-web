@@ -37,7 +37,7 @@ The [A-Frame State Component] provides a centralized store for state data. An an
 
 The [A-Frame Croquet Component] allows a world to define an [HTML Template] for user avatars. A different `color` attribute is applied to each user's avatar, but most primitives (including [gltf-model]) don't use that.
 
-[HTML Template]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
+[HTML Template]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template
 [gltf-model]: https://aframe.io/docs/1.4.0/components/gltf-model.html
 
 [{% image "./xalot-world.png", "Xalot world", [750, "auto"] %}](https://xalot.surge.sh/ "Xalot world")
