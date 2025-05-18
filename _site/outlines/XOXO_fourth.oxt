@@ -1,0 +1,60 @@
+Natara Bonsai "export template" to XOXO outline
+optimized for import to Outline Tracker for Palm webOS
+originally created by P. Douglas Reeder, Hominid Software
+http://outlinetracker.com
+
+* Bonsai Tasks have their completion folded into done or undone.
+* Bonsai Category is mapped to Outline Tracker Place. Places must be defined in Outline Tracker beforehand.
+* Contact name is folded into the text for an item, since the Outline Tracker responsible field refers to a particular entry in Contacts, not a name.
+* All items are collapsed, since templates don't allow a proper mapping to the "compact" attribute. 
+
+[OPTIONS]
+	EXTENSION=html
+	MARKUP=HTML
+	ENCODE=UTF-8
+	TAG_URLS=1
+[HEADER]
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title>#TITLE#</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="DC.TITLE" content="#TITLE#" />
+	<meta name="DC.DATE" content="#TODAY#" />
+	<meta name="Generator" content="Natura Bonsai XOXO export template: #FILTER_NAME#" />
+</head>
+<body>
+	<h1>#TITLE#</h1>
+	<ul>
+	
+[BRANCH_BEGIN]
+#LEVEL("	")#<li>#TEXT# #CONTACT#
+#LEVEL("	")#	#STATUS("<input type='checkbox' />","<input type='checkbox' checked='checked' />")#
+#LEVEL("	")#	<dl>
+#LEVEL("	")#		<dt>place</dt><dd>#CATEGORY#</dd>
+#LEVEL("	")#		<dt>due date</dt><dd>#DUE_DATE#</dd>
+#LEVEL("	")#		<dt>content text</dt><dd>#NOTE#</dd>
+#LEVEL("	")#	</dl>
+#LEVEL("	")#	<ul compact='compact'>
+
+[LEAF_BEGIN]
+#LEVEL("	")#		<li>#TEXT#
+#LEVEL("	")#			#STATUS("<input type='checkbox' />","<input type='checkbox' checked='checked' />")#
+#LEVEL("	")#			<dl>
+#LEVEL("	")#				<dt>place</dt><dd>#CATEGORY#</dd>
+#LEVEL("	")#				<dt>due date</dt><dd>#DUE_DATE#</dd>
+#LEVEL("	")#				<dt>content text</dt><dd>#NOTE#</dd>
+#LEVEL("	")#			</dl>
+
+[LEAF_END]
+#LEVEL("	")#		</li>
+
+[BRANCH_END]
+#LEVEL("	")#	</ul>
+#LEVEL("	")#</li>
+
+[FOOTER]
+	</ul>
+</body>
+</html>

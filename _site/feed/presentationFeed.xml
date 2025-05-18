@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>Talks by Doug Reeder</title>
+	<subtitle>Technical presentations at ColumbusJS, VRColumbus and elsewhere</subtitle>
+	<link href="https://hominidsoftware.com/feed/presentationFeed.xml" rel="self"/>
+	<link href="https://hominidsoftware.com/presentations/"/>
+	<updated>2024-08-07T00:00:00Z</updated>
+	<id>https://hominidsoftware.com/presentations/</id>
+	<author>
+		<name>Doug Reeder</name>
+		<email>reeder.29@gmail.com</email>
+	</author>
+	<generator version="2.0.1">Eleventy v2.0.1</generator>
+	
+	<entry>
+		<title>WebXR for Web Developers</title>
+		<link href="https://hominidsoftware.com/presentations/webxr-for-web-developers/"/>
+		<published>2024-08-07T00:00:00Z</published>
+		<updated>2024-08-22T04:23:05Z</updated>
+		<summary>Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don&#39;t normally use.</summary>
+		<id>https://hominidsoftware.com/presentations/webxr-for-web-developers/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://www.meetup.com/vr-columbus/&quot;&gt;VRColumbus&lt;/a&gt; in &lt;a href=&quot;https://www.meetup.com/vr-columbus/events/300924576/&quot;&gt;May 2024&lt;/a&gt; and &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://www.meetup.com/columbusjs/events/302520579/&quot;&gt;August 2024&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/WebXR%20for%20Web%20Developers/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;vs-native&quot; tabindex=&quot;-1&quot;&gt;vs. native &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Native apps can fully utilize hardware, but are siloed in development and distributed by gatekeepers&lt;/li&gt;
+&lt;li&gt;Web apps can reach anyone, but you must allow for differing capabilities and can&#39;t achieve the performance of native
+&lt;ul&gt;
+&lt;li&gt;may also run on personal computers or mobile (depending on interactions), for those without a headset&lt;/li&gt;
+&lt;li&gt;could have presenter(s) in headset and audience mostly on personal computers or mobile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;browser-graphics&quot; tabindex=&quot;-1&quot;&gt;Browser Graphics &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;everything displayed in a window is in &lt;strong&gt;Document Object Model&lt;/strong&gt; (DOM)&lt;/li&gt;
+&lt;li&gt;conventional web programming comes down to manipulating the DOM, using a weakly-typed language w/ automatic memory management&lt;/li&gt;
+&lt;li&gt;almost the polar opposite of environment for high-performance graphics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;apis-for-webxr&quot; tabindex=&quot;-1&quot;&gt;APIs for WebXR &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Full-screen mode&lt;/strong&gt; eliminates windowing &amp;amp; browser chrome, for immersion&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Canvas&lt;/strong&gt; is HTML Element (in the DOM) you can draw into&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;covers rectangular part or all of window&lt;/li&gt;
+&lt;li&gt;bitmapped&lt;/li&gt;
+&lt;li&gt;doesn&#39;t contain DOM, nor retain your draw calls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;current: &lt;strong&gt;WebGL 2&lt;/strong&gt;: context of HTML Canvas&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;based closely on &lt;a href=&quot;https://en.wikipedia.org/wiki/OpenGL_ES#OpenGL_ES_2.0&quot;&gt;OpenGL ES 3.0&lt;/a&gt;,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;you will program to a utility library (or else wind up writing your own)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;focus is on the shader program&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;libraries have all standard shaders&lt;/li&gt;
+&lt;li&gt;custom shaders for unusual cases&lt;/li&gt;
+&lt;li&gt;example: aframe-shader-buildings
+&lt;ul&gt;
+&lt;li&gt;each building is just an ell-shaped box made from 12 triangles; all buildings of a style are one object&lt;/li&gt;
+&lt;li&gt;switches from texture for walls to cubemap for windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shaders written in GLSL a C-like language (you serve GLSL files just like HTML, CSS &amp;amp; JavaScript)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://dougreeder.github.io/aframe-dial/example.html&quot;&gt;custom shader for analog dial&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.clicktorelease.com/code/vertex-displacement-noise-3d-webgl-glsl-three-js/add-some-colour-movement.html&quot;&gt;custom shader using vertex displacement&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://dougreeder.github.io/aframe-shader-buildings/example.html&quot;&gt;custom shader to create thousands of buildings cheaply&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://dougreeder.github.io/elfland-glider/city/&quot;&gt;game using building shader&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;future: &lt;strong&gt;WebGPU&lt;/strong&gt; in progress&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;new kind of Context for HTML Canvas element&lt;/li&gt;
+&lt;li&gt;no baggage from 1990s&lt;/li&gt;
+&lt;li&gt;supports modern GPU architectures&lt;/li&gt;
+&lt;li&gt;abstraction on top of Vulkan, Metal &amp;amp; DirectX 12&lt;/li&gt;
+&lt;li&gt;focuses on resource re-use via &amp;quot;pipelines&amp;quot; &amp;amp; &amp;quot;RenderBundles&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;WebXR&lt;/strong&gt;: A web standard for working with VR &amp;amp; AR&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;complements WebGL/WebGPU&lt;/li&gt;
+&lt;li&gt;VR/AR life-cycle
+&lt;ul&gt;
+&lt;li&gt;start &amp;amp; stop immersive &amp;amp; AR modes&lt;/li&gt;
+&lt;li&gt;frame timing (may be different than main display)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;provides new inputs
+&lt;ul&gt;
+&lt;li&gt;head pose for camera&lt;/li&gt;
+&lt;li&gt;Controller position and buttons&lt;/li&gt;
+&lt;li&gt;Hand tracking&lt;/li&gt;
+&lt;li&gt;transient inputs (like laser pointer): mobile tap or Vision OS click&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;exposes platform features like AR plane detection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;WebAssembly&lt;/strong&gt; (WASM)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;near native speed&lt;/li&gt;
+&lt;li&gt;just computation, no DOM access nor I/O&lt;/li&gt;
+&lt;li&gt;support for strongly typed languages; around 40 programming languages reportedly compile to WASM&lt;/li&gt;
+&lt;li&gt;physics engines, SLAM engines&lt;/li&gt;
+&lt;li&gt;2.0 in draft&lt;/li&gt;
+&lt;li&gt;developer survey: need for improvement in four areas: WASI, debugging support, integration with JavaScript and browser APIs, and build tooling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;performance&quot; tabindex=&quot;-1&quot;&gt;Performance &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Decide your &lt;strong&gt;target device class&lt;/strong&gt;: mobile (billions), standalone headsets (10s of millions), or personal computers (millions)&lt;/li&gt;
+&lt;li&gt;To keep frames/sec up, watch these metrics
+&lt;ul&gt;
+&lt;li&gt;number of triangles per frame:
+&lt;ul&gt;
+&lt;li&gt;mobile: &amp;lt; 100,000–200,000&lt;/li&gt;
+&lt;li&gt;standalone headsets: &amp;lt; 750,000–1,000,000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;draw calls per frame:
+&lt;ul&gt;
+&lt;li&gt;mobile: &amp;lt; 100–150&lt;/li&gt;
+&lt;li&gt;standalone headsets: &amp;lt; 100–175&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;metrics
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;draw calls&lt;/strong&gt;: not much more than 100 draw calls (object &amp;amp; material) on mobile, including standalone headsets&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;number of triangles&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;google-model-viewer&quot; tabindex=&quot;-1&quot;&gt;Google &amp;lt;model-viewer&amp;gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;only displays 3-D models&lt;/li&gt;
+&lt;li&gt;web component (element in DOM tree)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;frameworks&quot; tabindex=&quot;-1&quot;&gt;Frameworks &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Three.js
+&lt;ul&gt;
+&lt;li&gt;imperative programming&lt;/li&gt;
+&lt;li&gt;low-level; more code needs to be written than other frameworks&lt;/li&gt;
+&lt;li&gt;minimal dev tools&lt;/li&gt;
+&lt;li&gt;no built-in physics engine, but almost every physics engine documents how to use with Three.js&lt;/li&gt;
+&lt;li&gt;extensions tend to be low-level
+&lt;ul&gt;
+&lt;li&gt;example: subdivision vs. glow (halo)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;experimental support for WebGPU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Babylon.js
+&lt;ul&gt;
+&lt;li&gt;One True Way to do things; reputation of steeper knowledge curve&lt;/li&gt;
+&lt;li&gt;built-in support for almost anything you need (but if it doesn&#39;t work the way you need, you may be out of luck)&lt;/li&gt;
+&lt;li&gt;physics engine: Cannon.js or Oimo&lt;/li&gt;
+&lt;li&gt;community contributions&lt;/li&gt;
+&lt;li&gt;tools like Playground&lt;/li&gt;
+&lt;li&gt;most features support using WebGPU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A-Frame
+&lt;ul&gt;
+&lt;li&gt;Easy to get started; simplest scenes just require HTML&lt;/li&gt;
+&lt;li&gt;Programming guidelines, but you can do what you like
+&lt;ul&gt;
+&lt;li&gt;also, open-source chaos&lt;/li&gt;
+&lt;li&gt;impedance change when you get down to Three.js level&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A-Frame Inspector, like browser tools&lt;/li&gt;
+&lt;li&gt;no built-in physics engine&lt;/li&gt;
+&lt;li&gt;a component for anything you want to do (for example, Gaussian Splatting), but it may not be maintained or work with latest. In particular, many components were written for earlier versions of Three.js that use WebGL 1&lt;/li&gt;
+&lt;li&gt;many components are just wrappers for Three.js functionality&lt;/li&gt;
+&lt;li&gt;Lower layers use Three.js; awkward to use Three.js plugins&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/DougReeder/aframe-glow/tree/modernize&quot;&gt;A-Frame component&lt;/a&gt; built on Three.JS extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;engines&quot; tabindex=&quot;-1&quot;&gt;Engines &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Unity (exporter plugin)
+&lt;ul&gt;
+&lt;li&gt;not web-friendly,
+&lt;ul&gt;
+&lt;li&gt;long load times&lt;/li&gt;
+&lt;li&gt;minimal access to web APIs&lt;/li&gt;
+&lt;li&gt;can&#39;t get help via posting a simple example online&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;not all Unity capabilities&lt;/li&gt;
+&lt;li&gt;experimental support for WebGPU&lt;/li&gt;
+&lt;li&gt;good for showing off a single level of a native game&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PlayCanvas
+&lt;ul&gt;
+&lt;li&gt;integrates with ammo.js physics engine&lt;/li&gt;
+&lt;li&gt;visual editor&lt;/li&gt;
+&lt;li&gt;rendering optimized for mobile&lt;/li&gt;
+&lt;li&gt;built-in code, editor, less friendly to using your own IDE&lt;/li&gt;
+&lt;li&gt;WebGPU support in development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;8th wall
+&lt;ul&gt;
+&lt;li&gt;SLAM engine doesn&#39;t depend on WebXR API (so runs on iPhones)&lt;/li&gt;
+&lt;li&gt;focussed on AR advertising campaigns&lt;/li&gt;
+&lt;li&gt;expensive&lt;/li&gt;
+&lt;li&gt;must build on top of a framework such as A-Frame&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Wonderland
+&lt;ul&gt;
+&lt;li&gt;several excellent example games&lt;/li&gt;
+&lt;li&gt;free up to $120k/yr&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;others with less mind-share
+&lt;ul&gt;
+&lt;li&gt;Godot
+&lt;ul&gt;
+&lt;li&gt;2-D &amp;amp; 3-D game engine for native&lt;/li&gt;
+&lt;li&gt;impedance mismatch with WebXR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Elixir
+&lt;ul&gt;
+&lt;li&gt;Rapier physics engine&lt;/li&gt;
+&lt;li&gt;compatibility w/ Three.js plugins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cocos Creator
+&lt;ul&gt;
+&lt;li&gt;2-D &amp;amp; 3-D game engine for native&lt;/li&gt;
+&lt;li&gt;supports WebGPU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Etherial&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;tools-for-non-programmers&quot; tabindex=&quot;-1&quot;&gt;Tools for non-programmers &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;LearnBright
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;learning modules&amp;quot; only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MetaVRse Engine&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;development-generally&quot; tabindex=&quot;-1&quot;&gt;Development (generally) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;3D file formats: GLTF/GLB with many frameworks offering support for older standards like OBJ, STL and proprietary standards like FBX, USD.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can use multiple threads via Workers &amp;amp; WebAssembly (but it&#39;s awkward and less efficient than native)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Weakly typed languages can be transpiled to JavaScript&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Strongly typed languages can be compiled to WebAssembly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pick a framework or engine — begin with the end in mind&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;game vs. experience vs. presentation
+&lt;ul&gt;
+&lt;li&gt;physics engine required?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;try framework examples, on your target platforms, to see what apps are focussed on&lt;/li&gt;
+&lt;li&gt;licensing / who&#39;s backing it? / how long will your project be maintained?
+&lt;ul&gt;
+&lt;li&gt;Amazon abandoned Sumerian in 2022&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;What you&#39;re familiar with&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In any framework, you may need to write/re-write a component to do what you need&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Browser extension: WebXR API Emulator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Standalone headsets: chrome://inspect/#devices&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3D file formats: GLTF/GLB with many frameworks offering support for older standards like OBJ, STL and proprietary standards like FBX, USD.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can use multiple threads via Workers &amp;amp; WebAssembly (but it&#39;s awkward and less efficient than native)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Weakly typed languages can be transpiled to JavaScript; strongly typed languages can be compiled to WebAssembly&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;development-support&quot; tabindex=&quot;-1&quot;&gt;Development Support &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;WebXR discord&lt;/li&gt;
+&lt;li&gt;Framework forums / communities&lt;/li&gt;
+&lt;li&gt;Voices of VR podcast has done many episodes on WebXR and the broader Immersive Web community.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;browser-and-os-support&quot; tabindex=&quot;-1&quot;&gt;Browser &amp;amp; OS Support &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;quest-2-3-pro&quot; tabindex=&quot;-1&quot;&gt;Quest 2/3/Pro &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Oculus Browser: full support&lt;/li&gt;
+&lt;li&gt;Wolvic (based on Firefox): supports basic features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;pico-headsets&quot; tabindex=&quot;-1&quot;&gt;Pico headsets &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Firefox may or may not still work&lt;/li&gt;
+&lt;li&gt;Wolvic (based on Firefox): supports basic features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;vision-os&quot; tabindex=&quot;-1&quot;&gt;Vision OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Safari: enabled by default in VisonOS 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;personal-computers&quot; tabindex=&quot;-1&quot;&gt;Personal Computers &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chromium browsers: most features&lt;/li&gt;
+&lt;li&gt;Safari: behind flag&lt;/li&gt;
+&lt;li&gt;Firefox behind flag, no longer maintained&lt;/li&gt;
+&lt;li&gt;Opera: many features&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;android&quot; tabindex=&quot;-1&quot;&gt;Android &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chromium browsers: most features including AR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ios&quot; tabindex=&quot;-1&quot;&gt;iOS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Safari: not implemented&lt;/li&gt;
+&lt;li&gt;other browsers (only in Europe for now) ?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;linux&quot; tabindex=&quot;-1&quot;&gt;Linux &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Chromium browsers: experimental support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;outstanding-webxr-sites&quot; tabindex=&quot;-1&quot;&gt;Outstanding WebXR sites &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://meetwol.com&quot;&gt;Wol&lt;/a&gt;: Mixed-reality, voice interaction&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://travisbarrydick.github.io/vr-planets/dist/&quot;&gt;VRPlanets&lt;/a&gt;: learn orbital mechanics&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://3dstreet.app/&quot;&gt;3DStreet&lt;/a&gt;: urban planning&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://moonrider.xyz/&quot;&gt;Moonrider&lt;/a&gt;: Beat Saber clone&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://flowerbed.metademolab.com/&quot;&gt;Project Flowerbed&lt;/a&gt;: interactions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;live-coding&quot; tabindex=&quot;-1&quot;&gt;Live-coding &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/webxr-for-web-developers/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/DougReeder/live-coding-world&quot;&gt;code repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aframe.wiki/en/#!pages/environment.md&quot;&gt;A-Frame environment components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aframe.wiki/en/#!pages/component-directory.md&quot;&gt;A-Frame components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://live-coding.surge.sh/&quot;&gt;multi-user world&lt;/a&gt; — if you don&#39;t have a friend handy, open two windows&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs</title>
+		<link href="https://hominidsoftware.com/presentations/Web%20Share%20APIs/"/>
+		<published>2024-03-06T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps.</summary>
+		<id>https://hominidsoftware.com/presentations/Web%20Share%20APIs/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://www.meetup.com/columbusjs/events/299341757/&quot;&gt;March 2024&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;bio&quot; tabindex=&quot;-1&quot;&gt;Bio &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Doug Reeder has been programming professionally for a quarter century on a wide range of technologies, at organizations large and small. Today he does full-stack web development, consults on WebXR, and pushes back on gatekeepers.&lt;/p&gt;
+&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;1974-gui-copy-and-paste&quot; tabindex=&quot;-1&quot;&gt;1974: GUI Copy &amp;amp; Paste &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Larry Tesler &amp;amp; Tim Mott @ Xerox PARC&lt;/li&gt;
+&lt;li&gt;App to App within device, only&lt;/li&gt;
+&lt;li&gt;Text, later other data types&lt;/li&gt;
+&lt;li&gt;later: Drag &amp;amp; Drop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1996-palm-os-sharing&quot; tabindex=&quot;-1&quot;&gt;1996: Palm OS Sharing &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Few people had direct Internet access; PDAs didn&#39;t have IP networking&lt;/li&gt;
+&lt;li&gt;Exchange Manager; originated Gavin Peacock
+&lt;ul&gt;
+&lt;li&gt;IR beaming range 3 feet (OBEX IrDA; Pocket PC 2002 and later)&lt;/li&gt;
+&lt;li&gt;Bluetooth in Palm OS 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;IR beaming is fast enough for business cards, calendar events, memos (text only). If you&#39;re patient, you can share apps or the smaller pictures used back then&lt;/li&gt;
+&lt;li&gt;Available, but underutilized, within device:
+&lt;ul&gt;
+&lt;li&gt;Resco Explorer lets you receive zip archives&lt;/li&gt;
+&lt;li&gt;SiEd lets you receive and edit .c, .html, and .php files&lt;/li&gt;
+&lt;li&gt;VFSExchange (2006) — used mostly for ringtones &amp;amp; Java Midlets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;flex-center-center&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/VFSExchange-ScreenShot130-320w.avif 320w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/VFSExchange-ScreenShot130-320w.webp 320w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;screen shot of VFS Exchange&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/VFSExchange-ScreenShot130-320w.png&quot; width=&quot;320&quot; height=&quot;320&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Non-enthusiasts didn&#39;t use Beaming — unclear why.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Video of IR beaming [if time]&lt;/p&gt;
+&lt;h3 id=&quot;2009-palm-webos-touch-to-share&quot; tabindex=&quot;-1&quot;&gt;2009: Palm webOS Touch-to-share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;devices exchange URLs&lt;/li&gt;
+&lt;li&gt;paradigm is &amp;quot;share what&#39;s on the screen&amp;quot;&lt;/li&gt;
+&lt;li&gt;video of Zap Photoshare: &lt;a href=&quot;https://www.youtube.com/watch?v=2oLfKqpUJT4&quot;&gt;https://www.youtube.com/watch?v=2oLfKqpUJT4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;now-social-media-is-king&quot; tabindex=&quot;-1&quot;&gt;Now: Social Media is king &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Big demand to share URLs from and to Social Media&lt;/li&gt;
+&lt;li&gt;Selecting content on handhelds is tricky, so copy-and-paste is high-friction. ⇒ demand for sharing &lt;em&gt;within&lt;/em&gt; device&lt;/li&gt;
+&lt;li&gt;Native share targets:
+&lt;ul&gt;
+&lt;li&gt;social media&lt;/li&gt;
+&lt;li&gt;email&lt;/li&gt;
+&lt;li&gt;messaging&lt;/li&gt;
+&lt;li&gt;file storage&lt;/li&gt;
+&lt;li&gt;file transfer&lt;/li&gt;
+&lt;li&gt;print service&lt;/li&gt;
+&lt;li&gt;content transformers (e.g. text-to-speech, Google Lens)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Browsers already have menu command to share URL of whole page&lt;/li&gt;
+&lt;li&gt;Android offers to Share anything copied to the clipboard&lt;/li&gt;
+&lt;li&gt;A number of browsers accept shared text, and do a web search with it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;enter-the-web-share-api-send&quot; tabindex=&quot;-1&quot;&gt;Enter the Web Share API (send) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;original: asynchronous &lt;code&gt;navigator.share() &lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;can send part of page, or even content that isn&#39;t in page at all&lt;/li&gt;
+&lt;li&gt;requires &lt;em&gt;transient activation&lt;/em&gt; (typically a user click)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt;, &lt;code&gt;text&lt;/code&gt; &amp;amp; &lt;code&gt;url&lt;/code&gt; fields
+&lt;ul&gt;
+&lt;li&gt;can&#39;t send multiple URLs nor texts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;sender dumps it over the wall, receiver free to ignore fields it doesn&#39;t want to deal with&lt;/li&gt;
+&lt;li&gt;typically use text or url, not both. Can&#39;t be sure what receiver will actually use&lt;/li&gt;
+&lt;li&gt;widely supported (Firefox on Android won&#39;t send text)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;later: synchronous &lt;code&gt;navigator.canShare()&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;if data in one form is disallowed, you can send in another format&lt;/li&gt;
+&lt;li&gt;almost only use is whether the browser allows new &lt;code&gt;files&lt;/code&gt; field at all
+&lt;ul&gt;
+&lt;li&gt;won&#39;t tell you if file type is disallowed :-(&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;small-signature-complicated-use&quot; tabindex=&quot;-1&quot;&gt;Small signature, complicated use &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;url &amp;gt; text, file &amp;gt; text; safest to not send url &amp;amp; files; may need to offer more than one Share option&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;URLs: can send if API supported at all&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sending multiple URLs requires multiple user clicks&lt;/li&gt;
+&lt;li&gt;only &lt;code&gt;http:&lt;/code&gt; and &lt;code&gt;https:&lt;/code&gt; schemes&lt;/li&gt;
+&lt;li&gt;aside: theoretical possibilities that probably won&#39;t materialize: tel: mailto: sms: mms: irc: sip: xmpp:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;text: call &lt;code&gt;canShare()&lt;/code&gt;, fall back to simulating click on &lt;code&gt;mailto:&lt;/code&gt; anchor&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;files: multiple ways to fail&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no API&lt;/li&gt;
+&lt;li&gt;canShare()&lt;/li&gt;
+&lt;li&gt;file type rejected by share()&lt;/li&gt;
+&lt;li&gt;If your use case allows, can fall back to different type (plain text or PDF), &lt;code&gt;text&lt;/code&gt; field, thence to &lt;code&gt;mailto:&lt;/code&gt; anchor&lt;/li&gt;
+&lt;li&gt;Notes Together will try up to four different ways to send a note&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;file-types-chromium-on-android-will-share&quot; tabindex=&quot;-1&quot;&gt;File types Chromium on Android will share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;text/plain&lt;/li&gt;
+&lt;li&gt;text/html&lt;/li&gt;
+&lt;li&gt;text/csv&lt;/li&gt;
+&lt;li&gt;text/css — &lt;em&gt;why?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;file-types-chromium-on-android-won-t-share&quot; tabindex=&quot;-1&quot;&gt;File types Chromium on Android won&#39;t share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;text/tab-separated-values&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;text/calendar&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;text/vcard&lt;/strong&gt; (iOS Contacts share target)&lt;/li&gt;
+&lt;li&gt;text/markdown&lt;/li&gt;
+&lt;li&gt;text/rtf&lt;/li&gt;
+&lt;li&gt;text/javascript&lt;/li&gt;
+&lt;li&gt;text/p .p&lt;/li&gt;
+&lt;li&gt;text/awk .awk&lt;/li&gt;
+&lt;li&gt;text/uri .uri&lt;/li&gt;
+&lt;li&gt;text/gltf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;web-share-demo-apps&quot; tabindex=&quot;-1&quot;&gt;Web Share demo apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Title, text, url, files:
+&lt;a href=&quot;https://w3c.github.io/web-share/demos/share-files.html&quot;&gt;https://w3c.github.io/web-share/demos/share-files.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Files:
+&lt;a href=&quot;https://scrapbook-pwa.web.app/&quot;&gt;https://scrapbook-pwa.web.app/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;web-share-target-api-receive&quot; tabindex=&quot;-1&quot;&gt;Web Share &lt;em&gt;Target&lt;/em&gt; API (receive) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;installed PWA (requires Web App Manifest &amp;amp; Service Worker)&lt;/li&gt;
+&lt;li&gt;browser &amp;amp; OS that supports&lt;/li&gt;
+&lt;li&gt;add to Web App Manifest: &lt;code&gt; &lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;share_target&amp;quot;: {
+    &amp;quot;action&amp;quot;: &amp;quot;/create-from-share&amp;quot;,
+    &amp;quot;method&amp;quot;: &amp;quot;POST&amp;quot;,
+    &amp;quot;enctype&amp;quot;: &amp;quot;multipart/form-data&amp;quot;,
+    &amp;quot;params&amp;quot;: {
+      &amp;quot;title&amp;quot;: &amp;quot;title&amp;quot;,
+      &amp;quot;text&amp;quot;: &amp;quot;text&amp;quot;,
+      &amp;quot;url&amp;quot;: &amp;quot;url&amp;quot;,
+      &amp;quot;files&amp;quot;: [
+        {&amp;quot;name&amp;quot;: &amp;quot;files&amp;quot;, &amp;quot;accept&amp;quot;: [&amp;quot;text/*&amp;quot;, &amp;quot;image/*&amp;quot;, &amp;quot;.text&amp;quot;, &amp;quot;.readme&amp;quot;&amp;quot;]}
+      ]
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;route can be handled by web server or Service Worker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;quick-review-of-coding-service-workers&quot; tabindex=&quot;-1&quot;&gt;Quick review of coding Service Workers &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;available APIs differ from window
+&lt;ul&gt;
+&lt;li&gt;DOM is not available&lt;/li&gt;
+&lt;li&gt;DOMParser().parseFromString is not available&lt;/li&gt;
+&lt;li&gt;URL.createObjectURL is not available in a Service Worker&lt;/li&gt;
+&lt;li&gt;postMessage to client window, which postMessages back&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;processing data in Service Worker may lead to duplication of code&lt;/li&gt;
+&lt;li&gt;easier to just store data until it can be processed in a window&lt;/li&gt;
+&lt;li&gt;Sharing doesn&#39;t appear to count as a user action (transient activation)&lt;/li&gt;
+&lt;li&gt;testing is tricky — unit tests help, but important parts are inherently outside the browser&lt;/li&gt;
+&lt;li&gt;handler should return quickly with redirect to an appropriate path — can continue to process in the background&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;web-share-target-demo-apps&quot; tabindex=&quot;-1&quot;&gt;Web Share Target demo apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Title, text &amp;amp; url:
+&lt;a href=&quot;https://w3c.github.io/web-share-target/demos/sharetarget.html&quot;&gt;https://w3c.github.io/web-share-target/demos/sharetarget.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;File, or link and file:
+&lt;a href=&quot;https://scrapbook-pwa.web.app/&quot;&gt;https://scrapbook-pwa.web.app/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;can-t-access-full-native-sharing-api&quot; tabindex=&quot;-1&quot;&gt;Can&#39;t access full native Sharing API &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Can’t share rich text/HTML message&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MacOS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;can&#39;t directly Create Quick Note&lt;/li&gt;
+&lt;li&gt;can&#39;t directly Add to Dock&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iOS only allows sharing to one precompiled extension per app, it would be difficult to implement the same experience as Android&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;UWP registration is in app package manifest; not clear how browser can create share target for each app, but support is listed for Chrome, Edge and Opera&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don&#39;t hold your breath for more implementations&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;app-that-uses-web-share-apis-with-fallbacks&quot; tabindex=&quot;-1&quot;&gt;App that uses Web Share APIs with fallbacks &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Long-press on summary in list to share&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://notestogether.hominidsoftware.com&quot;&gt;Notes Together&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Can be on level playing field with native app, but...&lt;/li&gt;
+&lt;li&gt;Uneven implementation mean it can&#39;t be an essential part of using your webapp&lt;/li&gt;
+&lt;li&gt;Arbitrary restrictions &amp;amp; uneven support ⇒ must carefully check beforehand if your use case is supported&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Gestures in WebXR — Barrier Mage</title>
+		<link href="https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/"/>
+		<published>2021-09-25T00:00:00Z</published>
+		<updated>2024-08-22T04:23:05Z</updated>
+		<summary>Reliable gesture recognition enhances immersion.</summary>
+		<id>https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/</id>
+		<content type="html">&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/Gestures%20in%20WebXR/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;drawing-a-symbol&quot; tabindex=&quot;-1&quot;&gt;Drawing a symbol &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.avif 750w, https://hominidsoftware.com/img/pentacle-ViolentCloud-1500w.avif 1500w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.webp 750w, https://hominidsoftware.com/img/pentacle-ViolentCloud-1500w.webp 1500w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;drawing pentacle to protect from The Violent Cloud&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.jpeg&quot; width=&quot;1500&quot; height=&quot;1000&quot; srcset=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.jpeg 750w, https://hominidsoftware.com/img/pentacle-ViolentCloud-1500w.jpeg 1500w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;root-mean-square&quot; tabindex=&quot;-1&quot;&gt;Root-mean-square &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;math display=&quot;block&quot; class=&quot;tml-display&quot; style=&quot;display:block math;&quot;&gt;
+  &lt;msqrt&gt;
+    &lt;mfrac&gt;
+      &lt;mrow&gt;
+        &lt;mo form=&quot;prefix&quot; stretchy=&quot;false&quot; lspace=&quot;0em&quot; rspace=&quot;0em&quot;&gt;(&lt;/mo&gt;
+        &lt;msub&gt;
+          &lt;mi&gt;x&lt;/mi&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+        &lt;/msub&gt;
+        &lt;mo&gt;−&lt;/mo&gt;
+        &lt;msub&gt;
+          &lt;mi&gt;x&lt;/mi&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+        &lt;/msub&gt;
+        &lt;msup&gt;
+          &lt;mo form=&quot;postfix&quot; stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+        &lt;/msup&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mo form=&quot;prefix&quot; stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;
+        &lt;msub&gt;
+          &lt;mi&gt;y&lt;/mi&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+        &lt;/msub&gt;
+        &lt;mo&gt;−&lt;/mo&gt;
+        &lt;msub&gt;
+          &lt;mi&gt;y&lt;/mi&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+        &lt;/msub&gt;
+        &lt;msup&gt;
+          &lt;mo form=&quot;postfix&quot; stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+        &lt;/msup&gt;
+        &lt;mo&gt;+&lt;/mo&gt;
+        &lt;mo form=&quot;prefix&quot; stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;
+        &lt;msub&gt;
+          &lt;mi&gt;z&lt;/mi&gt;
+          &lt;mn&gt;1&lt;/mn&gt;
+        &lt;/msub&gt;
+        &lt;mo&gt;−&lt;/mo&gt;
+        &lt;msub&gt;
+          &lt;mi&gt;z&lt;/mi&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+        &lt;/msub&gt;
+        &lt;msup&gt;
+          &lt;mo form=&quot;postfix&quot; stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+        &lt;/msup&gt;
+      &lt;/mrow&gt;
+      &lt;mn&gt;3&lt;/mn&gt;
+    &lt;/mfrac&gt;
+  &lt;/msqrt&gt;
+&lt;/math&gt;
+&lt;p&gt;used to calculate difference between drawn endpoints &amp;amp; template endpoints&lt;/p&gt;
+&lt;h2 id=&quot;barrier-mage-basic-play&quot; tabindex=&quot;-1&quot;&gt;Barrier Mage basic play &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;video class=&quot;square&quot; controls=&quot;&quot; playsinline=&quot;&quot; preload=&quot;metadata&quot;&gt;
+	&lt;source src=&quot;https://hominidsoftware.com/no-multiviews/barrier-mage-basic-play-4.mp4&quot; type=&quot;video/mp4&quot;&gt;
+	Download the &lt;a href=&quot;https://hominidsoftware.com/no-multiviews/barrier-mage-basic-play-4.mp4&quot;&gt;MP4&lt;/a&gt; video.
+&lt;/video&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The ELK Stack</title>
+		<link href="https://hominidsoftware.com/presentations/ELK%20stack/"/>
+		<published>2020-01-02T00:00:00Z</published>
+		<updated>2024-08-10T22:15:20Z</updated>
+		<summary>Elasticsearch, Logstash &amp; Kibana together enable powerful monitoring and data transformations.</summary>
+		<id>https://hominidsoftware.com/presentations/ELK%20stack/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;talks delivered to technical &amp;amp; non-technical audiences at &lt;a href=&quot;https://www.nchannel.com/&quot;&gt;nChannel&lt;/a&gt; in January 2020&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&quot;technical-talk-on-elk-stack&quot; tabindex=&quot;-1&quot;&gt;technical talk on ELK stack &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/ELK%20stack/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;A RESTful API on top of the powerful Lucene search engine&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;document-based search engine (store denormalized data)&lt;/li&gt;
+&lt;li&gt;JSON + Date, Binary, Range, IP address, Geo-point, shape, etc.&lt;/li&gt;
+&lt;li&gt;schemas not required, but usually desirable; schema changes rarely break requests&lt;/li&gt;
+&lt;li&gt;inverted index&lt;/li&gt;
+&lt;li&gt;weaker storage guarantees than a database; not designed to be a source of truth&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;structured queries, fuzzy &amp;amp; full text queries, and complex queries that combine the two’&lt;/p&gt;
+&lt;p&gt;analytics use same indices and are likewise fast&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JOIN before ingestion (or in application); can do pre-specified parent-child relations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;close integration with &lt;strong&gt;Kibana&lt;/strong&gt; for management, visualization, machine learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Logstash&lt;/strong&gt; for &lt;strong&gt;server-side&lt;/strong&gt; data processing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;enrich/flatten data (e.g. from ID to full records)&lt;/li&gt;
+&lt;li&gt;Swiss Army knife&lt;/li&gt;
+&lt;li&gt;could write to other stores like S3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Beats&lt;/strong&gt; for &lt;strong&gt;client-side&lt;/strong&gt; single-purpose data shippers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Filebeat: tail file&lt;/li&gt;
+&lt;li&gt;Metricbeat: metrics like CPU&lt;/li&gt;
+&lt;li&gt;Packetbeat: network traffic&lt;/li&gt;
+&lt;li&gt;Winlogbeat:&lt;/li&gt;
+&lt;li&gt;Auditbeat: replaces auditd, uses same rules&lt;/li&gt;
+&lt;li&gt;Heartbeat: actively probe systems&lt;/li&gt;
+&lt;li&gt;Functionbeat: collect from serverless framework, like AWS Lambda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ingestion&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PUT /indexname/_doc/ID
+&lt;ul&gt;
+&lt;li&gt;POST _bulk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ingestion node (like Logstash but less functionality)&lt;/li&gt;
+&lt;li&gt;Logstash&lt;/li&gt;
+&lt;li&gt;Beats&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;use HTTP Service Action to interface with Symphony&lt;/p&gt;
+&lt;h1 id=&quot;non-technical-talk-on-elk-stack&quot; tabindex=&quot;-1&quot;&gt;non-technical talk on ELK stack &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/ELK%20stack/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;relational DB&lt;/strong&gt;: (for example, Oracle or MySQL)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schemas must be rigid&lt;/li&gt;
+&lt;li&gt;normalize data (each datum stored once)&lt;/li&gt;
+&lt;li&gt;easy to update&lt;/li&gt;
+&lt;li&gt;general purpose - good at mixture of reading &amp;amp; writing&lt;/li&gt;
+&lt;li&gt;JOIN at query time&lt;/li&gt;
+&lt;li&gt;have to know exactly what you’re searching for&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;MongoDB&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schemas can be lax&lt;/li&gt;
+&lt;li&gt;denormalize data (datum may be stored multiple places)&lt;/li&gt;
+&lt;li&gt;strong consistency (can be source of truth)&lt;/li&gt;
+&lt;li&gt;may or may not be easy to update&lt;/li&gt;
+&lt;li&gt;some JOINs can be done at query time&lt;/li&gt;
+&lt;li&gt;have to know exactly what you’re looking for&lt;/li&gt;
+&lt;li&gt;compose.com: if you need any more than five or so indexes on a MongoDB collection, then that collection is a prime candidate for putting into Elasticsearch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Elasticsearch&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schemas can be lax&lt;/li&gt;
+&lt;li&gt;denormalize data (datum may be stored multiple places)&lt;/li&gt;
+&lt;li&gt;weaker consistency (should not be source of truth)&lt;/li&gt;
+&lt;li&gt;updating may be slow or difficult&lt;/li&gt;
+&lt;li&gt;configure each index for family of queries&lt;/li&gt;
+&lt;li&gt;JOIN on parent-child, or before ingestion, or in application&lt;/li&gt;
+&lt;li&gt;great support for &lt;strong&gt;fuzzy searches&lt;/strong&gt;, including full-text search
+&lt;ul&gt;
+&lt;li&gt;products related to the one displayed, but only one from each vendor, weighted toward positively-reviewed and high-margin products&lt;/li&gt;
+&lt;li&gt;search for “green” products in name, description, or vendor blurb, but not variant, weighted toward name and description&lt;/li&gt;
+&lt;li&gt;find a customer who’s surname is Lee, Lea, Li, Le, Lê or Lý&lt;/li&gt;
+&lt;li&gt;Comply with HIPPA by searching documents for number groups that appear to be SSNs&lt;/li&gt;
+&lt;li&gt;blog posts and comments that contain some variant of “consumer preference” such as “consumer product preference” or “preference of consumer”&lt;/li&gt;
+&lt;li&gt;articles from around May 2005 that mention The Beatles&lt;/li&gt;
+&lt;li&gt;search-as-you-type (suggest completions)&lt;/li&gt;
+&lt;li&gt;find hotels near a specified point&lt;/li&gt;
+&lt;li&gt;consolidate logs from all servers, and use machine learning to look for anomalies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;close integration with &lt;strong&gt;Kibana&lt;/strong&gt; for management, visualization, machine learning&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Logstash&lt;/strong&gt; for &lt;strong&gt;server-side&lt;/strong&gt; data processing&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Beats&lt;/strong&gt; for &lt;strong&gt;client-side&lt;/strong&gt; single-purpose data shippers&lt;/p&gt;
+&lt;p&gt;use HTTP Service Action to interface with &lt;strong&gt;Symphony&lt;/strong&gt; 2020-01-13T20:22:44.054Z&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ingesting data&lt;/strong&gt; into ELK stack&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Logstash&lt;/strong&gt; for &lt;strong&gt;server-side&lt;/strong&gt; data processing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;enrich/flatten data (e.g. from ID to full records)&lt;/li&gt;
+&lt;li&gt;Swiss Army tool&lt;/li&gt;
+&lt;li&gt;could write to other stores like S3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Beats&lt;/strong&gt; for (&lt;strong&gt;client-side&lt;/strong&gt;) single-purpose data shippers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Filebeat: tail file&lt;/li&gt;
+&lt;li&gt;Metricbeat: metrics like CPU&lt;/li&gt;
+&lt;li&gt;Packetbeat: network traffic&lt;/li&gt;
+&lt;li&gt;Winlogbeat:&lt;/li&gt;
+&lt;li&gt;Auditbeat: replaces auditd, uses same rules&lt;/li&gt;
+&lt;li&gt;Heartbeat: actively probe systems&lt;/li&gt;
+&lt;li&gt;Functionbeat: collect from serverless framework, like AWS Lambda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;template is schema that Elasticsearch will confirm to&lt;/p&gt;
+&lt;p&gt;Kibana Spaces support different classes of users&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>JavaScript Service Worker Design Patterns for Better UX</title>
+		<link href="https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/"/>
+		<published>2017-09-20T00:00:00Z</published>
+		<updated>2024-08-22T04:23:05Z</updated>
+		<summary>Service Workers improve the user experience by insulating the webapp from the vagaries of the network.</summary>
+		<id>https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://columbusjs.org/09-20-2017/doug-reeder-service-workers.html&quot;&gt;September 2017&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/JavaScript%20Service%20Worker%20Design%20Patterns%20for%20Better%20UX/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;web-pages-used-in-talk&quot; tabindex=&quot;-1&quot;&gt;Web pages used in talk &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;offline app: https://serenenotes.hominidsoftware.com (sucessor at &lt;a href=&quot;https://notestogether.hominidsoftware.com/&quot;&gt;Notes Together&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jakearchibald.github.io/isserviceworkerready/&quot;&gt;Is Service Worker Ready&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;other-resources&quot; tabindex=&quot;-1&quot;&gt;Other resources &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers&quot;&gt;Using Service Workers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tooling: &lt;a href=&quot;https://developer.chrome.com/docs/workbox/&quot;&gt;Workbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>“Second Screen” apps with the Connect SDK</title>
+		<link href="https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/"/>
+		<published>2014-09-17T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>Throwing content from a phone  to a smart TV enables new interactions.</summary>
+		<id>https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://columbusjs.org/09-17-2014/javascript-hardware-night.html&quot;&gt;September 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&quot;motivation&quot; tabindex=&quot;-1&quot;&gt;Motivation &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;“Smart TVs” much less interactive than computers
+&lt;ul&gt;
+&lt;li&gt;one set of preferences per app (typically)&lt;/li&gt;
+&lt;li&gt;Search is laborious&lt;/li&gt;
+&lt;li&gt;No e-mail/tweet from friend that knows you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;“Smart TV” interfaces are clunky at best&lt;/li&gt;
+&lt;li&gt;Most people in front of a TV have a mobile device nearby&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;what-it-s-not&quot; tabindex=&quot;-1&quot;&gt;What it’s not &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Screen mirroring (ala AirPlay Mirroring or Chromecast tab mirroring)&lt;/li&gt;
+&lt;li&gt;Additional display over Wi-Fi&lt;/li&gt;
+&lt;li&gt;Local Media Streaming (ala Play on Roku or AirPlay streaming)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;development-and-testing&quot; tabindex=&quot;-1&quot;&gt;Development &amp;amp; Testing &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Half a dozen Android or iOS libraries required&lt;/p&gt;
+&lt;p&gt;Setup takes a day, not an hour, unless you’re already familiar with Android development / iOS development.&lt;/p&gt;
+&lt;p&gt;Testing: buy hardware for any platform you really care about.
+Only emulator is webOS TV, and that appears to be buggy.&lt;/p&gt;
+&lt;h3 id=&quot;compatibility-mobile-os&quot; tabindex=&quot;-1&quot;&gt;Compatibility - Mobile OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;iOS, Android, or Cordova for both.&lt;/p&gt;
+&lt;p&gt;No announced plan for Windows Phone nor web app (Firefox OS, ChromeOS)&lt;/p&gt;
+&lt;h3 id=&quot;compatibility-tv-os&quot; tabindex=&quot;-1&quot;&gt;Compatibility - TV OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;8 platforms:
+LG webOS,
+Chromecast,
+Apple TV,
+Roku,
+Fire TV,
+LG Smart TV ’13,
+LG Smart TV ’12,
+DIAL&lt;/p&gt;
+&lt;p&gt;23 features:
+Apps,
+Media,
+System Controls,
+TV Controls&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/compatibility-matix-750w.avif 750w, https://hominidsoftware.com/img/compatibility-matix-1080w.avif 1080w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/compatibility-matix-750w.webp 750w, https://hominidsoftware.com/img/compatibility-matix-1080w.webp 1080w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Compatibility matrix&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/compatibility-matix-750w.png&quot; width=&quot;1080&quot; height=&quot;1392&quot; srcset=&quot;https://hominidsoftware.com/img/compatibility-matix-750w.png 750w, https://hominidsoftware.com/img/compatibility-matix-1080w.png 1080w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Broad support for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Launching app w/ known ID&lt;/li&gt;
+&lt;li&gt;Throw video from URL&lt;/li&gt;
+&lt;li&gt;Throw YouTube video (&amp;amp; possibly Hulu, NetFlix)&lt;/li&gt;
+&lt;li&gt;Throw audio from URL&lt;/li&gt;
+&lt;li&gt;Throw photo from URL&lt;/li&gt;
+&lt;li&gt;Throw URL to browser?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Other features may not be available on users&#39; devices.&lt;/p&gt;
+&lt;h3 id=&quot;demonstrate-connect-sdk-api-sampler&quot; tabindex=&quot;-1&quot;&gt;Demonstrate Connect SDK API Sampler &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;media-tab&quot; tabindex=&quot;-1&quot;&gt;Media tab &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Throw photo&lt;/li&gt;
+&lt;li&gt;Throw audio&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;apps-tab&quot; tabindex=&quot;-1&quot;&gt;Apps tab &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Launch Enyo 2 Sampler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;use-cases&quot; tabindex=&quot;-1&quot;&gt;Use Cases &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Game using mobile as tilt controller, e.g. Wii game (TV-centric)&lt;/li&gt;
+&lt;li&gt;Progress through sequence of videos on tablet, optionally displaying on TV e.g. Reading Bear (mobile-centric)&lt;/li&gt;
+&lt;li&gt;Run web server on phone, display photos on TV, e.g. Zap Photoshare (mobile-centric)&lt;/li&gt;
+&lt;li&gt;Multiplayer real-time strategy, displaying player-private info on mobile (joint)&lt;/li&gt;
+&lt;li&gt;Collaborative editing, e.g. Subethaedit, Etherpad (joint)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ux-positives&quot; tabindex=&quot;-1&quot;&gt;UX Positives &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;TV apps needn’t depend on awkward TV UI.&lt;/p&gt;
+&lt;p&gt;Don’t need a large phone to view photos or videos, if you can throw them up on a large display.&lt;/p&gt;
+&lt;p&gt;Avoid logging in to TV&lt;/p&gt;
+&lt;h3 id=&quot;ux-gotchas&quot; tabindex=&quot;-1&quot;&gt;UX Gotchas &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;UI can be good while UX is poor.&lt;/p&gt;
+&lt;p&gt;[ask who’s on local Wi-Fi]
+Must be on same Wi-Fi network: Ok for home, work, close friends. Poor for Meetup, meeting at clients.&lt;/p&gt;
+&lt;p&gt;FireTV &amp;amp; DIAL TVs can only “Launch My app” &amp;amp; beam YouTube.
+Easy to exclude from list, but leaves user frustrated.&lt;/p&gt;
+&lt;p&gt;Some games are much easier if you can always glance at the map&lt;/p&gt;
+&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This might be the tipping point where users expect devices to work together (like VCRs and TVs did)&lt;/li&gt;
+&lt;li&gt;Or maybe it won’t catch on, and companies will re-impose their walled gardens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://connectsdk.com/&quot;&gt;Connect SDK website&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;underlying-technologies&quot; tabindex=&quot;-1&quot;&gt;Underlying Technologies &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;mDNS&lt;/li&gt;
+&lt;li&gt;WebSockets&lt;/li&gt;
+&lt;li&gt;DIAL &amp;amp; Chromecast&lt;/li&gt;
+&lt;li&gt;Apple TV&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Enyo: Yet Another Framework or The Next Step Beyond Dojo?</title>
+		<link href="https://hominidsoftware.com/presentations/Enyo%20framework/"/>
+		<published>2012-02-16T00:00:00Z</published>
+		<updated>2024-08-16T23:26:01Z</updated>
+		<summary>Web apps on mobile require a new framework</summary>
+		<id>https://hominidsoftware.com/presentations/Enyo%20framework/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;talk delivered at CAS, the Chemical Abstracts Service of the American Chemical Society&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Enyo%20framework/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Who&#39;s it from?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Palm/HP: needed an HTML5 rival to iPad &amp;amp; desktop apps&lt;/li&gt;
+&lt;li&gt;Scott Miles (architect) &amp;amp; Steve Orvell (team member) were early contributors to Dojo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Why A New Framework?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fast rendering&lt;/li&gt;
+&lt;li&gt;equally supports mobile &amp;amp; desktop&lt;/li&gt;
+&lt;li&gt;composition of objects (scalable to large apps &amp;amp; varying screen sizes)&lt;/li&gt;
+&lt;li&gt;dynamic widget creation&lt;/li&gt;
+&lt;li&gt;design-tool friendly (April &#39;12)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What is Enyo Not?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;not for enhancing web pages; it&#39;s a framework for writing web apps&lt;/li&gt;
+&lt;li&gt;not for older browsers (IE8+, most Chrome/Safari, most Firefox)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enyo Constructors are simple to write&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;enyo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Foo&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; f &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Subclassing is easy, and doesn&#39;t require a new directory.&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;enyo&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token literal-property property&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Bar&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token literal-property property&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Foo&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token literal-property property&quot;&gt;newProperty&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;42&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Observation: rendering engines are fast at turning big block of HTML to a DOM, slow to update DOM&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;only HTML is stub (dependencies handled by depends.js); root object instantiates all others, directly or indirectly&lt;/li&gt;
+&lt;li&gt;dynamic widget creation is similar to quasi-static widget creation
+(This style can be used in Dojo.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Objects interact in 3 ways&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;creation &amp;amp; deletion&lt;/li&gt;
+&lt;li&gt;message passing&lt;/li&gt;
+&lt;li&gt;(visual objects) layout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Message Passing requires&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sender has been created and not yet destroyed&lt;/li&gt;
+&lt;li&gt;receiver has been created and not yet destroyed&lt;/li&gt;
+&lt;li&gt;channel has been set up and not yet torn down
+So why not make owner the message passing channel?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Component: Enyo Kind that participates in lifecycle &amp;amp; message-passing&lt;/p&gt;
+&lt;p&gt;Control: Enyo kind associated w/ 1 or more DOM Elements (like a Dijit), and so participates in layout&lt;/p&gt;
+&lt;p&gt;Ownership/Containment example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;app&lt;/li&gt;
+&lt;li&gt;header&lt;/li&gt;
+&lt;li&gt;radio buttons&lt;/li&gt;
+&lt;li&gt;scroller&lt;/li&gt;
+&lt;li&gt;list&lt;/li&gt;
+&lt;li&gt;ajax&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Owners call ordinary methods on their children. Familiar, flexible.&lt;/p&gt;
+&lt;p&gt;DOM events bubble as usual&lt;/p&gt;
+&lt;p&gt;Custom Events sent to owners.  No addListener machinery -&amp;gt; must check that strings match&lt;/p&gt;
+&lt;p&gt;PubSub -&amp;gt; Enyo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Components publish to owners. No subscription to events, just methods.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Since owners don&#39;t need to contain children, dialogs can be packaged with the Controls that invoke them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example: Date picker
+&lt;img src=&quot;https://sdk.webosarchive.org/enyojs/enyo2.6/docs/developer-guide/assets/dg-controls-date-picker.png&quot; alt=&quot;DatePicker graphic&quot;&gt;&lt;/p&gt;
+&lt;p&gt;a Control with one DOM Element:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hr&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;sidebar&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a Control with multiple DOM Elements:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;ol&gt;&amp;lt;li&gt;alpha&amp;lt;/li&gt;&amp;lt;li&gt;beta&amp;lt;/li&gt;&amp;lt;/ol&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a Control with many DOM nodes:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;HtmlContent&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;srcId&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;myContent&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;onLinkClick&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;htmlContentLinkClick&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;index.html:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;myContent&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;a lot &lt;span class=&quot;token keyword&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;HTML&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;which ends here&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a Control from a framework widget:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Button&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;OK&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;onclick&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;okClick&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;a Control from your agglomeration of widgets:&lt;/p&gt;
+&lt;pre class=&quot;language-javascript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token literal-property property&quot;&gt;kind&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;MyControlPanel&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&#39;s turtles all the way down! (Everything is a Control.)&lt;/p&gt;
+&lt;p&gt;Why JavaScript alone and no HTML?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;building DOM goes faster using innerHTML than DOM methods&lt;/li&gt;
+&lt;li&gt;build DOM tree all at once&lt;/li&gt;
+&lt;li&gt;easier to read&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;panel of Controls same as standard widget -&amp;gt; start with standard widget, replace with custom. &lt;br&gt;
+example: ?&lt;/p&gt;
+&lt;p&gt;Layout: encourages but does not require CSS3 Flex Boxes (not emulated for IE8/9)&lt;/p&gt;
+&lt;p&gt;Ajax API same as Control API. &lt;br&gt;
+Any async API (e.g. WebSQL) same as Control API. &lt;br&gt;
+A list shouldn&#39;t care whether it&#39;s receiving info from a button press, WebSQL callback, or AJAX callback.&lt;/p&gt;
+&lt;p&gt;Combining With Other Frameworks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;orthogonal to module loaders&lt;/li&gt;
+&lt;li&gt;wrap POJSO w/ thin Enyo facade (manually for now, auto in future). Methods map directly. Custom Events must be added as needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Message-Passing &lt;br&gt;
+Dojo: Pub-Sub or ?. MUX.  Separate objects for separate channels. Stovepiped. &lt;br&gt;
+Enyo: Owner. MUX, transform.  One object may support multiple channels&lt;/p&gt;
+&lt;p&gt;[show example code]&lt;/p&gt;
+&lt;p&gt;Status as of early February 2012:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.0 (Webkit-only) complete&lt;/li&gt;
+&lt;li&gt;2.0 (core only)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Module Pattern &lt;br&gt;
+Facade Pattern &lt;br&gt;
+Mediator Pattern&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Loose-Schema Databases and Heterogeneous Data</title>
+		<link href="https://hominidsoftware.com/presentations/Loose-Schema%20Databases%20and%20Heterogenous%20Data/"/>
+		<published>2011-05-09T00:00:00Z</published>
+		<updated>2024-08-20T02:12:36Z</updated>
+		<summary>New databases are emerging, which embrace data in varying formats from varying sources.</summary>
+		<id>https://hominidsoftware.com/presentations/Loose-Schema%20Databases%20and%20Heterogenous%20Data/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in May 2011&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/no-multiviews/Loose-Schema%20Databases.pdf&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Loose-Schema%20Databases%20and%20Heterogenous%20Data/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Loose-Schema%20Databases%20and%20Heterogenous%20Data/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;need for loose schema&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;heterogeneous data: different communities conceptualize &amp;quot;similar&amp;quot; info differently.   Users now expect computers to adapt to them, rather than users adapting to computers.
+&lt;ul&gt;
+&lt;li&gt;music meta-data: pop vs. classical: artist vs. composer+performer+conductor&lt;/li&gt;
+&lt;li&gt;to-do items: due date as floating/julian day number vs. absolute times/timestamp, responsible person vs. associated people, source-code management system&lt;/li&gt;
+&lt;li&gt;medical tests: range of BP values not same as range of blood glucose, systolic must be greater than diastolic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;heterogeneous data, homogenous format&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;converting to homogenous format generally involves a loss of data, or at least an alteration of data.  Contact: title+given+ornamental+family+suffix name -&amp;gt; given+family&lt;/li&gt;
+&lt;li&gt;round-trip data to external sources: alteration generates a spurious change notification, losing data is unacceptable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;partial solution: shoehorning: text field encoded as CSV, JSON or XML&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DB can&#39;t search, only payload&lt;/li&gt;
+&lt;li&gt;DB can&#39;t enforce relations or business constraints&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;heterogeneous data, manual union schema&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;schema must be updated before new data can be stored&lt;/li&gt;
+&lt;li&gt;storage may be inefficient&lt;/li&gt;
+&lt;li&gt;works fine for music meta-data, fails for medical tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SQLite: relational + flexibility&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;absent fields don&#39;t take up storage; sparse DB okay&lt;/li&gt;
+&lt;li&gt;columns have type affinity&lt;/li&gt;
+&lt;li&gt;ROWID is integer only, is twice as fast&lt;/li&gt;
+&lt;li&gt;single-user&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Normalization&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;array and object fields violate 1NF (depending on your definition of atomicity)&lt;/li&gt;
+&lt;li&gt;still should normalize and selectively denormalize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CouchDB&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;written in Erlang for robust concurrent systems; no shared state threading and all data is immutable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;crash-only file is always in a consistent state&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot;shared-nothing&amp;quot; clustering,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RESTful JSON HTTP API + 3rd party client libraries&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;stores &amp;quot;documents&amp;quot;; JSON I/O&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;unique ID&lt;/li&gt;
+&lt;li&gt;no fixed schema, no declarative schema, update function can check consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;lockless &amp;amp; optimistic: if revision number doesn&#39;t match, update fails.  Resolution similar to Subversion: client merge, re-submit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;incremental replication, partial replicas possible;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;also runs on handhelds&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;queries: only Map-Reduce&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1st query against a &amp;quot;view&amp;quot; is slow, but later queries only require incremental updating&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;map phase maps documents to N-dimensional array of keys&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;reduce phase (optional) computes sums, averages, unions, etc over one or more dimensions&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;undone subtasks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;map: if task, write 1 to each parent key, if undone, write 1 to each parent key&lt;/li&gt;
+&lt;li&gt;reduce: sum of each&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DB8&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;webOS-only, Palm-Bus access&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;similar data model to CouchDB, but must write own connector&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;single DB shared by all apps&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;backed-up to HP/Palm servers&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;multiple devices, one profile: may duplicate data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Universal Search (&amp;quot;Just Type&amp;quot;): simpler than under Palm OS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sidenote on good UI: standard kinds use union schema: phone app only searches for contacts with phone number, e-mail app only searches for contacts with e-mail addr&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3rd party &amp;quot;kinds&amp;quot; may extend multiple other kinds, incl. standard calendar event and contact kinds.   Can extend contact with case details for CRM&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;supports &amp;quot;webOS Synergy™&amp;quot;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;separate sources have separate records, app presents merged view&lt;/li&gt;
+&lt;li&gt;Calendar: all day or start &amp;amp; end time&lt;/li&gt;
+&lt;li&gt;Contacts: heuristic identifies same person&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Watches&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;asynchronous message from database to app, indicating change in some subset of data&lt;/li&gt;
+&lt;li&gt;not clear whether enabled by non-relational design&lt;/li&gt;
+&lt;li&gt;enables simpler app design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mongo DB&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;document-oriented: no server-side JOINs; embed documents&lt;/li&gt;
+&lt;li&gt;queries: analog of most SQL ops&lt;/li&gt;
+&lt;li&gt;map-reduce&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;software-referenced&quot; tabindex=&quot;-1&quot;&gt;Software referenced &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Loose-Schema%20Databases%20and%20Heterogenous%20Data/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://webostv.developer.lge.com/develop/guides/db8-basic&quot;&gt;DB8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.mongodb.com/docs/manual/&quot;&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,11 @@
+/* for short windows, like a tablet in landscape orientation */
+
+#nav {
+	position: fixed;
+	top: 1px;
+	right: 1px;	
+}
+
+div#header {
+	margin: 0em 13em 0em 1em;
+}

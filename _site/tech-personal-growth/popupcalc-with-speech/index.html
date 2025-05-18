@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Adding Speech to PopupCalc — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" content="Experiments revealed issues with latency and usefulness" >
+		<meta property="og:title" content="Adding Speech to PopupCalc" >
+		<meta property="og:description" content="Experiments revealed issues with latency and usefulness" >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/popupcalc-with-speech/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		<meta property="og:image" content="https://hominidsoftware.com/img/popupcalc.webp" >
+		<meta property="og:image.width" content="339" >
+		<meta property="og:image.height" content="388" >
+		<meta property="article:published_time" content="Mon Oct 10 2011 20:00:00 GMT-0400 (Eastern Daylight Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="user experience">
+		<meta property="article:tag" content="webOS">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "Adding Speech to PopupCalc",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "Experiments revealed issues with latency and usefulness",
+			"image": "https://hominidsoftware.com/img/popupcalc.webp",
+			 "datePublished": "2011-10-11",
+			"dateModified": "2024-08-20",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["user experience", "webOS"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/popupcalc-with-speech/" >
+		
+		<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Adding Speech to PopupCalc</h1>
+
+<div class="post-description">Experiments revealed issues with latency and usefulness</div>
+
+<div class="post-description">About 1 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2011-10-11">11 October 2011</time></li>
+	<li><a href="/tags/user-experience/" class="post-tag">user experience</a>, </li>
+	<li><a href="/tags/webos/" class="post-tag">webOS</a></li>
+</ul>
+
+<p>There are several places where speech output might be useful in a touchscreen calculator.</p>
+<p>Touchscreens have no tactile feedback, making it difficult for users to be sure they've tapped the correct button. Autocorrect is not possible for numbers. Thus, speaking the name of each button as it is pressed gives users the immediate feedback of a keyclick. However, this does not require text-to-speech, only a recording of each key name.</p>
+<p>Due to the large latency in using the <code>flite</code> plugin (<code>sdltts</code>), an implementation of this in PopupCalc failed to provide the immediate feedback users need.</p>
+<p>Speaking the name of each digit is not how humans say numbers, so a &quot;Speak Operand&quot; option was added. Numbers can't be spoken until they're completely entered, as signaled by an operator.</p>
+<p>Thus, a calculation is spoken as the phrases
+&quot;two times&quot;, &quot;three plus&quot;, &quot;four equals ten&quot;, rather than the natural &quot;two times three&quot;, &quot;plus four&quot;, &quot;equals ten&quot;. While an interesting user interface experiment, I judged this to not be useful for end users.</p>
+<div class="center-horizontal">
+	<video controls width="320" height="404" src="/no-multiviews/PopupCalc speech 3.mp4" poster="/img/popupcalc.webp" playsinline preload="metadata">
+			Download the <a href="/no-multiviews/PopupCalc speech 3.mp4">PopupCalc with speech</a> MP4 video.
+	</video>
+</div>
+<p>Speaking the result of a calculation is another approach.
+Implementing this using the <code>flite</code> plugin (<code>sdltts</code>) results in a noticeable latency, but might sometimes be useful.</p>
+<p>Another possibility is speaking the whole calculation.
+This allows a user to check that the calculation was entered correctly, reducing the need for a &quot;paper tape&quot; widget. The latency is not a problem here.
+It's also useful when one person is doing calculations for a group (say, at a meeting).
+It's most useful when training someone to do calculations, but PopupCalc only handles simple calculations and more complicated calculations are rarely done with calculators anymore.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/hp-exit-strategy-handhelds/">HP&#39;s Exit Strategy for Handhelds</a></li><li>Next: <a href="/tech-personal-growth/webos-desk-accessories/">webOS “Desk Accessories”</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

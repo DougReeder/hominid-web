@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Mess That Is Installing a WebApp — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" content="Almost all platforms support installing a PWA, but prompting the user is still fragmented." >
+		<meta property="og:title" content="The Mess That Is Installing a WebApp" >
+		<meta property="og:description" content="Almost all platforms support installing a PWA, but prompting the user is still fragmented." >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		
+		
+		
+		<meta property="article:published_time" content="Tue Dec 05 2023 19:00:00 GMT-0500 (Eastern Standard Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="webapp">
+		<meta property="article:tag" content="PWA">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "The Mess That Is Installing a WebApp",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "Almost all platforms support installing a PWA, but prompting the user is still fragmented.",
+			
+			 "datePublished": "2023-12-06",
+			"dateModified": "2024-08-11",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["webapp", "PWA"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/" >
+		
+		<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>The Mess That Is Installing a WebApp</h1>
+
+<div class="post-description">Almost all platforms support installing a PWA, but prompting the user is still fragmented.</div>
+
+<div class="post-description">About 3 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2023-12-06">06 December 2023</time></li>
+	<li><a href="/tags/webapp/" class="post-tag">webapp</a>, </li>
+	<li><a href="/tags/pwa/" class="post-tag">PWA</a></li>
+</ul>
+
+<h2 id="progressive-web-apps-pwas" tabindex="-1">Progressive Web Apps (PWAs) <a class="header-anchor" href="#progressive-web-apps-pwas">#</a></h2>
+<p>A persistent argument for native apps over webapps has been that webapps didn't behave like native apps.
+They couldn't access device APIs,
+were slow to start up and couldn't run offline,
+always appeared in a browser window with navigation UI,
+and did not appear in the lists of running or recent apps.</p>
+<p>Now, almost all of the APIs that most apps need (such as geolocation, push messaging and Bluetooth)
+are available to webapps, often under the banner of <a href="https://developer.mozilla.org/en-US/docs/Web/API" rel="noreferrer nofollow noopener external">HTML5</a>.
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers" rel="noreferrer nofollow noopener external">Service Workers</a>,
+the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Cache" rel="noreferrer nofollow noopener external">Cache API</a>,
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" rel="noreferrer nofollow noopener external">Web Storage</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API" rel="noreferrer nofollow noopener external">IndexedDB</a> allow webapps to start instantly
+and run offline.
+A <a href="https://developer.mozilla.org/en-US/docs/Web/Manifest" rel="noreferrer nofollow noopener external">Web App Manifest</a> provides the OS with the info
+it needs to &quot;install&quot; the webapp, so it can appear in its own window, be listed with native apps, have a full
+set of icons, be a destination for sharing, etc.</p>
+<p>The new APIs enjoy broad support from the browser makers (with Safari trailing three to four years behind),
+albeit not all features are implemented on all platforms.</p>
+<p>What's more, these technologies are independent, allowing webapps to implement the app-like features
+only where they need them.  Websites that users already interact with can instantly start and run offline,
+regardless of whether they are installed, or even can be installed on a given platform.
+That's the &quot;Progressive&quot; part.</p>
+<h2 id="installation" tabindex="-1">Installation <a class="header-anchor" href="#installation">#</a></h2>
+<p>While all the browser makers are positive about allowing apps to be installed in some sense, they differ
+in the user experience.</p>
+<p>Apple doesn't want webapps to compete with its App Store and their 30% cut on all content,
+so Safari makes the user illogically search in the &quot;Share&quot; menu to find &quot;Add to Home Screen&quot; on mobile
+and &quot;Add to Dock&quot; on Macs.</p>
+<p>Mozilla has also decided that installation should initiated by the user, as bookmarks always have been.
+That is reasonable (though any website can be bookmarked, but only some can be installed) and they do little to educate users about this feature.
+They also only implement it on Android. When Mozilla was pushing its Firefox OS, they asked developers to
+use non-standard APIs and repackage their webapps, but now they show little interest in standards to make it easy
+to install webapps. That comes across as &quot;Not Invented Here&quot;.</p>
+<p>Google has proposed and implemented the <code>beforeinstallprompt</code> event allowing webapps to trigger a standard browser
+dialog prompting the user to install (or decline to install) the webapp.
+This <code>beforeinstallprompt</code> event is also sanity-gated.
+That is, the dialog is not displayed on the first visit to the webapp. Other criteria also apply, such as
+&quot;don't allow until the user has interacted with the webapp&quot; and &quot;don't prompt the user too often&quot;</p>
+<p>Given that Chromium browsers have implemented <code>beforeinstallprompt</code>
+and Firefox and Safari have definitely decided not to implement it (see https://github.com/w3c/manifest/issues/835),
+an installable webapp must implement something along the lines of:</p>
+<pre class="language-JavaScript" tabindex="0"><code class="language-JavaScript">if (appSpecificUserEngagementDetected) {
+	if (installPromptDeferred) { // BeforeInstallPromptEvent saying system install prompt is available
+		enqueueSnackbar(`Install this webapp for easy access and a separate window.`,
+			{callback: async () => {await installPromptDeferred.prompt(); /* ... */}});
+	} else if (/\b(iPad|iPhone|iPod)\b/.test(navigator.userAgent) &&
+			/WebKit/.test(navigator.userAgent) &&
+			!/Edge/.test(navigator.userAgent) &&
+			!window.MSStream) {
+		enqueueSnackbar(`For easy access and a separate window, tap the share button then "Add to Home Screen"`);
+	} else if (/\b(Macintosh)\b/.test(navigator.userAgent) &&
+			/Safari/.test(navigator.userAgent) &&
+			! /\b(Chrom\w{1,3}\/[\d.]+)\b/.test(navigator.userAgent)) {
+		enqueueSnackbar(`For easy access and a separate window, click the share button then "Add to Dock"`);
+	} else if (/\bMobile\b/.test(navigator.userAgent) &&
+			/\b(Firefox\/[\d.]+)\b/.test(navigator.userAgent) &&
+			! /\b(Seamonkey\/[\d.]+)\b/.test(navigator.userAgent)) {
+		enqueueSnackbar(`For easy access and a separate window, from the Firefox menu select "Install"`);
+	}
+}</code></pre>
+<p>That is, each webapp must detect, not a feature, but the user interface for installation
+(that is, if the browser is Safari Mobile, Safari Mac, or Firefox Android), and educate the user about it.
+Browser sniffing is notoriously unreliable, but is the only way to customize for browser UI.
+Also, each installable webapp must write its own user education text, and preferably localize it.
+After all this work, the code is fragile against changes to the user interface of Safari and Firefox.</p>
+<p>A better solution would be for Safari and Firefox to provide standardized and localized user education UI.
+Installation is unfamiliar to most users, and doesn't apply to most websites, so when better to educate users
+than when they've engaged with an installable webapp?</p>
+<p>I have therefore proposed that Mozilla implement standardized and localized user education (a dialog)
+in Firefox Android, triggered by an API with different semantics than Google's <code>beforeinstallprompt</code>,
+but the same signature.
+Thus, almost all installable web apps would immediately take advantage of it.</p>
+<p>Please comment on <a href="https://connect.mozilla.org/t5/ideas/standardize-amp-localize-user-education-re-install-pwa-command/idi-p/46661" rel="noreferrer nofollow noopener external">my proposal on Mozilla Connect</a>,
+to help it gain critical mass, so Mozilla will take it seriously.
+Alas, it's not vetted yet :-( so please check again next week.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/">From Notes-in-tasks to Tasks-in-notes</a></li><li>Next: <a href="/tech-personal-growth/Hubs-on-DigitalOcean/">Persistent Storage for Hubs on DigitalOcean</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

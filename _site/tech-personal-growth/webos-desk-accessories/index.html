@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>webOS “Desk Accessories” — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" content="This post originally appeared on the webOS Developer Relations blog" >
+		<meta property="og:title" content="webOS “Desk Accessories”" >
+		<meta property="og:description" content="This post originally appeared on the webOS Developer Relations blog" >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		<meta property="og:image" content="https://hominidsoftware.com/img/PopupCalc-Calendar.png" >
+		<meta property="og:image.width" content="1024" >
+		<meta property="og:image.height" content="768" >
+		<meta property="article:published_time" content="Mon Oct 24 2011 20:00:00 GMT-0400 (Eastern Daylight Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="user experience">
+		<meta property="article:tag" content="webOS">
+		<meta property="article:tag" content="mobile">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "webOS “Desk Accessories”",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "This post originally appeared on the webOS Developer Relations blog",
+			"image": "https://hominidsoftware.com/img/PopupCalc-Calendar.png",
+			 "datePublished": "2011-10-25",
+			"dateModified": "2024-08-21",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["user experience", "webOS", "mobile"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/" >
+		
+		<link rel="stylesheet" href="/bundle/pV54bAwDDS.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>webOS “Desk Accessories”</h1>
+
+<div class="post-description">This post originally appeared on the webOS Developer Relations blog</div>
+
+<div class="post-description">About 5 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2011-10-25">25 October 2011</time></li>
+	<li><a href="/tags/user-experience/" class="post-tag">user experience</a>, </li>
+	<li><a href="/tags/webos/" class="post-tag">webOS</a>, </li>
+	<li><a href="/tags/mobile/" class="post-tag">mobile</a></li>
+</ul>
+
+<p><em><strong>Editor’s note:</strong> This week we are featuring a guest challenge from rockstar webOS developer Doug Reeder. He has pioneered an app interface that he calls Desk Accessories. Your challenge this week is to create an app that uses this kind of interface. Take it away, Doug!</em></p>
+<h2 id="background" tabindex="-1">Background <a class="header-anchor" href="#background">#</a></h2>
+<p><a href="https://arstechnica.com/uncategorized/2007/03/study-says-leave-the-multitasking-to-your-computer/" rel="noreferrer nofollow noopener external">Psychological research</a> shows that humans cannot efficiently concentrate on more than one activity at a time. However, there are single activities that require two apps on the screen at once. For example, one might want to compose an e-mail while reading figures from a spreadsheet, or calculate price comparisons while shopping on-line.</p>
+<h2 id="the-webos-user-interface" tabindex="-1">The webOS User Interface <a class="header-anchor" href="#the-webos-user-interface">#</a></h2>
+<p>While webOS supports true multitasking, it only lets you interact with one card at a time. However, there are two kinds of webOS windows which a user can interact with while another app’s card is displayed: Dashboards and System popup alerts. You can’t divide your screen between two arbitrary apps, but you can have “desk accessories”: apps which use a part of the screen while leaving most of it for another app.</p>
+<p>Dashboards persist until dismissed by the user, and the user can display them with a single swipe at any time. However, they are always exactly 320 pixels wide and 52 pixels tall. The user can display and interact with multiple Dashboards simultaneously.</p>
+<p><picture><source type="image/avif" srcset="/img/notifications-dashboard-478w.avif 478w" sizes="100vw"><source type="image/webp" srcset="/img/notifications-dashboard-478w.webp 478w" sizes="100vw"><img alt="three dashboards on Touchpad" loading="lazy" decoding="async" src="/img/notifications-dashboard-478w.png" width="478" height="203"></picture></p>
+<p>System popup alerts (don’t confuse them with popups, toasters, and alerts managed by Enyo or Mojo) must be 320 pixels wide, but the height is configurable. Once closed, they are gone. Only one can be displayed at a time. While they’re available on both phones and tablets, Popups that are taller than about 240 pixels take up a majority of the screen on a phone, typically making the other app unusable – and if you can’t use the other app, you’re better off putting your app in a card.</p>
+<p><picture><source type="image/avif" srcset="/img/notes_portrait-750w.avif 750w, /img/notes_portrait-768w.avif 768w" sizes="100vw"><source type="image/webp" srcset="/img/notes_portrait-750w.webp 750w, /img/notes_portrait-768w.webp 768w" sizes="100vw"><img alt="Popup Calc over Memos" loading="lazy" decoding="async" src="/img/notes_portrait-750w.png" width="768" height="1024" srcset="/img/notes_portrait-750w.png 750w, /img/notes_portrait-768w.png 768w" sizes="100vw"></picture></p>
+<div class="center-horizontal">
+<picture><source type="image/avif" srcset="/img/ss_pre3_emu-480w.avif 480w" sizes="100vw"><source type="image/webp" srcset="/img/ss_pre3_emu-480w.webp 480w" sizes="100vw"><img alt="Popup Calc on phone" loading="lazy" decoding="async" src="/img/ss_pre3_emu-480w.png" width="480" height="800"></picture>
+</div>
+<p>You can put any kind of widget in a Dashboard or System Popup, but there is a big limitation—neither receives keyboard events.</p>
+<p>Here are two example apps. <a href="https://web.archive.org/web/20141022053747/https://developer.palm.com/appredirect/?packageid=com.machiapps.dashboardutilities&amp;applicationid=7009" rel="noreferrer nofollow noopener external">Dashboard Utilities</a> is a desk accessory that primarily uses a Dashboard. <a href="https://hominidsoftware.com/popupcalc/index.html">PopupCalc</a> is a desk accessory that primarily uses a System popup.</p>
+<div class="center-horizontal">
+<picture><source type="image/avif" srcset="/img/ph_1-320w.avif 320w" sizes="100vw"><source type="image/webp" srcset="/img/ph_1-320w.webp 320w" sizes="100vw"><img alt="Dashboard Utilities dashboards" loading="lazy" decoding="async" src="/img/ph_1-320w.png" width="320" height="480"></picture>
+</div>
+<h2 id="flow-of-activity" tabindex="-1">Flow of Activity <a class="header-anchor" href="#flow-of-activity">#</a></h2>
+<p>Dashboards and System popups are simple to create, but you must consider all the flows of user activity. Desk accessories are little-known as yet to webOS users, so you would do well to have your app start by launching a card which explains how to open your Dashboard or Popup.</p>
+<p>Any window can be dismissed by the user at any time, so your app must deal with this. webOS keeps track of a “root window” for each app, where it sends events such as applicationRelaunch. For standard apps that don’t specify <code>&quot;noWindow&quot;: true</code> in appinfo.json, the root window is initially the first card opened, but if that card is tossed away, another window becomes the root window. For headless apps, that specify <code>&quot;noWindow&quot;: true</code> in appinfo.json, the root window is a headless, non-displayed window. You must deal with the situation where your app has only a Dashboard or Popup in existence when the user taps the app icon in the Launcher—the current root window will receive an applicationRelaunch event. One good way to respond to this is to re-display the card with basic orientation info. Your app icon may be tapped by a user who has no idea that your app is a desk accessory that’s already running.</p>
+<p><picture><source type="image/avif" srcset="/img/popupcalc_2011-01-09_153312-750w.avif 750w, /img/popupcalc_2011-01-09_153312-1024w.avif 1024w" sizes="100vw"><source type="image/webp" srcset="/img/popupcalc_2011-01-09_153312-750w.webp 750w, /img/popupcalc_2011-01-09_153312-1024w.webp 1024w" sizes="100vw"><img alt="Popup Calc instruction card" loading="lazy" decoding="async" src="/img/popupcalc_2011-01-09_153312-750w.png" width="1024" height="768" srcset="/img/popupcalc_2011-01-09_153312-750w.png 750w, /img/popupcalc_2011-01-09_153312-1024w.png 1024w" sizes="100vw"></picture></p>
+<p>webOS has neither a Dock nor a Taskbar to provide ready access to apps. The only instant access is a swipe or tap to open all current Dashboards. Desk accessories must be closeable at any time, and users will expect them to open exactly as they closed. Thus, a Popup desk accessory will typically need a Dashboard to provide an “open” button. As long as either the Popup, Dashboard or card exist, the app will continue running and global variables will be preserved.</p>
+<p>Another UI issue for Popups is how to close them. The Center button on tablets and classic Pres will close them. An up-swipe on a phone will close a Popup and go to card mode, but on a tablet it just switches to card mode. A number of users find the Center button on TouchPads to be awkward, so it’s well to include another way to close. Unlike cards, the system does not support swipe-to-remove popups. A button labeled “Close” is easy, but uses precious screen real estate. One solution is some kind of swipe gesture, such as a dragging from inside the Popup to outside the Popup. This echoes the swipe-card-away gesture.</p>
+<p>The system does not close a Popup when it goes to Exhibition mode, but desk accessories generally should close themselves, since the user has by definition not interacted with them for a while. If the screen turns off, your Popup should close itself so it won’t display on the lock screen, where it would displace the dashboard notifications the user expects to see. To do this, your Popup should subscribe to the <a href="https://web.archive.org/web/20140921053848/https://developer.palm.com/content/api/reference/services/display-manager.html" rel="noreferrer nofollow noopener external">Display Manager service</a> and close itself if <code>inResponse.event === &quot;displayOff&quot;</code> or <code>inResponse.dockMode === true</code></p>
+<p>Many Dashboard desk accessories will set the window attribute <code>clickableWhenLocked</code>, to allow the user to interact with them on the lock screen. Alas, Popups don’t have that option, so you should not set <code>clickableWhenLocked</code> for the Dashboard for a Popup desk accessory.</p>
+<h2 id="state-variables" tabindex="-1">State Variables <a class="header-anchor" href="#state-variables">#</a></h2>
+<p>Users expect desk accessories to maintain state, that is, to re-open exactly as they closed. Enyo maintains the object enyo.application in sync across all windows, so properties of enyo.application are a good place to store state variables for a Popup.
+Documentation</p>
+<p><a href="https://web.archive.org/web/20141022050005/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.windows" rel="noreferrer nofollow noopener external">enyo.windows</a> allows you to directly create Dashboards and System popups. <a href="https://web.archive.org/web/20141022050005/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.Dashboard" rel="noreferrer nofollow noopener external">enyo.Dashboard</a> is a Kind that supports notifications in a Dashboard; typically a “desk accessory” will not use it.</p>
+<p>An overview of Mojo dashboards is on <a href="https://web.archive.org/web/20111111083909/https://developer.palm.com/content/api/dev-guide/mojo/dashboards-notifications.html" rel="noreferrer nofollow noopener external">this page</a>. Mojo “Dashboard Applications” are covered in the second part of <a href="https://web.archive.org/web/20141022052239/https://developer.palm.com/content/content/api/dev-guide/mojo/background-applications.html" rel="noreferrer nofollow noopener external">this page</a>.</p>
+<h2 id="demo-app" tabindex="-1">Demo App <a class="header-anchor" href="#demo-app">#</a></h2>
+<p>To ease App Hack development, there is an Enyo demo app which has a card to orient the user, but “lives” in a Dashboard, which contains a button to display a System popup.</p>
+<p>You’ll find the demo app on our <a href="https://web.archive.org/web/20141022053748/https://github.com/webOS-DevRel/Weekly-App-Hack/tree/master/4%20-%20PopupDemo" rel="noreferrer nofollow noopener external">GitHub repo</a>.</p>
+<p>The Makefile requires <code>gmake</code>. The first time, and after running <code>make clean</code>, you must run <code>make dirs</code> to create the build directories. Run <code>make all</code> to create the .ipk, <code>make install</code> to create the .ipk and install it, or <code>make run</code> to create the .ipk, install, and run it.</p>
+<p>If your development environment includes Miller’s JavaScript Lint, uncomment the Makefile line</p>
+<pre><code>jsl -conf jsl-Enyo-emptyok.conf -nologo -nofilelisting -process $@
+</code></pre>
+<p>If your development environment includes YUI, uncomment the Makefile <code>#ifdef</code> after</p>
+<pre><code># App source files are copied for debug builds and minified for production builds.
+</code></pre>
+<p>and the line after</p>
+<pre><code># Always minifies CSS.
+</code></pre>
+<h2 id="the-rules" tabindex="-1">The Rules <a class="header-anchor" href="#the-rules">#</a></h2>
+<ol>
+<li>
+<p>Submit your app based on the sample above to the App Catalog by November 1st at 11:59pm Pacific Daylight Time. We will be accepting both new apps as well as incorporation of the theme into existing apps as an improvement. A submission to the Beta catalog is acceptable.</p>
+</li>
+<li>
+<p>Notify us that you want to participate in the App Hack by sending us an email containing your app redirect link (it’s generated automatically and placed on the app’s detail page in “My Apps”) and any extra information you want to share with us at apphack@palm.com. This is also due by November 1st at 11:59pm Pacific Daylight Time.  If you do not send us this note, your app will not be considered for the App Hack.</p>
+</li>
+<li>
+<p>By the end of the day on Friday, November 4th 2011, the Developer Relations team will announce the winning app (along with honorable mentions and other entrants). The winner will get a blog post dedicated to him/her and his/her fantastic app.</p>
+</li>
+<li>
+<p>For this round, the winner (and only the winner) will also receive a 16GB TouchPad!</p>
+</li>
+</ol>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/popupcalc-with-speech/">Adding Speech to PopupCalc</a></li><li>Next: <a href="/tech-personal-growth/designing-webapps-multiple-devices/">Designing Web Apps For Multiple Devices</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

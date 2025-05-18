@@ -1,0 +1,118 @@
+
+<h1 style="font-size: 18pt;">
+    Repeating Tasks
+</h1>
+<ul class="xoxo">
+    <li>
+        Exact weekdays (1 day lead time)
+        <input value="done" type="checkbox" name="doneBox">
+            <dl>
+                <dt>
+                    place
+                </dt>
+                <dd id="placeId8">
+                    Running Errands
+                </dd>
+                <dt>
+                    due date
+                </dt>
+                <dd>
+                    Mon Sep 06 2010 18:00:00 GMT-0400 (EDT)
+                </dd>
+                <dt>
+                    recur
+                </dt>
+                <dd>
+                    RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR
+                </dd>
+                <dt>
+                    lead time
+                </dt>
+                <dd>
+                    86400000
+                </dd>
+                <dt>
+                    content text
+                </dt>
+                <dd>
+                    After being marked complete, this task will be due on the next weekday after the due date.
+                </dd>
+            </dl>
+            <ul>
+                <li>
+                    Prerequisite of exact weekdays, due 1 day before parent
+                    <input value="done" type="checkbox" name="doneBox">
+                    <dl>
+                        <dt>
+                            place
+                        </dt>
+                        <dd id="placeId8">
+                            Running Errands
+                        </dd>
+                        <dt>
+                            due date
+                        </dt>
+                        <dd>
+                            Sun Sep 05 2010 18:00:00 GMT-0400 (EDT)
+                        </dd>
+                        <dt>
+                            content text
+                        </dt>
+                        <dd>
+                            When its parent task repeats, this task will also be marked as incomplete and have its Due Date changed.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            </li>
+            <li>
+                Lax weekly (6 day lead time)
+                <input value="done" type="checkbox" name="doneBox">
+                <dl>
+                    <dt>
+                        place
+                    </dt>
+                    <dd id="placeId8">
+                        Running Errands
+                    </dd>
+                    <dt>
+                        due date
+                    </dt>
+                    <dd>
+                        Mon Sep 20 2010 18:00:00 GMT-0400 (EDT)
+                    </dd>
+                    <dt>
+                        recur
+                    </dt>
+                    <dd>
+                        RRULE:FREQ=WEEKLY;INTERVAL=1;LAX
+                    </dd>
+                    <dt>
+                        lead time
+                    </dt>
+                    <dd>
+                        518400000
+                    </dd>
+                    <dt>
+                        content text
+                    </dt>
+                    <dd>
+                        The Lead Time of this task will start a day after being marked complete, and the next Due Date will be a week after.
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+        <p style="font-family: arial, sans-serif;font-size: 12px;color: #999999;">
+            -- Exported from Outline Tracker for Palm webOS, version 1.7.0
+        </p>
+        <span style="font-family:Prelude, Verdana, san-serif;">
+            <br>
+                <br>
+                </span>
+                <span id="signature">
+                    <div style="font-family: arial, sans-serif;font-size: 12px;color: #999999;">
+                        -- Sent from my Palm Device
+                    </div>
+                    <br>
+                </span>
+                

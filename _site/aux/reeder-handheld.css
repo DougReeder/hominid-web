@@ -1,0 +1,35 @@
+/* for handheld devices (not narrow windows on desktops) */
+
+
+/* general-purpose styling */
+
+.desktoponlyblock {
+	display: none;
+}
+
+.handheldonlyblock {
+	display: block;
+}
+
+.desktoponlyinline {
+    display: none;
+}
+
+.handheldonlyinline {
+    display: inline;
+}
+
+#nav .handheldonlyblock {
+	margin-left: 1.25em;
+}
+
+
+/* structure and related styling */
+
+/* for accesskeys */
+#nav li a strong {
+	display: inline;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: underline;
+}

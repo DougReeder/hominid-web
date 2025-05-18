@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gestures in WebXR — Barrier Mage — Talks by Doug Reeder</title>
+	<meta name="author" content="Doug Reeder" >
+	
+	<meta name="description" content="Reliable gesture recognition enhances immersion." >
+	<meta property="og:title" content="Gestures in WebXR — Barrier Mage" >
+	<meta property="og:description" content="Reliable gesture recognition enhances immersion." >
+	<meta property="og:type" content="article" >
+	<meta property="og:url" content="https://hominidsoftware.com/presentations/Gestures in WebXR/" >
+	<meta property="og:site_name" content="Hominid Software" >
+	<meta property="og:image" content="https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.jpeg" >
+	<meta property="og:image.width" content="608" >
+	<meta property="og:image.height" content="405" >
+	<meta property="og:updated_time" content="2024-08-22" >
+	<meta property="article:published_time" content="2021-09-25" >
+	<meta property="article:modified_time" content="2024-08-22" >
+	<meta property="article:author" content="Doug Reeder">
+	<meta property="article:tag" content="presentation">
+	<meta property="article:tag" content="webXR">
+	<meta property="article:tag" content="VR">
+	
+	<meta property="article:section" content="Talks by Doug Reeder">
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "PresentationDigitalDocument",
+			
+			"name": "Gestures in WebXR — Barrier Mage",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+	"abstract": "The game Barrier Mage implements gesture-based Virtual Reality game play.  The user draws mystic symbols with 6-DOF VR controllers. Each symbol has a different effect. This novel game mechanic eliminates an abstraction layer usual in fantasy games, making this game more immersive.",
+	"teaches": "WebXR",
+	"description": "Reliable gesture recognition enhances immersion.",
+	"image": "https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.jpeg",
+			"datePublished": "2021-09-25",
+			"dateModified": "2024-08-22",
+			"keywords": ["webXR", "VR"]
+		}
+	</script>
+	<link rel="alternate" href="/feed/presentationFeed.xml" type="application/atom+xml" title="Talks by Doug Reeder">
+	<link rel="alternate" href="/feed/presentationFeed.json" type="application/json" title="Talks by Doug Reeder">
+		<link rel="canonical" href="https://hominidsoftware.com/presentations/Gestures in WebXR/" >
+	
+	<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+</head>
+<body>
+<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+<header>
+	<span class="home-link">Hominid Software — Talks by Doug Reeder</span>
+	<nav>
+		<h2 class="visually-hidden">Top level navigation menu</h2>
+		<ul class="nav">
+				<li class="nav-item"><a href="/">Apps</a></li>
+				<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+				<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+				<li class="nav-item"><a href="/presentations/">Talks</a></li>
+				<li class="nav-item"><a href="/archive/">Archive</a></li>
+				<li class="nav-item"><a href="/about/">About Me</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="skip">
+	
+<h1>Gestures in WebXR — Barrier Mage</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2021-09-25">25 September 2021</time></li>
+		<li><a href="/tags/webxr/" class="post-tag">webXR</a>, </li>
+		<li><a href="/tags/vr/" class="post-tag">VR</a></li>
+</ul>
+
+<h2>Abstract</h2>
+	<p>The game Barrier Mage implements gesture-based Virtual Reality game play.  The user draws mystic symbols with 6-DOF VR controllers. Each symbol has a different effect. This novel game mechanic eliminates an abstraction layer usual in fantasy games, making this game more immersive.</p>
+
+<h2 id="slides" tabindex="-1"><a href="../../keynote/Gestures%20in%20WebXR/">Slides</a> <a class="header-anchor" href="#slides">#</a></h2>
+<h2 id="drawing-a-symbol" tabindex="-1">Drawing a symbol <a class="header-anchor" href="#drawing-a-symbol">#</a></h2>
+<p><picture><source type="image/avif" srcset="/img/pentacle-ViolentCloud-750w.avif 750w, /img/pentacle-ViolentCloud-1500w.avif 1500w" sizes="100vw"><source type="image/webp" srcset="/img/pentacle-ViolentCloud-750w.webp 750w, /img/pentacle-ViolentCloud-1500w.webp 1500w" sizes="100vw"><img alt="drawing pentacle to protect from The Violent Cloud" loading="lazy" decoding="async" src="/img/pentacle-ViolentCloud-750w.jpeg" width="1500" height="1000" srcset="/img/pentacle-ViolentCloud-750w.jpeg 750w, /img/pentacle-ViolentCloud-1500w.jpeg 1500w" sizes="100vw"></picture></p>
+<h2 id="root-mean-square" tabindex="-1">Root-mean-square <a class="header-anchor" href="#root-mean-square">#</a></h2>
+<math display="block" class="tml-display" style="display:block math;">
+  <msqrt>
+    <mfrac>
+      <mrow>
+        <mo form="prefix" stretchy="false" lspace="0em" rspace="0em">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>x</mi>
+          <mn>2</mn>
+        </msub>
+        <msup>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mo form="prefix" stretchy="false">(</mo>
+        <msub>
+          <mi>y</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>y</mi>
+          <mn>2</mn>
+        </msub>
+        <msup>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mo form="prefix" stretchy="false">(</mo>
+        <msub>
+          <mi>z</mi>
+          <mn>1</mn>
+        </msub>
+        <mo>−</mo>
+        <msub>
+          <mi>z</mi>
+          <mn>2</mn>
+        </msub>
+        <msup>
+          <mo form="postfix" stretchy="false">)</mo>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+      <mn>3</mn>
+    </mfrac>
+  </msqrt>
+</math>
+<p>used to calculate difference between drawn endpoints &amp; template endpoints</p>
+<h2 id="barrier-mage-basic-play" tabindex="-1">Barrier Mage basic play <a class="header-anchor" href="#barrier-mage-basic-play">#</a></h2>
+<video class="square" controls playsinline preload="metadata">
+	<source src="/no-multiviews/barrier-mage-basic-play-4.mp4" type="video/mp4" >
+	Download the <a href="/no-multiviews/barrier-mage-basic-play-4.mp4">MP4</a> video.
+</video>
+
+		<ul class="links-nextprev"><li>Previous: <a href="/presentations/ELK stack/">The ELK Stack</a></li><li>Next: <a href="/presentations/Web Share APIs/">Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs</a></li>
+		</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

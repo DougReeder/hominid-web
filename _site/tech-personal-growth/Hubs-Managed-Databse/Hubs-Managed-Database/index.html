@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>A Managed Database for Hubs — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" content="Reworking the script and input values to less-than-obvious settings are required" >
+		<meta property="og:title" content="A Managed Database for Hubs" >
+		<meta property="og:description" content="Reworking the script and input values to less-than-obvious settings are required" >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		<meta property="og:image" content="https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.avif" >
+		<meta property="og:image.width" content="739" >
+		<meta property="og:image.height" content="1763" >
+		<meta property="article:published_time" content="Sat Nov 16 2024 19:00:00 GMT-0500 (Eastern Standard Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="Hubs">
+		<meta property="article:tag" content="Kubernetes">
+		<meta property="article:tag" content="VR">
+		<meta property="article:tag" content="webXR">
+		<meta property="article:tag" content="application">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "A Managed Database for Hubs",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "Reworking the script and input values to less-than-obvious settings are required",
+			"image": "https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.avif",
+			 "datePublished": "2024-11-17",
+			"dateModified": "2024-11-28",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["Hubs", "Kubernetes", "VR", "webXR", "application"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/" >
+		
+		<link rel="stylesheet" href="/bundle/K0Y9O-Azrk.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>A Managed Database for Hubs</h1>
+
+<div class="post-description">Reworking the script and input values to less-than-obvious settings are required</div>
+
+<div class="post-description">About 4 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-11-17">17 November 2024</time></li>
+	<li><a href="/tags/hubs/" class="post-tag">Hubs</a>, </li>
+	<li><a href="/tags/kubernetes/" class="post-tag">Kubernetes</a>, </li>
+	<li><a href="/tags/vr/" class="post-tag">VR</a>, </li>
+	<li><a href="/tags/webxr/" class="post-tag">webXR</a>, </li>
+	<li><a href="/tags/application/" class="post-tag">application</a></li>
+</ul>
+
+<p><em>Content warning: extremely technical — may induce trance, fugue or psychedelic states, out-of-body experiences, lucid dreaming or technical breakthroughs.</em></p>
+<h2 id="motivation" tabindex="-1">Motivation <a class="header-anchor" href="#motivation">#</a></h2>
+<p>I continue my quest to make my Hubs Community Edition instance observable and production-ready.
+It's difficult to access PostgresQL running in a container in Kubernetes for development or monitoring.
+Backing up the PostgresQL database as a volume (of files) allows restoring to the same version of PostrgresQL,
+but not necessarily a newer version, which you might be obliged to use if you change provider
+or your current version reaches end-of-life.
+So, the next step is moving the PostgresQL database outside the Kubernetes cluster.</p>
+<h2 id="managed-databases" tabindex="-1">Managed Databases <a class="header-anchor" href="#managed-databases">#</a></h2>
+<p>Operating databases is a specialty all its own — tuning the number of connections and amount of memory,
+setting up backups and restores, updating to newer versions — preferably with no down time.
+I, as an application programmer, would prefer to leave that to experts.
+Fortunately, hosting providers are even more likely to offer managed databases than managed Kubernetes.
+DigitalOcean is no exception, offering managed PostgresQL v13–16.
+It's automatically backed-up daily, and restores, updates and scaling can all happen without down time.</p>
+<p>Hubs still encodes passwords using MD5, and PostgresQL v13 is the last version that uses MD5 by default.
+(MD5 is no longer considered secure.)
+Fortunately, DigitalOcean still offers v13.
+(Hubs needs to update its password encoding before v13 reaches end-of-life on 2025-11-13.)</p>
+<p>Another advantage of managed databases is monitoring.
+DigitalOcean provides the most important metrics automatically:</p>
+<div class="center-horizontal">
+<picture><source type="image/avif" srcset="/img/managed-database-metrics-DigitalOcean-739w.avif 739w" sizes="100vw"><source type="image/webp" srcset="/img/managed-database-metrics-DigitalOcean-739w.webp 739w" sizes="100vw"><img alt="Managed database metrics on DigitalOcean" loading="lazy" decoding="async" src="/img/managed-database-metrics-DigitalOcean-739w.png" width="739" height="1763"></picture>
+</div>
+I only need to understand these enough to know when my database is overloaded.
+<p>A downside of moving the database outside the Kubernetes cluster is that the database and cluster need to
+be scaled up (and paid for) separately. Kubernetes can autoscale, but the database cannot.
+My database costs $15.00/month, raising my costs 63%.
+Also, the database configuration is no longer part of the Kubernetes template files, so I have to
+keep track of it separately.</p>
+<h2 id="configuration" tabindex="-1">Configuration <a class="header-anchor" href="#configuration">#</a></h2>
+<p>Once the database was up, I had to figure out how to configure Hubs to use it.
+There are several strategies, depending on whether you continue to use the <code>pgbouncer</code> and <code>pgbouncer-t</code>
+deployments for database connection pooling.
+Pgbouncer (the software itself) is normally a transparent proxy, so you just need to change the connection parameters on the client.</p>
+<h3 id="change-database-only" tabindex="-1">Change Database Only <a class="header-anchor" href="#change-database-only">#</a></h3>
+<p>Mike Morran from Mozilla gave a demonstration on <a href="https://www.youtube.com/watch?v=ShQqXGjB0qo" rel="noreferrer nofollow noopener external">Persistent Volumes and External Database - Community Edition Setup Session</a> (the database info isn't until the last 20 minutes).
+There, he shows how to edit <code>hcce.yaml</code> to direct <code>pgbouncer</code> and <code>pgbouncer-t</code> to an external database.
+It was hard to extract exactly what you do, but my notes say it's something like:</p>
+<p>point pgbouncer to external SQL DB in hcce.yaml (change password in multiple places)</p>
+<ol>
+<li>change password:
+<ol>
+<li>change stringData.PGRST_DB_URI</li>
+<li>change stringData.DB_USER ?</li>
+<li>change stringData.DB_PASS; ensure URI encoded properly.
+postgresql://username:password@host:port/database?application_name=myapp</li>
+<li>change stringData.PSQL</li>
+</ol>
+</li>
+<li>in pgbouncer &amp; pgbouncer-t change value of &quot;DB_HOST&quot; from &quot;pgsql&quot; to private IP addr of PostgresQL</li>
+<li>? delete pgsql deployment &amp; service?</li>
+<li>? comment out pgsql deployment &amp; service?</li>
+<li>apply hcce.yaml</li>
+<li>check logs of pgbouncer</li>
+</ol>
+<p>He also assumes PostgresQL is using its usual port, 5432, and you can use the <code>postgres</code> superuser account
+in PostgresQL.  (On DigitalOcean managed PostgresQL the <code>postgres</code> superuser is used only for management.)</p>
+<p>This is the approach to take if your provider does not offer managed connection pooling. Google Cloud is one such.</p>
+<h3 id="change-database-and-connection-pools" tabindex="-1">Change Database &amp; Connection Pools <a class="header-anchor" href="#change-database-and-connection-pools">#</a></h3>
+<p>DigitalOcean offers connection pooling for free with a managed database.
+That sounded more observable, and possibly higher performance.
+They use pgbouncer also, so I dove into <code>hcce.yaml</code> to extract the parameters.
+Largely, they use the default values, so the connection pools each will use up to 20 database connections
+and support up to 10,000 client connections. They are not configured to use TLS (aka SSL).
+<code>pgbouncer</code> uses the default session mode and <code>pgbouncer-t</code> uses transaction mode, hence the names
+(and the reason there are two connection pools).</p>
+<p>The cheapest managed PostgresQL has 22 connections available for apps.
+The Reticulum configuration that uses <code>pgbouncer-t</code> has a parameter <code>pool_size</code> of 10
+(it's not clear what this refers to).
+I created two connection pools using the Digital Ocean UI.
+The one using transaction mode I named <code>retpooltransaction</code> and set to use 10 connections.
+The one using session mode I named <code>retpoolsession</code> and set to use the other 12 available connections.
+Both are reached on port 25061, and require TLS (aka SSL),
+so I needed to set the hostname, port and database name (the name of the pool) separately.
+<code>input-values.yaml</code> only has parameters for <code>DB_HOST</code> and <code>DB_HOST_T</code>, and <code>PGRST_DB_URI</code>
+and <code>PSQL</code> didn't use all the parameters needed,
+so I edited <code>input-values.yaml</code> and
+<code>generate_script/hcce.yam</code> to have all these parameters:</p>
+<pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">DB_HOST</span><span class="token punctuation">:</span> <span class="token string">"private-hominid-do-user-99999999-0.m.db.ondigitalocean.com"</span>
+<span class="token key atrule">DB_PORT</span><span class="token punctuation">:</span> <span class="token string">"25061"</span>
+<span class="token key atrule">DB_NAME</span><span class="token punctuation">:</span> <span class="token string">"retpoolsession"</span>
+<span class="token key atrule">DB_SSL</span><span class="token punctuation">:</span> <span class="token string">"true"</span>
+<span class="token key atrule">DB_SSLMODE</span><span class="token punctuation">:</span> <span class="token string">"require"</span>
+<span class="token key atrule">PGRST_DB_URI</span><span class="token punctuation">:</span> <span class="token string">"postgres://$DB_USER:$DB_PASS@$DB_HOST:$DB_PORT/$DB_NAME?sslmode=$DB_SSLMODE"</span>
+<span class="token key atrule">PSQL</span><span class="token punctuation">:</span>         <span class="token string">"postgres://$DB_USER:$DB_PASS@$DB_HOST:$DB_PORT/$DB_NAME?sslmode=$DB_SSLMODE"</span>
+<span class="token key atrule">DB_HOST_T</span><span class="token punctuation">:</span> <span class="token string">"private-hominid-do-user-99999999-0.m.db.ondigitalocean.com"</span>
+<span class="token key atrule">DB_PORT_T</span><span class="token punctuation">:</span> <span class="token string">"25061"</span>
+<span class="token key atrule">DB_NAME_T</span><span class="token punctuation">:</span> <span class="token string">"retpooltransaction"</span></code></pre>
+<p>Unfortunately, <code>DB_SSL</code> is needed to furnish a boolean value, and <code>DB_SSLMODE</code> to furnish
+an enumerated value. I've submitted a <a href="https://github.com/Hubs-Foundation/hubs-cloud/pull/364" rel="noreferrer nofollow noopener external">pull request to add the new parameters</a>.</p>
+<p>There should also be values, analogous to <code>GENERATE_PERSISTENT_VOLUMES</code>, to enable/disable
+creating the database deployment and service, and the connection pool deployments and services.
+That would require editing <code>generate_script/index.js</code>, which I've been trying to avoid.</p>
+<p>I had some difficulty getting this configuration to work, so I tried a configuration
+without connection pools — Reticulum talking directly to the database — to validate that
+it was possible to connect.  Logs were very useful here; I repeatedly used</p>
+<pre><code>kubectl delete deploy --all
+kubectl delete pvc --all
+kubectl delete pv --all
+# delete the block storage volume and the `retdb` database
+# using the DigitalOcean UI
+kubectl apply -f hcce.yaml
+kubectl get deployments
+kubectl get pods
+kubectl logs reticulum-7798f5dbb6-9bcrw -f
+kubectl logs reticulum-7798f5dbb6-9bcrw -c postgrest -f
+</code></pre>
+<p>I didn't use <code>kubectl delete -f hcce.yaml</code>, because it deletes the load balancer, requiring
+DNS to be updated with the new IP address.
+(Despite the similar suffix, the <code>postgrest</code> container uses <code>pgbouncer</code>, not <code>pgbouncer-t</code>.)</p>
+<p>Once I had all the parameters being properly set in <code>hcce.yaml</code>, Reticulum connected to <code>retpoolsession</code>
+properly.  However, for the other pool, even with correct parameters, I always got</p>
+<pre><code>(Postgrex.Error) ERROR 3D000 (invalid_catalog_name) database &quot;retpooltransaction&quot; does not exist
+</code></pre>
+<p>Eventually, after much thrashing, I tried renaming the transaction-mode connection pool from <code>retpooltransaction</code> to <code>retdb</code>,
+and <em>then</em> Reticulum connected properly to the transaction-mode connection pool. (The database and the connection pool are on different ports, so you can re-use the name.)
+I have no idea why this tweak is necessary.</p>
+<h2 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h2>
+<p>I now have automatic daily backups for my database.
+I can now use <code>psql</code> to connect directly to the database, and run queries like</p>
+<pre><code>select hub_sid, name from hubs where entry_mode = 'allow';
+</code></pre>
+<p>or</p>
+<pre><code>select avatar_id, name from avatars where allow_remixing = 't';
+</code></pre>
+<p>to understand what's going on inside my Hubs instance.</p>
+<p>With the persistent volume separate from the node(s) (<a href="../../Hubs-on-DigitalOcean/">see my previous post</a>),
+I can set my Kubernetes cluster to scale up the number of nodes to handle heavier loads,
+and if the connection pools or database is then the limiting resource, I can scale that up, too.
+I can backup and archive my Hubs instance, and restore it on another provider.</p>
+<p>I have a production-ready instance of Hubs!</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/Hubs-on-DigitalOcean/">Persistent Storage for Hubs on DigitalOcean</a></li><li>Next: <a href="/tech-personal-growth/gemini-android-xr/">Gemini will determine the success of Android XR</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

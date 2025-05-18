@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs — Talks by Doug Reeder</title>
+	<meta name="author" content="Doug Reeder" >
+	
+	<meta name="description" content="The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps." >
+	<meta property="og:title" content="Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs" >
+	<meta property="og:description" content="The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps." >
+	<meta property="og:type" content="article" >
+	<meta property="og:url" content="https://hominidsoftware.com/presentations/Web Share APIs/" >
+	<meta property="og:site_name" content="Hominid Software" >
+	<meta property="og:image" content="https://hominidsoftware.com/img/VFSExchange-ScreenShot130-320w.png" >
+	<meta property="og:image.width" content="320" >
+	<meta property="og:image.height" content="320" >
+	<meta property="og:updated_time" content="2024-08-21" >
+	<meta property="article:published_time" content="2024-03-06" >
+	<meta property="article:modified_time" content="2024-08-21" >
+	<meta property="article:author" content="Doug Reeder">
+	<meta property="article:tag" content="presentation">
+	<meta property="article:tag" content="webapp">
+	<meta property="article:tag" content="PWA">
+	<meta property="article:tag" content="user experience">
+	<meta property="article:tag" content="webOS">
+	
+	<meta property="article:section" content="Talks by Doug Reeder">
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "PresentationDigitalDocument",
+			
+			"name": "Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+	"abstract": "The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps. But can these APIs meet your needs?",
+	"teaches": "Web Share API,Web Share Target API",
+	"description": "The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps.",
+	"image": "https://hominidsoftware.com/img/VFSExchange-ScreenShot130-320w.png",
+			"datePublished": "2024-03-06",
+			"dateModified": "2024-08-21",
+			"keywords": ["webapp", "PWA", "user experience", "webOS"]
+		}
+	</script>
+	<link rel="alternate" href="/feed/presentationFeed.xml" type="application/atom+xml" title="Talks by Doug Reeder">
+	<link rel="alternate" href="/feed/presentationFeed.json" type="application/json" title="Talks by Doug Reeder">
+		<link rel="canonical" href="https://hominidsoftware.com/presentations/Web Share APIs/" >
+	
+	<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+</head>
+<body>
+<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+<header>
+	<span class="home-link">Hominid Software — Talks by Doug Reeder</span>
+	<nav>
+		<h2 class="visually-hidden">Top level navigation menu</h2>
+		<ul class="nav">
+				<li class="nav-item"><a href="/">Apps</a></li>
+				<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+				<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+				<li class="nav-item"><a href="/presentations/">Talks</a></li>
+				<li class="nav-item"><a href="/archive/">Archive</a></li>
+				<li class="nav-item"><a href="/about/">About Me</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="skip">
+	
+<h1>Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-03-06">06 March 2024</time></li>
+		<li><a href="/tags/webapp/" class="post-tag">webapp</a>, </li>
+		<li><a href="/tags/pwa/" class="post-tag">PWA</a>, </li>
+		<li><a href="/tags/user-experience/" class="post-tag">user experience</a>, </li>
+		<li><a href="/tags/webos/" class="post-tag">webOS</a></li>
+</ul>
+
+<h2>Abstract</h2>
+	<p>The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps. But can these APIs meet your needs?</p>
+
+<p><em>Delivered to <a href="https://columbusjs.org/" rel="noreferrer nofollow noopener external">ColumbusJS</a> in <a href="https://www.meetup.com/columbusjs/events/299341757/" rel="noreferrer nofollow noopener external">March 2024</a></em></p>
+<h2 id="bio" tabindex="-1">Bio <a class="header-anchor" href="#bio">#</a></h2>
+<p>Doug Reeder has been programming professionally for a quarter century on a wide range of technologies, at organizations large and small. Today he does full-stack web development, consults on WebXR, and pushes back on gatekeepers.</p>
+<h2 id="outline" tabindex="-1">Outline <a class="header-anchor" href="#outline">#</a></h2>
+<h3 id="1974-gui-copy-and-paste" tabindex="-1">1974: GUI Copy &amp; Paste <a class="header-anchor" href="#1974-gui-copy-and-paste">#</a></h3>
+<ul>
+<li>Larry Tesler &amp; Tim Mott @ Xerox PARC</li>
+<li>App to App within device, only</li>
+<li>Text, later other data types</li>
+<li>later: Drag &amp; Drop</li>
+</ul>
+<h3 id="1996-palm-os-sharing" tabindex="-1">1996: Palm OS Sharing <a class="header-anchor" href="#1996-palm-os-sharing">#</a></h3>
+<ul>
+<li>Few people had direct Internet access; PDAs didn't have IP networking</li>
+<li>Exchange Manager; originated Gavin Peacock
+<ul>
+<li>IR beaming range 3 feet (OBEX IrDA; Pocket PC 2002 and later)</li>
+<li>Bluetooth in Palm OS 4</li>
+</ul>
+</li>
+<li>IR beaming is fast enough for business cards, calendar events, memos (text only). If you're patient, you can share apps or the smaller pictures used back then</li>
+<li>Available, but underutilized, within device:
+<ul>
+<li>Resco Explorer lets you receive zip archives</li>
+<li>SiEd lets you receive and edit .c, .html, and .php files</li>
+<li>VFSExchange (2006) — used mostly for ringtones &amp; Java Midlets</li>
+</ul>
+</li>
+</ul>
+<div class="flex-center-center">
+<picture><source type="image/avif" srcset="/img/VFSExchange-ScreenShot130-320w.avif 320w" sizes="100vw"><source type="image/webp" srcset="/img/VFSExchange-ScreenShot130-320w.webp 320w" sizes="100vw"><img alt="screen shot of VFS Exchange" loading="lazy" decoding="async" src="/img/VFSExchange-ScreenShot130-320w.png" width="320" height="320"></picture>
+</div>
+<ul>
+<li>Non-enthusiasts didn't use Beaming — unclear why.</li>
+</ul>
+<p>Video of IR beaming [if time]</p>
+<h3 id="2009-palm-webos-touch-to-share" tabindex="-1">2009: Palm webOS Touch-to-share <a class="header-anchor" href="#2009-palm-webos-touch-to-share">#</a></h3>
+<ul>
+<li>devices exchange URLs</li>
+<li>paradigm is &quot;share what's on the screen&quot;</li>
+<li>video of Zap Photoshare: <a href="https://www.youtube.com/watch?v=2oLfKqpUJT4" rel="noreferrer nofollow noopener external">https://www.youtube.com/watch?v=2oLfKqpUJT4</a></li>
+</ul>
+<h3 id="now-social-media-is-king" tabindex="-1">Now: Social Media is king <a class="header-anchor" href="#now-social-media-is-king">#</a></h3>
+<ul>
+<li>Big demand to share URLs from and to Social Media</li>
+<li>Selecting content on handhelds is tricky, so copy-and-paste is high-friction. ⇒ demand for sharing <em>within</em> device</li>
+<li>Native share targets:
+<ul>
+<li>social media</li>
+<li>email</li>
+<li>messaging</li>
+<li>file storage</li>
+<li>file transfer</li>
+<li>print service</li>
+<li>content transformers (e.g. text-to-speech, Google Lens)</li>
+</ul>
+</li>
+<li>Browsers already have menu command to share URL of whole page</li>
+<li>Android offers to Share anything copied to the clipboard</li>
+<li>A number of browsers accept shared text, and do a web search with it</li>
+</ul>
+<h3 id="enter-the-web-share-api-send" tabindex="-1">Enter the Web Share API (send) <a class="header-anchor" href="#enter-the-web-share-api-send">#</a></h3>
+<ul>
+<li>original: asynchronous <code>navigator.share() </code>
+<ul>
+<li>can send part of page, or even content that isn't in page at all</li>
+<li>requires <em>transient activation</em> (typically a user click)</li>
+<li><code>title</code>, <code>text</code> &amp; <code>url</code> fields
+<ul>
+<li>can't send multiple URLs nor texts</li>
+</ul>
+</li>
+<li>sender dumps it over the wall, receiver free to ignore fields it doesn't want to deal with</li>
+<li>typically use text or url, not both. Can't be sure what receiver will actually use</li>
+<li>widely supported (Firefox on Android won't send text)</li>
+</ul>
+</li>
+<li>later: synchronous <code>navigator.canShare()</code>
+<ul>
+<li>if data in one form is disallowed, you can send in another format</li>
+<li>almost only use is whether the browser allows new <code>files</code> field at all
+<ul>
+<li>won't tell you if file type is disallowed :-(</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="small-signature-complicated-use" tabindex="-1">Small signature, complicated use <a class="header-anchor" href="#small-signature-complicated-use">#</a></h3>
+<ul>
+<li>
+<p>url &gt; text, file &gt; text; safest to not send url &amp; files; may need to offer more than one Share option</p>
+</li>
+<li>
+<p>URLs: can send if API supported at all</p>
+<ul>
+<li>sending multiple URLs requires multiple user clicks</li>
+<li>only <code>http:</code> and <code>https:</code> schemes</li>
+<li>aside: theoretical possibilities that probably won't materialize: tel: mailto: sms: mms: irc: sip: xmpp:</li>
+</ul>
+</li>
+<li>
+<p>text: call <code>canShare()</code>, fall back to simulating click on <code>mailto:</code> anchor</p>
+</li>
+<li>
+<p>files: multiple ways to fail</p>
+<ul>
+<li>no API</li>
+<li>canShare()</li>
+<li>file type rejected by share()</li>
+<li>If your use case allows, can fall back to different type (plain text or PDF), <code>text</code> field, thence to <code>mailto:</code> anchor</li>
+<li>Notes Together will try up to four different ways to send a note</li>
+</ul>
+</li>
+</ul>
+<h3 id="file-types-chromium-on-android-will-share" tabindex="-1">File types Chromium on Android will share <a class="header-anchor" href="#file-types-chromium-on-android-will-share">#</a></h3>
+<ul>
+<li>text/plain</li>
+<li>text/html</li>
+<li>text/csv</li>
+<li>text/css — <em>why?</em></li>
+</ul>
+<h3 id="file-types-chromium-on-android-won-t-share" tabindex="-1">File types Chromium on Android won't share <a class="header-anchor" href="#file-types-chromium-on-android-won-t-share">#</a></h3>
+<ul>
+<li><strong>text/tab-separated-values</strong></li>
+<li><strong>text/calendar</strong></li>
+<li><strong>text/vcard</strong> (iOS Contacts share target)</li>
+<li>text/markdown</li>
+<li>text/rtf</li>
+<li>text/javascript</li>
+<li>text/p .p</li>
+<li>text/awk .awk</li>
+<li>text/uri .uri</li>
+<li>text/gltf</li>
+</ul>
+<h3 id="web-share-demo-apps" tabindex="-1">Web Share demo apps <a class="header-anchor" href="#web-share-demo-apps">#</a></h3>
+<ul>
+<li>Title, text, url, files:
+<a href="https://w3c.github.io/web-share/demos/share-files.html" rel="noreferrer nofollow noopener external">https://w3c.github.io/web-share/demos/share-files.html</a></li>
+<li>Files:
+<a href="https://scrapbook-pwa.web.app/" rel="noreferrer nofollow noopener external">https://scrapbook-pwa.web.app/</a></li>
+</ul>
+<h3 id="web-share-target-api-receive" tabindex="-1">Web Share <em>Target</em> API (receive) <a class="header-anchor" href="#web-share-target-api-receive">#</a></h3>
+<ul>
+<li>installed PWA (requires Web App Manifest &amp; Service Worker)</li>
+<li>browser &amp; OS that supports</li>
+<li>add to Web App Manifest: <code> </code></li>
+</ul>
+<pre><code>&quot;share_target&quot;: {
+    &quot;action&quot;: &quot;/create-from-share&quot;,
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;enctype&quot;: &quot;multipart/form-data&quot;,
+    &quot;params&quot;: {
+      &quot;title&quot;: &quot;title&quot;,
+      &quot;text&quot;: &quot;text&quot;,
+      &quot;url&quot;: &quot;url&quot;,
+      &quot;files&quot;: [
+        {&quot;name&quot;: &quot;files&quot;, &quot;accept&quot;: [&quot;text/*&quot;, &quot;image/*&quot;, &quot;.text&quot;, &quot;.readme&quot;&quot;]}
+      ]
+    }
+</code></pre>
+<ul>
+<li>route can be handled by web server or Service Worker</li>
+</ul>
+<h3 id="quick-review-of-coding-service-workers" tabindex="-1">Quick review of coding Service Workers <a class="header-anchor" href="#quick-review-of-coding-service-workers">#</a></h3>
+<ul>
+<li>available APIs differ from window
+<ul>
+<li>DOM is not available</li>
+<li>DOMParser().parseFromString is not available</li>
+<li>URL.createObjectURL is not available in a Service Worker</li>
+<li>postMessage to client window, which postMessages back</li>
+</ul>
+</li>
+<li>processing data in Service Worker may lead to duplication of code</li>
+<li>easier to just store data until it can be processed in a window</li>
+<li>Sharing doesn't appear to count as a user action (transient activation)</li>
+<li>testing is tricky — unit tests help, but important parts are inherently outside the browser</li>
+<li>handler should return quickly with redirect to an appropriate path — can continue to process in the background</li>
+</ul>
+<h3 id="web-share-target-demo-apps" tabindex="-1">Web Share Target demo apps <a class="header-anchor" href="#web-share-target-demo-apps">#</a></h3>
+<ul>
+<li>Title, text &amp; url:
+<a href="https://w3c.github.io/web-share-target/demos/sharetarget.html" rel="noreferrer nofollow noopener external">https://w3c.github.io/web-share-target/demos/sharetarget.html</a></li>
+<li>File, or link and file:
+<a href="https://scrapbook-pwa.web.app/" rel="noreferrer nofollow noopener external">https://scrapbook-pwa.web.app/</a></li>
+</ul>
+<h3 id="can-t-access-full-native-sharing-api" tabindex="-1">Can't access full native Sharing API <a class="header-anchor" href="#can-t-access-full-native-sharing-api">#</a></h3>
+<ul>
+<li>
+<p>Can’t share rich text/HTML message</p>
+</li>
+<li>
+<p>MacOS</p>
+<ul>
+<li>can't directly Create Quick Note</li>
+<li>can't directly Add to Dock</li>
+</ul>
+</li>
+<li>
+<p>iOS only allows sharing to one precompiled extension per app, it would be difficult to implement the same experience as Android</p>
+</li>
+<li>
+<p>UWP registration is in app package manifest; not clear how browser can create share target for each app, but support is listed for Chrome, Edge and Opera</p>
+</li>
+<li>
+<p>Don't hold your breath for more implementations</p>
+</li>
+</ul>
+<h3 id="app-that-uses-web-share-apis-with-fallbacks" tabindex="-1">App that uses Web Share APIs with fallbacks <a class="header-anchor" href="#app-that-uses-web-share-apis-with-fallbacks">#</a></h3>
+<p><em>Long-press on summary in list to share</em></p>
+<p><a href="https://notestogether.hominidsoftware.com">Notes Together</a></p>
+<h2 id="summary" tabindex="-1">Summary <a class="header-anchor" href="#summary">#</a></h2>
+<ul>
+<li>Can be on level playing field with native app, but...</li>
+<li>Uneven implementation mean it can't be an essential part of using your webapp</li>
+<li>Arbitrary restrictions &amp; uneven support ⇒ must carefully check beforehand if your use case is supported</li>
+</ul>
+
+		<ul class="links-nextprev"><li>Previous: <a href="/presentations/Gestures in WebXR/">Gestures in WebXR — Barrier Mage</a></li><li>Next: <a href="/presentations/webxr-for-web-developers/">WebXR for Web Developers</a></li>
+		</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

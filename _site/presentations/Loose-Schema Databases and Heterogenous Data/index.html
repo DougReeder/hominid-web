@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Loose-Schema Databases and Heterogeneous Data — Talks by Doug Reeder</title>
+	<meta name="author" content="Doug Reeder" >
+	
+	<meta name="description" content="New databases are emerging, which embrace data in varying formats from varying sources." >
+	<meta property="og:title" content="Loose-Schema Databases and Heterogeneous Data" >
+	<meta property="og:description" content="New databases are emerging, which embrace data in varying formats from varying sources." >
+	<meta property="og:type" content="article" >
+	<meta property="og:url" content="https://hominidsoftware.com/presentations/Loose-Schema Databases and Heterogenous Data/" >
+	<meta property="og:site_name" content="Hominid Software" >
+	
+	
+	
+	<meta property="og:updated_time" content="2024-08-20" >
+	<meta property="article:published_time" content="2011-05-09" >
+	<meta property="article:modified_time" content="2024-08-20" >
+	<meta property="article:author" content="Doug Reeder">
+	<meta property="article:tag" content="presentation">
+	<meta property="article:tag" content="NoSQL">
+	<meta property="article:tag" content="CouchDB">
+	<meta property="article:tag" content="map‐reduce">
+	<meta property="article:tag" content="webOS">
+	<meta property="article:tag" content="MongoDB">
+	<meta property="article:tag" content="DB8">
+	<meta property="article:tag" content="indexing/search">
+	
+	<meta property="article:section" content="Talks by Doug Reeder">
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "PresentationDigitalDocument",
+			
+			"name": "Loose-Schema Databases and Heterogeneous Data",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+	"abstract": "Traditional databases are designed around homogenous data. Heterogenous data can be shoehorned into a homogenous format, but constraints are hard to enforce.  A new generation of databases is emerging, which embraces data in varying formats from varying sources.  Access may be with familiar relational operations, or radically different operations such as Map-Reduce.",
+	"teaches": "NoSQL",
+	"description": "New databases are emerging, which embrace data in varying formats from varying sources.",
+	
+			"datePublished": "2011-05-09",
+			"dateModified": "2024-08-20",
+			"keywords": ["NoSQL", "CouchDB", "map‐reduce", "webOS", "MongoDB", "DB8", "indexing/search"]
+		}
+	</script>
+	<link rel="alternate" href="/feed/presentationFeed.xml" type="application/atom+xml" title="Talks by Doug Reeder">
+	<link rel="alternate" href="/feed/presentationFeed.json" type="application/json" title="Talks by Doug Reeder">
+		<link rel="canonical" href="https://hominidsoftware.com/presentations/Loose-Schema Databases and Heterogenous Data/" >
+	
+	<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+</head>
+<body>
+<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+<header>
+	<span class="home-link">Hominid Software — Talks by Doug Reeder</span>
+	<nav>
+		<h2 class="visually-hidden">Top level navigation menu</h2>
+		<ul class="nav">
+				<li class="nav-item"><a href="/">Apps</a></li>
+				<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+				<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+				<li class="nav-item"><a href="/presentations/">Talks</a></li>
+				<li class="nav-item"><a href="/archive/">Archive</a></li>
+				<li class="nav-item"><a href="/about/">About Me</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="skip">
+	
+<h1>Loose-Schema Databases and Heterogeneous Data</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2011-05-09">09 May 2011</time></li>
+		<li><a href="/tags/nosql/" class="post-tag">NoSQL</a>, </li>
+		<li><a href="/tags/couchdb/" class="post-tag">CouchDB</a>, </li>
+		<li><a href="/tags/map-reduce/" class="post-tag">map‐reduce</a>, </li>
+		<li><a href="/tags/webos/" class="post-tag">webOS</a>, </li>
+		<li><a href="/tags/mongodb/" class="post-tag">MongoDB</a>, </li>
+		<li><a href="/tags/db8/" class="post-tag">DB8</a>, </li>
+		<li><a href="/tags/indexing-search/" class="post-tag">indexing/search</a></li>
+</ul>
+
+<h2>Abstract</h2>
+	<p>Traditional databases are designed around homogenous data. Heterogenous data can be shoehorned into a homogenous format, but constraints are hard to enforce.  A new generation of databases is emerging, which embraces data in varying formats from varying sources.  Access may be with familiar relational operations, or radically different operations such as Map-Reduce.</p>
+
+<p><em>Delivered to <a href="https://columbusjs.org/" rel="noreferrer nofollow noopener external">ColumbusJS</a> in May 2011</em></p>
+<h2 id="slides" tabindex="-1"><a href="../../no-multiviews/Loose-Schema%20Databases.pdf">Slides</a> <a class="header-anchor" href="#slides">#</a></h2>
+<h2 id="outline" tabindex="-1">Outline <a class="header-anchor" href="#outline">#</a></h2>
+<ul>
+<li>
+<p>need for loose schema</p>
+<ul>
+<li>heterogeneous data: different communities conceptualize &quot;similar&quot; info differently.   Users now expect computers to adapt to them, rather than users adapting to computers.
+<ul>
+<li>music meta-data: pop vs. classical: artist vs. composer+performer+conductor</li>
+<li>to-do items: due date as floating/julian day number vs. absolute times/timestamp, responsible person vs. associated people, source-code management system</li>
+<li>medical tests: range of BP values not same as range of blood glucose, systolic must be greater than diastolic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>heterogeneous data, homogenous format</p>
+<ul>
+<li>converting to homogenous format generally involves a loss of data, or at least an alteration of data.  Contact: title+given+ornamental+family+suffix name -&gt; given+family</li>
+<li>round-trip data to external sources: alteration generates a spurious change notification, losing data is unacceptable</li>
+</ul>
+</li>
+<li>
+<p>partial solution: shoehorning: text field encoded as CSV, JSON or XML</p>
+<ul>
+<li>DB can't search, only payload</li>
+<li>DB can't enforce relations or business constraints</li>
+</ul>
+</li>
+<li>
+<p>heterogeneous data, manual union schema</p>
+<ul>
+<li>schema must be updated before new data can be stored</li>
+<li>storage may be inefficient</li>
+<li>works fine for music meta-data, fails for medical tests</li>
+</ul>
+</li>
+<li>
+<p>SQLite: relational + flexibility</p>
+<ul>
+<li>absent fields don't take up storage; sparse DB okay</li>
+<li>columns have type affinity</li>
+<li>ROWID is integer only, is twice as fast</li>
+<li>single-user</li>
+</ul>
+</li>
+<li>
+<p>Normalization</p>
+<ul>
+<li>array and object fields violate 1NF (depending on your definition of atomicity)</li>
+<li>still should normalize and selectively denormalize</li>
+</ul>
+</li>
+<li>
+<p>CouchDB</p>
+<ul>
+<li>
+<p>written in Erlang for robust concurrent systems; no shared state threading and all data is immutable</p>
+</li>
+<li>
+<p>crash-only file is always in a consistent state</p>
+</li>
+<li>
+<p>&quot;shared-nothing&quot; clustering,</p>
+</li>
+<li>
+<p>RESTful JSON HTTP API + 3rd party client libraries</p>
+</li>
+<li>
+<p>stores &quot;documents&quot;; JSON I/O</p>
+<ul>
+<li>unique ID</li>
+<li>no fixed schema, no declarative schema, update function can check consistency</li>
+</ul>
+</li>
+<li>
+<p>lockless &amp; optimistic: if revision number doesn't match, update fails.  Resolution similar to Subversion: client merge, re-submit</p>
+</li>
+<li>
+<p>incremental replication, partial replicas possible;</p>
+</li>
+<li>
+<p>also runs on handhelds</p>
+</li>
+<li>
+<p>queries: only Map-Reduce</p>
+<ul>
+<li>
+<p>1st query against a &quot;view&quot; is slow, but later queries only require incremental updating</p>
+</li>
+<li>
+<p>map phase maps documents to N-dimensional array of keys</p>
+</li>
+<li>
+<p>reduce phase (optional) computes sums, averages, unions, etc over one or more dimensions</p>
+</li>
+<li>
+<p>undone subtasks</p>
+<ul>
+<li>map: if task, write 1 to each parent key, if undone, write 1 to each parent key</li>
+<li>reduce: sum of each</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DB8</p>
+<ul>
+<li>
+<p>webOS-only, Palm-Bus access</p>
+</li>
+<li>
+<p>similar data model to CouchDB, but must write own connector</p>
+</li>
+<li>
+<p>single DB shared by all apps</p>
+</li>
+<li>
+<p>backed-up to HP/Palm servers</p>
+</li>
+<li>
+<p>multiple devices, one profile: may duplicate data</p>
+</li>
+<li>
+<p>Universal Search (&quot;Just Type&quot;): simpler than under Palm OS</p>
+</li>
+<li>
+<p>sidenote on good UI: standard kinds use union schema: phone app only searches for contacts with phone number, e-mail app only searches for contacts with e-mail addr</p>
+</li>
+<li>
+<p>3rd party &quot;kinds&quot; may extend multiple other kinds, incl. standard calendar event and contact kinds.   Can extend contact with case details for CRM</p>
+</li>
+<li>
+<p>supports &quot;webOS Synergy™&quot;</p>
+<ul>
+<li>separate sources have separate records, app presents merged view</li>
+<li>Calendar: all day or start &amp; end time</li>
+<li>Contacts: heuristic identifies same person</li>
+</ul>
+</li>
+<li>
+<p>Watches</p>
+<ul>
+<li>asynchronous message from database to app, indicating change in some subset of data</li>
+<li>not clear whether enabled by non-relational design</li>
+<li>enables simpler app design</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Mongo DB</p>
+<ul>
+<li>document-oriented: no server-side JOINs; embed documents</li>
+<li>queries: analog of most SQL ops</li>
+<li>map-reduce</li>
+</ul>
+</li>
+</ul>
+<h2 id="software-referenced" tabindex="-1">Software referenced <a class="header-anchor" href="#software-referenced">#</a></h2>
+<ul>
+<li><a href="https://couchdb.apache.org/" rel="noreferrer nofollow noopener external">CouchDB</a></li>
+<li><a href="https://webostv.developer.lge.com/develop/guides/db8-basic" rel="noreferrer nofollow noopener external">DB8</a></li>
+<li><a href="https://www.mongodb.com/docs/manual/" rel="noreferrer nofollow noopener external">MongoDB</a></li>
+</ul>
+
+		<ul class="links-nextprev"><li>Next: <a href="/presentations/Enyo framework/">Enyo: Yet Another Framework or The Next Step Beyond Dojo?</a></li>
+		</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The ELK Stack — Talks by Doug Reeder</title>
+	<meta name="author" content="Doug Reeder" >
+	
+	<meta name="description" content="Elasticsearch, Logstash &amp; Kibana together enable powerful monitoring and data transformations." >
+	<meta property="og:title" content="The ELK Stack" >
+	<meta property="og:description" content="Elasticsearch, Logstash &amp; Kibana together enable powerful monitoring and data transformations." >
+	<meta property="og:type" content="article" >
+	<meta property="og:url" content="https://hominidsoftware.com/presentations/ELK stack/" >
+	<meta property="og:site_name" content="Hominid Software" >
+	
+	
+	
+	<meta property="og:updated_time" content="2024-08-10" >
+	<meta property="article:published_time" content="2020-01-02" >
+	<meta property="article:modified_time" content="2024-08-10" >
+	<meta property="article:author" content="Doug Reeder">
+	<meta property="article:tag" content="presentation">
+	<meta property="article:tag" content="indexing/search">
+	<meta property="article:tag" content="Lucene/Solr/Elastisearch">
+	
+	<meta property="article:section" content="Talks by Doug Reeder">
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "PresentationDigitalDocument",
+			
+			"name": "The ELK Stack",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+	
+	
+	"description": "Elasticsearch, Logstash &amp; Kibana together enable powerful monitoring and data transformations.",
+	
+			"datePublished": "2020-01-02",
+			"dateModified": "2024-08-10",
+			"keywords": ["indexing/search", "Lucene/Solr/Elastisearch"]
+		}
+	</script>
+	<link rel="alternate" href="/feed/presentationFeed.xml" type="application/atom+xml" title="Talks by Doug Reeder">
+	<link rel="alternate" href="/feed/presentationFeed.json" type="application/json" title="Talks by Doug Reeder">
+		<link rel="canonical" href="https://hominidsoftware.com/presentations/ELK stack/" >
+	
+	<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+</head>
+<body>
+<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+<header>
+	<span class="home-link">Hominid Software — Talks by Doug Reeder</span>
+	<nav>
+		<h2 class="visually-hidden">Top level navigation menu</h2>
+		<ul class="nav">
+				<li class="nav-item"><a href="/">Apps</a></li>
+				<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+				<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+				<li class="nav-item"><a href="/presentations/">Talks</a></li>
+				<li class="nav-item"><a href="/archive/">Archive</a></li>
+				<li class="nav-item"><a href="/about/">About Me</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="skip">
+	
+<h1>The ELK Stack</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2020-01-02">02 January 2020</time></li>
+		<li><a href="/tags/indexing-search/" class="post-tag">indexing/search</a>, </li>
+		<li><a href="/tags/lucene-solr-elastisearch/" class="post-tag">Lucene/Solr/Elastisearch</a></li>
+</ul>
+
+
+
+<p><em>talks delivered to technical &amp; non-technical audiences at <a href="https://www.nchannel.com/" rel="noreferrer nofollow noopener external">nChannel</a> in January 2020</em></p>
+<h1 id="technical-talk-on-elk-stack" tabindex="-1">technical talk on ELK stack <a class="header-anchor" href="#technical-talk-on-elk-stack">#</a></h1>
+<p><strong>A RESTful API on top of the powerful Lucene search engine</strong></p>
+<ul>
+<li>document-based search engine (store denormalized data)</li>
+<li>JSON + Date, Binary, Range, IP address, Geo-point, shape, etc.</li>
+<li>schemas not required, but usually desirable; schema changes rarely break requests</li>
+<li>inverted index</li>
+<li>weaker storage guarantees than a database; not designed to be a source of truth</li>
+</ul>
+<p>structured queries, fuzzy &amp; full text queries, and complex queries that combine the two’</p>
+<p>analytics use same indices and are likewise fast</p>
+<ul>
+<li>JOIN before ingestion (or in application); can do pre-specified parent-child relations</li>
+</ul>
+<p>close integration with <strong>Kibana</strong> for management, visualization, machine learning</p>
+<p><strong>Logstash</strong> for <strong>server-side</strong> data processing</p>
+<ul>
+<li>enrich/flatten data (e.g. from ID to full records)</li>
+<li>Swiss Army knife</li>
+<li>could write to other stores like S3</li>
+</ul>
+<p><strong>Beats</strong> for <strong>client-side</strong> single-purpose data shippers</p>
+<ul>
+<li>Filebeat: tail file</li>
+<li>Metricbeat: metrics like CPU</li>
+<li>Packetbeat: network traffic</li>
+<li>Winlogbeat:</li>
+<li>Auditbeat: replaces auditd, uses same rules</li>
+<li>Heartbeat: actively probe systems</li>
+<li>Functionbeat: collect from serverless framework, like AWS Lambda</li>
+</ul>
+<p><strong>Ingestion</strong></p>
+<ul>
+<li>PUT /indexname/_doc/ID
+<ul>
+<li>POST _bulk</li>
+</ul>
+</li>
+<li>ingestion node (like Logstash but less functionality)</li>
+<li>Logstash</li>
+<li>Beats</li>
+</ul>
+<p>use HTTP Service Action to interface with Symphony</p>
+<h1 id="non-technical-talk-on-elk-stack" tabindex="-1">non-technical talk on ELK stack <a class="header-anchor" href="#non-technical-talk-on-elk-stack">#</a></h1>
+<p><strong>relational DB</strong>: (for example, Oracle or MySQL)</p>
+<ul>
+<li>schemas must be rigid</li>
+<li>normalize data (each datum stored once)</li>
+<li>easy to update</li>
+<li>general purpose - good at mixture of reading &amp; writing</li>
+<li>JOIN at query time</li>
+<li>have to know exactly what you’re searching for</li>
+</ul>
+<p><strong>MongoDB</strong>:</p>
+<ul>
+<li>schemas can be lax</li>
+<li>denormalize data (datum may be stored multiple places)</li>
+<li>strong consistency (can be source of truth)</li>
+<li>may or may not be easy to update</li>
+<li>some JOINs can be done at query time</li>
+<li>have to know exactly what you’re looking for</li>
+<li>compose.com: if you need any more than five or so indexes on a MongoDB collection, then that collection is a prime candidate for putting into Elasticsearch</li>
+</ul>
+<p><strong>Elasticsearch</strong>:</p>
+<ul>
+<li>schemas can be lax</li>
+<li>denormalize data (datum may be stored multiple places)</li>
+<li>weaker consistency (should not be source of truth)</li>
+<li>updating may be slow or difficult</li>
+<li>configure each index for family of queries</li>
+<li>JOIN on parent-child, or before ingestion, or in application</li>
+<li>great support for <strong>fuzzy searches</strong>, including full-text search
+<ul>
+<li>products related to the one displayed, but only one from each vendor, weighted toward positively-reviewed and high-margin products</li>
+<li>search for “green” products in name, description, or vendor blurb, but not variant, weighted toward name and description</li>
+<li>find a customer who’s surname is Lee, Lea, Li, Le, Lê or Lý</li>
+<li>Comply with HIPPA by searching documents for number groups that appear to be SSNs</li>
+<li>blog posts and comments that contain some variant of “consumer preference” such as “consumer product preference” or “preference of consumer”</li>
+<li>articles from around May 2005 that mention The Beatles</li>
+<li>search-as-you-type (suggest completions)</li>
+<li>find hotels near a specified point</li>
+<li>consolidate logs from all servers, and use machine learning to look for anomalies</li>
+</ul>
+</li>
+</ul>
+<p>close integration with <strong>Kibana</strong> for management, visualization, machine learning</p>
+<p><strong>Logstash</strong> for <strong>server-side</strong> data processing</p>
+<p><strong>Beats</strong> for <strong>client-side</strong> single-purpose data shippers</p>
+<p>use HTTP Service Action to interface with <strong>Symphony</strong> 2020-01-13T20:22:44.054Z</p>
+<p><strong>ingesting data</strong> into ELK stack</p>
+<p><strong>Logstash</strong> for <strong>server-side</strong> data processing</p>
+<ul>
+<li>enrich/flatten data (e.g. from ID to full records)</li>
+<li>Swiss Army tool</li>
+<li>could write to other stores like S3</li>
+</ul>
+<p><strong>Beats</strong> for (<strong>client-side</strong>) single-purpose data shippers</p>
+<ul>
+<li>Filebeat: tail file</li>
+<li>Metricbeat: metrics like CPU</li>
+<li>Packetbeat: network traffic</li>
+<li>Winlogbeat:</li>
+<li>Auditbeat: replaces auditd, uses same rules</li>
+<li>Heartbeat: actively probe systems</li>
+<li>Functionbeat: collect from serverless framework, like AWS Lambda</li>
+</ul>
+<p>template is schema that Elasticsearch will confirm to</p>
+<p>Kibana Spaces support different classes of users</p>
+
+		<ul class="links-nextprev"><li>Previous: <a href="/presentations/JavaScript Service Worker Design Patterns/">JavaScript Service Worker Design Patterns for Better UX</a></li><li>Next: <a href="/presentations/Gestures in WebXR/">Gestures in WebXR — Barrier Mage</a></li>
+		</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

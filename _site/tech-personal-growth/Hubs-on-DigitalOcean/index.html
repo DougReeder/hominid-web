@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Persistent Storage for Hubs on DigitalOcean — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" content="Days of sifting through details produced a simple solution." >
+		<meta property="og:title" content="Persistent Storage for Hubs on DigitalOcean" >
+		<meta property="og:description" content="Days of sifting through details produced a simple solution." >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		<meta property="og:image" content="https://hominidsoftware.com/img/kubernetes-debug-flowchart-750w.png" >
+		<meta property="og:image.width" content="750" >
+		<meta property="og:image.height" content="1061" >
+		<meta property="article:published_time" content="Sun Oct 27 2024 20:00:00 GMT-0400 (Eastern Daylight Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="Hubs">
+		<meta property="article:tag" content="Kubernetes">
+		<meta property="article:tag" content="VR">
+		<meta property="article:tag" content="webXR">
+		<meta property="article:tag" content="application">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "Persistent Storage for Hubs on DigitalOcean",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "Days of sifting through details produced a simple solution.",
+			"image": "https://hominidsoftware.com/img/kubernetes-debug-flowchart-750w.png",
+			 "datePublished": "2024-10-28",
+			"dateModified": "2024-11-28",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["Hubs", "Kubernetes", "VR", "webXR", "application"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/" >
+		
+		<link rel="stylesheet" href="/bundle/K0Y9O-Azrk.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Persistent Storage for Hubs on DigitalOcean</h1>
+
+<div class="post-description">Days of sifting through details produced a simple solution.</div>
+
+<div class="post-description">About 5 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-10-28">28 October 2024</time></li>
+	<li><a href="/tags/hubs/" class="post-tag">Hubs</a>, </li>
+	<li><a href="/tags/kubernetes/" class="post-tag">Kubernetes</a>, </li>
+	<li><a href="/tags/vr/" class="post-tag">VR</a>, </li>
+	<li><a href="/tags/webxr/" class="post-tag">webXR</a>, </li>
+	<li><a href="/tags/application/" class="post-tag">application</a></li>
+</ul>
+
+<p><a href="#my-final-configuration">skip to solution</a></p>
+<p><em>Content warning: extremely technical — may cause drowsiness — do not read while operating heavy machinery</em></p>
+<h2 id="setting-up-hubs-cloud-community-edition" tabindex="-1">Setting up Hubs Cloud Community Edition <a class="header-anchor" href="#setting-up-hubs-cloud-community-edition">#</a></h2>
+<p>The free Hubs service from Mozilla has been shut down, along with Hubs Cloud.
+Fortunately, the Community Edition of Hubs Cloud is now straightforward to set up.
+The number of steps is large, but that’s hard to avoid with a freestanding consumer-ready service.</p>
+<p>I followed the <a href="https://docs.google.com/document/d/1BXSxTNFLjx8dtz26_OAFJParGdz8qTE2XvVAxwoJwrQ/edit?tab=t.0" rel="noreferrer nofollow noopener external">Beginner’s Guide to CE</a>, with the changes noted below.
+It wasn’t clear that Kubernetes commands haven’t necessarily taken effect when the command exits (which is not obvious if you’re new to Kubernetes).</p>
+<p>It’s not documented in the Beginner’s Guide, but Hubs works fine with a subdomain like <code>hubs.hominidsoftware.com</code>, so I could use my existing domain.
+I was also able to configure my existing Postfix mail server to handle the new subdomain, keeping down my total infrastructure and accounts.</p>
+<p>The other trouble I ran into into trouble was getting Let’s Encrypt certificates set up.
+I had to apply <code>hcce.yaml</code> once as generated, then run the script <code>gen-ssl</code>, then edit <code>hcce.yaml</code> to comment out the flag <code>--default-ssl-certificate=hcce/cert-hcce</code> for haproxy and finally apply <code>hcce.yaml</code> again.  :-(
+That turns out to be a known issue, in the long list of tasks for the Hubs maintainers.</p>
+<h2 id="operational-trouble" tabindex="-1">Operational trouble <a class="header-anchor" href="#operational-trouble">#</a></h2>
+<p>Originally, I set up my Kubernetes cluster to Autoscale.
+(I overlooked the step in the Beginner’s Guide which said to set Fixed scaling and only one node.)
+All was well, until a heavy load triggered a second node to spin up.
+The configuration for Community Edition stores avatars, resources and scenes using <code>hostPath</code> volumes — that is, files are stored on the node’s filesystem.
+Two different nodes won’t share a filesystem, so avatars, resources and scenes were unavailable on the new node and storage became scrambled.</p>
+<p>A workaround was to change the cluster scaling type to Fixed, and only configure one node (as the Beginner’s Guide instructs).</p>
+<p>That’s the Achilles’ Heel of Community Edition: it’s not configured for production use.</p>
+<h2 id="persistent-storage" tabindex="-1">Persistent storage <a class="header-anchor" href="#persistent-storage">#</a></h2>
+<p>Unfortunately, there isn’t yet any proper documentation on persistent storage for Hubs.
+The <a href="https://github.com/Hubs-Foundation/hubs-docs/blob/2f23837be9a94d2f431f960637dca3e58351e649/docs/dev-system-overview.md?plain=1#L4" rel="noreferrer nofollow noopener external">System Overview</a> just notes there’s &quot;a postgresql database behind reticulum and a file store&quot;.
+There is a YouTube video: <a href="https://www.youtube.com/watch?v=ShQqXGjB0qo" rel="noreferrer nofollow noopener external">Persistent Volumes and External Database - Community Edition Setup Session - April 24, 2024</a>.
+After an hour of unrelated stuff, you find out the file storage can be Google Cloud Persistent Volumes exposed as NFS.
+It was not immediately clear to me why a StorageClass of <code>nfs</code> was chosen over <code>standard-rwo</code></p>
+<p>Digital Ocean doesn’t offer NFS for either its Volumes Block Storage or Spaces Object Storage (S3-compatible blob storage).
+Since a Kubernetes Volume is essentially a directory, I set up a bucket in Spaces Object Storage, and started reading the Kubernetes docs to find the parameters to connect.
+It turns out, the most popular container orchestration system doesn’t natively talk the most popular mass storage protocol.
+Not what I expected.
+There <em>are</em> <a href="https://github.com/awslabs/mountpoint-s3-csi-driver?tab=readme-ov-file" rel="noreferrer nofollow noopener external">Container Storage Interface (CSI) Drivers for S3</a> that you can install, but I prefer to start with a simple solution.</p>
+<p>So (as I should have done earlier), I finally searched the WWW for &quot;DigitalOcean&quot; &quot;PersistentVolume&quot;.
+DigitalOcean supports <code>csi-digitalocean</code>, a CSI for their Volumes Block Storage, which they install on all their managed clusters.
+(You can’t directly check if a CSI is installed; you have to check if its StorageClasses are available.)
+Documentation on configuring it could be improved, but basically, in a <code>PersistentVolumeClaim</code>, you just change <code>storageClassName</code> from <code>manual</code> to <code>do-block-storage</code>.
+If you don’t explicitly configure a matching <code>PersistentVolume</code>, one will be dynamically created.
+I commented out the <code>PersistentVolume</code> in <code>hcce.yaml</code> for <code>ret-pv</code>, the Reticulum file storage.
+That worked, albeit the <code>PersistentVolume</code> had a Reclaim Policy of Delete, which you obviously don’t want for your permanent storage.
+I went back to the list of available StorageClasses: <code>do-block-storage</code>, <code>do-block-storage-retain</code>, <code>do-block-storage-xfs</code> and <code>do-block-storage-xfs-retain</code>, which are not really documented. <code>-retain</code> sounds like a Reclaim Policy and indeed, using <code>do-block-storage-retain</code> dynamically created a <code>PersistentVolume</code> with a Reclaim Policy of Retain.</p>
+<p>Hubs needs a PostgresQL database.
+DigitalOcean offers managed PostresQL databases.
+The video notes that Hubs requires MD5 password encryption, which is not the default for v14 and later.
+You can, however configure that in later versions.</p>
+<p>I was ready to spin up a manged PostgresQL database, when I remembered that Community Edition has a <code>postgresql</code> container which writes and reads to a <code>PersistenVolumeClaim</code> of its own.
+Could you just change that use DigitalOcean Block Storage?
+I had trouble getting it working, but fortunately Kubernetes is easy to debug :-)</p>
+<div class="center-horizontal">
+<picture><source type="image/avif" srcset="/img/kubernetes-debug-flowchart-750w.avif 750w, /img/kubernetes-debug-flowchart-1785w.avif 1785w" sizes="100vw"><source type="image/webp" srcset="/img/kubernetes-debug-flowchart-750w.webp 750w, /img/kubernetes-debug-flowchart-1785w.webp 1785w" sizes="100vw"><img alt="A visual guide on troubleshooting Kubernetes deployments" loading="lazy" decoding="async" src="/img/kubernetes-debug-flowchart-750w.png" width="1785" height="2526" srcset="/img/kubernetes-debug-flowchart-750w.png 750w, /img/kubernetes-debug-flowchart-1785w.png 1785w" sizes="100vw"></picture>
+</div>
+<p><em>Thanks to Daniele Polencic</em></p>
+<p>Setting the <code>pgsql-pvc</code> <code>PersistenVolumeClaim</code> to use the <code>do-block-storage-retain</code> StorageClass resulted in the pgsql deployment failing.
+The pod log contained</p>
+<pre><code>initdb: error: directory &quot;/var/lib/postgresql/data&quot; exists but is not empty
+It contains a lost+found directory, perhaps due to it being a mount point.
+</code></pre>
+<p>That check should be disabled for this case, but I had another option: using the <code>do-block-storage-xfs-retain</code> StorageClass.
+<code>-xfs</code> sounds like the XFS file system.
+Would PostgresQL be happier XFS rather than ext4?
+The answer is yes, so both <code>PersistentVolumesClaims</code> are now <code>do-block-storage-xfs-retain</code> (for consistency), and my Hubs instance has persistent storage that’s not tied to a node!  Next, I’ll need to set up regular backups for my shiny new volumes.</p>
+<p>Unfortunately, PostgresQL is still a black box.
+For a truly production-ready system, PostgresQL should be separate from the cluster, for easy administration and maintenance.</p>
+<h2 id="access-from-multiple-nodes" tabindex="-1">Access from multiple nodes? <a class="header-anchor" href="#access-from-multiple-nodes">#</a></h2>
+<p>Now storage can be accessed from any node — but <code>accessModes</code> <code>ReadWriteOnce</code> only allows one node at a time.
+When I set the mode to <code>ReadWriteMany</code>, the PersistentVolumes weren’t created.</p>
+<p>To have a cluster that can handle large meetings, I installed DO’s <a href="https://docs.digitalocean.com/products/marketplace/catalog/csi-for-s3/" rel="noreferrer nofollow noopener external">CSI for S3</a> and, for <code>ret-pvc</code> set</p>
+<pre><code>spec:
+  storageClassName: csi-s3
+  accessModes:
+    - ReadWriteMany
+</code></pre>
+<p>That dynamically created an S3 bucket in DigitalOcean Spaces which can be accessed from multiple nodes.
+The Reclaim Policy was <code>Delete</code>.  It might require creating a new StorageClass manually to get a Reclaim Policy of <code>Retain</code>.</p>
+<p>It’s highly unlikely that PostgresQL would be happy with multiple instances writing to the same set of files, so I didn’t try this for <code>pgsql-pvc</code>.</p>
+<h2 id="increasing-storage-capacity" tabindex="-1">Increasing Storage Capacity <a class="header-anchor" href="#increasing-storage-capacity">#</a></h2>
+<p>DigitalOcean notes that you can increase <code>capacity.storage</code> and re-apply at any time, and the <code>PersistentVolume</code> will be re-sized.
+Unfortunately, the <em>filesystem</em> on the volume isn’t necessarily re-sized, so it might make sense to set a larger capacity from the start.
+More research will be required. :-S</p>
+<h2 id="my-final-configuration-but-see-my-next-post" tabindex="-1">My Final Configuration [but see my next post!] <a class="header-anchor" href="#my-final-configuration-but-see-my-next-post">#</a></h2>
+<p>As I haven’t yet set up an external PostgresQL database, for simplicity and cost savings, I went back to the StorageClass of <code>do-block-storage-xfs-retain</code> for now:</p>
+<pre><code>#################################################################################
+################################# persistent volume ##################################
+######################################################################################
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+#  name: pgsql-pv
+#  labels:
+#    type: local
+#spec:
+#  storageClassName: manual
+#  capacity:
+#    storage: 10Gi
+#  accessModes:
+#    - ReadWriteOnce
+#  persistentVolumeReclaimPolicy: Retain
+#  claimRef:
+#    name: pgsql-pvc
+#    namespace: hcce
+#  hostPath:
+#    path: &quot;/mnt/pgsql_data&quot;
+#    type: DirectoryOrCreate
+---
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+#  name: ret-pv
+#  labels:
+#    type: local
+#spec:
+#  storageClassName: manual
+#  capacity:
+#    storage: 10Gi
+#  accessModes:
+#    - ReadWriteOnce
+#  persistentVolumeReclaimPolicy: Retain
+#  claimRef:
+#    name: ret-pvc
+#    namespace: hcce
+#  hostPath:
+#    path: &quot;/mnt/ret_storage_data&quot;
+#    type: DirectoryOrCreate
+---
+######################################################################################
+############################## persistent volume claim ###############################
+######################################################################################
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pgsql-pvc
+  namespace: hcce
+spec:
+  storageClassName: do-block-storage-xfs-retain
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ret-pvc
+  namespace: hcce
+spec:
+  storageClassName: do-block-storage-xfs-retain
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+</code></pre>
+<h2 id="changing-the-hubs-default-configuration" tabindex="-1">Changing the Hubs default configuration <a class="header-anchor" href="#changing-the-hubs-default-configuration">#</a></h2>
+<p>StorageClasses <code>do-block-storage</code>, <code>do-block-storage-retain</code>, <code>do-block-storage-xfs</code> and <code>do-block-storage-xfs-retain</code> are unique to DigitalOcean and <code>csi-s3</code> requires installation of <code>k8s-csi-s3</code>, so you couldn’t use them in the default Community Edition configuration.
+However, if you don’t set the StorageClass at all, you’ll get the cluster’s default StorageClass.
+For DigitalOcean, that’s <code>do-block-storage</code> which has a Reclaim Policy of Delete, but is more durable than <code>hostPath</code> volumes and can be backed-up and then restored to a Retained volume.
+The default StorageClass for Google and Amazon’s managed Kubernetes is similar.</p>
+<p>If PostgresQL can be configured to not care about the <code>lost+found</code> directory, the <code>pgsql-pvc</code> <code>PersistentVolumeClaim</code> could also use the default <code>StorageClass</code>.
+On every cloud provider I checked, the default <code>StorageClass</code> is external to nodes.
+That would make persistent storage the default. As the Hubs configuration doesn’t constrain the number of nodes, this would avoid non-experts losing data, as I did.</p>
+<h2 id="addendum-10-november-2024" tabindex="-1">Addendum (10 November 2024) <a class="header-anchor" href="#addendum-10-november-2024">#</a></h2>
+<p>Changing the PostgresQL volume to mount higher in the filesystem hierarchy (that is, changing <code>deployment.spec.template.spec.containers[0].volumeMounts[0].mountPath</code> from <code>/var/lib/postgresql/data</code> to just <code>/var/lib/postgresql</code>) puts <code>lost+found</code> (if it exists) where PostgresQL doesn’t care.</p>
+<p>So, I submitted <a href="https://github.com/Hubs-Foundation/hubs-cloud/pull/363" rel="noreferrer nofollow noopener external">a pull request</a> which creates
+the volumes using the default StorageClass, so the right thing happens automagically on any provider.
+It also creates the <code>pgsql</code> volume with accessMode <code>ReadWriteOncePod</code>, so if someone mistakenly creates another replica of <code>pgsql</code>, the database files won’t be mangled.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/webapp-install-mess/">The Mess That Is Installing a WebApp</a></li><li>Next: <a href="/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/">A Managed Database for Hubs</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

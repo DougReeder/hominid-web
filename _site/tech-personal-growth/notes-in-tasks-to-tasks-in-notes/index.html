@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>From Notes-in-tasks to Tasks-in-notes — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta property="og:title" content="From Notes-in-tasks to Tasks-in-notes" >
+		<meta property="og:description" content="Essays on using digital technology to become a better person" >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		<meta property="og:image" content="https://hominidsoftware.com/img/Notes-Together-Task-List-750w.jpeg" >
+		<meta property="og:image.width" content="320" >
+		<meta property="og:image.height" content="569" >
+		<meta property="article:published_time" content="Wed Jun 07 2023 20:00:00 GMT-0400 (Eastern Daylight Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="getting things done">
+		<meta property="article:tag" content="memos/notes">
+		<meta property="article:tag" content="application">
+		<meta property="article:tag" content="PWA">
+		<meta property="article:tag" content="webOS">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "From Notes-in-tasks to Tasks-in-notes",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			
+			"image": "https://hominidsoftware.com/img/Notes-Together-Task-List-750w.jpeg",
+			 "datePublished": "2023-06-08",
+			"dateModified": "2024-08-21",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["getting things done", "memos/notes", "application", "PWA", "webOS"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/" >
+		
+		<link rel="stylesheet" href="/bundle/K0Y9O-Azrk.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>From Notes-in-tasks to Tasks-in-notes</h1>
+
+<div class="post-description"></div>
+
+<div class="post-description">About 3 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2023-06-08">08 June 2023</time></li>
+	<li><a href="/tags/getting-things-done/" class="post-tag">getting things done</a>, </li>
+	<li><a href="/tags/memos-notes/" class="post-tag">memos/notes</a>, </li>
+	<li><a href="/tags/application/" class="post-tag">application</a>, </li>
+	<li><a href="/tags/pwa/" class="post-tag">PWA</a>, </li>
+	<li><a href="/tags/webos/" class="post-tag">webOS</a></li>
+</ul>
+
+<h2 id="outline-tracker" tabindex="-1">Outline Tracker <a class="header-anchor" href="#outline-tracker">#</a></h2>
+<p>I learned Palm webOS programming to write <a href="/outlinetracker/index.html"><em>Outline Tracker</em></a>, a To-Do List app.
+The main feature was filtering to display only the tasks you could work on at the current time,
+at your current &quot;Place&quot;, and not blocked by other tasks.
+Tasks could also repeat on either a strict or lax schedule, and were visible in the webOS Calendar app.
+They also had a person responsible for them.</p>
+<p>However, items in local Projects could be toggled between Tasks with a checkbox, and Notes without.
+In addition, each item could also have <em>content text</em>, which was only displayed when the item was expanded.</p>
+<div class="center-horizontal">
+<p><img src="/outlinetracker/visuals/content_text.png" alt="screen shot showing content text"></p>
+</div>
+<p>It could act as an outliner, importing from <a href="https://microformats.org/wiki/xoxo" rel="noreferrer nofollow noopener external"><em>XOXO</em></a> files.
+A Project could be all text, with no Tasks.</p>
+<p>The data model was very general, essentially a superset of all the To-Do apps I studied.
+Unfortunately, this did not lend itself to a low-friction user interface.
+Creating multiple tasks required switching between the hardware keyboard and on-screen buttons.
+New Places could only be created in a separate screen.
+The UI was fine for creating a few complex items, but was clunky for making a shopping list.
+It pushed the user toward a few large Projects, instead of many small ones, which doesn't match much outside a job.
+It also lacked an &quot;inbox&quot; where the user could quickly create a task, and later fill in the details.</p>
+<p>It also had Basecamp (now Basecamp Classic) Projects, which could be synchronized between devices.
+These were restricted to Basecamp's more rigid data model, where lists could have context text,
+but tasks could not. Tasks, however, could have multiple text Comments.
+It also has text-only Messages at the top level.</p>
+<p>Other To-Do apps likewise allow text that isn't explicitly a task, in various places.</p>
+<h2 id="notes-together" tabindex="-1">Notes Together <a class="header-anchor" href="#notes-together">#</a></h2>
+<p>After the demise of webOS, I started a line of research that eventually led to <a href="/notes-together/"><em>Notes Together</em></a>, a note-taking app.
+It's marquee feature is full-text search (using Indexed DB under the hood),
+eliminating the need to curate notes with categories or explicit tags.
+Users are encouraged to toss in snippets of text or pictures and get back to whatever they were doing.
+Semantic formatting such as headings, lists, tables, block quotes and monospaced code blocks
+is retained. Styling is discarded, so pasted and user-typed text harmonize.
+Syncing with <a href="https://remotestorage.io/" rel="noreferrer nofollow noopener external"><em>remoteStorage</em></a> avoids compromising the data model to work with third-party software.</p>
+<p>I found myself keeping notes with lists of groceries to buy and which episodes I had seen in a TV series.
+Shopping lists are entered very naturally, by typing return after every item (like all word processing apps).
+The Unicode checkmark ✔️ was useful here, but clunky to insert.
+So I added code for unordered and ordered checklists (<em>Task Lists</em> and <em>Sequences</em>, respectively).
+A very few clicks can paste in anything that resembles a list and transform it to a checklist.
+(Completed Tasks are moved to the bottom of the list instead of being hidden,
+so it's easy to recover from a fat-fingered tap.)
+Thus, a note-taking app became a lower-friction place than a To-Do app to keep simple to-do lists.</p>
+<div class="center-horizontal">
+<picture><source type="image/avif" srcset="/img/Notes-Together-Task-List-750w.avif 750w" sizes="100vw"><source type="image/webp" srcset="/img/Notes-Together-Task-List-750w.webp 750w" sizes="100vw"><img alt="a Task List in Notes Together" loading="lazy" decoding="async" src="/img/Notes-Together-Task-List-750w.jpeg" width="750" height="1334"></picture>
+</div>
+<p>Text associated with a task is not confined to certain fields —
+you write a document and place the checklist anywhere you like, even in a table cell.
+You don't have to move the cursor between fields; it's all one document.</p>
+<p>Notes Together will never be able to show you <em>only</em> the tasks you can work on here-and-now,
+or <em>just</em> the tasks you're waiting on others to do.
+Nor will you be able to see work errands and household errands in the same list
+(unless you keep everything in one giant list ☹).
+Nor does it help you with repeating chores
+(though you can lock a note against edits, and repeatedly check and uncheck the items).
+However, every note has an associated Date,
+so it's possible to have a Task List for each day on which something is due
+(though then you can't see all the tasks in one list).
+Lists can contain sub-lists, so Tasks can contain sub-Tasks.
+(I haven't yet written code to check an item when the last item on a sub-list is checked.)
+Every word is indexed, so there's not a separate list of tags that the user must curate, unlike Outline Tracker.</p>
+<p>So Notes Together can't slice and dice tasks like Outline Tracker, but everything you <em>can</em> do is low-friction.
+I find it more pleasant to use to track my To-Dos.</p>
+<h2 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h2>
+<p>Despite starting from different places, my two apps ended up having surprisingly similar capabilities.
+Ease of use turned out to be more important than the &quot;correct&quot; data model.</p>
+<p>It's said that every Unix application expands until it can read email.  Here's hoping I never reach that point. ☺︎</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/good-day-to-dance/">Today is a Good Day to ... Dance</a></li><li>Next: <a href="/tech-personal-growth/webapp-install-mess/">The Mess That Is Installing a WebApp</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

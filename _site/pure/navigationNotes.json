@@ -1,0 +1,6 @@
+[
+	{"pagename": "Features", "relurl": "/searchablenotes/index.html", "pageclass": "featuresNotes"},
+	{"pagename": "F.A.Q.", "relurl": "/searchablenotes/faq.html", "pageclass": "faqNotes"},
+	{"pagename": "Support", "relurl": "/searchablenotes/support.html", "pageclass": "supportNotes"},
+	{"pagename": "Privacy &amp; License", "relurl": "/searchablenotes/license.html", "pageclass": "licenseNotes"}
+]

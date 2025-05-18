@@ -1,0 +1,46 @@
+Package: com.hominidsoftware.zapphotoshare
+Version: 2.3.4
+Section: Multimedia
+Description: Zap Photoshare
+Architecture: all
+Maintainer: Hominid Software <support@hominidsoftware.com>
+Filename: com.hominidsoftware.zapphotoshare_2.3.4_all.ipk
+Size: 210864
+MD5Sum: 411f5256a7db00be4b58c31214637c74
+Source: {  "Feed":"Hominid-Software",  "Title":"Zap Photoshare",  "Homepage":"https://hominidsoftware.com/zapphotoshare/support.html",  "Icon":"https://hominidsoftware.com/preware/zap-icon64.png",  "Type":"Application",  "Category":"Multimedia",  "License":"Free; Closed-source",  "LastUpdated":"1413861000",  "MinWebOSVersion":"2.2.4", "Languages": ["en_US"], "Screenshots": ["https://hominidsoftware.com/zapphotoshare/visuals/ss_phone_en_1.png", "https://hominidsoftware.com/zapphotoshare/visuals/browser_ColorBox_portrait.png"],  "FullDescription":"Share pictures to any device on the local Wi-Fi network! Instead of the tiny screen of your phone, view your photos on a tablet, a desktop with a 23\" screen or a wall-sized Internet-enabled TV. If it has a web browser and Wi-Fi, you can share to it!<br><br>Multiple friends can view your shared album, each at his/her own pace, while you use your device normally.<br><br>Uses the photo albums you already have set up on your device - create more at any time.<br><br>Keep a slide show - or several - in your pocket. No accounts to set up, no passwords to manage!" }
+
+
+Package: com.hominidsoftware.searchablenotes
+Version: 1.8.0
+Section: Productivity
+Description: Serene Notes
+Architecture: all
+Maintainer: Hominid Software <support@hominidsoftware.com>
+Filename: com.hominidsoftware.searchablenotes_1.8.0_all.ipk
+Size: 373037
+MD5Sum: 11979138196f3136ee1408c8f1eb5189
+Source: { "Feed":"Hominid-Software",  "Title":"Serene Notes",  "Homepage":"https://hominidsoftware.com/searchablenotes/support.html",  "Icon":"https://hominidsoftware.com/preware/serene-notes-icon256x256.png",  "Type":"Application",  "Category":"Productivity",  "License":"Free; Closed-source",  "LastUpdated":"1506403992",  "MinWebOSVersion":"3.5.0", "Languages": ["en_US"], "Screenshots": ["https://hominidsoftware.com/searchablenotes/visuals/Notes_ss_phn_en_2_1.4.0.png"],  "FullDescription":"Have you taken a note (or copied a snippet of text) with important details, and forgotten where you put it?  Do you struggle to remember what was discussed at the meetup in February or the staff meeting last Tuesday?  Did you learn something at the conference in Amsterdam that's only relevant now?  Serene Notes can help!  Just search for any words in your note, or where you wrote it, then skim the list by date.<ul><li>Import your current notes from plain text, Markdown or HTML files.</li><li>Works with text in any Latin alphabet. (Search is optimized for English, Spanish and German.)</li><li>Works well on both phones and tablets.</li></ul>[Geotagging has low accuracy under LuneOS.]" }
+
+
+Package: com.hominidsoftware.popupcalc
+Version: 1.1.6
+Section: Productivity
+Description: PopupCalc
+Architecture: all
+Maintainer: Hominid Software <support@hominidsoftware.com>
+Filename: com.hominidsoftware.popupcalc_1.1.6_all.ipk
+Size: 21242
+MD5Sum: a370a8b7b86ff97a0262c0c1380ec018
+Source: {  "Feed":"Hominid-Software",  "Title":"PopupCalc",  "Homepage":"https://hominidsoftware.com/popupcalc/support.html",  "Icon":"https://hominidsoftware.com/preware/popupcalc-icon64.png",  "Type":"Application",  "Category":"Productivity",  "License":"Free; Closed-source",  "LastUpdated":"1413861377",  "MinWebOSVersion":"3.0.5", "Languages": ["en_US"], "Screenshots": ["https://hominidsoftware.com/popupcalc/visuals/notes_portrait.png", "https://hominidsoftware.com/popupcalc/visuals/browser_portrait.png"],  "FullDescription":"PopupCalc is a calculator that runs in a window on top of other applications. Both PopupCalc and the other app are fully functional, so you can do calculations while writing a memo or shopping on-line.<br ><br>Results are saved for later use and can be copied to the clipboard.<br ><br>PopupCalc “lives” in a dashboard notification, so the calculator is just a swipe and a tap away at any time, once launched." }
+
+
+Package: com.hominidsoftware.exhibitioncalc
+Version: 1.0.2
+Section: Productivity
+Description: ExhibitionCalc
+Architecture: all
+Maintainer: Hominid Software <support@hominidsoftware.com>
+Filename: com.hominidsoftware.exhibitioncalc_1.0.2_all.ipk
+Size: 37414
+MD5Sum: adcf2135a0cf8d70b7b03148cb22a7d4
+Source: {  "Feed":"Hominid-Software",  "Title":"ExhibitionCalc",  "Homepage":"https://hominidsoftware.com/exhibitioncalc/support.html",  "Icon":"https://hominidsoftware.com/preware/exhibitioncalc-icon64.png",  "Type":"Application",  "Category":"Productivity",  "License":"Free; Closed-source",  "LastUpdated":"1413861377",  "MinWebOSVersion":"3.0.5", "Languages": ["en_US"], "Screenshots": ["https://hominidsoftware.com/exhibitioncalc/visuals/exhibitioncalc_portrait.png"],  "FullDescription":"A calculator that's ready at hand when your device is in Exhibition Mode!  Results are saved for later use and can be copied to the clipboard.<br ><br>(Also works as a normal app, if you prefer this to the built-in calculator.)" }

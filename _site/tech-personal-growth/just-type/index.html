@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Just Type — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" content="UI needs to be discoverable" >
+		<meta property="og:title" content="Just Type" >
+		<meta property="og:description" content="UI needs to be discoverable" >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/just-type/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		
+		
+		
+		<meta property="article:published_time" content="Fri Aug 12 2011 20:00:00 GMT-0400 (Eastern Daylight Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="user experience">
+		<meta property="article:tag" content="webOS">
+		<meta property="article:tag" content="mobile">
+		<meta property="article:tag" content="indexing/search">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"name": "Just Type",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "UI needs to be discoverable",
+			
+			 "datePublished": "2011-08-13",
+			"dateModified": "2024-08-12",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["user experience", "webOS", "mobile", "indexing/search"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/just-type/" >
+		
+		<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Just Type</h1>
+
+<div class="post-description">UI needs to be discoverable</div>
+
+<div class="post-description">About 2 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2011-08-13">13 August 2011</time></li>
+	<li><a href="/tags/user-experience/" class="post-tag">user experience</a>, </li>
+	<li><a href="/tags/webos/" class="post-tag">webOS</a>, </li>
+	<li><a href="/tags/mobile/" class="post-tag">mobile</a>, </li>
+	<li><a href="/tags/indexing-search/" class="post-tag">indexing/search</a></li>
+</ul>
+
+<p>When a user needs to select one item out of hundreds (the typical case on a handheld device), there are a number user interface approaches. &quot;Browse&quot; approaches work when items fit in a hierarchy the user can remember, for example <em>Artist &gt; Album &gt; Song</em> or <em>Account &gt; Mailbox &gt; Message</em>.</p>
+<p>For some datasets there isn't a hierarchy, for others you could impose a hierarchy, but the user may not categorize items the same way.  For example, a user experiencing an &quot;out of memory&quot; error won't know to look in  FAQs on &quot;Configuration&quot;.  Here, you need some variation on search.</p>
+<p>The chief problem with search is that, typically, the user doesn't know how specific to be.  Too short a search phrase will return too many results.  Too long a search phrase may return no results, if the search phrase is not exactly right.  The solution is &quot;live search&quot; - returning search results as the user types.</p>
+<p>Until the release of the TouchPad, all webOS devices had a built-in hardware keyboard.  This allows a distinctive technique - when no text field has the focus, if a character is typed, start searching.  This allowed experienced users to search a list, without cluttering the small screen with a search field or button.  The problem is, there is no indication to new users they can search.  Since the Contacts app is unusable without this technique, one might assume that all users learn it.  But real users don't have to behave like we expect.</p>
+<p>Palm assumed that all users set up e-mail on their smartphone, thus requiring support requests be sent by e-mail</p>
+<p>There are four scenes in Outline Tracker which use FilterLists, and the hint or help for each was different.  The FAQ list was searchable, and the first FAQ was 'how to search the FAQs'.  This always bothered me, but I couldn't think of a better alternative when I first implemented the FAQ scene.</p>
+<p>While adding <a href="https://web.archive.org/web/20141022130716/https://developer.palm.com/distribution/viewtopic.php?f=11&amp;t=17285" rel="noreferrer nofollow noopener external">support for the on-screen keyboard</a> to my Mojo app  I rediscovered that the status message list is a FilterList.</p>
+<p>I have often had trouble finding the status message I was looking for. The typedown filter would have been great for this. But this is so non-discoverable, that I didn't know it existed in code I wrote myself.</p>
+<p>Given also that I added visible text to most of the FilterList scenes, telling users they could &quot;Just Type&quot;, I'm thinking the &quot;Just Type&quot; concept (that is, no visible UI to start search) is a real fail.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/webos-under-windows/">How is HP-Palm going to port webOS to Windows?</a></li><li>Next: <a href="/tech-personal-growth/hp-exit-strategy-handhelds/">HP&#39;s Exit Strategy for Handhelds</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>

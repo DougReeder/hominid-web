@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebXR for Web Developers — Talks by Doug Reeder</title>
+	<meta name="author" content="Doug Reeder" >
+	
+	<meta name="description" content="Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don&#39;t normally use." >
+	<meta property="og:title" content="WebXR for Web Developers" >
+	<meta property="og:description" content="Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don&#39;t normally use." >
+	<meta property="og:type" content="article" >
+	<meta property="og:url" content="https://hominidsoftware.com/presentations/webxr-for-web-developers/" >
+	<meta property="og:site_name" content="Hominid Software" >
+	
+	
+	
+	<meta property="og:updated_time" content="2024-08-22" >
+	<meta property="article:published_time" content="2024-08-07" >
+	<meta property="article:modified_time" content="2024-08-22" >
+	<meta property="article:author" content="Doug Reeder">
+	<meta property="article:tag" content="presentation">
+	<meta property="article:tag" content="webXR">
+	<meta property="article:tag" content="JavaScript">
+	<meta property="article:tag" content="VR">
+	<meta property="article:tag" content="AR">
+	
+	<meta property="article:section" content="Talks by Doug Reeder">
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "PresentationDigitalDocument",
+			
+			"name": "WebXR for Web Developers",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+	"abstract": "Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don't normally use. I'll cover what's needed and where XR on the WWW is going.",
+	"teaches": "WebXR",
+	"description": "Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don&#39;t normally use.",
+	
+			"datePublished": "2024-08-07",
+			"dateModified": "2024-08-22",
+			"keywords": ["webXR", "JavaScript", "VR", "AR"]
+		}
+	</script>
+	<link rel="alternate" href="/feed/presentationFeed.xml" type="application/atom+xml" title="Talks by Doug Reeder">
+	<link rel="alternate" href="/feed/presentationFeed.json" type="application/json" title="Talks by Doug Reeder">
+		<link rel="canonical" href="https://hominidsoftware.com/presentations/webxr-for-web-developers/" >
+	
+	<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+</head>
+<body>
+<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+<header>
+	<span class="home-link">Hominid Software — Talks by Doug Reeder</span>
+	<nav>
+		<h2 class="visually-hidden">Top level navigation menu</h2>
+		<ul class="nav">
+				<li class="nav-item"><a href="/">Apps</a></li>
+				<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+				<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+				<li class="nav-item"><a href="/presentations/">Talks</a></li>
+				<li class="nav-item"><a href="/archive/">Archive</a></li>
+				<li class="nav-item"><a href="/about/">About Me</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="skip">
+	
+<h1>WebXR for Web Developers</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2024-08-07">07 August 2024</time></li>
+		<li><a href="/tags/webxr/" class="post-tag">webXR</a>, </li>
+		<li><a href="/tags/javascript/" class="post-tag">JavaScript</a>, </li>
+		<li><a href="/tags/vr/" class="post-tag">VR</a>, </li>
+		<li><a href="/tags/ar/" class="post-tag">AR</a></li>
+</ul>
+
+<h2>Abstract</h2>
+	<p>Doing VR and AR on the WWW requires a raft of APIs, libraries, languages, services, file formats, design metrics and approaches that web developers don't normally use. I'll cover what's needed and where XR on the WWW is going.</p>
+
+<p><em>Delivered to <a href="https://www.meetup.com/vr-columbus/" rel="noreferrer nofollow noopener external">VRColumbus</a> in <a href="https://www.meetup.com/vr-columbus/events/300924576/" rel="noreferrer nofollow noopener external">May 2024</a> and <a href="https://columbusjs.org/" rel="noreferrer nofollow noopener external">ColumbusJS</a> in <a href="https://www.meetup.com/columbusjs/events/302520579/" rel="noreferrer nofollow noopener external">August 2024</a></em></p>
+<h2 id="slides" tabindex="-1"><a href="../../keynote/WebXR%20for%20Web%20Developers/">Slides</a> <a class="header-anchor" href="#slides">#</a></h2>
+<h2 id="vs-native" tabindex="-1">vs. native <a class="header-anchor" href="#vs-native">#</a></h2>
+<ul>
+<li>Native apps can fully utilize hardware, but are siloed in development and distributed by gatekeepers</li>
+<li>Web apps can reach anyone, but you must allow for differing capabilities and can't achieve the performance of native
+<ul>
+<li>may also run on personal computers or mobile (depending on interactions), for those without a headset</li>
+<li>could have presenter(s) in headset and audience mostly on personal computers or mobile</li>
+</ul>
+</li>
+</ul>
+<h2 id="browser-graphics" tabindex="-1">Browser Graphics <a class="header-anchor" href="#browser-graphics">#</a></h2>
+<ul>
+<li>everything displayed in a window is in <strong>Document Object Model</strong> (DOM)</li>
+<li>conventional web programming comes down to manipulating the DOM, using a weakly-typed language w/ automatic memory management</li>
+<li>almost the polar opposite of environment for high-performance graphics</li>
+</ul>
+<h2 id="apis-for-webxr" tabindex="-1">APIs for WebXR <a class="header-anchor" href="#apis-for-webxr">#</a></h2>
+<ul>
+<li>
+<p><strong>Full-screen mode</strong> eliminates windowing &amp; browser chrome, for immersion</p>
+</li>
+<li>
+<p><strong>Canvas</strong> is HTML Element (in the DOM) you can draw into</p>
+<ul>
+<li>covers rectangular part or all of window</li>
+<li>bitmapped</li>
+<li>doesn't contain DOM, nor retain your draw calls</li>
+</ul>
+</li>
+<li>
+<p>current: <strong>WebGL 2</strong>: context of HTML Canvas</p>
+<ul>
+<li>
+<p>based closely on <a href="https://en.wikipedia.org/wiki/OpenGL_ES#OpenGL_ES_2.0" rel="noreferrer nofollow noopener external">OpenGL ES 3.0</a>,</p>
+</li>
+<li>
+<p>you will program to a utility library (or else wind up writing your own)</p>
+</li>
+<li>
+<p>focus is on the shader program</p>
+<ul>
+<li>libraries have all standard shaders</li>
+<li>custom shaders for unusual cases</li>
+<li>example: aframe-shader-buildings
+<ul>
+<li>each building is just an ell-shaped box made from 12 triangles; all buildings of a style are one object</li>
+<li>switches from texture for walls to cubemap for windows</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Shaders written in GLSL a C-like language (you serve GLSL files just like HTML, CSS &amp; JavaScript)</p>
+<ul>
+<li>
+<p><a href="https://dougreeder.github.io/aframe-dial/example.html" rel="noreferrer nofollow noopener external">custom shader for analog dial</a></p>
+</li>
+<li>
+<p><a href="https://www.clicktorelease.com/code/vertex-displacement-noise-3d-webgl-glsl-three-js/add-some-colour-movement.html" rel="noreferrer nofollow noopener external">custom shader using vertex displacement</a></p>
+</li>
+<li>
+<p><a href="https://dougreeder.github.io/aframe-shader-buildings/example.html" rel="noreferrer nofollow noopener external">custom shader to create thousands of buildings cheaply</a></p>
+</li>
+<li>
+<p><a href="https://dougreeder.github.io/elfland-glider/city/" rel="noreferrer nofollow noopener external">game using building shader</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>future: <strong>WebGPU</strong> in progress</p>
+<ul>
+<li>new kind of Context for HTML Canvas element</li>
+<li>no baggage from 1990s</li>
+<li>supports modern GPU architectures</li>
+<li>abstraction on top of Vulkan, Metal &amp; DirectX 12</li>
+<li>focuses on resource re-use via &quot;pipelines&quot; &amp; &quot;RenderBundles&quot;</li>
+</ul>
+</li>
+<li>
+<p><strong>WebXR</strong>: A web standard for working with VR &amp; AR</p>
+<ul>
+<li>complements WebGL/WebGPU</li>
+<li>VR/AR life-cycle
+<ul>
+<li>start &amp; stop immersive &amp; AR modes</li>
+<li>frame timing (may be different than main display)</li>
+</ul>
+</li>
+<li>provides new inputs
+<ul>
+<li>head pose for camera</li>
+<li>Controller position and buttons</li>
+<li>Hand tracking</li>
+<li>transient inputs (like laser pointer): mobile tap or Vision OS click</li>
+</ul>
+</li>
+<li>exposes platform features like AR plane detection</li>
+</ul>
+</li>
+<li>
+<p><strong>WebAssembly</strong> (WASM)</p>
+<ul>
+<li>near native speed</li>
+<li>just computation, no DOM access nor I/O</li>
+<li>support for strongly typed languages; around 40 programming languages reportedly compile to WASM</li>
+<li>physics engines, SLAM engines</li>
+<li>2.0 in draft</li>
+<li>developer survey: need for improvement in four areas: WASI, debugging support, integration with JavaScript and browser APIs, and build tooling</li>
+</ul>
+</li>
+</ul>
+<h2 id="performance" tabindex="-1">Performance <a class="header-anchor" href="#performance">#</a></h2>
+<ul>
+<li>Decide your <strong>target device class</strong>: mobile (billions), standalone headsets (10s of millions), or personal computers (millions)</li>
+<li>To keep frames/sec up, watch these metrics
+<ul>
+<li>number of triangles per frame:
+<ul>
+<li>mobile: &lt; 100,000–200,000</li>
+<li>standalone headsets: &lt; 750,000–1,000,000</li>
+</ul>
+</li>
+<li>draw calls per frame:
+<ul>
+<li>mobile: &lt; 100–150</li>
+<li>standalone headsets: &lt; 100–175</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>metrics
+<ul>
+<li><strong>draw calls</strong>: not much more than 100 draw calls (object &amp; material) on mobile, including standalone headsets</li>
+<li><strong>number of triangles</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="google-model-viewer" tabindex="-1">Google &lt;model-viewer&gt; <a class="header-anchor" href="#google-model-viewer">#</a></h2>
+<ul>
+<li>only displays 3-D models</li>
+<li>web component (element in DOM tree)</li>
+</ul>
+<h2 id="frameworks" tabindex="-1">Frameworks <a class="header-anchor" href="#frameworks">#</a></h2>
+<ul>
+<li>Three.js
+<ul>
+<li>imperative programming</li>
+<li>low-level; more code needs to be written than other frameworks</li>
+<li>minimal dev tools</li>
+<li>no built-in physics engine, but almost every physics engine documents how to use with Three.js</li>
+<li>extensions tend to be low-level
+<ul>
+<li>example: subdivision vs. glow (halo)</li>
+</ul>
+</li>
+<li>experimental support for WebGPU</li>
+</ul>
+</li>
+<li>Babylon.js
+<ul>
+<li>One True Way to do things; reputation of steeper knowledge curve</li>
+<li>built-in support for almost anything you need (but if it doesn't work the way you need, you may be out of luck)</li>
+<li>physics engine: Cannon.js or Oimo</li>
+<li>community contributions</li>
+<li>tools like Playground</li>
+<li>most features support using WebGPU</li>
+</ul>
+</li>
+<li>A-Frame
+<ul>
+<li>Easy to get started; simplest scenes just require HTML</li>
+<li>Programming guidelines, but you can do what you like
+<ul>
+<li>also, open-source chaos</li>
+<li>impedance change when you get down to Three.js level</li>
+</ul>
+</li>
+<li>A-Frame Inspector, like browser tools</li>
+<li>no built-in physics engine</li>
+<li>a component for anything you want to do (for example, Gaussian Splatting), but it may not be maintained or work with latest. In particular, many components were written for earlier versions of Three.js that use WebGL 1</li>
+<li>many components are just wrappers for Three.js functionality</li>
+<li>Lower layers use Three.js; awkward to use Three.js plugins</li>
+<li><a href="https://github.com/DougReeder/aframe-glow/tree/modernize" rel="noreferrer nofollow noopener external">A-Frame component</a> built on Three.JS extension</li>
+</ul>
+</li>
+</ul>
+<h2 id="engines" tabindex="-1">Engines <a class="header-anchor" href="#engines">#</a></h2>
+<ul>
+<li>Unity (exporter plugin)
+<ul>
+<li>not web-friendly,
+<ul>
+<li>long load times</li>
+<li>minimal access to web APIs</li>
+<li>can't get help via posting a simple example online</li>
+</ul>
+</li>
+<li>not all Unity capabilities</li>
+<li>experimental support for WebGPU</li>
+<li>good for showing off a single level of a native game</li>
+</ul>
+</li>
+<li>PlayCanvas
+<ul>
+<li>integrates with ammo.js physics engine</li>
+<li>visual editor</li>
+<li>rendering optimized for mobile</li>
+<li>built-in code, editor, less friendly to using your own IDE</li>
+<li>WebGPU support in development</li>
+</ul>
+</li>
+<li>8th wall
+<ul>
+<li>SLAM engine doesn't depend on WebXR API (so runs on iPhones)</li>
+<li>focussed on AR advertising campaigns</li>
+<li>expensive</li>
+<li>must build on top of a framework such as A-Frame</li>
+</ul>
+</li>
+<li>Wonderland
+<ul>
+<li>several excellent example games</li>
+<li>free up to $120k/yr</li>
+</ul>
+</li>
+<li>others with less mind-share
+<ul>
+<li>Godot
+<ul>
+<li>2-D &amp; 3-D game engine for native</li>
+<li>impedance mismatch with WebXR</li>
+</ul>
+</li>
+<li>Elixir
+<ul>
+<li>Rapier physics engine</li>
+<li>compatibility w/ Three.js plugins</li>
+</ul>
+</li>
+<li>Cocos Creator
+<ul>
+<li>2-D &amp; 3-D game engine for native</li>
+<li>supports WebGPU</li>
+</ul>
+</li>
+<li>Etherial</li>
+</ul>
+</li>
+</ul>
+<h2 id="tools-for-non-programmers" tabindex="-1">Tools for non-programmers <a class="header-anchor" href="#tools-for-non-programmers">#</a></h2>
+<ul>
+<li>LearnBright
+<ul>
+<li>&quot;learning modules&quot; only</li>
+</ul>
+</li>
+<li>MetaVRse Engine</li>
+</ul>
+<h2 id="development-generally" tabindex="-1">Development (generally) <a class="header-anchor" href="#development-generally">#</a></h2>
+<ul>
+<li>
+<p>3D file formats: GLTF/GLB with many frameworks offering support for older standards like OBJ, STL and proprietary standards like FBX, USD.</p>
+</li>
+<li>
+<p>Can use multiple threads via Workers &amp; WebAssembly (but it's awkward and less efficient than native)</p>
+</li>
+<li>
+<p>Weakly typed languages can be transpiled to JavaScript</p>
+</li>
+<li>
+<p>Strongly typed languages can be compiled to WebAssembly</p>
+</li>
+<li>
+<p>Pick a framework or engine — begin with the end in mind</p>
+<ul>
+<li>game vs. experience vs. presentation
+<ul>
+<li>physics engine required?</li>
+</ul>
+</li>
+<li>try framework examples, on your target platforms, to see what apps are focussed on</li>
+<li>licensing / who's backing it? / how long will your project be maintained?
+<ul>
+<li>Amazon abandoned Sumerian in 2022</li>
+</ul>
+</li>
+<li>What you're familiar with</li>
+</ul>
+</li>
+<li>
+<p>In any framework, you may need to write/re-write a component to do what you need</p>
+</li>
+<li>
+<p>Browser extension: WebXR API Emulator</p>
+</li>
+<li>
+<p>Standalone headsets: chrome://inspect/#devices</p>
+</li>
+<li>
+<p>3D file formats: GLTF/GLB with many frameworks offering support for older standards like OBJ, STL and proprietary standards like FBX, USD.</p>
+</li>
+<li>
+<p>Can use multiple threads via Workers &amp; WebAssembly (but it's awkward and less efficient than native)</p>
+</li>
+<li>
+<p>Weakly typed languages can be transpiled to JavaScript; strongly typed languages can be compiled to WebAssembly</p>
+</li>
+</ul>
+<h2 id="development-support" tabindex="-1">Development Support <a class="header-anchor" href="#development-support">#</a></h2>
+<ul>
+<li>WebXR discord</li>
+<li>Framework forums / communities</li>
+<li>Voices of VR podcast has done many episodes on WebXR and the broader Immersive Web community.</li>
+</ul>
+<h2 id="browser-and-os-support" tabindex="-1">Browser &amp; OS Support <a class="header-anchor" href="#browser-and-os-support">#</a></h2>
+<h3 id="quest-2-3-pro" tabindex="-1">Quest 2/3/Pro <a class="header-anchor" href="#quest-2-3-pro">#</a></h3>
+<ul>
+<li>Oculus Browser: full support</li>
+<li>Wolvic (based on Firefox): supports basic features</li>
+</ul>
+<h3 id="pico-headsets" tabindex="-1">Pico headsets <a class="header-anchor" href="#pico-headsets">#</a></h3>
+<ul>
+<li>Firefox may or may not still work</li>
+<li>Wolvic (based on Firefox): supports basic features</li>
+</ul>
+<h3 id="vision-os" tabindex="-1">Vision OS <a class="header-anchor" href="#vision-os">#</a></h3>
+<ul>
+<li>Safari: enabled by default in VisonOS 2</li>
+</ul>
+<h3 id="personal-computers" tabindex="-1">Personal Computers <a class="header-anchor" href="#personal-computers">#</a></h3>
+<ul>
+<li>Chromium browsers: most features</li>
+<li>Safari: behind flag</li>
+<li>Firefox behind flag, no longer maintained</li>
+<li>Opera: many features</li>
+</ul>
+<h3 id="android" tabindex="-1">Android <a class="header-anchor" href="#android">#</a></h3>
+<ul>
+<li>Chromium browsers: most features including AR</li>
+</ul>
+<h3 id="ios" tabindex="-1">iOS <a class="header-anchor" href="#ios">#</a></h3>
+<ul>
+<li>Safari: not implemented</li>
+<li>other browsers (only in Europe for now) ?</li>
+</ul>
+<h3 id="linux" tabindex="-1">Linux <a class="header-anchor" href="#linux">#</a></h3>
+<ul>
+<li>Chromium browsers: experimental support</li>
+</ul>
+<h2 id="outstanding-webxr-sites" tabindex="-1">Outstanding WebXR sites <a class="header-anchor" href="#outstanding-webxr-sites">#</a></h2>
+<ul>
+<li><a href="https://meetwol.com" rel="noreferrer nofollow noopener external">Wol</a>: Mixed-reality, voice interaction</li>
+<li><a href="https://travisbarrydick.github.io/vr-planets/dist/" rel="noreferrer nofollow noopener external">VRPlanets</a>: learn orbital mechanics</li>
+<li><a href="https://3dstreet.app/" rel="noreferrer nofollow noopener external">3DStreet</a>: urban planning</li>
+<li><a href="https://moonrider.xyz/" rel="noreferrer nofollow noopener external">Moonrider</a>: Beat Saber clone</li>
+<li><a href="https://flowerbed.metademolab.com/" rel="noreferrer nofollow noopener external">Project Flowerbed</a>: interactions</li>
+</ul>
+<h2 id="live-coding" tabindex="-1">Live-coding <a class="header-anchor" href="#live-coding">#</a></h2>
+<ul>
+<li><a href="https://github.com/DougReeder/live-coding-world" rel="noreferrer nofollow noopener external">code repo</a></li>
+<li><a href="https://aframe.wiki/en/#!pages/environment.md" rel="noreferrer nofollow noopener external">A-Frame environment components</a></li>
+<li><a href="https://aframe.wiki/en/#!pages/component-directory.md" rel="noreferrer nofollow noopener external">A-Frame components</a></li>
+<li><a href="https://live-coding.surge.sh/" rel="noreferrer nofollow noopener external">multi-user world</a> — if you don't have a friend handy, open two windows</li>
+</ul>
+
+		<ul class="links-nextprev"><li>Previous: <a href="/presentations/Web Share APIs/">Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs</a></li>
+		</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

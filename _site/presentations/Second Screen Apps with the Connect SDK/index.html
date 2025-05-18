@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>“Second Screen” apps with the Connect SDK — Talks by Doug Reeder</title>
+	<meta name="author" content="Doug Reeder" >
+	
+	<meta name="description" content="Throwing content from a phone  to a smart TV enables new interactions." >
+	<meta property="og:title" content="“Second Screen” apps with the Connect SDK" >
+	<meta property="og:description" content="Throwing content from a phone  to a smart TV enables new interactions." >
+	<meta property="og:type" content="article" >
+	<meta property="og:url" content="https://hominidsoftware.com/presentations/Second Screen Apps with the Connect SDK/" >
+	<meta property="og:site_name" content="Hominid Software" >
+	<meta property="og:image" content="https://hominidsoftware.com/img/compatibility-matix-750w.png" >
+	<meta property="og:image.width" content="608" >
+	<meta property="og:image.height" content="784" >
+	<meta property="og:updated_time" content="2024-08-21" >
+	<meta property="article:published_time" content="2014-09-17" >
+	<meta property="article:modified_time" content="2024-08-21" >
+	<meta property="article:author" content="Doug Reeder">
+	<meta property="article:tag" content="presentation">
+	<meta property="article:tag" content="iOS">
+	<meta property="article:tag" content="Android">
+	<meta property="article:tag" content="mobile">
+	
+	<meta property="article:section" content="Talks by Doug Reeder">
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "PresentationDigitalDocument",
+			
+			"name": "“Second Screen” apps with the Connect SDK",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+	
+	
+	"description": "Throwing content from a phone  to a smart TV enables new interactions.",
+	"image": "https://hominidsoftware.com/img/compatibility-matix-750w.png",
+			"datePublished": "2014-09-17",
+			"dateModified": "2024-08-21",
+			"keywords": ["iOS", "Android", "mobile"]
+		}
+	</script>
+	<link rel="alternate" href="/feed/presentationFeed.xml" type="application/atom+xml" title="Talks by Doug Reeder">
+	<link rel="alternate" href="/feed/presentationFeed.json" type="application/json" title="Talks by Doug Reeder">
+		<link rel="canonical" href="https://hominidsoftware.com/presentations/Second Screen Apps with the Connect SDK/" >
+	
+	<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+</head>
+<body>
+<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+<header>
+	<span class="home-link">Hominid Software — Talks by Doug Reeder</span>
+	<nav>
+		<h2 class="visually-hidden">Top level navigation menu</h2>
+		<ul class="nav">
+				<li class="nav-item"><a href="/">Apps</a></li>
+				<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+				<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+				<li class="nav-item"><a href="/presentations/">Talks</a></li>
+				<li class="nav-item"><a href="/archive/">Archive</a></li>
+				<li class="nav-item"><a href="/about/">About Me</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main id="skip">
+	
+<h1>“Second Screen” apps with the Connect SDK</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2014-09-17">17 September 2014</time></li>
+		<li><a href="/tags/ios/" class="post-tag">iOS</a>, </li>
+		<li><a href="/tags/android/" class="post-tag">Android</a>, </li>
+		<li><a href="/tags/mobile/" class="post-tag">mobile</a></li>
+</ul>
+
+
+
+<p><em>Delivered to <a href="https://columbusjs.org/" rel="noreferrer nofollow noopener external">ColumbusJS</a> in <a href="https://columbusjs.org/09-17-2014/javascript-hardware-night.html" rel="noreferrer nofollow noopener external">September 2014</a></em></p>
+<h3 id="motivation" tabindex="-1">Motivation <a class="header-anchor" href="#motivation">#</a></h3>
+<ul>
+<li>“Smart TVs” much less interactive than computers
+<ul>
+<li>one set of preferences per app (typically)</li>
+<li>Search is laborious</li>
+<li>No e-mail/tweet from friend that knows you</li>
+</ul>
+</li>
+<li>“Smart TV” interfaces are clunky at best</li>
+<li>Most people in front of a TV have a mobile device nearby</li>
+</ul>
+<h3 id="what-it-s-not" tabindex="-1">What it’s not <a class="header-anchor" href="#what-it-s-not">#</a></h3>
+<ul>
+<li>Screen mirroring (ala AirPlay Mirroring or Chromecast tab mirroring)</li>
+<li>Additional display over Wi-Fi</li>
+<li>Local Media Streaming (ala Play on Roku or AirPlay streaming)</li>
+</ul>
+<h3 id="development-and-testing" tabindex="-1">Development &amp; Testing <a class="header-anchor" href="#development-and-testing">#</a></h3>
+<p>Half a dozen Android or iOS libraries required</p>
+<p>Setup takes a day, not an hour, unless you’re already familiar with Android development / iOS development.</p>
+<p>Testing: buy hardware for any platform you really care about.
+Only emulator is webOS TV, and that appears to be buggy.</p>
+<h3 id="compatibility-mobile-os" tabindex="-1">Compatibility - Mobile OS <a class="header-anchor" href="#compatibility-mobile-os">#</a></h3>
+<p>iOS, Android, or Cordova for both.</p>
+<p>No announced plan for Windows Phone nor web app (Firefox OS, ChromeOS)</p>
+<h3 id="compatibility-tv-os" tabindex="-1">Compatibility - TV OS <a class="header-anchor" href="#compatibility-tv-os">#</a></h3>
+<p>8 platforms:
+LG webOS,
+Chromecast,
+Apple TV,
+Roku,
+Fire TV,
+LG Smart TV ’13,
+LG Smart TV ’12,
+DIAL</p>
+<p>23 features:
+Apps,
+Media,
+System Controls,
+TV Controls</p>
+<p><picture><source type="image/avif" srcset="/img/compatibility-matix-750w.avif 750w, /img/compatibility-matix-1080w.avif 1080w" sizes="100vw"><source type="image/webp" srcset="/img/compatibility-matix-750w.webp 750w, /img/compatibility-matix-1080w.webp 1080w" sizes="100vw"><img alt="Compatibility matrix" loading="lazy" decoding="async" src="/img/compatibility-matix-750w.png" width="1080" height="1392" srcset="/img/compatibility-matix-750w.png 750w, /img/compatibility-matix-1080w.png 1080w" sizes="100vw"></picture></p>
+<p>Broad support for</p>
+<ul>
+<li>Launching app w/ known ID</li>
+<li>Throw video from URL</li>
+<li>Throw YouTube video (&amp; possibly Hulu, NetFlix)</li>
+<li>Throw audio from URL</li>
+<li>Throw photo from URL</li>
+<li>Throw URL to browser?</li>
+</ul>
+<p>Other features may not be available on users' devices.</p>
+<h3 id="demonstrate-connect-sdk-api-sampler" tabindex="-1">Demonstrate Connect SDK API Sampler <a class="header-anchor" href="#demonstrate-connect-sdk-api-sampler">#</a></h3>
+<h4 id="media-tab" tabindex="-1">Media tab <a class="header-anchor" href="#media-tab">#</a></h4>
+<ul>
+<li>Throw photo</li>
+<li>Throw audio</li>
+</ul>
+<h4 id="apps-tab" tabindex="-1">Apps tab <a class="header-anchor" href="#apps-tab">#</a></h4>
+<ul>
+<li>Launch Enyo 2 Sampler</li>
+</ul>
+<h3 id="use-cases" tabindex="-1">Use Cases <a class="header-anchor" href="#use-cases">#</a></h3>
+<ul>
+<li>Game using mobile as tilt controller, e.g. Wii game (TV-centric)</li>
+<li>Progress through sequence of videos on tablet, optionally displaying on TV e.g. Reading Bear (mobile-centric)</li>
+<li>Run web server on phone, display photos on TV, e.g. Zap Photoshare (mobile-centric)</li>
+<li>Multiplayer real-time strategy, displaying player-private info on mobile (joint)</li>
+<li>Collaborative editing, e.g. Subethaedit, Etherpad (joint)</li>
+</ul>
+<h3 id="ux-positives" tabindex="-1">UX Positives <a class="header-anchor" href="#ux-positives">#</a></h3>
+<p>TV apps needn’t depend on awkward TV UI.</p>
+<p>Don’t need a large phone to view photos or videos, if you can throw them up on a large display.</p>
+<p>Avoid logging in to TV</p>
+<h3 id="ux-gotchas" tabindex="-1">UX Gotchas <a class="header-anchor" href="#ux-gotchas">#</a></h3>
+<p>UI can be good while UX is poor.</p>
+<p>[ask who’s on local Wi-Fi]
+Must be on same Wi-Fi network: Ok for home, work, close friends. Poor for Meetup, meeting at clients.</p>
+<p>FireTV &amp; DIAL TVs can only “Launch My app” &amp; beam YouTube.
+Easy to exclude from list, but leaves user frustrated.</p>
+<p>Some games are much easier if you can always glance at the map</p>
+<h3 id="conclusion" tabindex="-1">Conclusion <a class="header-anchor" href="#conclusion">#</a></h3>
+<ul>
+<li>This might be the tipping point where users expect devices to work together (like VCRs and TVs did)</li>
+<li>Or maybe it won’t catch on, and companies will re-impose their walled gardens</li>
+</ul>
+<hr>
+<p><a href="https://connectsdk.com/" rel="noreferrer nofollow noopener external">Connect SDK website</a></p>
+<h2 id="underlying-technologies" tabindex="-1">Underlying Technologies <a class="header-anchor" href="#underlying-technologies">#</a></h2>
+<ul>
+<li>mDNS</li>
+<li>WebSockets</li>
+<li>DIAL &amp; Chromecast</li>
+<li>Apple TV</li>
+</ul>
+
+		<ul class="links-nextprev"><li>Previous: <a href="/presentations/Enyo framework/">Enyo: Yet Another Framework or The Next Step Beyond Dojo?</a></li><li>Next: <a href="/presentations/JavaScript Service Worker Design Patterns/">JavaScript Service Worker Design Patterns for Better UX</a></li>
+		</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/presentationFeed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	&nbsp;
+	<a href="/feed/presentationFeed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+</div>
+
+</main>
+
+<footer></footer>
+
+
+</body>
+</html>

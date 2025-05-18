@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>Tech for Personal Growth</title>
+	<subtitle>Essays on using digital technology to become a better person</subtitle>
+	<link href="https://hominidsoftware.com/feed/feed.xml" rel="self"/>
+	<link href="https://hominidsoftware.com/tech-personal-growth/"/>
+	<updated>2024-12-14T00:00:00Z</updated>
+	<id>https://hominidsoftware.com/tech-personal-growth/</id>
+	<author>
+		<name>Doug Reeder</name>
+		<email>reeder.29@gmail.com</email>
+	</author>
+	<generator version="2.0.1">Eleventy v2.0.1</generator>
+	
+	<entry>
+		<title>Gemini will determine the success of Android XR</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/"/>
+		<published>2024-12-14T00:00:00Z</published>
+		<updated>2025-01-30T19:35:00Z</updated>
+		<summary>Android XR will struggle to establish an ecosystem; practical real-world uses for Gemini in the headset form-factor will be key.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/</id>
+		<content type="html">&lt;h2 id=&quot;the-new-entrant&quot; tabindex=&quot;-1&quot;&gt;The new entrant &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Android XR appears to be a professionally-executed implementation of mixed reality.
+Samsung and Google put out competitive hardware;
+I will assume for this post that they will have table stakes.&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Project-Moohan-3-4-750w.avif 750w, https://hominidsoftware.com/img/Project-Moohan-3-4-909w.avif 909w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Project-Moohan-3-4-750w.webp 750w, https://hominidsoftware.com/img/Project-Moohan-3-4-909w.webp 909w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Project Moohan [Infinity], courtesy of Samsung&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Project-Moohan-3-4-750w.png&quot; width=&quot;909&quot; height=&quot;583&quot; srcset=&quot;https://hominidsoftware.com/img/Project-Moohan-3-4-750w.png 750w, https://hominidsoftware.com/img/Project-Moohan-3-4-909w.png 909w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Project Moohan [&amp;quot;Infinity&amp;quot;], courtesy of Samsung; not shown: external power brick&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;the-legacy&quot; tabindex=&quot;-1&quot;&gt;The legacy &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Google launched Daydream nearly a decade ago and dropped it less than three years later.
+They launched Glass OS and dropped it about four years later.
+Career rewards at Google follow the Launch, Promote, Abandon cycle (that&#39;s the terminology used by employees).
+Samsung launched and dropped Gear VR.&lt;/p&gt;
+&lt;p&gt;You can argue that phone VR was a technological dead-end — but Oculus developed the OS for Gear VR, and its descendant now powers all Meta headsets (that greatly outnumber other headsets).
+Any developer who lived through that will think carefully before betting significant resources on Android XR.&lt;/p&gt;
+&lt;h2 id=&quot;the-established-competition&quot; tabindex=&quot;-1&quot;&gt;The established competition &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Meta has a commanding lead in VR games.
+If Google can convince enough of the largest social VR networks to port their apps, they could achieve near-parity there, but no more.
+XR productivity and lifestyle apps are not drawing many users yet.
+[My contribution there is &lt;a href=&quot;https://hominidsoftware.com/model-presenter/&quot;&gt;Model Presenter&lt;/a&gt;.]&lt;/p&gt;
+&lt;p&gt;Meta&#39;s Horizon OS can run Android apps.
+Android app developers can spatialize their apps using Meta&#39;s API, and get access to tens of millions of headsets now, or Google&#39;s and get access to however many (or few) Project Moohan headsets sell next year.
+I know where I&#39;d put my effort, especially give that that&#39;s still less than one percent of Android devices.&lt;/p&gt;
+&lt;p&gt;Teardown of Vision Pro hardware shows that it&#39;s not technologically ahead of other headsets, it&#39;s just better, more expensive hardware.
+So, if Android XR headsets are cheaper, they will struggle to match the flowing experience of Vision Pro.
+Without the grace of Vision OS and its hardware, using flat apps in a headset is of marginal value, even for users invested in Android apps, or rubbed the wrong way by Apple paternalism.
+Google is hit-and-miss on user experience while Apple has nailed the UX for Vision OS.&lt;/p&gt;
+&lt;h2 id=&quot;the-value-proposition&quot; tabindex=&quot;-1&quot;&gt;The value proposition &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Most households and organizations still don&#39;t have a VR headset, so Google and Samsung don&#39;t have to pry users away from an existing ecosystem.
+But they still have to woo users.&lt;/p&gt;
+&lt;p&gt;What&#39;s left to draw users to Android XR? Machine learning.
+Gemini will be the main draw for years.&lt;/p&gt;
+&lt;p&gt;Given time, Android XR could grow its ecosystem beyond that, but Google tends to kill products
+after three-to-five years, if they don&#39;t achieve Internet scale.
+Apple has made it clear Vision OS is a long-term project, that is not expected to be profitable for years.
+The Quest is, at the very least, a successful gaming and social VR console, even if Zuckerberg can&#39;t convince his shareholders to underwrite his vision of the future.
+Pico is ready to take the center of VR gaming, if Meta falters.&lt;/p&gt;
+&lt;p&gt;The most impressive demos of Gemini have the user walking up to something they are unfamiliar with, and Gemini telling them what is is, what&#39;s important about it, and/or how to use it.
+You do that sporadically, not all day long.  A phone is fine for that.&lt;/p&gt;
+&lt;p&gt;What can Gemini do in the headset form factor, that it can’t do in a phone, that is actually useful to ordinary people (as opposed to a an impressive tech demo)?
+Most people are already carrying around an Android phone with an excellent camera and a solid microphone.
+You need to pull it out to access Gemini, but that&#39;s a modest hurdle.
+More importantly, it&#39;s obvious when someone is using the camera on their phone.
+It doesn&#39;t have the vibe of someone surreptitiously spying on you.
+The reaction to XR headsets in public will be less virulent than that Google Glass evoked,
+and eventually, it will be accepted that anyone around you could be recording you.
+But that won&#39;t change in the next five years.&lt;/p&gt;
+&lt;p&gt;So hands-free functionality is where Gemini has to shine.
+Heads-up walking directions in unfamiliar places, when you&#39;re loaded with luggage, will be valuable.
+Continuous translation in real life will be valuable when you&#39;re in a foreign country.
+So, frequent travellers will be a core market.
+They will also appreciate viewing flat-screen entertainment on a virtual large screen.
+Some of them will pack a mouse and keyboard and use a headset instead of a personal computer.
+(But you can do the latter two with other headsets.)&lt;/p&gt;
+&lt;p&gt;It&#39;s possible a voice assistant is what XR productivity and lifestyle apps need to take off.
+I look forward to seeing what emerges.&lt;/p&gt;
+&lt;p&gt;Whenever you hear of some neat thing someone is doing with Google XR, ask yourself if it&#39;s better than something people already have — better enough to buy and carry around a new device.&lt;/p&gt;
+&lt;h2 id=&quot;the-conclusion&quot; tabindex=&quot;-1&quot;&gt;The Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I don&#39;t see enough value in Google XR, that enough people will buy it, that will sustain Google&#39;s interest, long enough to build a competitive ecosystem.
+There are many clever and dedicated people in- and outside of Google and Samsung —
+I hope they can produce products that succeed at these difficult challenges, and prove me wrong.
+But there are safer bets for those interested in XR.&lt;/p&gt;
+&lt;p&gt;XR needs more competition, to reduce lock-in, so it serves people, rather than corporations.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A Managed Database for Hubs</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/"/>
+		<published>2024-11-17T00:00:00Z</published>
+		<updated>2024-11-28T02:11:18Z</updated>
+		<summary>Reworking the script and input values to less-than-obvious settings are required</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Content warning: extremely technical — may induce trance, fugue or psychedelic states, out-of-body experiences, lucid dreaming or technical breakthroughs.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;motivation&quot; tabindex=&quot;-1&quot;&gt;Motivation &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I continue my quest to make my Hubs Community Edition instance observable and production-ready.
+It&#39;s difficult to access PostgresQL running in a container in Kubernetes for development or monitoring.
+Backing up the PostgresQL database as a volume (of files) allows restoring to the same version of PostrgresQL,
+but not necessarily a newer version, which you might be obliged to use if you change provider
+or your current version reaches end-of-life.
+So, the next step is moving the PostgresQL database outside the Kubernetes cluster.&lt;/p&gt;
+&lt;h2 id=&quot;managed-databases&quot; tabindex=&quot;-1&quot;&gt;Managed Databases &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Operating databases is a specialty all its own — tuning the number of connections and amount of memory,
+setting up backups and restores, updating to newer versions — preferably with no down time.
+I, as an application programmer, would prefer to leave that to experts.
+Fortunately, hosting providers are even more likely to offer managed databases than managed Kubernetes.
+DigitalOcean is no exception, offering managed PostgresQL v13–16.
+It&#39;s automatically backed-up daily, and restores, updates and scaling can all happen without down time.&lt;/p&gt;
+&lt;p&gt;Hubs still encodes passwords using MD5, and PostgresQL v13 is the last version that uses MD5 by default.
+(MD5 is no longer considered secure.)
+Fortunately, DigitalOcean still offers v13.
+(Hubs needs to update its password encoding before v13 reaches end-of-life on 2025-11-13.)&lt;/p&gt;
+&lt;p&gt;Another advantage of managed databases is monitoring.
+DigitalOcean provides the most important metrics automatically:&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.avif 739w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.webp 739w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Managed database metrics on DigitalOcean&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.png&quot; width=&quot;739&quot; height=&quot;1763&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+I only need to understand these enough to know when my database is overloaded.
+&lt;p&gt;A downside of moving the database outside the Kubernetes cluster is that the database and cluster need to
+be scaled up (and paid for) separately. Kubernetes can autoscale, but the database cannot.
+My database costs $15.00/month, raising my costs 63%.
+Also, the database configuration is no longer part of the Kubernetes template files, so I have to
+keep track of it separately.&lt;/p&gt;
+&lt;h2 id=&quot;configuration&quot; tabindex=&quot;-1&quot;&gt;Configuration &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Once the database was up, I had to figure out how to configure Hubs to use it.
+There are several strategies, depending on whether you continue to use the &lt;code&gt;pgbouncer&lt;/code&gt; and &lt;code&gt;pgbouncer-t&lt;/code&gt;
+deployments for database connection pooling.
+Pgbouncer (the software itself) is normally a transparent proxy, so you just need to change the connection parameters on the client.&lt;/p&gt;
+&lt;h3 id=&quot;change-database-only&quot; tabindex=&quot;-1&quot;&gt;Change Database Only &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Mike Morran from Mozilla gave a demonstration on &lt;a href=&quot;https://www.youtube.com/watch?v=ShQqXGjB0qo&quot;&gt;Persistent Volumes and External Database - Community Edition Setup Session&lt;/a&gt; (the database info isn&#39;t until the last 20 minutes).
+There, he shows how to edit &lt;code&gt;hcce.yaml&lt;/code&gt; to direct &lt;code&gt;pgbouncer&lt;/code&gt; and &lt;code&gt;pgbouncer-t&lt;/code&gt; to an external database.
+It was hard to extract exactly what you do, but my notes say it&#39;s something like:&lt;/p&gt;
+&lt;p&gt;point pgbouncer to external SQL DB in hcce.yaml (change password in multiple places)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;change password:
+&lt;ol&gt;
+&lt;li&gt;change stringData.PGRST_DB_URI&lt;/li&gt;
+&lt;li&gt;change stringData.DB_USER ?&lt;/li&gt;
+&lt;li&gt;change stringData.DB_PASS; ensure URI encoded properly.
+postgresql://username:password@host:port/database?application_name=myapp&lt;/li&gt;
+&lt;li&gt;change stringData.PSQL&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;in pgbouncer &amp;amp; pgbouncer-t change value of &amp;quot;DB_HOST&amp;quot; from &amp;quot;pgsql&amp;quot; to private IP addr of PostgresQL&lt;/li&gt;
+&lt;li&gt;? delete pgsql deployment &amp;amp; service?&lt;/li&gt;
+&lt;li&gt;? comment out pgsql deployment &amp;amp; service?&lt;/li&gt;
+&lt;li&gt;apply hcce.yaml&lt;/li&gt;
+&lt;li&gt;check logs of pgbouncer&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;He also assumes PostgresQL is using its usual port, 5432, and you can use the &lt;code&gt;postgres&lt;/code&gt; superuser account
+in PostgresQL.  (On DigitalOcean managed PostgresQL the &lt;code&gt;postgres&lt;/code&gt; superuser is used only for management.)&lt;/p&gt;
+&lt;p&gt;This is the approach to take if your provider does not offer managed connection pooling. Google Cloud is one such.&lt;/p&gt;
+&lt;h3 id=&quot;change-database-and-connection-pools&quot; tabindex=&quot;-1&quot;&gt;Change Database &amp;amp; Connection Pools &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;DigitalOcean offers connection pooling for free with a managed database.
+That sounded more observable, and possibly higher performance.
+They use pgbouncer also, so I dove into &lt;code&gt;hcce.yaml&lt;/code&gt; to extract the parameters.
+Largely, they use the default values, so the connection pools each will use up to 20 database connections
+and support up to 10,000 client connections. They are not configured to use TLS (aka SSL).
+&lt;code&gt;pgbouncer&lt;/code&gt; uses the default session mode and &lt;code&gt;pgbouncer-t&lt;/code&gt; uses transaction mode, hence the names
+(and the reason there are two connection pools).&lt;/p&gt;
+&lt;p&gt;The cheapest managed PostgresQL has 22 connections available for apps.
+The Reticulum configuration that uses &lt;code&gt;pgbouncer-t&lt;/code&gt; has a parameter &lt;code&gt;pool_size&lt;/code&gt; of 10
+(it&#39;s not clear what this refers to).
+I created two connection pools using the Digital Ocean UI.
+The one using transaction mode I named &lt;code&gt;retpooltransaction&lt;/code&gt; and set to use 10 connections.
+The one using session mode I named &lt;code&gt;retpoolsession&lt;/code&gt; and set to use the other 12 available connections.
+Both are reached on port 25061, and require TLS (aka SSL),
+so I needed to set the hostname, port and database name (the name of the pool) separately.
+&lt;code&gt;input-values.yaml&lt;/code&gt; only has parameters for &lt;code&gt;DB_HOST&lt;/code&gt; and &lt;code&gt;DB_HOST_T&lt;/code&gt;, and &lt;code&gt;PGRST_DB_URI&lt;/code&gt;
+and &lt;code&gt;PSQL&lt;/code&gt; didn&#39;t use all the parameters needed,
+so I edited &lt;code&gt;input-values.yaml&lt;/code&gt; and
+&lt;code&gt;generate_script/hcce.yam&lt;/code&gt; to have all these parameters:&lt;/p&gt;
+&lt;pre class=&quot;language-yaml&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;DB_HOST&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;private-hominid-do-user-99999999-0.m.db.ondigitalocean.com&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_PORT&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;25061&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_NAME&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;retpoolsession&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_SSL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;true&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_SSLMODE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;require&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;PGRST_DB_URI&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;postgres://$DB_USER:$DB_PASS@$DB_HOST:$DB_PORT/$DB_NAME?sslmode=$DB_SSLMODE&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;PSQL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;token string&quot;&gt;&quot;postgres://$DB_USER:$DB_PASS@$DB_HOST:$DB_PORT/$DB_NAME?sslmode=$DB_SSLMODE&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_HOST_T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;private-hominid-do-user-99999999-0.m.db.ondigitalocean.com&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_PORT_T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;25061&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;DB_NAME_T&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;retpooltransaction&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Unfortunately, &lt;code&gt;DB_SSL&lt;/code&gt; is needed to furnish a boolean value, and &lt;code&gt;DB_SSLMODE&lt;/code&gt; to furnish
+an enumerated value. I&#39;ve submitted a &lt;a href=&quot;https://github.com/Hubs-Foundation/hubs-cloud/pull/364&quot;&gt;pull request to add the new parameters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There should also be values, analogous to &lt;code&gt;GENERATE_PERSISTENT_VOLUMES&lt;/code&gt;, to enable/disable
+creating the database deployment and service, and the connection pool deployments and services.
+That would require editing &lt;code&gt;generate_script/index.js&lt;/code&gt;, which I&#39;ve been trying to avoid.&lt;/p&gt;
+&lt;p&gt;I had some difficulty getting this configuration to work, so I tried a configuration
+without connection pools — Reticulum talking directly to the database — to validate that
+it was possible to connect.  Logs were very useful here; I repeatedly used&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;kubectl delete deploy --all
+kubectl delete pvc --all
+kubectl delete pv --all
+# delete the block storage volume and the `retdb` database
+# using the DigitalOcean UI
+kubectl apply -f hcce.yaml
+kubectl get deployments
+kubectl get pods
+kubectl logs reticulum-7798f5dbb6-9bcrw -f
+kubectl logs reticulum-7798f5dbb6-9bcrw -c postgrest -f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I didn&#39;t use &lt;code&gt;kubectl delete -f hcce.yaml&lt;/code&gt;, because it deletes the load balancer, requiring
+DNS to be updated with the new IP address.
+(Despite the similar suffix, the &lt;code&gt;postgrest&lt;/code&gt; container uses &lt;code&gt;pgbouncer&lt;/code&gt;, not &lt;code&gt;pgbouncer-t&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Once I had all the parameters being properly set in &lt;code&gt;hcce.yaml&lt;/code&gt;, Reticulum connected to &lt;code&gt;retpoolsession&lt;/code&gt;
+properly.  However, for the other pool, even with correct parameters, I always got&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;(Postgrex.Error) ERROR 3D000 (invalid_catalog_name) database &amp;quot;retpooltransaction&amp;quot; does not exist
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Eventually, after much thrashing, I tried renaming the transaction-mode connection pool from &lt;code&gt;retpooltransaction&lt;/code&gt; to &lt;code&gt;retdb&lt;/code&gt;,
+and &lt;em&gt;then&lt;/em&gt; Reticulum connected properly to the transaction-mode connection pool. (The database and the connection pool are on different ports, so you can re-use the name.)
+I have no idea why this tweak is necessary.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-Managed-Databse/Hubs-Managed-Database/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I now have automatic daily backups for my database.
+I can now use &lt;code&gt;psql&lt;/code&gt; to connect directly to the database, and run queries like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select hub_sid, name from hubs where entry_mode = &#39;allow&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;select avatar_id, name from avatars where allow_remixing = &#39;t&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;to understand what&#39;s going on inside my Hubs instance.&lt;/p&gt;
+&lt;p&gt;With the persistent volume separate from the node(s) (&lt;a href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;see my previous post&lt;/a&gt;),
+I can set my Kubernetes cluster to scale up the number of nodes to handle heavier loads,
+and if the connection pools or database is then the limiting resource, I can scale that up, too.
+I can backup and archive my Hubs instance, and restore it on another provider.&lt;/p&gt;
+&lt;p&gt;I have a production-ready instance of Hubs!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Persistent Storage for Hubs on DigitalOcean</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/"/>
+		<published>2024-10-28T00:00:00Z</published>
+		<updated>2024-11-28T02:11:18Z</updated>
+		<summary>Days of sifting through details produced a simple solution.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/</id>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;skip to solution&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Content warning: extremely technical — may cause drowsiness — do not read while operating heavy machinery&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;setting-up-hubs-cloud-community-edition&quot; tabindex=&quot;-1&quot;&gt;Setting up Hubs Cloud Community Edition &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The free Hubs service from Mozilla has been shut down, along with Hubs Cloud.
+Fortunately, the Community Edition of Hubs Cloud is now straightforward to set up.
+The number of steps is large, but that’s hard to avoid with a freestanding consumer-ready service.&lt;/p&gt;
+&lt;p&gt;I followed the &lt;a href=&quot;https://docs.google.com/document/d/1BXSxTNFLjx8dtz26_OAFJParGdz8qTE2XvVAxwoJwrQ/edit?tab=t.0&quot;&gt;Beginner’s Guide to CE&lt;/a&gt;, with the changes noted below.
+It wasn’t clear that Kubernetes commands haven’t necessarily taken effect when the command exits (which is not obvious if you’re new to Kubernetes).&lt;/p&gt;
+&lt;p&gt;It’s not documented in the Beginner’s Guide, but Hubs works fine with a subdomain like &lt;code&gt;hubs.hominidsoftware.com&lt;/code&gt;, so I could use my existing domain.
+I was also able to configure my existing Postfix mail server to handle the new subdomain, keeping down my total infrastructure and accounts.&lt;/p&gt;
+&lt;p&gt;The other trouble I ran into into trouble was getting Let’s Encrypt certificates set up.
+I had to apply &lt;code&gt;hcce.yaml&lt;/code&gt; once as generated, then run the script &lt;code&gt;gen-ssl&lt;/code&gt;, then edit &lt;code&gt;hcce.yaml&lt;/code&gt; to comment out the flag &lt;code&gt;--default-ssl-certificate=hcce/cert-hcce&lt;/code&gt; for haproxy and finally apply &lt;code&gt;hcce.yaml&lt;/code&gt; again.  :-(
+That turns out to be a known issue, in the long list of tasks for the Hubs maintainers.&lt;/p&gt;
+&lt;h2 id=&quot;operational-trouble&quot; tabindex=&quot;-1&quot;&gt;Operational trouble &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Originally, I set up my Kubernetes cluster to Autoscale.
+(I overlooked the step in the Beginner’s Guide which said to set Fixed scaling and only one node.)
+All was well, until a heavy load triggered a second node to spin up.
+The configuration for Community Edition stores avatars, resources and scenes using &lt;code&gt;hostPath&lt;/code&gt; volumes — that is, files are stored on the node’s filesystem.
+Two different nodes won’t share a filesystem, so avatars, resources and scenes were unavailable on the new node and storage became scrambled.&lt;/p&gt;
+&lt;p&gt;A workaround was to change the cluster scaling type to Fixed, and only configure one node (as the Beginner’s Guide instructs).&lt;/p&gt;
+&lt;p&gt;That’s the Achilles’ Heel of Community Edition: it’s not configured for production use.&lt;/p&gt;
+&lt;h2 id=&quot;persistent-storage&quot; tabindex=&quot;-1&quot;&gt;Persistent storage &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unfortunately, there isn’t yet any proper documentation on persistent storage for Hubs.
+The &lt;a href=&quot;https://github.com/Hubs-Foundation/hubs-docs/blob/2f23837be9a94d2f431f960637dca3e58351e649/docs/dev-system-overview.md?plain=1#L4&quot;&gt;System Overview&lt;/a&gt; just notes there’s &amp;quot;a postgresql database behind reticulum and a file store&amp;quot;.
+There is a YouTube video: &lt;a href=&quot;https://www.youtube.com/watch?v=ShQqXGjB0qo&quot;&gt;Persistent Volumes and External Database - Community Edition Setup Session - April 24, 2024&lt;/a&gt;.
+After an hour of unrelated stuff, you find out the file storage can be Google Cloud Persistent Volumes exposed as NFS.
+It was not immediately clear to me why a StorageClass of &lt;code&gt;nfs&lt;/code&gt; was chosen over &lt;code&gt;standard-rwo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Digital Ocean doesn’t offer NFS for either its Volumes Block Storage or Spaces Object Storage (S3-compatible blob storage).
+Since a Kubernetes Volume is essentially a directory, I set up a bucket in Spaces Object Storage, and started reading the Kubernetes docs to find the parameters to connect.
+It turns out, the most popular container orchestration system doesn’t natively talk the most popular mass storage protocol.
+Not what I expected.
+There &lt;em&gt;are&lt;/em&gt; &lt;a href=&quot;https://github.com/awslabs/mountpoint-s3-csi-driver?tab=readme-ov-file&quot;&gt;Container Storage Interface (CSI) Drivers for S3&lt;/a&gt; that you can install, but I prefer to start with a simple solution.&lt;/p&gt;
+&lt;p&gt;So (as I should have done earlier), I finally searched the WWW for &amp;quot;DigitalOcean&amp;quot; &amp;quot;PersistentVolume&amp;quot;.
+DigitalOcean supports &lt;code&gt;csi-digitalocean&lt;/code&gt;, a CSI for their Volumes Block Storage, which they install on all their managed clusters.
+(You can’t directly check if a CSI is installed; you have to check if its StorageClasses are available.)
+Documentation on configuring it could be improved, but basically, in a &lt;code&gt;PersistentVolumeClaim&lt;/code&gt;, you just change &lt;code&gt;storageClassName&lt;/code&gt; from &lt;code&gt;manual&lt;/code&gt; to &lt;code&gt;do-block-storage&lt;/code&gt;.
+If you don’t explicitly configure a matching &lt;code&gt;PersistentVolume&lt;/code&gt;, one will be dynamically created.
+I commented out the &lt;code&gt;PersistentVolume&lt;/code&gt; in &lt;code&gt;hcce.yaml&lt;/code&gt; for &lt;code&gt;ret-pv&lt;/code&gt;, the Reticulum file storage.
+That worked, albeit the &lt;code&gt;PersistentVolume&lt;/code&gt; had a Reclaim Policy of Delete, which you obviously don’t want for your permanent storage.
+I went back to the list of available StorageClasses: &lt;code&gt;do-block-storage&lt;/code&gt;, &lt;code&gt;do-block-storage-retain&lt;/code&gt;, &lt;code&gt;do-block-storage-xfs&lt;/code&gt; and &lt;code&gt;do-block-storage-xfs-retain&lt;/code&gt;, which are not really documented. &lt;code&gt;-retain&lt;/code&gt; sounds like a Reclaim Policy and indeed, using &lt;code&gt;do-block-storage-retain&lt;/code&gt; dynamically created a &lt;code&gt;PersistentVolume&lt;/code&gt; with a Reclaim Policy of Retain.&lt;/p&gt;
+&lt;p&gt;Hubs needs a PostgresQL database.
+DigitalOcean offers managed PostresQL databases.
+The video notes that Hubs requires MD5 password encryption, which is not the default for v14 and later.
+You can, however configure that in later versions.&lt;/p&gt;
+&lt;p&gt;I was ready to spin up a manged PostgresQL database, when I remembered that Community Edition has a &lt;code&gt;postgresql&lt;/code&gt; container which writes and reads to a &lt;code&gt;PersistenVolumeClaim&lt;/code&gt; of its own.
+Could you just change that use DigitalOcean Block Storage?
+I had trouble getting it working, but fortunately Kubernetes is easy to debug :-)&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/kubernetes-debug-flowchart-750w.avif 750w, https://hominidsoftware.com/img/kubernetes-debug-flowchart-1785w.avif 1785w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/kubernetes-debug-flowchart-750w.webp 750w, https://hominidsoftware.com/img/kubernetes-debug-flowchart-1785w.webp 1785w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;A visual guide on troubleshooting Kubernetes deployments&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/kubernetes-debug-flowchart-750w.png&quot; width=&quot;1785&quot; height=&quot;2526&quot; srcset=&quot;https://hominidsoftware.com/img/kubernetes-debug-flowchart-750w.png 750w, https://hominidsoftware.com/img/kubernetes-debug-flowchart-1785w.png 1785w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Daniele Polencic&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Setting the &lt;code&gt;pgsql-pvc&lt;/code&gt; &lt;code&gt;PersistenVolumeClaim&lt;/code&gt; to use the &lt;code&gt;do-block-storage-retain&lt;/code&gt; StorageClass resulted in the pgsql deployment failing.
+The pod log contained&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;initdb: error: directory &amp;quot;/var/lib/postgresql/data&amp;quot; exists but is not empty
+It contains a lost+found directory, perhaps due to it being a mount point.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That check should be disabled for this case, but I had another option: using the &lt;code&gt;do-block-storage-xfs-retain&lt;/code&gt; StorageClass.
+&lt;code&gt;-xfs&lt;/code&gt; sounds like the XFS file system.
+Would PostgresQL be happier XFS rather than ext4?
+The answer is yes, so both &lt;code&gt;PersistentVolumesClaims&lt;/code&gt; are now &lt;code&gt;do-block-storage-xfs-retain&lt;/code&gt; (for consistency), and my Hubs instance has persistent storage that’s not tied to a node!  Next, I’ll need to set up regular backups for my shiny new volumes.&lt;/p&gt;
+&lt;p&gt;Unfortunately, PostgresQL is still a black box.
+For a truly production-ready system, PostgresQL should be separate from the cluster, for easy administration and maintenance.&lt;/p&gt;
+&lt;h2 id=&quot;access-from-multiple-nodes&quot; tabindex=&quot;-1&quot;&gt;Access from multiple nodes? &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Now storage can be accessed from any node — but &lt;code&gt;accessModes&lt;/code&gt; &lt;code&gt;ReadWriteOnce&lt;/code&gt; only allows one node at a time.
+When I set the mode to &lt;code&gt;ReadWriteMany&lt;/code&gt;, the PersistentVolumes weren’t created.&lt;/p&gt;
+&lt;p&gt;To have a cluster that can handle large meetings, I installed DO’s &lt;a href=&quot;https://docs.digitalocean.com/products/marketplace/catalog/csi-for-s3/&quot;&gt;CSI for S3&lt;/a&gt; and, for &lt;code&gt;ret-pvc&lt;/code&gt; set&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;spec:
+  storageClassName: csi-s3
+  accessModes:
+    - ReadWriteMany
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That dynamically created an S3 bucket in DigitalOcean Spaces which can be accessed from multiple nodes.
+The Reclaim Policy was &lt;code&gt;Delete&lt;/code&gt;.  It might require creating a new StorageClass manually to get a Reclaim Policy of &lt;code&gt;Retain&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It’s highly unlikely that PostgresQL would be happy with multiple instances writing to the same set of files, so I didn’t try this for &lt;code&gt;pgsql-pvc&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;increasing-storage-capacity&quot; tabindex=&quot;-1&quot;&gt;Increasing Storage Capacity &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;DigitalOcean notes that you can increase &lt;code&gt;capacity.storage&lt;/code&gt; and re-apply at any time, and the &lt;code&gt;PersistentVolume&lt;/code&gt; will be re-sized.
+Unfortunately, the &lt;em&gt;filesystem&lt;/em&gt; on the volume isn’t necessarily re-sized, so it might make sense to set a larger capacity from the start.
+More research will be required. :-S&lt;/p&gt;
+&lt;h2 id=&quot;my-final-configuration-but-see-my-next-post&quot; tabindex=&quot;-1&quot;&gt;My Final Configuration [but see my next post!] &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;As I haven’t yet set up an external PostgresQL database, for simplicity and cost savings, I went back to the StorageClass of &lt;code&gt;do-block-storage-xfs-retain&lt;/code&gt; for now:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#################################################################################
+################################# persistent volume ##################################
+######################################################################################
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+#  name: pgsql-pv
+#  labels:
+#    type: local
+#spec:
+#  storageClassName: manual
+#  capacity:
+#    storage: 10Gi
+#  accessModes:
+#    - ReadWriteOnce
+#  persistentVolumeReclaimPolicy: Retain
+#  claimRef:
+#    name: pgsql-pvc
+#    namespace: hcce
+#  hostPath:
+#    path: &amp;quot;/mnt/pgsql_data&amp;quot;
+#    type: DirectoryOrCreate
+---
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+#  name: ret-pv
+#  labels:
+#    type: local
+#spec:
+#  storageClassName: manual
+#  capacity:
+#    storage: 10Gi
+#  accessModes:
+#    - ReadWriteOnce
+#  persistentVolumeReclaimPolicy: Retain
+#  claimRef:
+#    name: ret-pvc
+#    namespace: hcce
+#  hostPath:
+#    path: &amp;quot;/mnt/ret_storage_data&amp;quot;
+#    type: DirectoryOrCreate
+---
+######################################################################################
+############################## persistent volume claim ###############################
+######################################################################################
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pgsql-pvc
+  namespace: hcce
+spec:
+  storageClassName: do-block-storage-xfs-retain
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ret-pvc
+  namespace: hcce
+spec:
+  storageClassName: do-block-storage-xfs-retain
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;changing-the-hubs-default-configuration&quot; tabindex=&quot;-1&quot;&gt;Changing the Hubs default configuration &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;StorageClasses &lt;code&gt;do-block-storage&lt;/code&gt;, &lt;code&gt;do-block-storage-retain&lt;/code&gt;, &lt;code&gt;do-block-storage-xfs&lt;/code&gt; and &lt;code&gt;do-block-storage-xfs-retain&lt;/code&gt; are unique to DigitalOcean and &lt;code&gt;csi-s3&lt;/code&gt; requires installation of &lt;code&gt;k8s-csi-s3&lt;/code&gt;, so you couldn’t use them in the default Community Edition configuration.
+However, if you don’t set the StorageClass at all, you’ll get the cluster’s default StorageClass.
+For DigitalOcean, that’s &lt;code&gt;do-block-storage&lt;/code&gt; which has a Reclaim Policy of Delete, but is more durable than &lt;code&gt;hostPath&lt;/code&gt; volumes and can be backed-up and then restored to a Retained volume.
+The default StorageClass for Google and Amazon’s managed Kubernetes is similar.&lt;/p&gt;
+&lt;p&gt;If PostgresQL can be configured to not care about the &lt;code&gt;lost+found&lt;/code&gt; directory, the &lt;code&gt;pgsql-pvc&lt;/code&gt; &lt;code&gt;PersistentVolumeClaim&lt;/code&gt; could also use the default &lt;code&gt;StorageClass&lt;/code&gt;.
+On every cloud provider I checked, the default &lt;code&gt;StorageClass&lt;/code&gt; is external to nodes.
+That would make persistent storage the default. As the Hubs configuration doesn’t constrain the number of nodes, this would avoid non-experts losing data, as I did.&lt;/p&gt;
+&lt;h2 id=&quot;addendum-10-november-2024&quot; tabindex=&quot;-1&quot;&gt;Addendum (10 November 2024) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/Hubs-on-DigitalOcean/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Changing the PostgresQL volume to mount higher in the filesystem hierarchy (that is, changing &lt;code&gt;deployment.spec.template.spec.containers[0].volumeMounts[0].mountPath&lt;/code&gt; from &lt;code&gt;/var/lib/postgresql/data&lt;/code&gt; to just &lt;code&gt;/var/lib/postgresql&lt;/code&gt;) puts &lt;code&gt;lost+found&lt;/code&gt; (if it exists) where PostgresQL doesn’t care.&lt;/p&gt;
+&lt;p&gt;So, I submitted &lt;a href=&quot;https://github.com/Hubs-Foundation/hubs-cloud/pull/363&quot;&gt;a pull request&lt;/a&gt; which creates
+the volumes using the default StorageClass, so the right thing happens automagically on any provider.
+It also creates the &lt;code&gt;pgsql&lt;/code&gt; volume with accessMode &lt;code&gt;ReadWriteOncePod&lt;/code&gt;, so if someone mistakenly creates another replica of &lt;code&gt;pgsql&lt;/code&gt;, the database files won’t be mangled.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Mess That Is Installing a WebApp</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/"/>
+		<published>2023-12-06T00:00:00Z</published>
+		<updated>2024-08-11T03:10:34Z</updated>
+		<summary>Almost all platforms support installing a PWA, but prompting the user is still fragmented.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/</id>
+		<content type="html">&lt;h2 id=&quot;progressive-web-apps-pwas&quot; tabindex=&quot;-1&quot;&gt;Progressive Web Apps (PWAs) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A persistent argument for native apps over webapps has been that webapps didn&#39;t behave like native apps.
+They couldn&#39;t access device APIs,
+were slow to start up and couldn&#39;t run offline,
+always appeared in a browser window with navigation UI,
+and did not appear in the lists of running or recent apps.&lt;/p&gt;
+&lt;p&gt;Now, almost all of the APIs that most apps need (such as geolocation, push messaging and Bluetooth)
+are available to webapps, often under the banner of &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API&quot;&gt;HTML5&lt;/a&gt;.
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers&quot;&gt;Service Workers&lt;/a&gt;,
+the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Cache&quot;&gt;Cache API&lt;/a&gt;,
+&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API&quot;&gt;Web Storage&lt;/a&gt; and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API&quot;&gt;IndexedDB&lt;/a&gt; allow webapps to start instantly
+and run offline.
+A &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Manifest&quot;&gt;Web App Manifest&lt;/a&gt; provides the OS with the info
+it needs to &amp;quot;install&amp;quot; the webapp, so it can appear in its own window, be listed with native apps, have a full
+set of icons, be a destination for sharing, etc.&lt;/p&gt;
+&lt;p&gt;The new APIs enjoy broad support from the browser makers (with Safari trailing three to four years behind),
+albeit not all features are implemented on all platforms.&lt;/p&gt;
+&lt;p&gt;What&#39;s more, these technologies are independent, allowing webapps to implement the app-like features
+only where they need them.  Websites that users already interact with can instantly start and run offline,
+regardless of whether they are installed, or even can be installed on a given platform.
+That&#39;s the &amp;quot;Progressive&amp;quot; part.&lt;/p&gt;
+&lt;h2 id=&quot;installation&quot; tabindex=&quot;-1&quot;&gt;Installation &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;While all the browser makers are positive about allowing apps to be installed in some sense, they differ
+in the user experience.&lt;/p&gt;
+&lt;p&gt;Apple doesn&#39;t want webapps to compete with its App Store and their 30% cut on all content,
+so Safari makes the user illogically search in the &amp;quot;Share&amp;quot; menu to find &amp;quot;Add to Home Screen&amp;quot; on mobile
+and &amp;quot;Add to Dock&amp;quot; on Macs.&lt;/p&gt;
+&lt;p&gt;Mozilla has also decided that installation should initiated by the user, as bookmarks always have been.
+That is reasonable (though any website can be bookmarked, but only some can be installed) and they do little to educate users about this feature.
+They also only implement it on Android. When Mozilla was pushing its Firefox OS, they asked developers to
+use non-standard APIs and repackage their webapps, but now they show little interest in standards to make it easy
+to install webapps. That comes across as &amp;quot;Not Invented Here&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Google has proposed and implemented the &lt;code&gt;beforeinstallprompt&lt;/code&gt; event allowing webapps to trigger a standard browser
+dialog prompting the user to install (or decline to install) the webapp.
+This &lt;code&gt;beforeinstallprompt&lt;/code&gt; event is also sanity-gated.
+That is, the dialog is not displayed on the first visit to the webapp. Other criteria also apply, such as
+&amp;quot;don&#39;t allow until the user has interacted with the webapp&amp;quot; and &amp;quot;don&#39;t prompt the user too often&amp;quot;&lt;/p&gt;
+&lt;p&gt;Given that Chromium browsers have implemented &lt;code&gt;beforeinstallprompt&lt;/code&gt;
+and Firefox and Safari have definitely decided not to implement it (see https://github.com/w3c/manifest/issues/835),
+an installable webapp must implement something along the lines of:&lt;/p&gt;
+&lt;pre class=&quot;language-JavaScript&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;if (appSpecificUserEngagementDetected) {
+	if (installPromptDeferred) { // BeforeInstallPromptEvent saying system install prompt is available
+		enqueueSnackbar(`Install this webapp for easy access and a separate window.`,
+			{callback: async () =&gt; {await installPromptDeferred.prompt(); /* ... */}});
+	} else if (/&#92;b(iPad|iPhone|iPod)&#92;b/.test(navigator.userAgent) &amp;&amp;
+			/WebKit/.test(navigator.userAgent) &amp;&amp;
+			!/Edge/.test(navigator.userAgent) &amp;&amp;
+			!window.MSStream) {
+		enqueueSnackbar(`For easy access and a separate window, tap the share button then &quot;Add to Home Screen&quot;`);
+	} else if (/&#92;b(Macintosh)&#92;b/.test(navigator.userAgent) &amp;&amp;
+			/Safari/.test(navigator.userAgent) &amp;&amp;
+			! /&#92;b(Chrom&#92;w{1,3}&#92;/[&#92;d.]+)&#92;b/.test(navigator.userAgent)) {
+		enqueueSnackbar(`For easy access and a separate window, click the share button then &quot;Add to Dock&quot;`);
+	} else if (/&#92;bMobile&#92;b/.test(navigator.userAgent) &amp;&amp;
+			/&#92;b(Firefox&#92;/[&#92;d.]+)&#92;b/.test(navigator.userAgent) &amp;&amp;
+			! /&#92;b(Seamonkey&#92;/[&#92;d.]+)&#92;b/.test(navigator.userAgent)) {
+		enqueueSnackbar(`For easy access and a separate window, from the Firefox menu select &quot;Install&quot;`);
+	}
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That is, each webapp must detect, not a feature, but the user interface for installation
+(that is, if the browser is Safari Mobile, Safari Mac, or Firefox Android), and educate the user about it.
+Browser sniffing is notoriously unreliable, but is the only way to customize for browser UI.
+Also, each installable webapp must write its own user education text, and preferably localize it.
+After all this work, the code is fragile against changes to the user interface of Safari and Firefox.&lt;/p&gt;
+&lt;p&gt;A better solution would be for Safari and Firefox to provide standardized and localized user education UI.
+Installation is unfamiliar to most users, and doesn&#39;t apply to most websites, so when better to educate users
+than when they&#39;ve engaged with an installable webapp?&lt;/p&gt;
+&lt;p&gt;I have therefore proposed that Mozilla implement standardized and localized user education (a dialog)
+in Firefox Android, triggered by an API with different semantics than Google&#39;s &lt;code&gt;beforeinstallprompt&lt;/code&gt;,
+but the same signature.
+Thus, almost all installable web apps would immediately take advantage of it.&lt;/p&gt;
+&lt;p&gt;Please comment on &lt;a href=&quot;https://connect.mozilla.org/t5/ideas/standardize-amp-localize-user-education-re-install-pwa-command/idi-p/46661&quot;&gt;my proposal on Mozilla Connect&lt;/a&gt;,
+to help it gain critical mass, so Mozilla will take it seriously.
+Alas, it&#39;s not vetted yet :-( so please check again next week.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>From Notes-in-tasks to Tasks-in-notes</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/"/>
+		<published>2023-06-08T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		
+		<id>https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/</id>
+		<content type="html">&lt;h2 id=&quot;outline-tracker&quot; tabindex=&quot;-1&quot;&gt;Outline Tracker &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I learned Palm webOS programming to write &lt;a href=&quot;https://hominidsoftware.com/outlinetracker/index.html&quot;&gt;&lt;em&gt;Outline Tracker&lt;/em&gt;&lt;/a&gt;, a To-Do List app.
+The main feature was filtering to display only the tasks you could work on at the current time,
+at your current &amp;quot;Place&amp;quot;, and not blocked by other tasks.
+Tasks could also repeat on either a strict or lax schedule, and were visible in the webOS Calendar app.
+They also had a person responsible for them.&lt;/p&gt;
+&lt;p&gt;However, items in local Projects could be toggled between Tasks with a checkbox, and Notes without.
+In addition, each item could also have &lt;em&gt;content text&lt;/em&gt;, which was only displayed when the item was expanded.&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;https://hominidsoftware.com/outlinetracker/visuals/content_text.png&quot; alt=&quot;screen shot showing content text&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It could act as an outliner, importing from &lt;a href=&quot;https://microformats.org/wiki/xoxo&quot;&gt;&lt;em&gt;XOXO&lt;/em&gt;&lt;/a&gt; files.
+A Project could be all text, with no Tasks.&lt;/p&gt;
+&lt;p&gt;The data model was very general, essentially a superset of all the To-Do apps I studied.
+Unfortunately, this did not lend itself to a low-friction user interface.
+Creating multiple tasks required switching between the hardware keyboard and on-screen buttons.
+New Places could only be created in a separate screen.
+The UI was fine for creating a few complex items, but was clunky for making a shopping list.
+It pushed the user toward a few large Projects, instead of many small ones, which doesn&#39;t match much outside a job.
+It also lacked an &amp;quot;inbox&amp;quot; where the user could quickly create a task, and later fill in the details.&lt;/p&gt;
+&lt;p&gt;It also had Basecamp (now Basecamp Classic) Projects, which could be synchronized between devices.
+These were restricted to Basecamp&#39;s more rigid data model, where lists could have context text,
+but tasks could not. Tasks, however, could have multiple text Comments.
+It also has text-only Messages at the top level.&lt;/p&gt;
+&lt;p&gt;Other To-Do apps likewise allow text that isn&#39;t explicitly a task, in various places.&lt;/p&gt;
+&lt;h2 id=&quot;notes-together&quot; tabindex=&quot;-1&quot;&gt;Notes Together &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;After the demise of webOS, I started a line of research that eventually led to &lt;a href=&quot;https://hominidsoftware.com/notes-together/&quot;&gt;&lt;em&gt;Notes Together&lt;/em&gt;&lt;/a&gt;, a note-taking app.
+It&#39;s marquee feature is full-text search (using Indexed DB under the hood),
+eliminating the need to curate notes with categories or explicit tags.
+Users are encouraged to toss in snippets of text or pictures and get back to whatever they were doing.
+Semantic formatting such as headings, lists, tables, block quotes and monospaced code blocks
+is retained. Styling is discarded, so pasted and user-typed text harmonize.
+Syncing with &lt;a href=&quot;https://remotestorage.io/&quot;&gt;&lt;em&gt;remoteStorage&lt;/em&gt;&lt;/a&gt; avoids compromising the data model to work with third-party software.&lt;/p&gt;
+&lt;p&gt;I found myself keeping notes with lists of groceries to buy and which episodes I had seen in a TV series.
+Shopping lists are entered very naturally, by typing return after every item (like all word processing apps).
+The Unicode checkmark ✔️ was useful here, but clunky to insert.
+So I added code for unordered and ordered checklists (&lt;em&gt;Task Lists&lt;/em&gt; and &lt;em&gt;Sequences&lt;/em&gt;, respectively).
+A very few clicks can paste in anything that resembles a list and transform it to a checklist.
+(Completed Tasks are moved to the bottom of the list instead of being hidden,
+so it&#39;s easy to recover from a fat-fingered tap.)
+Thus, a note-taking app became a lower-friction place than a To-Do app to keep simple to-do lists.&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Notes-Together-Task-List-750w.avif 750w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Notes-Together-Task-List-750w.webp 750w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;a Task List in Notes Together&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Notes-Together-Task-List-750w.jpeg&quot; width=&quot;750&quot; height=&quot;1334&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;p&gt;Text associated with a task is not confined to certain fields —
+you write a document and place the checklist anywhere you like, even in a table cell.
+You don&#39;t have to move the cursor between fields; it&#39;s all one document.&lt;/p&gt;
+&lt;p&gt;Notes Together will never be able to show you &lt;em&gt;only&lt;/em&gt; the tasks you can work on here-and-now,
+or &lt;em&gt;just&lt;/em&gt; the tasks you&#39;re waiting on others to do.
+Nor will you be able to see work errands and household errands in the same list
+(unless you keep everything in one giant list ☹).
+Nor does it help you with repeating chores
+(though you can lock a note against edits, and repeatedly check and uncheck the items).
+However, every note has an associated Date,
+so it&#39;s possible to have a Task List for each day on which something is due
+(though then you can&#39;t see all the tasks in one list).
+Lists can contain sub-lists, so Tasks can contain sub-Tasks.
+(I haven&#39;t yet written code to check an item when the last item on a sub-list is checked.)
+Every word is indexed, so there&#39;s not a separate list of tags that the user must curate, unlike Outline Tracker.&lt;/p&gt;
+&lt;p&gt;So Notes Together can&#39;t slice and dice tasks like Outline Tracker, but everything you &lt;em&gt;can&lt;/em&gt; do is low-friction.
+I find it more pleasant to use to track my To-Dos.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/notes-in-tasks-to-tasks-in-notes/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Despite starting from different places, my two apps ended up having surprisingly similar capabilities.
+Ease of use turned out to be more important than the &amp;quot;correct&amp;quot; data model.&lt;/p&gt;
+&lt;p&gt;It&#39;s said that every Unix application expands until it can read email.  Here&#39;s hoping I never reach that point. ☺︎&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Today is a Good Day to ... Dance</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/"/>
+		<published>2023-06-02T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>Klaang the Klingon shows how ballet is done right</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/</id>
+		<content type="html">&lt;h2 id=&quot;1st-position&quot; tabindex=&quot;-1&quot;&gt;1st Position &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-1st-Position-750w.avif 750w, https://hominidsoftware.com/img/Klaang-1st-Position-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-1st-Position-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-1st-Position-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-1st-Position-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-1st-Position-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;1st Position&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-1st-Position-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-1st-Position-750w.webp 750w, https://hominidsoftware.com/img/Klaang-1st-Position-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-1st-Position-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2nd-position&quot; tabindex=&quot;-1&quot;&gt;2nd Position &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-2nd-Position-750w.avif 750w, https://hominidsoftware.com/img/Klaang-2nd-Position-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-2nd-Position-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-2nd-Position-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-2nd-Position-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-2nd-Position-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;2nd Position&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-2nd-Position-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-2nd-Position-750w.webp 750w, https://hominidsoftware.com/img/Klaang-2nd-Position-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-2nd-Position-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3rd-position&quot; tabindex=&quot;-1&quot;&gt;3rd Position &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-3rd-Position-750w.avif 750w, https://hominidsoftware.com/img/Klaang-3rd-Position-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-3rd-Position-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-3rd-Position-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-3rd-Position-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-3rd-Position-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;3rd Position&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-3rd-Position-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-3rd-Position-750w.webp 750w, https://hominidsoftware.com/img/Klaang-3rd-Position-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-3rd-Position-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4th-position&quot; tabindex=&quot;-1&quot;&gt;4th Position &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-4th-Position-750w.avif 750w, https://hominidsoftware.com/img/Klaang-4th-Position-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-4th-Position-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-4th-Position-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-4th-Position-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-4th-Position-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;4th Position&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-4th-Position-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-4th-Position-750w.webp 750w, https://hominidsoftware.com/img/Klaang-4th-Position-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-4th-Position-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;5th-position&quot; tabindex=&quot;-1&quot;&gt;5th Position &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-5th-Position-750w.avif 750w, https://hominidsoftware.com/img/Klaang-5th-Position-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-5th-Position-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-5th-Position-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-5th-Position-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-5th-Position-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;5th Position&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-5th-Position-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-5th-Position-750w.webp 750w, https://hominidsoftware.com/img/Klaang-5th-Position-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-5th-Position-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;demi-plie&quot; tabindex=&quot;-1&quot;&gt;Demi-plie &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Demi-plie A&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-B-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-B-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-B-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-B-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-B-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-B-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Demi-plie B&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-B-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-B-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-B-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-B-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Demi-plie C&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Demi-plie-A-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Demi-plie-A-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;battement-tendu&quot; tabindex=&quot;-1&quot;&gt;Battement Tendu &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Battement Tendu A&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-A-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Battement Tendu B&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Battement-Tendu-B-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;pirouette&quot; tabindex=&quot;-1&quot;&gt;Pirouette &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/good-day-to-dance/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-A-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Pirouette-A-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-A-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-A-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Pirouette-A-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-A-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Pirouette A&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-A-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-A-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Pirouette-A-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-A-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-B-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Pirouette-B-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-B-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-B-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Pirouette-B-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-B-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Pirouette B&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-B-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-B-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Pirouette-B-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-B-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-C-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Pirouette-C-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-C-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-C-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Pirouette-C-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-C-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Pirouette C&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-C-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-C-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Pirouette-C-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-C-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-D-750w.avif 750w, https://hominidsoftware.com/img/Klaang-Pirouette-D-1500w.avif 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-D-3024w.avif 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;undefined&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-D-750w.tiff 750w, https://hominidsoftware.com/img/Klaang-Pirouette-D-1500w.tiff 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-D-3024w.tiff 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Pirouette D&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-D-750w.webp&quot; width=&quot;3024&quot; height=&quot;4032&quot; srcset=&quot;https://hominidsoftware.com/img/Klaang-Pirouette-D-750w.webp 750w, https://hominidsoftware.com/img/Klaang-Pirouette-D-1500w.webp 1500w, https://hominidsoftware.com/img/Klaang-Pirouette-D-3024w.webp 3024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Multiuser WebXR using Croquet OS &amp; A-Frame</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/croquet-os-and-aframe/"/>
+		<published>2023-04-25T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>There&#39;s a new network option for A-Frame</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/croquet-os-and-aframe/</id>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;https://croquet.io/croquet-os/&quot;&gt;&lt;em&gt;Croquet OS&lt;/em&gt;&lt;/a&gt; is real-time synchronization-as-a-service (and not restricted to WebXR). You don&#39;t run your own synchronization server; large traffic volumes require payment.&lt;/p&gt;
+&lt;p&gt;It&#39;s designed around keeping state in its own Model objects, which have a number of restrictions so each client maintains a bit-identical simulation.
+Web apps which keep all state and modeling in Croquet Models avoid the who-grabbed-it-first problem.&lt;/p&gt;
+&lt;p&gt;Croquet has Views to handle display and user input, which can differ between users. They mediate between Models and the rest of your code.&lt;/p&gt;
+&lt;p&gt;Croquet keeps snapshots on the network, so sessions can be resumed, even if no clients are still online. (Unlike networked-aframe and Mozilla Hubs, if I understand them correctly.)
+Croquet has its &lt;em&gt;Worldcore&lt;/em&gt; library to handle scene graph, position, rotation, etc. Worldcore can render using their &lt;em&gt;webgl&lt;/em&gt; package or Three.js. Croquet packages cover most, but not all, of what Three.js does. There is no directory of third-party components available for use.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aframe.io/&quot;&gt;A-Frame&lt;/a&gt; maintains a scene graph using Three.js, so you won&#39;t use Worldcore with A-Frame. You can the &lt;a href=&quot;https://github.com/NikolaySuslov/aframe-croquet-component&quot;&gt;A-Frame Croquet Component&lt;/a&gt; to synchronize the attributes of A-Frame entities&lt;/p&gt;
+&lt;p&gt;Off-the-shelf A-Frame components maintain state internally. When user input or world modeling (such as collision detection) happens in A-Frame, a synthetic DOM event must be emitted for a View to receive. Typically, the View will need to publish a message to one or more Models. The message must be sent over the network to every client. The Model(s) (on each client) would typically publish a message to other Models or their Views, and the View(s) (on each client) will set attributes on A-Frame objects. This can make debugging tedious, but delay comes mainly from the network.&lt;/p&gt;
+&lt;p&gt;You could rewrite A-Frame components to keep state in Croquet Models, but at that point it may make more sense to switch to Worldcore.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://www.npmjs.com/package/aframe-state-component&quot;&gt;A-Frame State Component&lt;/a&gt; provides a centralized store for state data. An analogous component with similar syntax could be written for Croquet, but that hasn&#39;t happened yet.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://github.com/NikolaySuslov/aframe-croquet-component&quot;&gt;A-Frame Croquet Component&lt;/a&gt; allows a world to define an &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template&quot;&gt;HTML Template&lt;/a&gt; for user avatars. A different &lt;code&gt;color&lt;/code&gt; attribute is applied to each user&#39;s avatar, but most primitives (including &lt;a href=&quot;https://aframe.io/docs/1.4.0/components/gltf-model.html&quot;&gt;gltf-model&lt;/a&gt;) don&#39;t use that.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://xalot.surge.sh/&quot; title=&quot;Xalot world&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/xalot-world-747w.avif 747w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/xalot-world-747w.webp 747w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Xalot world&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/xalot-world-747w.png&quot; width=&quot;747&quot; height=&quot;513&quot;&gt;&lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For other users to join the same session, a current user must share the URL, including the query string.&lt;/p&gt;
+&lt;p&gt;Croquet Models are typically synced 20 times per second, not coupled to A-Frame &lt;code&gt;tick()&lt;/code&gt;. That&#39;s fine for low-speed syncing, for example, seeing which way another player&#39;s avatar is facing. That&#39;s also fine for detecting whether a moving object collides with a stationary object. A-Frame collision detection will not be coupled to Croquet syncing, so high-speed simulation will have issues. For example, calculating if one player&#39;s fireball collides with the other player&#39;s dodging avatar will depend on which client the calculation is done. Likewise, one client might calculate that one player had grabbed some object first, while another client might calculate that another player had grabbed it first.&lt;/p&gt;
+&lt;p&gt;A number of edge cases have to be dealt with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Some serializable types still need to be added to aframe-croquet-component&lt;/li&gt;
+&lt;li&gt;A-Frame components may have non-serializable attributes. HTMLElements are not serializable, so their ID is saved instead. Other non-serializable attributes will cause errors.&lt;/li&gt;
+&lt;li&gt;Procedural generation of a world requires waiting until random seeds can be obtained from a model (as only Croquet Models can generate the same random number sequence on every client).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&#39;s easy to &lt;a href=&quot;https://github.com/NikolaySuslov/aframe-croquet-component#how-to-share-an-entity-in-an-a-frame-scene-with-other-users&quot;&gt;throw together a multi-user experience&lt;/a&gt; (without voice chat) using existing A-Frame components and your A-Frame expertise. However, as an immature library, you might have to code and submit a PR to get advanced capabilities. And it may not be the best choice for an action game or polished experience.&lt;/p&gt;
+&lt;p&gt;See also this &lt;a href=&quot;https://aframe.wiki/en/#!pages/multiuser.md#Comparison_Table&quot;&gt;Comparison of Croquet with Networked A-Frame and Mozilla Hubs&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Civil Cold War</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/civil-cold-war/"/>
+		<published>2020-11-04T00:00:00Z</published>
+		<updated>2023-04-20T20:31:14Z</updated>
+		<summary>Political polarization will continue for a long time</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/civil-cold-war/</id>
+		<content type="html">&lt;p&gt;If a post on politics is not what you’re up for, feel free to ignore this.&lt;/p&gt;
+&lt;p&gt;I write assuming Biden will win and be able to take office.&lt;/p&gt;
+&lt;p&gt;Despite this, the plain fact remains that a very large minority of American are okay with supporting a candidate who openly attacks democracy, the rule of law, and civil rights. 2016 was not an aberration. The evidence is there, but it does not shift their votes. More people have voted for Trump than in 2016. America is not the country we thought it was. Nor is there much motivation for Republican leadership to change much. Why change what very nearly worked?&lt;/p&gt;
+&lt;p&gt;Thus, we face the very high likelihood of continued political polarization, leaving the Federal government unable to act effectively against danger from without and within and degrading what professionalism there is.&lt;/p&gt;
+&lt;p&gt;What do you call that situation? I call it a Civil Cold War.&lt;/p&gt;
+&lt;p&gt;Of course, there are many differences between the world in the second half of the 20th century and America today. Not least is that the world was never united in one society and government beforehand.&lt;/p&gt;
+&lt;p&gt;I do not take the Cold War as a blueprint for what will happen to America, but I do look to it for patterns that may recur.&lt;/p&gt;
+&lt;p&gt;One pattern to recall is that most people in “Communist” countries were basically decent people who valued the services provided them by their government without endorsing all of its activities. Government propaganda was able to drown out Western messages, without the help of Facebook’s individual profiles.&lt;/p&gt;
+&lt;p&gt;Another pattern is the use of disinformation and rigged elections over naked force.  “Communist” leaders knew the danger of open warfare.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A User-Empowering Architecture for WebVR Discovery</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/architecture-webvr-discovery/"/>
+		<published>2019-03-29T00:00:00Z</published>
+		<updated>2023-04-26T12:50:58Z</updated>
+		<summary>A better way to find VR &amp; AR content on the Web is needed.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/architecture-webvr-discovery/</id>
+		<content type="html">&lt;p&gt;Currently, it’s hard to browse the VR web. Sites are available over HTTP but hard to find. If you know the URL, you can laboriously type it in on a virtual keyboard, but that’s not something most users are willing to do.&lt;/p&gt;
+&lt;p&gt;Search using existing web crawlers is possible, but typing fewer characters than a URL is only less annoying, not really low friction. Voice search is possible in low-noise environments, but presents privacy issues, even if speech recognition is done on-device. Current web crawlers also lack a filter for VR and/or 360 content.&lt;/p&gt;
+&lt;p&gt;Another possibility is presenting the user with multiple feeds of content. This is the approach taken by Oculus. However, given Facebook’s history, a substantial number of users will not trust Oculus to work in their best interest, or treat content outside the Facebook ecosystem equally.&lt;/p&gt;
+&lt;p&gt;The feed approach could satisfy users concerned about privacy and control if the user could control what sources were used to generate the feeds. RSS feeds would be ideal. &lt;a href=&quot;https://vrsites.com/&quot;&gt;WebXR experiences
+(Meta Quest tested)&lt;/a&gt; &lt;a href=&quot;https://webvr.directory/&quot;&gt;WebVR Directory by Supermedium&lt;/a&gt; &lt;a href=&quot;https://experiments.withgoogle.com/collection/webvr&quot;&gt;Experiments with Google&lt;/a&gt; and &lt;a href=&quot;https://acerwebvr.github.io/&quot;&gt;Acer WebVR Start Page&lt;/a&gt; are websites that curate WebVR experiences. &lt;a href=&quot;https://aframe.io/blog/&quot;&gt;A-Frame Blog&lt;/a&gt; is a blog collecting projects, tools, and events related to the A-Frame framework.&lt;/p&gt;
+&lt;p&gt;Scraping summaries from web pages that reference WebVR content is possible, but fragile. Feed items could be generated from site metadata, including Open Graph Protocol and oEmbed. Something along the lines of Slack’s Unfurl Cascade is probably best.&lt;/p&gt;
+&lt;p&gt;Identifying links to WebVR sites is a bit tricky - there is no Open Graph type for WebVR. For the general case you’d need to run enough JavaScript to detect usage of WebVR APIs. Some shortcuts are possible, such as looking for script tags for WebVR frameworks. Distinguishing 360 photo or video content from full VR may not be generally possible. Identifying other content of interest is even trickier to do on the fly.&lt;/p&gt;
+&lt;p&gt;There should be straightforward UI to add and remove sources. It might or might not make sense to take a user’s Favorites as sources.&lt;/p&gt;
+&lt;p&gt;The UI should present at least two composite feeds - one of liked content the user can return to, and another of new items.&lt;/p&gt;
+&lt;p&gt;Finally, the system should order items using an estimation of how well the user will like the content. Framerate, number of page crashes and time-on-page could be tracked. Some tweaking should be possible - perhaps giving a simple thumb-up or thumb-down on each item of content. A headset that can run VR ought to be able to crunch a fair amount of data, to predict what a user most wants.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Buying OS X Lion Online</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/buying-lion-online/"/>
+		<published>2014-08-24T00:00:00Z</published>
+		<updated>2024-08-10T22:18:11Z</updated>
+		<summary>Apple&#39;s much-touted concern with user experience was not in evidence</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/buying-lion-online/</id>
+		<content type="html">&lt;p&gt;Steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;quot;buy&amp;quot; from Apple store&lt;/li&gt;
+&lt;li&gt;receive &amp;quot;order is being processed&amp;quot; email the next day&lt;/li&gt;
+&lt;li&gt;receive &amp;quot;shipment notification&amp;quot; email, the day after that&lt;/li&gt;
+&lt;li&gt;receive &amp;quot;order is being processed&amp;quot; email, the day after that&lt;/li&gt;
+&lt;li&gt;receive email with password for a PDF file allegedly attached to another email [do not receive any PDF]&lt;/li&gt;
+&lt;li&gt;call phone number in email&lt;/li&gt;
+&lt;li&gt;phone system repeatedly fails to understand my request to &amp;quot;re-send license PDF&amp;quot;&lt;/li&gt;
+&lt;li&gt;phone system refuses to proceed withou &amp;quot;web order number&amp;quot; [not present in email]&lt;/li&gt;
+&lt;li&gt;Dig up Apple ID password&lt;/li&gt;
+&lt;li&gt;Go through dozens of screens on store to find the only order I&#39;ve placed in years, with its order number&lt;/li&gt;
+&lt;li&gt;call phone number again&lt;/li&gt;
+&lt;li&gt;enter order number&lt;/li&gt;
+&lt;li&gt;eventually get redirected to human, who gives me the actual license code&lt;/li&gt;
+&lt;li&gt;open Mac App Store&lt;/li&gt;
+&lt;li&gt;attempt to find &amp;quot;Redeem&amp;quot; link or &amp;quot;Quick Links&amp;quot; section it&#39;s allegedly in; fail to find it in tool bar or menus&lt;/li&gt;
+&lt;li&gt;click through all toolbar items&lt;/li&gt;
+&lt;li&gt;try &amp;quot;view my account&amp;quot; menu item&lt;/li&gt;
+&lt;li&gt;be required to approve new 17-page terms of service&lt;/li&gt;
+&lt;li&gt;eventually fine &amp;quot;redeem&amp;quot; link in the &amp;quot;Featured&amp;quot; section (because when redeeming a purchase, you want to be dunned to buy more)&lt;/li&gt;
+&lt;li&gt;enter license code&lt;/li&gt;
+&lt;li&gt;App Store tells me it&#39;s downloading, but provides no further feedback&lt;/li&gt;
+&lt;li&gt;select &amp;quot;Check for unfinished downloads&amp;quot; under Store menu&lt;/li&gt;
+&lt;li&gt;re-enter Apple ID password entered a few minutes ago&lt;/li&gt;
+&lt;li&gt;App Store displays progress bar indicating download will take 35 minutes more&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;How is this supposed to be more convenient than them mailing me a DVD?&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Designing Web Apps For Multiple Devices</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/designing-webapps-multiple-devices/"/>
+		<published>2013-11-05T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>A guest post on the Mozilla Hacks blog, in Apps and Mobile</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/designing-webapps-multiple-devices/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;Originally appeared on the &lt;a href=&quot;https://hacks.mozilla.org/2013/11/designing-web-apps-for-multiple-devices/&quot;&gt;Mozilla Hacks blog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Before 2010, there were few devices on the Web other than smartphones and desktop/laptop computers. Developers could assume phone users had a small screen, low bandwidth and used a webapp for brief moments. Desktop users were assumed to have a large screen, high bandwidth and spend large amounts of time within an application.&lt;/p&gt;
+&lt;p&gt;Designing a webapp now means designing for 2014 and beyond, where users buy giant phones, phablets and tablets in many sizes. 4G connections may be faster than DSL or the throttled Wi-Fi at a coffee-shop. A number of laptop and “all-in-one” computers have touchscreens. Users may spend an evening hour on the couch with a tablet. And it was never true that all desktop users wanted apps to take up their whole screen – writing an e-mail or report often requires consulting another app, which ought to be content with half the screen.&lt;/p&gt;
+&lt;p&gt;Segmenting users by device today typically leads to bad assumptions for large minorities. Users use multiple devices throughout the day and dislike learning different interaction patterns for different devices. Apple’s “Back to the Mac” initiative sought to bring smartphone features to OS X, and Windows 8 and Ubuntu Unity strive to have a single experience from phones to desktops.&lt;/p&gt;
+&lt;h2 id=&quot;app-examples&quot; tabindex=&quot;-1&quot;&gt;App examples &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/designing-webapps-multiple-devices/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It is difficult to achieve a good user experience for all devices and screen sizes, as seen by the criticism of Windows 8 and Apple&#39;s “Back to the Mac” initiative. It &lt;em&gt;can&lt;/em&gt; be done for a range of devices, especially by new apps unburdened by legacy expectations. I present here two web apps optimized for smartphones through desktops (but not “smart” TVs, feature phones nor smartwatches): a photo gallery and a memo app.&lt;/p&gt;
+&lt;h3 id=&quot;photo-gallery&quot; tabindex=&quot;-1&quot;&gt;Photo gallery &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/designing-webapps-multiple-devices/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The photo gallery is half of a photo sharing app. &lt;s&gt;&lt;a href=&quot;http://hominidsoftware.com:1234/&quot;&gt;A sample album of the gallery&lt;/a&gt; can be seen online.&lt;/s&gt; (&lt;a href=&quot;https://hominidsoftware.com/zapphotoshare/index.html&quot;&gt;The application described as a whole&lt;/a&gt; is worth seeing.)&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-750w.avif 750w, https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-1024w.avif 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-750w.webp 750w, https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-1024w.webp 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;photo gallery: thumbnail grid&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-750w.png&quot; width=&quot;1024&quot; height=&quot;768&quot; srcset=&quot;https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-750w.png 750w, https://hominidsoftware.com/img/ss_tablet_en_3_1.1.9-1024w.png 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The photo gallery follows the paradigm used by a number of prior photo browsing apps. Thumbnails are presented in a grid which scrolls vertically. The number and width of columns depends on the screen width. Grid cells could be small or large; I chose the minimum cell size to be the smallest common screen width for smartphones: 320 CSS pixels. Thus, the number of columns is &lt;code&gt;floor(windowWidth / 320)&lt;/code&gt; and the cell size is &lt;code&gt;windowWidth / number of columns&lt;/code&gt;. Columns normally are from 320 to 639 pixels wide.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Window Width&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;# Columns&lt;/th&gt;
+&lt;th&gt;Typical Device&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;320-639&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;1&lt;/td&gt;
+&lt;td&gt;phone/phablet (portrait)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;640-959&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;2&lt;/td&gt;
+&lt;td&gt;phablet (landscape), tablet (portrait)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;960-1279&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;3&lt;/td&gt;
+&lt;td&gt;tablet (landscape)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1280-&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;4&lt;/td&gt;
+&lt;td&gt;laptop, desktop&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The number of columns is capped at four, so scrolling doesn’t outpace data transfer.&lt;/p&gt;
+&lt;p&gt;One approach would use fixed size thumbnails of 300×300 and increase the padding as cells get larger. However, the image library available (libjpeg) only supports half-, quarter- and eighth-size reductions, so padding is fixed and images are resized to fill. The web app requests a photo of appropriate size and the server (written in node.js, and normally running on a phone) returns the smallest version of the photo that fills the requested size cell.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-750w.avif 750w, https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-1024w.avif 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-750w.webp 750w, https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-1024w.webp 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;photo gallery: carousel&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-750w.png&quot; width=&quot;1024&quot; height=&quot;768&quot; srcset=&quot;https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-750w.png 750w, https://hominidsoftware.com/img/ss_tablet_en_4_1.1.9-1024w.png 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;Tapping on a thumbnail switches to a carousel which fills the window. The user can zoom in further by double-tapping the image or using the mousewheel. Originally, full-screen mode was engaged when the carousel was displayed; however, changing to full-screen takes several seconds on many devices, so now full-screen mode must be manually set. Touchscreen users can swipe to navigate forward and backward, while desktop users can use the keyboard. A weakness is that a mouse user can click on a picture to navigate forward, but must swipe (or use the keyboard) to navigate backward. Mouse users could benefit from visible navigation buttons, but mice aren’t easy for a web app to detect.&lt;/p&gt;
+&lt;p&gt;Switching modes from the thumbnail gallery to the carousel and back is easy on any device. This supports the typical scenario of: user skims thumbnails to photo of interest, taps to enlarge, uses carousel to go through related photos, and returns to thumbnails. Users can navigate a substantial number of photos the same way on any device. A larger screen is shows more thumbnails at once and more detail on individual photos, but interaction is the same.&lt;/p&gt;
+&lt;p&gt;Development was eased by creative use of the List widget of Enyo 2 (though any list widget could have been used). Application code sizes the cells and fills each row with 1-4 thumbnails, while the List widget handles creating and re-using DOM elements. The carousel is Enyo’s ImageCarousel, which is designed from the ground up to run well on multiple types of devices.&lt;/p&gt;
+&lt;h3 id=&quot;memo-app-serene-notes&quot; tabindex=&quot;-1&quot;&gt;Memo app (Serene Notes) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/designing-webapps-multiple-devices/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The second example is a deceptively simple memo app, which can be &lt;a href=&quot;https://serenenotes.hominidsoftware.com/&quot;&gt;used on-line&lt;/a&gt; &lt;s&gt;or installed on Firefox OS from the Marketplace&lt;/s&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_land_2col-750w.avif 750w, https://hominidsoftware.com/img/Memos_ss_phab_land_2col-960w.avif 960w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_land_2col-750w.webp 750w, https://hominidsoftware.com/img/Memos_ss_phab_land_2col-960w.webp 960w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Serene Notes: phablet landscape (two columns)&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Memos_ss_phab_land_2col-750w.png&quot; width=&quot;960&quot; height=&quot;540&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_land_2col-750w.png 750w, https://hominidsoftware.com/img/Memos_ss_phab_land_2col-960w.png 960w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The fundamental layout is two panels side-by-side. In windows narrower than 640 CSS pixels, the second panel slides in on top of the first. Collapse is based solely on window width, not device class, so phablet users will have one column in portrait mode and two columns in landscape mode.&lt;/p&gt;
+&lt;div class=&quot;flex-center-center&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_port_1col-540w.avif 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_port_1col-540w.webp 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Serene Notes: phablet portrait (one column)&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Memos_ss_phab_port_1col-540w.png&quot; width=&quot;540&quot; height=&quot;960&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;p&gt;Tablet and desktop users don’t need to muck with dialogs or layers, while phone users have fast transitions. Most importantly, the shift in mental models is easy when going from a phone to a larger device. While this app does not currently sync user data between devices, adding that would give a seamless experience across devices. [The successor app &lt;a href=&quot;https://notestogether.hominidsoftware.com/#&quot;&gt;Notes Together&lt;/a&gt; does sync between devices.]&lt;/p&gt;
+&lt;p&gt;Presently, the Help pane displaces the Details pane. In windows wider than 960px, Help should really be a third panel.&lt;/p&gt;
+&lt;p&gt;The collapsing panels use the Enyo Panels widget. Another instance of Panels is used to swap the Details and Help panes in the second panel. Using a JavaScript framework designed to support multiple devices really speeds development.&lt;/p&gt;
+&lt;p&gt;To maximize display of user data the list foregoes controls on items in favor of direct manipulation: items can be swiped (or double-clicked) for operations such as Delete. Reordering is done by hold-then-drag. Discoverability was traded off for power – many apps will need to strike a different balance. A possible future enhancement on larger screens would be to add visible controls or at least tool tips.&lt;/p&gt;
+&lt;div class=&quot;flex-center-center&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_port_1col_search-540w.avif 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Memos_ss_phab_port_1col_search-540w.webp 540w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Serene Notes: live search (phone)&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Memos_ss_phab_port_1col_search-540w.png&quot; width=&quot;540&quot; height=&quot;960&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;p&gt;Fixed groupings such as folders or notebooks would require the user to navigate an extra level to access data. Search allows a memo to be in multiple groupings, and requires less UI. (However, it is not appropriate for users who rely on spatial memory.)&lt;/p&gt;
+&lt;p&gt;While typing on a touchscreen is laborious, the app minimizes typing by using prefix searches. Searching for “s fra” will find all memos that contain “San Francisco” and few false positives among hundreds of memos. The on-screen keyboard on most phones obscures all but a few list items, but live search and the counter of hits tells the user when she has narrowed the search to a handful of memos. Skimming the list then allows the user to select the desired record. Live full-text search is implemented using IndexedDB.&lt;/p&gt;
+&lt;p&gt;Typing is also minimized by localizing the search to the preferred language of the browser or OS. In Spanish ñ is a different letter than n (and Spanish keyboards have a key devoted to it), just as w is a different letter than u in English. For Spanish users, peña never matches pena, reducing false matches. However, users are not required to know languages other than their own, so for a Spanish user “cote” matches the French cote, coté, côte and côté.&lt;/p&gt;
+&lt;p&gt;Hardware keyboards allow users to type more quickly and accurately, larger screens minimize scrolling, and faster processors and disks make complicated searches nearly instantaneous, but the interface works the same for all devices.&lt;/p&gt;
+&lt;h2 id=&quot;mobile-first&quot; tabindex=&quot;-1&quot;&gt;Mobile first &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/designing-webapps-multiple-devices/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Both apps were designed “mobile-first”, which tends to result in lean apps, with fewer features than standard desktop apps. Given that most features in desktop apps are rarely used, that’s not necessarily a problem for desktop users. Carefully-chosen defaults eliminate the need for preference settings.&lt;/p&gt;
+&lt;p&gt;Working out a user interface design that works well across a range of devices often requires more effort initially, but can result in a more user-friendly experience with the added benefit of being easier to maintain. A few powerful user-interface elements can eliminate the need for many panes, dialogs, dropdowns and buttons.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>webOS “Desk Accessories”</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/"/>
+		<published>2011-10-25T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>This post originally appeared on the webOS Developer Relations blog</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;Editor’s note:&lt;/strong&gt; This week we are featuring a guest challenge from rockstar webOS developer Doug Reeder. He has pioneered an app interface that he calls Desk Accessories. Your challenge this week is to create an app that uses this kind of interface. Take it away, Doug!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;background&quot; tabindex=&quot;-1&quot;&gt;Background &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://arstechnica.com/uncategorized/2007/03/study-says-leave-the-multitasking-to-your-computer/&quot;&gt;Psychological research&lt;/a&gt; shows that humans cannot efficiently concentrate on more than one activity at a time. However, there are single activities that require two apps on the screen at once. For example, one might want to compose an e-mail while reading figures from a spreadsheet, or calculate price comparisons while shopping on-line.&lt;/p&gt;
+&lt;h2 id=&quot;the-webos-user-interface&quot; tabindex=&quot;-1&quot;&gt;The webOS User Interface &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;While webOS supports true multitasking, it only lets you interact with one card at a time. However, there are two kinds of webOS windows which a user can interact with while another app’s card is displayed: Dashboards and System popup alerts. You can’t divide your screen between two arbitrary apps, but you can have “desk accessories”: apps which use a part of the screen while leaving most of it for another app.&lt;/p&gt;
+&lt;p&gt;Dashboards persist until dismissed by the user, and the user can display them with a single swipe at any time. However, they are always exactly 320 pixels wide and 52 pixels tall. The user can display and interact with multiple Dashboards simultaneously.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/notifications-dashboard-478w.avif 478w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/notifications-dashboard-478w.webp 478w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;three dashboards on Touchpad&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/notifications-dashboard-478w.png&quot; width=&quot;478&quot; height=&quot;203&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;System popup alerts (don’t confuse them with popups, toasters, and alerts managed by Enyo or Mojo) must be 320 pixels wide, but the height is configurable. Once closed, they are gone. Only one can be displayed at a time. While they’re available on both phones and tablets, Popups that are taller than about 240 pixels take up a majority of the screen on a phone, typically making the other app unusable – and if you can’t use the other app, you’re better off putting your app in a card.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/notes_portrait-750w.avif 750w, https://hominidsoftware.com/img/notes_portrait-768w.avif 768w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/notes_portrait-750w.webp 750w, https://hominidsoftware.com/img/notes_portrait-768w.webp 768w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Popup Calc over Memos&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/notes_portrait-750w.png&quot; width=&quot;768&quot; height=&quot;1024&quot; srcset=&quot;https://hominidsoftware.com/img/notes_portrait-750w.png 750w, https://hominidsoftware.com/img/notes_portrait-768w.png 768w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/ss_pre3_emu-480w.avif 480w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/ss_pre3_emu-480w.webp 480w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Popup Calc on phone&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/ss_pre3_emu-480w.png&quot; width=&quot;480&quot; height=&quot;800&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;p&gt;You can put any kind of widget in a Dashboard or System Popup, but there is a big limitation—neither receives keyboard events.&lt;/p&gt;
+&lt;p&gt;Here are two example apps. &lt;a href=&quot;https://web.archive.org/web/20141022053747/https://developer.palm.com/appredirect/?packageid=com.machiapps.dashboardutilities&amp;amp;applicationid=7009&quot;&gt;Dashboard Utilities&lt;/a&gt; is a desk accessory that primarily uses a Dashboard. &lt;a href=&quot;https://hominidsoftware.com/popupcalc/index.html&quot;&gt;PopupCalc&lt;/a&gt; is a desk accessory that primarily uses a System popup.&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/ph_1-320w.avif 320w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/ph_1-320w.webp 320w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Dashboard Utilities dashboards&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/ph_1-320w.png&quot; width=&quot;320&quot; height=&quot;480&quot;&gt;&lt;/picture&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;flow-of-activity&quot; tabindex=&quot;-1&quot;&gt;Flow of Activity &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Dashboards and System popups are simple to create, but you must consider all the flows of user activity. Desk accessories are little-known as yet to webOS users, so you would do well to have your app start by launching a card which explains how to open your Dashboard or Popup.&lt;/p&gt;
+&lt;p&gt;Any window can be dismissed by the user at any time, so your app must deal with this. webOS keeps track of a “root window” for each app, where it sends events such as applicationRelaunch. For standard apps that don’t specify &lt;code&gt;&amp;quot;noWindow&amp;quot;: true&lt;/code&gt; in appinfo.json, the root window is initially the first card opened, but if that card is tossed away, another window becomes the root window. For headless apps, that specify &lt;code&gt;&amp;quot;noWindow&amp;quot;: true&lt;/code&gt; in appinfo.json, the root window is a headless, non-displayed window. You must deal with the situation where your app has only a Dashboard or Popup in existence when the user taps the app icon in the Launcher—the current root window will receive an applicationRelaunch event. One good way to respond to this is to re-display the card with basic orientation info. Your app icon may be tapped by a user who has no idea that your app is a desk accessory that’s already running.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-750w.avif 750w, https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-1024w.avif 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-750w.webp 750w, https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-1024w.webp 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Popup Calc instruction card&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-750w.png&quot; width=&quot;1024&quot; height=&quot;768&quot; srcset=&quot;https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-750w.png 750w, https://hominidsoftware.com/img/popupcalc_2011-01-09_153312-1024w.png 1024w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;webOS has neither a Dock nor a Taskbar to provide ready access to apps. The only instant access is a swipe or tap to open all current Dashboards. Desk accessories must be closeable at any time, and users will expect them to open exactly as they closed. Thus, a Popup desk accessory will typically need a Dashboard to provide an “open” button. As long as either the Popup, Dashboard or card exist, the app will continue running and global variables will be preserved.&lt;/p&gt;
+&lt;p&gt;Another UI issue for Popups is how to close them. The Center button on tablets and classic Pres will close them. An up-swipe on a phone will close a Popup and go to card mode, but on a tablet it just switches to card mode. A number of users find the Center button on TouchPads to be awkward, so it’s well to include another way to close. Unlike cards, the system does not support swipe-to-remove popups. A button labeled “Close” is easy, but uses precious screen real estate. One solution is some kind of swipe gesture, such as a dragging from inside the Popup to outside the Popup. This echoes the swipe-card-away gesture.&lt;/p&gt;
+&lt;p&gt;The system does not close a Popup when it goes to Exhibition mode, but desk accessories generally should close themselves, since the user has by definition not interacted with them for a while. If the screen turns off, your Popup should close itself so it won’t display on the lock screen, where it would displace the dashboard notifications the user expects to see. To do this, your Popup should subscribe to the &lt;a href=&quot;https://web.archive.org/web/20140921053848/https://developer.palm.com/content/api/reference/services/display-manager.html&quot;&gt;Display Manager service&lt;/a&gt; and close itself if &lt;code&gt;inResponse.event === &amp;quot;displayOff&amp;quot;&lt;/code&gt; or &lt;code&gt;inResponse.dockMode === true&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Many Dashboard desk accessories will set the window attribute &lt;code&gt;clickableWhenLocked&lt;/code&gt;, to allow the user to interact with them on the lock screen. Alas, Popups don’t have that option, so you should not set &lt;code&gt;clickableWhenLocked&lt;/code&gt; for the Dashboard for a Popup desk accessory.&lt;/p&gt;
+&lt;h2 id=&quot;state-variables&quot; tabindex=&quot;-1&quot;&gt;State Variables &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Users expect desk accessories to maintain state, that is, to re-open exactly as they closed. Enyo maintains the object enyo.application in sync across all windows, so properties of enyo.application are a good place to store state variables for a Popup.
+Documentation&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://web.archive.org/web/20141022050005/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.windows&quot;&gt;enyo.windows&lt;/a&gt; allows you to directly create Dashboards and System popups. &lt;a href=&quot;https://web.archive.org/web/20141022050005/https://developer.palm.com/content/api/reference/enyo/enyo-api-reference.html#enyo.Dashboard&quot;&gt;enyo.Dashboard&lt;/a&gt; is a Kind that supports notifications in a Dashboard; typically a “desk accessory” will not use it.&lt;/p&gt;
+&lt;p&gt;An overview of Mojo dashboards is on &lt;a href=&quot;https://web.archive.org/web/20111111083909/https://developer.palm.com/content/api/dev-guide/mojo/dashboards-notifications.html&quot;&gt;this page&lt;/a&gt;. Mojo “Dashboard Applications” are covered in the second part of &lt;a href=&quot;https://web.archive.org/web/20141022052239/https://developer.palm.com/content/content/api/dev-guide/mojo/background-applications.html&quot;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;demo-app&quot; tabindex=&quot;-1&quot;&gt;Demo App &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To ease App Hack development, there is an Enyo demo app which has a card to orient the user, but “lives” in a Dashboard, which contains a button to display a System popup.&lt;/p&gt;
+&lt;p&gt;You’ll find the demo app on our &lt;a href=&quot;https://web.archive.org/web/20141022053748/https://github.com/webOS-DevRel/Weekly-App-Hack/tree/master/4%20-%20PopupDemo&quot;&gt;GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Makefile requires &lt;code&gt;gmake&lt;/code&gt;. The first time, and after running &lt;code&gt;make clean&lt;/code&gt;, you must run &lt;code&gt;make dirs&lt;/code&gt; to create the build directories. Run &lt;code&gt;make all&lt;/code&gt; to create the .ipk, &lt;code&gt;make install&lt;/code&gt; to create the .ipk and install it, or &lt;code&gt;make run&lt;/code&gt; to create the .ipk, install, and run it.&lt;/p&gt;
+&lt;p&gt;If your development environment includes Miller’s JavaScript Lint, uncomment the Makefile line&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jsl -conf jsl-Enyo-emptyok.conf -nologo -nofilelisting -process $@
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If your development environment includes YUI, uncomment the Makefile &lt;code&gt;#ifdef&lt;/code&gt; after&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# App source files are copied for debug builds and minified for production builds.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;and the line after&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Always minifies CSS.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;the-rules&quot; tabindex=&quot;-1&quot;&gt;The Rules &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-desk-accessories/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Submit your app based on the sample above to the App Catalog by November 1st at 11:59pm Pacific Daylight Time. We will be accepting both new apps as well as incorporation of the theme into existing apps as an improvement. A submission to the Beta catalog is acceptable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Notify us that you want to participate in the App Hack by sending us an email containing your app redirect link (it’s generated automatically and placed on the app’s detail page in “My Apps”) and any extra information you want to share with us at apphack@palm.com. This is also due by November 1st at 11:59pm Pacific Daylight Time.  If you do not send us this note, your app will not be considered for the App Hack.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;By the end of the day on Friday, November 4th 2011, the Developer Relations team will announce the winning app (along with honorable mentions and other entrants). The winner will get a blog post dedicated to him/her and his/her fantastic app.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For this round, the winner (and only the winner) will also receive a 16GB TouchPad!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Adding Speech to PopupCalc</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/popupcalc-with-speech/"/>
+		<published>2011-10-11T00:00:00Z</published>
+		<updated>2024-08-20T02:12:36Z</updated>
+		<summary>Experiments revealed issues with latency and usefulness</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/popupcalc-with-speech/</id>
+		<content type="html">&lt;p&gt;There are several places where speech output might be useful in a touchscreen calculator.&lt;/p&gt;
+&lt;p&gt;Touchscreens have no tactile feedback, making it difficult for users to be sure they&#39;ve tapped the correct button. Autocorrect is not possible for numbers. Thus, speaking the name of each button as it is pressed gives users the immediate feedback of a keyclick. However, this does not require text-to-speech, only a recording of each key name.&lt;/p&gt;
+&lt;p&gt;Due to the large latency in using the &lt;code&gt;flite&lt;/code&gt; plugin (&lt;code&gt;sdltts&lt;/code&gt;), an implementation of this in PopupCalc failed to provide the immediate feedback users need.&lt;/p&gt;
+&lt;p&gt;Speaking the name of each digit is not how humans say numbers, so a &amp;quot;Speak Operand&amp;quot; option was added. Numbers can&#39;t be spoken until they&#39;re completely entered, as signaled by an operator.&lt;/p&gt;
+&lt;p&gt;Thus, a calculation is spoken as the phrases
+&amp;quot;two times&amp;quot;, &amp;quot;three plus&amp;quot;, &amp;quot;four equals ten&amp;quot;, rather than the natural &amp;quot;two times three&amp;quot;, &amp;quot;plus four&amp;quot;, &amp;quot;equals ten&amp;quot;. While an interesting user interface experiment, I judged this to not be useful for end users.&lt;/p&gt;
+&lt;div class=&quot;center-horizontal&quot;&gt;
+	&lt;video controls=&quot;&quot; width=&quot;320&quot; height=&quot;404&quot; src=&quot;https://hominidsoftware.com/no-multiviews/PopupCalc%20speech%203.mp4&quot; poster=&quot;https://hominidsoftware.com/img/popupcalc.webp&quot; playsinline=&quot;&quot; preload=&quot;metadata&quot;&gt;
+			Download the &lt;a href=&quot;https://hominidsoftware.com/no-multiviews/PopupCalc%20speech%203.mp4&quot;&gt;PopupCalc with speech&lt;/a&gt; MP4 video.
+	&lt;/video&gt;
+&lt;/div&gt;
+&lt;p&gt;Speaking the result of a calculation is another approach.
+Implementing this using the &lt;code&gt;flite&lt;/code&gt; plugin (&lt;code&gt;sdltts&lt;/code&gt;) results in a noticeable latency, but might sometimes be useful.&lt;/p&gt;
+&lt;p&gt;Another possibility is speaking the whole calculation.
+This allows a user to check that the calculation was entered correctly, reducing the need for a &amp;quot;paper tape&amp;quot; widget. The latency is not a problem here.
+It&#39;s also useful when one person is doing calculations for a group (say, at a meeting).
+It&#39;s most useful when training someone to do calculations, but PopupCalc only handles simple calculations and more complicated calculations are rarely done with calculators anymore.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>HP&#39;s Exit Strategy for Handhelds</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/hp-exit-strategy-handhelds/"/>
+		<published>2011-08-19T00:00:00Z</published>
+		<updated>2024-08-12T04:00:50Z</updated>
+		<summary>It&#39;s easier to sell a going concern</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/hp-exit-strategy-handhelds/</id>
+		<content type="html">&lt;p&gt;There is wide agreement that HP&#39;s hardware (and before that, Palm&#39;s hardware) for webOS was not as good as it needed to be, to compete.  HP failed, over the course of a year, to use its &amp;quot;scale&amp;quot; to properly sell the devices it did have.  So, it&#39;s reasonable for HP to stop making webOS hardware.&lt;/p&gt;
+&lt;p&gt;webOS itself was widely praised for its elegance of design (if not so widely for its implementation).  Other manufacturers expressed interest in licensing webOS, despite the poor history of Apple and Palm directly competing against their licensees.&lt;/p&gt;
+&lt;p&gt;Deciding to ax your hardware changes the proposition.  Windows CE/Windows Mobile and its licensees trundled along for over a decade. And as of this week, Android licensees are strongly motivated to look for a new OS to add to their lineup - so a deal is more reachable than ever before.&lt;/p&gt;
+&lt;p&gt;What looks better to a licensee - a functioning ecosystem where you can add products, or a mothballed ecosystem that must be revived?   For the cost of shutting down webOS GBU suddenly, HP could easily have ramped down operations until new devices from new manufacturers were within reach.   If apps are truly as important as pundits say, it&#39;s better to have developers continuing to work during the transition, rather than trying to lure them back to a re-animated platform.&lt;/p&gt;
+&lt;p&gt;With licensing deals much easier to make this week, there was no rush to announce the end of HP webOS devices, and kill off current sales and consumer interest.  Even if a licensing deal is announced within a month, HP has badly damaged the value of webOS.&lt;/p&gt;
+&lt;p&gt;Leo Apotheker and the rest of HP&#39;s high management have done their shareholders a disservice by macho posturing instead of prudent operations.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Just Type</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/just-type/"/>
+		<published>2011-08-13T00:00:00Z</published>
+		<updated>2024-08-12T04:00:50Z</updated>
+		<summary>UI needs to be discoverable</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/just-type/</id>
+		<content type="html">&lt;p&gt;When a user needs to select one item out of hundreds (the typical case on a handheld device), there are a number user interface approaches. &amp;quot;Browse&amp;quot; approaches work when items fit in a hierarchy the user can remember, for example &lt;em&gt;Artist &amp;gt; Album &amp;gt; Song&lt;/em&gt; or &lt;em&gt;Account &amp;gt; Mailbox &amp;gt; Message&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;For some datasets there isn&#39;t a hierarchy, for others you could impose a hierarchy, but the user may not categorize items the same way.  For example, a user experiencing an &amp;quot;out of memory&amp;quot; error won&#39;t know to look in  FAQs on &amp;quot;Configuration&amp;quot;.  Here, you need some variation on search.&lt;/p&gt;
+&lt;p&gt;The chief problem with search is that, typically, the user doesn&#39;t know how specific to be.  Too short a search phrase will return too many results.  Too long a search phrase may return no results, if the search phrase is not exactly right.  The solution is &amp;quot;live search&amp;quot; - returning search results as the user types.&lt;/p&gt;
+&lt;p&gt;Until the release of the TouchPad, all webOS devices had a built-in hardware keyboard.  This allows a distinctive technique - when no text field has the focus, if a character is typed, start searching.  This allowed experienced users to search a list, without cluttering the small screen with a search field or button.  The problem is, there is no indication to new users they can search.  Since the Contacts app is unusable without this technique, one might assume that all users learn it.  But real users don&#39;t have to behave like we expect.&lt;/p&gt;
+&lt;p&gt;Palm assumed that all users set up e-mail on their smartphone, thus requiring support requests be sent by e-mail&lt;/p&gt;
+&lt;p&gt;There are four scenes in Outline Tracker which use FilterLists, and the hint or help for each was different.  The FAQ list was searchable, and the first FAQ was &#39;how to search the FAQs&#39;.  This always bothered me, but I couldn&#39;t think of a better alternative when I first implemented the FAQ scene.&lt;/p&gt;
+&lt;p&gt;While adding &lt;a href=&quot;https://web.archive.org/web/20141022130716/https://developer.palm.com/distribution/viewtopic.php?f=11&amp;amp;t=17285&quot;&gt;support for the on-screen keyboard&lt;/a&gt; to my Mojo app  I rediscovered that the status message list is a FilterList.&lt;/p&gt;
+&lt;p&gt;I have often had trouble finding the status message I was looking for. The typedown filter would have been great for this. But this is so non-discoverable, that I didn&#39;t know it existed in code I wrote myself.&lt;/p&gt;
+&lt;p&gt;Given also that I added visible text to most of the FilterList scenes, telling users they could &amp;quot;Just Type&amp;quot;, I&#39;m thinking the &amp;quot;Just Type&amp;quot; concept (that is, no visible UI to start search) is a real fail.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>How is HP-Palm going to port webOS to Windows?</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/webos-under-windows/"/>
+		<published>2011-03-15T00:00:00Z</published>
+		<updated>2023-04-20T20:31:14Z</updated>
+		<summary>There are many technical and user experience challenges</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/webos-under-windows/</id>
+		<content type="html">&lt;h2 id=&quot;porting&quot; tabindex=&quot;-1&quot;&gt;Porting &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-under-windows/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A build of WebKit for x86, should be straightforward, though there&#39;s many details that need to be got right. WebOS apps use an asynchronous protocol called PalmBus to communicate with system services, so that code must be ported from ARM webOS. Instead of sharing one small screen, each app can have its own window, sized appropriately.&lt;/p&gt;
+&lt;p&gt;Services written in C/C++ may have been written assuming only ARM processors, but that&#39;s in-house code at least. Again, many details must be got right.&lt;/p&gt;
+&lt;p&gt;JavaScript services are problematic, since Node for Windows is not yet fully working. Worse (from HP&#39;s standpoint), Cygwin (the Unix-compatability layer for Windows) is GPL, not LGPL:&lt;/p&gt;
+&lt;p&gt;Most of the tools are covered by the GNU GPL, some are public domain, and others have a X11 style license. To cover the GNU GPL requirements, the basic rule is if you give out any binaries, you must also make the source available….&lt;/p&gt;
+&lt;p&gt;The Cygwin™ API library found in the &lt;code&gt;winsup&lt;/code&gt; subdirectory of the source code is also covered by the GNU GPL (with exceptions; see below). By default, all executables link against this library (and in the process include GPL&#39;d Cygwin™ glue code). This means that unless you modify the tools so that compiled executables do not make use of the Cygwin™ library, your compiled programs will also have to be free software distributed under the GPL with source code available to all.&lt;/p&gt;
+&lt;p&gt;If the Cygwin license only &amp;quot;infects&amp;quot; Node, that should be a win for everyone: HP-Palm supports Node under Windows, while the rest of webOS remains private to HP-Palm. However, Node in webOS is customized to add PalmBus support, which complicates matters.  HP-Palm will need good work from their programmer-lawyers to thread this strait.&lt;/p&gt;
+&lt;p&gt;DB8 is the central database of user information in webOS 2. Replicating it and the user&#39;s Palm Profile from Windows to handhelds should be straightforward once the above is complete. Currently, PalmProfiles are only backed up once a day. Users will want faster replication between their PC and their handhelds. At the Palm Developer day in May 2010, CouchDB was mentioned in conjunction with DB8. CouchDB has real-time replication; let&#39;s hope no DB8 design decisions were made which make real-time replication difficult. This is also needed by users with a tablet and smartphone, so one can guess this is in-hand (or will be in-hand by June).&lt;/p&gt;
+&lt;p&gt;What features of desktop computers will need support? File system requests already go over the PalmBus, so accessing desktop user files will be supported. TouchPads can print to network printers; presumably local Windows printers will be straightforward to add to that system. Presumably audio support will match that available in other WebKit builds such as Safari for Windows. Bluetooth I&#39;d guess will not be supported in the first release, since audio and keyboards will be handled separately. There&#39;s no support for USB under webOS currently, so don&#39;t expect webOS under Windows to support it any time soon.&lt;/p&gt;
+&lt;h2 id=&quot;user-experience&quot; tabindex=&quot;-1&quot;&gt;User Experience &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webos-under-windows/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Mouse and pointer are different than a touchscreen, but the new Enyo framework has been demonstrated running in a browser, so developers will have the ability to test apps with both mouse and finger. Whether they succeed in well supporting both remains to be seen.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Syncing to my desktop&amp;quot; is the number-one feature request for Outline Tracker. Having the same interface on both will lower the friction of using both. Web apps are useful, but notes and tasks stored locally are better. Alas, Mac and Linux users will be left out for the foreseeable future.&lt;/p&gt;
+&lt;p&gt;Currently, people use handhelds as an adjunct to desktop computers.  Many people do not work at a desk; current solutions (&lt;a href=&quot;https://hominidsoftware.com/outlinetracker/case_study.html&quot;&gt;Outline Tracker &amp;amp; Basecamp Classic Case Study&lt;/a&gt;) use different apps on handhelds and the desktop. This (and/or the Motorola Atrix) could shift the balance.&lt;/p&gt;
+&lt;p&gt;Does the future belong to the system that can best replicate users&#39; data, and the user experience, across all of a user&#39;s devices? I don&#39;t know, but I look forward to finding out.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Transitions</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/transitions/"/>
+		<published>2011-02-11T00:00:00Z</published>
+		<updated>2024-08-12T04:00:50Z</updated>
+		<summary>Palm OS → webOS 1.x → webOS 2.x → ?</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/transitions/</id>
+		<content type="html">&lt;p&gt;HP/Palm&#39;s presentation yesterday showed some solid hardware and innovative user interfaces.  The new Enyo framework presented to developers is in position to make webOS live up to its initial promise of developing like developing for the web, rather than merely making use of web technologies.&lt;/p&gt;
+&lt;p&gt;But I&#39;m worried about how we get from the current webOS users, apps and developers to the bright future painted by HP.&lt;/p&gt;
+&lt;p&gt;Apps become powerful when users enter a lot of data in them - and they&#39;ll only do that if they expect to use the apps for a long time.&lt;/p&gt;
+&lt;p&gt;This can be seen with some Palm OS apps, such as FileMaker.  Users have YEARS of data accumulated, and won&#39;t move to another platform without it.   Currently, they nurse aging Palm OS hardware, and bemoan that no other platform will let them use their data.&lt;/p&gt;
+&lt;p&gt;Palm promised the ability to run Palm OS apps in an emulator under webOS.  Classic from Motion Apps was that emulator, and technically it works well. But a finger isn&#39;t as precise as a stylus, making Palm OS apps a chore to use, even with the clever zoom-in-and-out.   The rating of Classic hovers around 3 out of 5 stars -- a poor showing for a product with so much work behind it.&lt;/p&gt;
+&lt;p&gt;Then, last Fall, Motion Apps announced that HP/Palm was refusing to include the necessary files in webOS 2.0 to allow Classic to run.  Users of Palm OS software were left facing a dead end - apparently due to HP/Palm&#39;s intransigence, rather than technical limitations.&lt;/p&gt;
+&lt;p&gt;Old platforms can&#39;t be supported forever, but if they aren&#39;t supported until there&#39;s a viable replacement, users won&#39;t trust their backers.   What lesson should Palm OS users draw about HP/Palm&#39;s commitment to them, from this?&lt;/p&gt;
+&lt;p&gt;Early webOS adopters took a leap of faith and signed two-year contracts, believing that 3rd-party apps would come. After a short 16 months in public, HP/Palm announced at the NYC Dev day that Mojo (the framework most webOS apps are based on) was obsolete, and not guaranteed to be included on webOS devices after 2011.  As a webOS user, should you buy apps now, that won&#39;t work next year?  Should you stay with a platform that declares your current apps obsolete, months before any replacement could possibly arrive?&lt;/p&gt;
+&lt;p&gt;Early webOS developers took a leap of faith and learned the intricacies of Mojo, a framework new even to seasoned JavaScript developers.  While amateur developers contribute many worthwhile apps, large powerful apps that make a device more than a toy, and users more than mayflies flitting from platform to platform, usually come from professional developers. Developers who need to make a profit.   It&#39;s hard to make a profit on a platform that&#39;s only around for 16 months.   While Mojo apps will remain runnable through the end of 2011, app sales are primarily made to users new to the platform.   And large, expensive apps do particularly poorly when their platform is obsolete.  So, sales of powerful Mojo apps have tanked (and lighter apps aren&#39;t doing so well, either).   As a developer, what lesson should you draw, about the profitability of developing for webOS?&lt;/p&gt;
+&lt;p&gt;Yesterday, we learned that webOS 2.x will not be available over-the-air (OTA) to devices that shipped with webOS 1.x (almost every device not possessed by a developer).  While HP/Palm has promised a &amp;quot;path to webOS 2&amp;quot; for owners, no details are available.  Will this be a webOS Doctor, which erases 3rd-party data and requires a desktop computer? This is similar to the upgrade mechanism for Palm OS, a mechanism that most users did not use.  Will the path be credit toward a new device?  No one knows.&lt;/p&gt;
+&lt;p&gt;Microsoft has excelled at creating fear, uncertainty and doubt (FUD) about it&#39;s competitors.  HP/Palm has done a surprising job of creating FUD about their own product.  HP/Palm appears to pin its hopes on one exciting future technology after another, with inadequate concern for current users.&lt;/p&gt;
+&lt;p&gt;None of these problems are beyond remedy.   The Palm OS ROM needed for Classic, and the Mojo framework, may consume valuable space on new devices, but there&#39;s no visible reason they can&#39;t be made optional downloads for those who need them. And HP/Palm can commit to keeping them available until users have real alternatives.  Users would see that HP/Palm cares about their long-term needs.  Developers could have confidence that apps they develop now can be sold for years.   Developers of existing apps would be motivated to improve them and convert them to use Enyo.&lt;/p&gt;
+&lt;p&gt;There are many Palm OS apps that have committed user bases, even today.  Users who bought one Palm device after another.  Users that promoted Palm OS to everyone they knew.  How many webOS apps can boast that today?&lt;/p&gt;
+&lt;p&gt;Good design and a lot of work has gone into webOS 2 (and 3!)  There&#39;s a bright future out there for webOS -- if the transitions of users, apps, and developers are properly smoothed.   And HP/Palm is the one that has to do it.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Procrastination vs. System</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/procrastination-vs-system/"/>
+		<published>2010-07-10T00:00:00Z</published>
+		<updated>2023-04-20T20:31:14Z</updated>
+		<summary>To-do items need to be actionable, with adequate detail</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/procrastination-vs-system/</id>
+		<content type="html">&lt;p&gt;Another wedding was coming up (boy, there have been a lot of them this year).  When I checked my suit to be sure it was clean, the pants were missing.  A call the next day to the cleaner verified that they were still there.&lt;/p&gt;
+&lt;p&gt;Several months ago, I had a nagging feeling something needed to be picked up from the cleaners, so I put an item on my to-do list: phone cleaners.  Months later, I still hadn&#39;t made a simple phone call.&lt;/p&gt;
+&lt;h2 id=&quot;thesis&quot; tabindex=&quot;-1&quot;&gt;Thesis &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/procrastination-vs-system/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;My task &amp;quot;phone cleaners&amp;quot; was vague and thus not compelling.  If I had written down &amp;quot;pick up pants from cleaners&amp;quot; when I dropped them off, the item would have been focused and actionable.  Better if I set it with a deadline.  Better yet if I set a lead time (start date), so I wouldn&#39;t see the task until it was time to act on it.&lt;/p&gt;
+&lt;p&gt;Tasks in a to-do system must be specifically phrased, with proper metadata, to induce action.&lt;/p&gt;
+&lt;h2 id=&quot;antithesis&quot; tabindex=&quot;-1&quot;&gt;Antithesis &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/procrastination-vs-system/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Without any system, I remembered what I needed to do, in adequate time.&lt;/p&gt;
+&lt;p&gt;(Counterargument: If I hadn&#39;t checked my suit a week in advance of the wedding, there wouldn&#39;t have been enough time.)&lt;/p&gt;
+&lt;h2 id=&quot;synthesis&quot; tabindex=&quot;-1&quot;&gt;Synthesis &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/procrastination-vs-system/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A task system should contain tasks that are non-routine, or otherwise non-memorable.  It should not contain items that will come to your attention anyway (a full trash can is its own reminder).&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Synergy for Tasks</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/"/>
+		<published>2010-06-06T00:00:00Z</published>
+		<updated>2024-08-10T22:21:05Z</updated>
+		<summary>webOS Tasks should be reworked using the Palm Synergy paradigm</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/</id>
+		<content type="html">&lt;h2 id=&quot;background&quot; tabindex=&quot;-1&quot;&gt;Background &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To-Do List/Tasks was one of the four core apps to have a dedicated button under Palm OS. Yet &lt;em&gt;Tasks&lt;/em&gt;, its analog under webOS, was not reworked using the Synergy idea of presenting data from different back ends with a common UI.&lt;/p&gt;
+&lt;p&gt;There is value in keeping a to-do list for oneself, but much greater value in tracking tasks performed by a team – what has been done, what needs to be done, when it is due, who’s responsible for what. Most groupware supports some form of task list management. Properly implemented and used, it increases productivity by reducing the number of phone calls, e-mails and meetings required. These services are more than simple to-do lists; they are the working face of modern project management.&lt;/p&gt;
+&lt;p&gt;Accessing groupware from handheld devices increases its value – project plans can be reviewed and updated during a meeting (without requiring workers to have and bring distracting laptops), indeed any time people are away from their work stations: &lt;a href=&quot;https://hominidsoftware.com/outlinetracker/case_study.html&quot;&gt;case study&lt;/a&gt; With full-time access to groupware, project plans become living documents.&lt;/p&gt;
+&lt;h2 id=&quot;synergy-a-prime-differentiator-of-webos&quot; tabindex=&quot;-1&quot;&gt;Synergy: A Prime Differentiator of webOS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;WebOS users praise the way it handles contacts and calendars, using Palm Synergy. Pulling the disparate elements of users’ lives together has been one of the biggest selling points of webOS. Yet the user experience has not been consistently compelling. Jon Stokes of Ars Technica wrote one of the best thought-out reviews of the Pre on its launch (&lt;a href=&quot;https://arstechnica.com/gadgets/2009/06/ars-reviews-the-palm-pre-part-1-the-blackberry-killer/&quot;&gt;Ars Reviews the Palm Pre, part 1: the BlackBerry killer&lt;/a&gt;), but bailed out six months later, in part because webOS apps were largely clients for single cloud services – there was nothing compellingly different about the experience for him (&lt;a href=&quot;https://arstechnica.com/gadgets/2010/03/rip-palm-its-over-and-heres-why/&quot;&gt;RIP Palm: it’s over, and here’s why&lt;/a&gt;). He could access cloud services just as well from an Android phone.&lt;/p&gt;
+&lt;h2 id=&quot;webos-task-list-managers&quot; tabindex=&quot;-1&quot;&gt;webOS Task List Managers &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Many users bemoaned the lack of a decent built-in task list manager, finding the existing Tasks application too simplistic for their needs. Some reviews of webOS devices found the built-in Tasks application adequate for their needs, but none cite it as a reason to switch to webOS. Existing third-party task list managers had some traction – reviews in the App Catalog often praise them in comparison to the built-in Tasks application. &lt;em&gt;Outline Tracker Free&lt;/em&gt; made Computerworld’s list of &lt;a href=&quot;https://www.computerworld.com/article/1543114/10-must-have-free-palm-webos-apps-2.html&quot;&gt;“10 must-have free webOS Apps”&lt;/a&gt;. The application “To Do Classic” was popular, despite having essentially the same feature set as the built-in Tasks application.&lt;/p&gt;
+&lt;p&gt;However, almost no task list managers were included in the lists of must-have paid apps being blogged during Palm’s Summer Half Off sale. The best-selling task list manager in the Palm Hot Apps promotion, Outline Tracker, placed around #52. Just under 20,000 users downloaded Outline Tracker Free (as of the start of July 2010). Using estimates of the total number of webOS devices sold, this is perhaps 2% of the user base.&lt;/p&gt;
+&lt;p&gt;Task list managers did not become “must-have” apps for the average webOS user.&lt;/p&gt;
+&lt;h2 id=&quot;proposal-synergy-for-tasks&quot; tabindex=&quot;-1&quot;&gt;Proposal: Synergy for Tasks &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I propose that Tasks be reworked using Synergy. DB8 would hold tasks from various back-ends, all inheriting from a common task type. The new Tasks app would display a unified view - users could see their in-house tasks from Outlook in the same view as client-related tasks from Basecamp.&lt;/p&gt;
+&lt;h3 id=&quot;data-model&quot; tabindex=&quot;-1&quot;&gt;Data Model &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We would need to harmonize the differences between Google Tasks, Done!, Basecamp, etc.
+by developing a paradigm which allows the user a single interface to all of them. Any task app has two main controls: one which controls which tasks appear, and one which controls what order they appear in.&lt;/p&gt;
+&lt;h4 id=&quot;controlling-which-tasks-appear&quot; tabindex=&quot;-1&quot;&gt;Controlling Which Tasks Appear &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;A data model in which each task has zero or more “tags” (and tags can be added at any time) can encompass most paradigms. Tag names are one or a few words.&lt;/p&gt;
+&lt;p&gt;List-based apps, such as webOS Tasks, allow the user to display the tasks from one list. This can be generalized by treating the list name as a “tag”. When the user selects the list name from a list of “tags”, the list items are displayed, as they match the “tag”.&lt;/p&gt;
+&lt;p&gt;Apps based on David Allen’s “Getting Things Done” system allow displaying the user’s set of tasks by “context” or “location”. Contexts can be directly modeled as tags.&lt;/p&gt;
+&lt;p&gt;Additional tags can also be generated. Project-based systems would add a tag for the project name. The account name or task source would also be a tag, allowing selection of all your Google Tasks, for example.&lt;/p&gt;
+&lt;p&gt;A key point is that tags can “mean” different different things. Some tags could be to-do list names, while others are GTD contexts and still others are “project” names.&lt;/p&gt;
+&lt;p&gt;The Tasks app wouldn’t care - the user selects a tag from the list of all tags, and the app displays tasks that match.&lt;/p&gt;
+&lt;p&gt;A beginning user can assign a single tag to each task, and treat it like a bunch of to-do lists. If he later adds multiple tags to slice up his tasks differently, he doesn’t need to copy his tasks to a different system.&lt;/p&gt;
+&lt;h4 id=&quot;controlling-the-order&quot; tabindex=&quot;-1&quot;&gt;Controlling the Order &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;Many task apps have a concept of “priority” or “importance”.
+Any system with two, three, four, five, six, ten or twelve levels can be mapped to a 60-level scale - and back again.
+Sometimes the desired order is by Due Date. Some systems also support a Start Date.
+Alternatively, the user may wish to order tasks herself.
+A popup list selecting between these alternatives (much like the webOS Tasks app) should meet most users’ needs&lt;/p&gt;
+&lt;h3 id=&quot;synergy-connectors&quot; tabindex=&quot;-1&quot;&gt;Synergy Connectors &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A Connector would need to be written for each back end.
+Like Calendar, there’s no need to de-dupe tasks from different sources, so each Connector must map data from the backend into the harmonized format. In particular, each Connector would need to assign appropriate tags for incoming data, and map tags to appropriate backend data structures.&lt;/p&gt;
+&lt;h3 id=&quot;task-insertion&quot; tabindex=&quot;-1&quot;&gt;Task Insertion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Complementing the Connectors would be a service allowing any app to create a task, with user consent. (Analogous to the API for creating a Contact: &lt;a href=&quot;http://www.openwebosproject.org/docs/developer_reference/application_apis/add_contact/&quot;&gt;Add Contact&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A task may arrive on a user’s plate from a number of sources (“inboxes” in GTD terms): e-mail, instant messaging, phone, in person, a meeting, or a project review. A task from the real world requires the user to type it in, but digital sources should not. The best typing is none at all.&lt;/p&gt;
+&lt;p&gt;Many times, receipt of an e-mail should generate a task. If users can only cut and paste the text of an e-mail, it arrives in the task list manager as an undigested blob. Metadata, such as the sender, is lost. There is no way for a task list manager to automatically assign metadata such as due date, nor to tag a task depending on which e-mail account it was sent to. Email apps could use the API to create tasks with pre-filled tags. The e-mail app knows about e-mails, so it is best positioned to create a task from an e-mail. Likewise, the phone app could inject tasks pre-populated with contact information.&lt;/p&gt;
+&lt;h3 id=&quot;a-task-service-inboxes-and-non-task-list-manager-apps&quot; tabindex=&quot;-1&quot;&gt;A Task Service, “Inboxes” and non-Task List Manager Apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The operating system generates a small number of tasks for the user. Updating third-party apps currently depends on the user running the Updates application. While the webOS notification system is exemplary in handling do-it-now or do-it-in-ten-minutes things, it’s not designed for do-it-today or do- it-next-week things. It would be natural for update notices to go on the user’s To-Do list.&lt;/p&gt;
+&lt;p&gt;Shopping search apps could create and update shopping lists integrated with a user’s other activities. While these apps &lt;em&gt;could&lt;/em&gt; target the built-in Tasks application with their Tasks, that would give the user no flexibility in which task list manager he or she used.&lt;/p&gt;
+&lt;p&gt;It is often possible to create a task-oriented view of cloud services which are not primarily task list managers, such as software bug-tracking systems. It is not cost-effective for developers of third party task list managers to support backends like this, but it would be cost-effective in many instances to write glue code between a webOS Task Service and such a backend. Integrating domain-specific systems with general task list management would be a killer app for many users and businesses.&lt;/p&gt;
+&lt;h3 id=&quot;universal-search&quot; tabindex=&quot;-1&quot;&gt;Universal Search &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;It would be straightforward to add a unified Task Service to webOS Universal Search.&lt;/p&gt;
+&lt;h2 id=&quot;palm-synergy-for-tasks&quot; tabindex=&quot;-1&quot;&gt;Palm Synergy for Tasks &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/synergy-for-tasks/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A unified Task Service would thus extend Palm Synergy the logical next step. It would make webOS a preferred front-end to groupware. It would help make the webOS experience compellingly different than other smartphone platforms. I propose that Palm should develop a unified Task Service now.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Maps — Digital vs. Paper</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/maps/"/>
+		<published>2009-07-03T00:00:00Z</published>
+		<updated>2024-08-12T04:00:50Z</updated>
+		<summary>Limitations of digital maps</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/maps/</id>
+		<content type="html">&lt;p&gt;My pre-electronic handheld mapping tool was a Rand-McNally road atlas.  50 states, 12 provinces, and Mexico if I ever needed it.  I always made sure I had human-written directions for the last few streets.  And, you know, the only problems I had were bad signs (and my poor ability to spot small signs while driving). It only took a few seconds to flip to the right page, and the detail maps were there, too.   Of course, the detail for cities was limited, and often there was no detail map at all where I was headed.  But it got me there.&lt;/p&gt;
+&lt;p&gt;My brother had Mapopolis on his Palm, which looked pretty useful (though the vector maps were hard to interpret without a scale) but I never used it enough to be sure -- certainly not enough to plunk down money for it.&lt;/p&gt;
+&lt;p&gt;When Google brought out Google Maps Mobile for Palm, I downloaded it right away.  I was still using dialup, so it was painfully slow, and version 1.0 would go catatonic without a data connection.  Later they fixed that, but it was never convenient enough to take time for -- I would fire it up when I was a passenger, but the near-real-time traffic data never guided us away from traffic jams.&lt;/p&gt;
+&lt;p&gt;Now I have Google Maps on my Palm Pre, and a 3G connection.  My wife and I headed off to a wedding without directions to the site.  This wedding was in Canada, where Sprint charges me 60 cents per minute, and data in proportion.   GPS is a real help in using mapping programs, when your question is &amp;quot;how do I get there from HERE?&amp;quot;&lt;/p&gt;
+&lt;p&gt;So, I was looking up directions as we closed in on the border.  Google Maps   Now, we hoped to get there in time to stop at the hotel room to freshen up, so I loaded the route and switched to &amp;quot;airplane mode&amp;quot; (radios off).&lt;/p&gt;
+&lt;p&gt;We ran late and had to go directly to the site.
+So, I had directions to a hotel, but not to the wedding site, and knew Sprint would charge me an arm and a leg to download it.  We were short on options, so I turned the radio on, and -- no data service.  Fortunately, we soon spotted a Provincial visitor info center, and asked the kind ladies there.  So, we got there (and in time!) not with 21st century electronic maps, nor even 17th century paper maps, but Bronze-age stop-and-ask-the-locals.  The people who are pushing web applications for mobile need to venture further afield, and learn how far we are from the seamless communication that demands.&lt;/p&gt;
+&lt;p&gt;I think it&#39;s time to buy another Rand-McNally road atlas.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Knowledge &amp; Handhelds</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/knowledge-handhelds/"/>
+		<published>2009-06-21T00:00:00Z</published>
+		<updated>2024-08-10T22:18:11Z</updated>
+		<summary>My productivity path into PDAs</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/knowledge-handhelds/</id>
+		<content type="html">&lt;p&gt;I’ve been using handheld computers for nine years now (not counting an earlier stint programming for the Newton back in ‘94, nor writing packages for the TI-89 calculator, which has some symbolic mathematic features that MATLAB doesn’t, nor using my Casio Data Bank wristwatch). First a Palm III, briefly a Visor Prism, then a Kyocera 7135 and a Treo 650. I’ve had to handle tech support for several Windows Mobile devices, and have handled an iPhone just enough to be intrigued. (Sorry, Symbian, you just never came my way here in the States.) While I like gadgets as much as the next guy, I try to maintain an engineer’s perspective: what does this allow people to do, what does it let them do better? Much as we compare devices to each other, it’s still not clear that handhelds are gaining ground on the 900-pound gorilla: paper and pencil.&lt;/p&gt;
+&lt;p&gt;For years, I kept a paper planner. It was fine for recording dates of upcoming events, it traveled with me, unlike a wall calendar, and was a useful place to scrawl notes that I might need later that week or month. (I still use datebook applications this way – no other program I’ve used made it easy for notes to drift out of sight as they became obsolete.) When my Palm III arrived (just before the Viking millennium – but that’s another story) I was thrilled – I’m often so into my work I lose track of time, so I might know I have a meeting in an hour, but by the time to leave, have totally forgotten about it.&lt;/p&gt;
+&lt;p&gt;When Verizon replaced my Kyocera 7135 with a Treo 650, an email application was included, so I gave it a try. It was irksome to configure, and (since I wasn’t willing to pay Verizon’s extortionate rates for data, irksome and slow to use dialup, too) but I kept plugging away, thinking “there must be a use for receiving email when I’m away from a computer”. One factor retarding its usefulness was the fact that many emails were of little value if you couldn’t follow the URLs contained in them, and the Treo’s web browser was not adequate for viewing most of the web (which, yes, is largely the fault of the web, but I was at the short end of that lever).
+This spring, a colleague pointed me toward Michael Mace’s blog post &lt;a href=&quot;https://mobileopportunity.blogspot.com/2007/01/shape-of-smartphone-and-mobile-data.html&quot;&gt;“The shape of the smartphone and mobile data markets”&lt;/a&gt;. Market research he did for PalmSource revealed three distinct groups of users (and a big chunk of non-users). It was an “aha!” moment – that’s why there were people excited over capabilities I didn’t care about. The group he calls “information-centric users” (a commenter suggested knowledge-centric users, and that describes them a bit better) describes my use to a T. We use handheld devices to record knowledge, and retrieve it again – a backing store for our brains. While it’s nice if our handheld can hold a whole reference manual (or access it online, these days), the key thing is our notes on the manual. So the old PDA-without-a-phone was fine for us, and we’re disappointed that our needs have been shuffled aside in the rush to pour more data through handhelds.&lt;/p&gt;
+&lt;p&gt;In this blog, I’ll focus on knowledge and handhelds (with excursions into any topic that grabs my fancy). I close with the motto of Richard Wesley Hamming’s book “Numerical Methods for Scientists and Engineers”:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The purpose of computing is insight, not numbers.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Mästermyr chest and ‘What did Vikings sit on?’</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/mastermyr-chest-as-seat/"/>
+		<published>2002-07-03T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>The Mästermyr chest has several unexpected design features which point toward it being a seat.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/mastermyr-chest-as-seat/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;originally posted to the Norsefolk email list&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;While constructing a chest based on the Mästermyr find, I have noticed
+several odd features. The bottom fits into a dado on the ends, which
+extend downward to form the feet, and is also mortised into the ends,
+so weight on the bottom of the chest is transmitted to the ends (not
+odd).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The chest is 90” long, but only 28” wide, so the bottom, only
+3/4” thick, could use some support from the sides to enhance its
+rigidity. However, the sides have rabbets, which decrease the
+thickness of wood for the pegs which hold it together, and means the
+sides rest partly on the bottom.&lt;/li&gt;
+&lt;li&gt;The sides are cut in such a way that they rest partly on the ends,
+which makes the chest more complicated and the tolerances much more
+finicky.&lt;/li&gt;
+&lt;li&gt;The top is carved as a shallow barrel arch, which is more work than
+the whole rest of the chest and decreases the utility of the chest as
+a work surface and makes it harder to stack.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Skapti-Mastermyr-chest-504w.avif 504w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Skapti-Mastermyr-chest-504w.webp 504w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;Mästermyr chest replica&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Skapti-Mastermyr-chest-504w.png&quot; width=&quot;504&quot; height=&quot;360&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;The one thing these three design points do enhance is the ability of
+the chest to carry weight on top of the lid, at some expense to the
+ability of the chest to carry weight inside. Also, the chest is long
+enough for two adults to sit on.&lt;/p&gt;
+&lt;p&gt;The majority of the half-dozen chests depicted in &lt;a href=&quot;https://openlibrary.org/books/OL1743095M/From_Viking_to_crusader&quot;&gt;&lt;em&gt;From Viking to Crusader&lt;/em&gt;&lt;/a&gt;
+are similarly long and narrow, with curved tops. I don’t know if they
+share the other design characteristics of the Mastermyr chest as well.&lt;/p&gt;
+&lt;p&gt;From this, I conclude that many, if not most, chests were designed to function well as seats.
+This may go some way toward explaining the paucity of chairs and stools discovered.&lt;/p&gt;
+&lt;p&gt;However, the Mästermyr chest has no carrying handles, making it inconvenient as a portable
+seat.  Either&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It was expected to be placed in a good place for a seat indoors,
+and something &lt;em&gt;different&lt;/em&gt; was used outdoors and for any task where you
+needed to move your seat.  Or,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It was not expected to be used as a portable seat very often.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Adding the info that there are lots of partial finds of stools, this suggests
+the following hierarchy of seating:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Built in benches and/or several chests as the fixed indoor seats; enough
+(or almost enough) for the usual residents of the farm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stools for moveable indoor seats and usual outdoor seats.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Chests as extra seating for guests at feasts, weddings, and all the
+other big gatherings that were a significant part of Norse culture.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This would avoid the needs for lots of stools, benches, or chairs which
+would only get used at feasts, and would need to be stored in-between times.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Late Viking Age Ship Terminology</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/Late%20Viking%20Age%20Ship%20Terminology/"/>
+		<published>2002-02-15T00:00:00Z</published>
+		<updated>2024-08-21T23:57:12Z</updated>
+		<summary>Runestones &amp; skaldic poetry help us understand how vikings described their ships and crews.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/Late%20Viking%20Age%20Ship%20Terminology/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;originally posted to the Viking Age Vessels email group&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;From &lt;em&gt;Ships &amp;amp; Men in the Late Viking Age&lt;/em&gt;, by Judith Jesch, a book which studies the runestone corpus and skaldic verse from the latter half of the Viking age (there’s not much earlier material), to determine what terminology was actually used then.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Skip&lt;/strong&gt; and &lt;strong&gt;skeið&lt;/strong&gt; are the most common terms for ship, skip being used in many contexts showing it did not refer to any particular type or use of ship. Skeið, on the other hand, is almost always used of a ship “either on the way to or in the thick of battle and clearly connotes a warship”. Langskip (longship), despite its common use in the sagas written down post-Viking-age, means any ship that is long, i.e. not not necessarily a warship and “is not a technical term”. “The most common compound with skip is herskip ‘warship’”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dreki&lt;/strong&gt; (pl. drekkar) (‘dragon’), derived from the dragon heads on the prow (and sometimes also on the stern). It is used primarily as poetic metaphor for a ship, and “there is no evidence that it was a technical term for any particular type of ship”.&lt;/p&gt;
+&lt;p&gt;Jesch confirms that &lt;strong&gt;knorr&lt;/strong&gt; is more often used for a ship of trade, but notes the many places where it refers to a ship used for war. She quotes Ole Crumlin-Pedersen (1997a, 189-90 [does anyone have a copy of this?]) “that the relative beam of ships ‘changed drastically in the early phase of the process of adapting ships to carry sail, in order to provide sufficient stability at the initial stage’”. Thus, since early Viking warships such as Tune and Gokstad [anyone have length-to-beam ratios for these?] had similar proportions to cargo ships, and later ones were more slender, early overlap of knorr and terms for warship giving way to a later (late- or post-Viking) distinction is consistent with shipbuilding practice.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/Strouds-Run-0709-2867-750w.avif 750w, https://hominidsoftware.com/img/Strouds-Run-0709-2867-2032w.avif 2032w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/Strouds-Run-0709-2867-750w.webp 750w, https://hominidsoftware.com/img/Strouds-Run-0709-2867-2032w.webp 2032w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;the Blackbird sailing at Stroud&#39;s Run&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/Strouds-Run-0709-2867-750w.jpeg&quot; width=&quot;2032&quot; height=&quot;1354&quot; srcset=&quot;https://hominidsoftware.com/img/Strouds-Run-0709-2867-750w.jpeg 750w, https://hominidsoftware.com/img/Strouds-Run-0709-2867-2032w.jpeg 2032w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anchors&lt;/strong&gt; are mentioned several times in the skaldic corpus, perhaps explained by [lacuna]. Crumlin-Pedersen (1997b, 146) makes the point that anchors are ‘the largest examples of forged ironwork’ known from the Viking Age and that, because of their cost, they were used only on the largest ships.” So, perhaps having an iron anchor on our boats would be a sign of their high quality.&lt;/p&gt;
+&lt;p&gt;The skaldic corpus also provides evidence of slipways using simple log rollers to beach ships during the Viking Age. This and the references to harbors (and the pilings at the trading center on Lake Malar), suggest the Vikings only hauled their ships up on an undeveloped beach when they had to.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Styrimaðr&lt;/strong&gt; (lit. ‘steersman’) is usually taken to mean captain, often captain-owner, and can also be used like a title. Sometimes it helps commemorate the sailing skills of a man, without implying command.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Skipari&lt;/strong&gt; (pl. skipan) is the root of the modern Scandinavian and English ‘skipper’, but the author finds its use in the Viking Age to more often make sense as a crew member. This would be especially true of the plural skipan. Sometimes it appears to be an officer subordinate to a Styrimaðr.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Motunautr&lt;/strong&gt; (pl. motunautar), ‘mess-mate’ also appears in nautical contexts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sogn&lt;/strong&gt; and &lt;strong&gt;Sókn&lt;/strong&gt; (etymologically a ‘seeking’ -&amp;gt; attack or battle) can refer to any assemblage of people; in a nautical context this means a ship’s crew.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sessi&lt;/strong&gt;, derived from sess, rowing-bench, means ‘bench-mate’, either in the hall or on a ship.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lið&lt;/strong&gt; has a wide range of meanings, basically a group of people, “in most cases it can be translated as ‘troop’”. Sometimes, by extension, it means ‘fleet’. It occurs in many compounds. Skiplið is often taken to mean crew who will or must man a ship (as Ragnar used in the Fydraka Skiplið magnets); the author finds that in many cases ‘collection of ships’ makes inscriptions make more sense. Thingalið is much discussed by scholars, but a straightforward compound of Thing and lið should be Thinglið. Most scholars take it to refer to the retainers of a great man, but Jesch finds more sense translating it as ‘contracted troop’ from the sense of thing in which it means ‘battle’. Liðsmenn are troops strongly associated with a ship or fleet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Floti&lt;/strong&gt; refers to a large fleet, which it will take us some time to assemble. :-) Sometimes it can also refer to the crew of the fleet as well.&lt;/p&gt;
+&lt;p&gt;In medieval Scandinavia, &lt;strong&gt;leiðangr&lt;/strong&gt; refers to the royal levy of men and ships, but the Viking age evidence does not confirm any meaning more specific than ‘fleet’. Thus, the question of when the levy system came into use must rest on other evidence.&lt;/p&gt;
+&lt;p&gt;As always, while we strive to improve our understanding, we should always remember that many interpretations of the evidence is available and be courteous about suggesting different word usage.&lt;/p&gt;
+&lt;p&gt;So, may I suggest to my bench-mates that we are the Vestrus skipan?&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>WWDC 1994 Newton Track Report</title>
+		<link href="https://hominidsoftware.com/tech-personal-growth/WWDC%201994%20Newton%20Track%20Report/"/>
+		<published>1994-05-18T00:00:00Z</published>
+		<updated>2024-08-12T04:00:50Z</updated>
+		<summary>The Apple Newton ecosystem is maturing, but the Newton isn&#39;t a great way to take notes.</summary>
+		<id>https://hominidsoftware.com/tech-personal-growth/WWDC%201994%20Newton%20Track%20Report/</id>
+		<content type="html">&lt;p&gt;&lt;em&gt;This was originally posted to a Usenet newsgroup&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I attended the Newton track of Apple&#39;s World Wide
+Development Conference today. (WWDC continues until Friday)&lt;/p&gt;
+&lt;p&gt;The Development Overview session was a reasonable
+introduction to the Newton Tool Kit environment. The
+Building Newton Solutions session focused on four or five
+applications for specific markets. One was a program for the
+State of California&#39;s disaster evaluation. The user filled
+out a form using popup menus, lists and so forth, got the
+location from an attached GPS unit, and could sketch the
+scene. Another was for farmers and talked to a Windows
+database. Monsato had started the project three years ago,
+found interest by farmers in having information in the
+field, but no interest in using laptops PC&#39;s on truck
+dashboards. The PIE pioneers program will be restructured
+at the end of the summer.&lt;/p&gt;
+&lt;p&gt;I skipped the Newton Communication Wired &amp;amp; Wireless session
+and the Bookmaker session to take advantage of the
+debugging lab, where the Apple engineer fixed one bug in our
+application and identified what needed to be done for
+another.&lt;/p&gt;
+&lt;p&gt;The synchronization session was very interesting,
+identifying various levels of ease of use. Users were
+classified as using the Newton as either a lunch box, a
+credit card, or a collector. PIE&#39;s strategy involves PIE
+doing the enabling work to allow third party developers to
+develop communications software. &amp;quot;Code less, ship more&amp;quot;
+Newton Connection is considered a first generation product,
+and they are moving toward toolboxes and API&#39;s for direct
+Mac &amp;amp; Windows application communication. Integration
+Libraries will be available sometime during the summer to
+allow developers to produce Mac files from the synch files.
+Newton Connection for Developers was announced, which has a
+Listener window similar to the Inspector window in NTK to
+allow debugging of Meta Datas. It has been seeded to some
+developers and will come out this summer.&lt;/p&gt;
+&lt;p&gt;The feedback forum was lively, with developers stating their
+desires and the PIE DTS people giving an idea how soon
+various upgrades and interfaces will be available. The
+compiler is still under development. One fellow complained
+that there was no solution for the 30 app barrier that
+worked on original MessagePad&#39;s, but another member of the
+audience said he had one in hand. Most of the concerns
+expressed here were addressed and a number of others besides.&lt;/p&gt;
+&lt;p&gt;Some notable facts I gathered:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Transparent 110&#39;s were for sale, and a number of Apple people
+had them.&lt;/li&gt;
+&lt;li&gt;Application storage fills up separately from frames storage
+(used by running applications). The division between these
+two domains is fixed.&lt;/li&gt;
+&lt;li&gt;Running applications from Flash RAM cards or static RAM
+cards is not noticeably slower than running from main
+memory.&lt;/li&gt;
+&lt;li&gt;Don&#39;t use full justification in print formats, it&#39;s broken.&lt;/li&gt;
+&lt;li&gt;No Newton on a Mac any time soon.&lt;/li&gt;
+&lt;li&gt;TCP-IP is 6-12 months away&lt;/li&gt;
+&lt;li&gt;There will probably be a Newton Development conference in
+the fall.&lt;/li&gt;
+&lt;li&gt;The Alpha draft of the Human Interface guidelines has been
+posted to various sources.&lt;/li&gt;
+&lt;li&gt;There is hope of support for application deletion, as
+distinct the RemoveScript, so applications that are being
+deleted (not just having their card removed) can deleted
+their soups, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don&#39;t take any of this as gospel, I&#39;m just typing this out
+quickly.&lt;/p&gt;
+&lt;p&gt;So, overall, nothing earth-shattering, but the development
+environment is maturing and more and more applications are
+coming out.&lt;/p&gt;
+&lt;p&gt;I used a MP100 to gather notes, and looking back, my note
+gathering was rather inefficient in gathering information
+and spending time wisely. I didn&#39;t waste any time pawing
+through paper notes to find the one I wanted, but I lost
+more time trying to get notes into the Newton. However, I
+did get answers to almost all of my questions because I had
+a To Do list of them on hand. I exchanged electronic
+business cards with about two dozen people, and that was
+nice because I have the information in a usable database.
+It was also quite useful to be able to show off the
+applications I&#39;m working on. The Newton was also a great
+way to kill time and accomplish modest amounts of work while
+traveling. I killed a half hour in the San Jose airport
+entering the data from the two paper business cards I
+received. This echoes the direction that many developers
+are taking, limiting the amount of written input necessary
+to use the program.&lt;/p&gt;
+&lt;p&gt;For the next conference, I suggest speakers have their
+lecture outline available for downloading, by beaming or
+otherwise. If I had the outline as a base, I could have
+added comments and extensions and ended up with decent
+notes. Text editing is much more feasible on the Newton than
+primary text entering.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

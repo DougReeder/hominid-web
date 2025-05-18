@@ -1,0 +1,379 @@
+/* for all media */
+
+/* general-purpose styling */
+
+/* page header */
+.headerIcon {
+	float: left;
+}
+
+/* centered images */
+.centeredBlock {
+	display: block;
+	margin: 15px auto 15px auto;
+}
+
+/* for floats wider than 250px */
+.floatright300 {
+	float: right;
+	padding: 0.25em 0em 0.5em 0.5em;
+}
+
+.floatright300 p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* for floats narrower than 250px */
+.floatright200 {
+}
+
+.clearboth {
+	clear:both;
+}
+
+table.medium {
+	border-collapse: collapse;
+}
+
+table.medium td, table.medium th {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 0.2em;
+}
+
+.parenthetical {
+        /* font-style: italic; */
+        font-size: smaller;
+}
+
+
+h2, h3, h4, h5, h6 {
+	clear: both;
+	color: #A6713D;
+}
+
+/* for text shared with webOS apps */
+.palm-body-title {   /* like h2 */
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0.83em 0px 0.83em 0px;
+	clear: both;
+	color: #A6713D;
+}
+
+.palm-body-text {   /* like paragraph */
+	display: block;
+	margin: 1em 0px;
+}
+
+
+/* */
+.desktoponlyblock {
+	display: block;
+}
+
+.handheldonlyblock {
+	display: none;
+}
+
+.desktoponlyinline {
+    display: inline;
+}
+
+.handheldonlyinline {
+    display: none;
+}
+
+
+/* structure and related styling */
+html {
+	margin: 0;
+	padding: 0;
+	background: url(bgAqua1.png) repeat;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: prelude,sans-serif;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	}
+
+#outer {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	max-width: 57em;
+	min-width: 480px;
+}
+
+#header {
+	padding: 1em;
+}
+
+h1 {
+	text-align: center;
+	margin: 0em;
+}
+
+#header p {
+	text-align: center;
+	margin: 0em;
+	font-style: italic;
+}
+
+.onlyif1col {
+	display: none;
+}
+
+#main {
+	position: relative;
+}
+
+/* does something in place of max-width and min-width for IE 6 and below */
+* html #outer {
+}
+
+* html #main {
+}
+
+#content {
+	margin: 0em 13em 0em 1em;
+	padding: 0em 0em 0em 0em;
+}
+
+#nav {
+	position: fixed;
+	top: 7.5em;
+	right: 1px;
+	width: 12em;
+	border: 1px solid black;
+	padding: 0 0 1em 0;
+	margin-bottom: 1em;
+	font-family: 'Trebuchet MS', 'Lucida Grande',
+	  Verdana, Lucida, Geneva, Helvetica,
+	  Arial, sans-serif;
+	background-color: #90bade;
+	color: #333;
+}
+
+#nav .navHead {
+	display: block;
+	font-size: larger;
+	padding: 5px;
+}
+
+/*
+#nav .navHead {
+	display: block;
+	font-size: larger;
+	color: white;
+	margin: 0 0 0 0;
+	padding: 5px 5px 5px 0.9em;
+	background-color: #2175bc;
+	border-bottom: 1px solid #90bade;
+	-webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;
+	text-decoration: none;
+	width: 12em;
+}
+*/
+
+#nav ul {
+	list-style: none;
+	margin: 0 0 0em 1.75em;
+	padding: 0;
+	border: none;
+}
+
+#nav li {
+	margin: 0;
+}
+
+#nav li a {
+	display: block;
+	padding: 5px 5px 5px 0.9em;
+	background-color: #2175bc;
+	color: white;
+	border-bottom: 1px solid #90bade;
+	-webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;
+	text-decoration: none;
+	width: 100%;
+}
+
+/* for everone except IE/Windows */
+html>body #nav li a {
+	width: auto;
+}
+
+#nav li a:hover {
+	background-color: #2586d7;
+	color: white;
+}
+
+
+/* non-link headers in navigation */
+#nav li em {
+	display: block;
+	padding: 5px 5px 5px 0.5em;
+	border-bottom: 1px solid #90bade;
+	background-color: #2175bc;
+	color: black;
+	text-decoration: none;
+	width: 100%;
+}
+
+/* for everone except IE/Windows */
+html>body #nav li em {
+	width: auto;
+}
+
+
+/* for accesskeys */
+#nav li a strong {
+	display: none;
+}
+
+#footer {
+	clear: both;
+	padding: 1em;
+}
+
+#featuresNotesTogether .featuresNotesTogether,
+#licenseNotesTogether .licenseNotesTogether,
+
+#featuresNotes .featuresNotes,
+#faqNotes .faqNotes,
+#supportNotes .supportNotes,
+#licenseNotes .licenseNotes,
+
+#features .features,
+#screenshots .screenshots,
+#support .support,
+#gettingStarted .gettingStarted,
+#justType .justType,
+#details .details,
+#faq .faq,
+#methodologies .methodologies,
+#migration .migration,
+#contest .contest,
+#license .license,
+#featuresZap .featuresZap,
+#faqZap .faqZap,
+#supportZap .supportZap,
+#licenseZap .licenseZap,
+#featuresPC .featuresPC,
+#faqPC .faqPC,
+#supportPC .supportPC,
+#licensePC .licensePC,
+#featuresEC .featuresEC,
+#faqEC .faqEC,
+#supportEC .supportEC,
+#licenseEC .licenseEC {
+	/* background-color: #ddd; */
+	/* font-weight: bold; */
+	list-style-type: square;
+	color: blue;
+}
+
+/*********************************************************/
+
+.headerSample {
+	height: 50px;
+	border-width: 0 25px;
+	-webkit-border-image:url(../outlinetracker/images/sample/header.png) 0 25 0 25 stretch stretch;
+	-moz-border-image:url(../outlinetracker/images/sample/header.png) 0 25 0 25 stretch stretch;
+	-o-border-image:url(../outlinetracker/images/sample/header.png) 0 25 0 25 stretch stretch;
+	line-height: 48px;
+	color: white;
+	font-family: sans-serif;
+	font-weight:bold;
+	font-size: 16px;
+}
+
+.headerInsetSample {
+	display: inline-block;
+	height:33px;
+	border-width:0 15px;
+	-webkit-border-image:url(../outlinetracker/images/header-inset-background.png) 0 15 0 15 stretch stretch;
+	-moz-border-image:url(../outlinetracker/images/header-inset-background.png) 0 15 0 15 stretch stretch;
+	-o-border-image:url(../outlinetracker/images/header-inset-background.png) 0 15 0 15 stretch stretch;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+
+.headerInsetWrapperSample {
+	margin: 2px -5px;
+	line-height:30px;
+	color: white;
+	font-family: sans-serif;
+	font-weight:bold;
+	font-size: 16px;
+}
+
+/***********************************************************/
+table.realTable {
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-collapse: collapse;
+}
+
+table.realTable caption {
+	padding: 7px 0;
+}
+
+table.realTable td {
+	min-width: 100px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 3px 6px 6px 6px;
+}
+
+
+.faqText {
+    clear: both;
+}
+.faqText table {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 30em;
+    border-collapse: collapse;
+}
+.faqText caption {
+    margin-bottom: 0.25em;
+    font-weight: bold;
+}
+ .faqText td {
+    border: 1px solid black;
+    padding: 0.45em;
+}
+
+
+ .centerEnd {
+	 display: flex;
+	 justify-content: center;
+	 align-items: end;
+ }
+
+ .centerCenter {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+
+ .leftMargin {
+	 margin-left: 1rem;
+ }
