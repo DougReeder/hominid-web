@@ -38,7 +38,7 @@ Samsung launched and dropped Gear VR.
 You can argue that phone VR was a technological dead-end — but Oculus developed the OS for Gear VR, and its descendant now powers all Meta headsets (that greatly outnumber other headsets).
 Any developer who lived through that will think carefully before betting significant resources on Android XR.
 
-## The existing competition
+## The established competition
 
 Meta has a commanding lead in VR games.
 If Google can convince enough of the largest social VR networks to port their apps, they could achieve near-parity there, but no more.

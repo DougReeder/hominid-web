@@ -20,7 +20,7 @@ are available to webapps, often under the banner of [HTML5](https://developer.mo
 the [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache),
 [Web Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) and [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) allow webapps to start instantly
 and run offline.
-A [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) provides the OS with the info
+A [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) provides the OS with the info
 it needs to "install" the webapp, so it can appear in its own window, be listed with native apps, have a full
 set of icons, be a destination for sharing, etc.
 

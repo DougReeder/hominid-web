@@ -6,9 +6,8 @@
 		<title>Multiuser WebXR using Croquet OS &amp; A-Frame — Tech for Personal Growth</title>
 		<meta name="author" content="Doug Reeder" >
 		
-		<meta name="description" content="There&#39;s a new network option for A-Frame" >
+		<meta name="description" property="og:description" content="There&#39;s a new network option for A-Frame" >
 		<meta property="og:title" content="Multiuser WebXR using Croquet OS &amp; A-Frame" >
-		<meta property="og:description" content="There&#39;s a new network option for A-Frame" >
 		<meta property="og:type" content="article" >
 		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/croquet-os-and-aframe/" >
 		<meta property="og:site_name" content="Hominid Software" >
@@ -86,7 +85,7 @@ Croquet has its <em>Worldcore</em> library to handle scene graph, position, rota
 <p>Off-the-shelf A-Frame components maintain state internally. When user input or world modeling (such as collision detection) happens in A-Frame, a synthetic DOM event must be emitted for a View to receive. Typically, the View will need to publish a message to one or more Models. The message must be sent over the network to every client. The Model(s) (on each client) would typically publish a message to other Models or their Views, and the View(s) (on each client) will set attributes on A-Frame objects. This can make debugging tedious, but delay comes mainly from the network.</p>
 <p>You could rewrite A-Frame components to keep state in Croquet Models, but at that point it may make more sense to switch to Worldcore.</p>
 <p>The <a href="https://www.npmjs.com/package/aframe-state-component" rel="noreferrer nofollow noopener external">A-Frame State Component</a> provides a centralized store for state data. An analogous component with similar syntax could be written for Croquet, but that hasn't happened yet.</p>
-<p>The <a href="https://github.com/NikolaySuslov/aframe-croquet-component" rel="noreferrer nofollow noopener external">A-Frame Croquet Component</a> allows a world to define an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" rel="noreferrer nofollow noopener external">HTML Template</a> for user avatars. A different <code>color</code> attribute is applied to each user's avatar, but most primitives (including <a href="https://aframe.io/docs/1.4.0/components/gltf-model.html" rel="noreferrer nofollow noopener external">gltf-model</a>) don't use that.</p>
+<p>The <a href="https://github.com/NikolaySuslov/aframe-croquet-component" rel="noreferrer nofollow noopener external">A-Frame Croquet Component</a> allows a world to define an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template" rel="noreferrer nofollow noopener external">HTML Template</a> for user avatars. A different <code>color</code> attribute is applied to each user's avatar, but most primitives (including <a href="https://aframe.io/docs/1.4.0/components/gltf-model.html" rel="noreferrer nofollow noopener external">gltf-model</a>) don't use that.</p>
 <p><a href="https://xalot.surge.sh/" title="Xalot world" rel="noreferrer nofollow noopener external"><picture><source type="image/avif" srcset="/img/xalot-world-747w.avif 747w" sizes="100vw"><source type="image/webp" srcset="/img/xalot-world-747w.webp 747w" sizes="100vw"><img alt="Xalot world" loading="lazy" decoding="async" src="/img/xalot-world-747w.png" width="747" height="513"></picture></a></p>
 <p>For other users to join the same session, a current user must share the URL, including the query string.</p>
 <p>Croquet Models are typically synced 20 times per second, not coupled to A-Frame <code>tick()</code>. That's fine for low-speed syncing, for example, seeing which way another player's avatar is facing. That's also fine for detecting whether a moving object collides with a stationary object. A-Frame collision detection will not be coupled to Croquet syncing, so high-speed simulation will have issues. For example, calculating if one player's fireball collides with the other player's dodging avatar will depend on which client the calculation is done. Likewise, one client might calculate that one player had grabbed some object first, while another client might calculate that another player had grabbed it first.</p>
@@ -103,9 +102,9 @@ Croquet has its <em>Worldcore</em> library to handle scene graph, position, rota
 </ul>
 
 <div class="flex-center-center">
-	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36"></a>
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36" alt="JSON for feed readers"></a>
 	&nbsp;
-	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36"></a>
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36" alt="Atom XML for feed readers"></a>
 </div>
 
 		</main>

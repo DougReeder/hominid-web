@@ -5,11 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title + " — " + metadata.reviewTitle if title else metadata.reviewTitle }}</title>
 	<meta name="author" content="{{ author.name or metadata.author.name }}" />
-	{% if description %}
-	<meta name="description" content="{{ description }}">
+	{% if description or metadata.reviewDescription %}
+	<meta name="description" property="og:description" content="{{ description or metadata.reviewDescription }}">
 	{%- endif %}
 	<meta property="og:title" content="{{ title or metadata.reviewTitle }}" />
-	<meta property="og:description" content="{{ description or metadata.reviewDescription }}" />
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="{{ metadata.origin + page.url }}" />
 	<meta property="og:site_name" content="{{ metadata.title }}" />
