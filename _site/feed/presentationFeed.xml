@@ -394,7 +394,7 @@
 		<title>Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs</title>
 		<link href="https://hominidsoftware.com/presentations/Web-Share-APIs/"/>
 		<published>2024-03-06T00:00:00Z</published>
-		<updated>2024-03-06T00:00:00Z</updated>
+		<updated>2025-05-20T14:39:03Z</updated>
 		<summary>The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps.</summary>
 		<id>https://hominidsoftware.com/presentations/Web-Share-APIs/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://www.meetup.com/columbusjs/events/299341757/&quot;&gt;March 2024&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -622,7 +622,7 @@
 		<title>Gestures-in-WebXR — Barrier Mage</title>
 		<link href="https://hominidsoftware.com/presentations/Gestures-in-WebXR/"/>
 		<published>2021-09-25T00:00:00Z</published>
-		<updated>2021-09-25T00:00:00Z</updated>
+		<updated>2025-05-20T14:39:03Z</updated>
 		<summary>Reliable gesture recognition enhances immersion.</summary>
 		<id>https://hominidsoftware.com/presentations/Gestures-in-WebXR/</id>
 		<content type="html">&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/Gestures%20in%20WebXR/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures-in-WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -695,7 +695,7 @@
 		<title>The ELK Stack</title>
 		<link href="https://hominidsoftware.com/presentations/ELK-stack/"/>
 		<published>2020-01-02T00:00:00Z</published>
-		<updated>2020-01-02T00:00:00Z</updated>
+		<updated>2025-05-20T14:39:03Z</updated>
 		<summary>Elasticsearch, Logstash &amp; Kibana together enable powerful monitoring and data transformations.</summary>
 		<id>https://hominidsoftware.com/presentations/ELK-stack/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;talks delivered to technical &amp;amp; non-technical audiences at &lt;a href=&quot;https://www.nchannel.com/&quot;&gt;nChannel&lt;/a&gt; in January 2020&lt;/em&gt;&lt;/p&gt;
@@ -814,7 +814,7 @@
 		<title>JavaScript Service Worker Design Patterns for Better UX</title>
 		<link href="https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/"/>
 		<published>2017-09-20T00:00:00Z</published>
-		<updated>2017-09-20T00:00:00Z</updated>
+		<updated>2025-05-20T14:39:03Z</updated>
 		<summary>Service Workers improve the user experience by insulating the webapp from the vagaries of the network.</summary>
 		<id>https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://columbusjs.org/09-20-2017/doug-reeder-service-workers.html&quot;&gt;September 2017&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -836,7 +836,7 @@
 		<title>“Second Screen” apps with the Connect SDK</title>
 		<link href="https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/"/>
 		<published>2014-09-17T00:00:00Z</published>
-		<updated>2014-09-17T00:00:00Z</updated>
+		<updated>2025-05-20T14:39:03Z</updated>
 		<summary>Throwing content from a phone  to a smart TV enables new interactions.</summary>
 		<id>https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://columbusjs.org/09-17-2014/javascript-hardware-night.html&quot;&gt;September 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
@@ -942,7 +942,7 @@ Easy to exclude from list, but leaves user frustrated.&lt;/p&gt;
 		<title>Enyo: Yet Another Framework or The Next Step Beyond Dojo?</title>
 		<link href="https://hominidsoftware.com/presentations/Enyo-framework/"/>
 		<published>2012-02-16T00:00:00Z</published>
-		<updated>2012-02-16T00:00:00Z</updated>
+		<updated>2025-05-20T14:39:03Z</updated>
 		<summary>Web apps on mobile require a new framework</summary>
 		<id>https://hominidsoftware.com/presentations/Enyo-framework/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;talk delivered at CAS, the Chemical Abstracts Service of the American Chemical Society&lt;/em&gt;&lt;/p&gt;

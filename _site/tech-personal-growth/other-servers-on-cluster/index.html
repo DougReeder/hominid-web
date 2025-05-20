@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Other servers on my Hubs cluster — Tech for Personal Growth</title>
+		<meta name="author" content="Doug Reeder" >
+		
+		<meta name="description" property="og:description" content="Consolidating my non-Hubs servers into my Kubernetes cluster" >
+		<meta property="og:title" content="Other servers on my Hubs cluster" >
+		<meta property="og:type" content="article" >
+		<meta property="og:url" content="https://hominidsoftware.com/tech-personal-growth/other-servers-on-cluster/" >
+		<meta property="og:site_name" content="Hominid Software" >
+		<meta property="og:image" content="https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.avif" >
+		<meta property="og:image.width" content="739" >
+		<meta property="og:image.height" content="1763" >
+		<meta property="article:published_time" content="Wed May 14 2025 20:00:00 GMT-0400 (Eastern Daylight Time)" >
+		<meta property="article:author" content="Doug Reeder">
+		<meta property="article:tag" content="post">
+		<meta property="article:tag" content="Hubs">
+		<meta property="article:tag" content="Kubernetes">
+		<meta property="article:tag" content="Armadietto">
+		<meta property="article:tag" content="remoteStorage">
+		
+		<meta property="article:section" content="Tech for Personal Growth">
+		<meta name="generator" content="Eleventy v2.0.1">
+
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org/",
+			"@type": "BlogPosting",
+			"headline": "Other servers on my Hubs cluster",
+			"author": {"@type":"Person","name":"Doug Reeder","email":"reeder.29@gmail.com","url":"https://hominidsoftware.com/about/"},
+			"description": "Consolidating my non-Hubs servers into my Kubernetes cluster",
+			"image": "https://hominidsoftware.com/img/managed-database-metrics-DigitalOcean-739w.avif",
+			 "datePublished": "2025-05-15",
+			"dateModified": "2025-05-15",
+			"articleSection": "Tech for Personal Growth",
+			"keywords": ["Hubs", "Kubernetes", "Armadietto", "remoteStorage"]
+		}
+	</script>
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Tech for Personal Growth">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Tech for Personal Growth">
+		<link rel="canonical" href="https://hominidsoftware.com/tech-personal-growth/other-servers-on-cluster/" >
+		
+		<link rel="stylesheet" href="/bundle/wGLGTyBBrQ.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<span class="home-link">Hominid Software — Tech for Personal Growth</span>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Apps</a></li>
+					<li class="nav-item"><a href="/tech-personal-growth/">Blog</a></li>
+					<li class="nav-item"><a href="/reviews/">Reviews</a></li>
+					<li class="nav-item"><a href="/presentations/">Talks</a></li>
+					<li class="nav-item"><a href="/archive/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Other servers on my Hubs cluster</h1>
+
+<div class="post-description">Consolidating my non-Hubs servers into my Kubernetes cluster</div>
+
+<div class="post-description">About 2 min reading time</div>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-05-15">15 May 2025</time></li>
+	<li><a href="/tags/hubs/" class="post-tag">Hubs</a>, </li>
+	<li><a href="/tags/kubernetes/" class="post-tag">Kubernetes</a>, </li>
+	<li><a href="/tags/armadietto/" class="post-tag">Armadietto</a>, </li>
+	<li><a href="/tags/remotestorage/" class="post-tag">remoteStorage</a></li>
+</ul>
+
+<h2 id="motivation" tabindex="-1">Motivation <a class="header-anchor" href="#motivation">#</a></h2>
+<p>Running a Hubs instance, with a Kubernetes cluster and separate load balancer, is more than twice as expensive as renting a single Virtual Private Server.
+One of the selling point of Kubernetes is running multiple apps ...</p>
+<h2 id="" tabindex="-1"> <a class="header-anchor" href="#">#</a></h2>
+<p>original model: external load balancer per external service. Made sense for Google's Internet-scale services, but requiring two load balancer nodes (for redundancy) for each service, especially for low-traffic or intermittent services, is overkill, and expensive.
+Also, load balancer nodes can't be shared between services, unlike Kubernetes nodes.</p>
+<p>now: One Ingress Controller inside cluster handles Level 7: name-based virtual servers, path based routing (but still need external load balancer)</p>
+<p>Load Balancer + Ingress Controller and Ingresses is like running name-based virtual servers using Apache</p>
+<h2 id="new-server-armadietto-remotestorage" tabindex="-1">New server: Armadietto remoteStorage <a class="header-anchor" href="#new-server-armadietto-remotestorage">#</a></h2>
+<p>private network (VPC Network) of cluster</p>
+<pre class="language-json" tabindex="0"><code class="language-json">      <span class="token property">"trust_proxy"</span><span class="token operator">:</span> <span class="token string">"10.118.0.5/20"</span><span class="token punctuation">,</span></code></pre>
+<h2 id="getting-the-real-client-ip-address" tabindex="-1">Getting the real client IP address <a class="header-anchor" href="#getting-the-real-client-ip-address">#</a></h2>
+<p>rate-limit malfunctioning or abusive clients, also logging</p>
+<p>TLS handled by ingress controller, so load balancer can't see that the encrypted TCP stream contains HTTP, and so can't add <code>X-Forwarded-For</code> (nor <code>Forwarded</code>) header.</p>
+<h3 id="enable-proxy-protocol-on-load-balancer" tabindex="-1">Enable PROXY Protocol on load balancer <a class="header-anchor" href="#enable-proxy-protocol-on-load-balancer">#</a></h3>
+<p>private network (VPC Network) of cluster</p>
+<p>Helm values.yaml</p>
+<pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">controller</span><span class="token punctuation">:</span>
+  <span class="token key atrule">config</span><span class="token punctuation">:</span>
+    <span class="token key atrule">proxy-protocol</span><span class="token punctuation">:</span> <span class="token string">"10.118.0.5/20"</span></code></pre>
+<p>Unclear how to determine actual network for load balancer.
+Extract IP address from logs or echo service; guess at netmask</p>
+<h3 id="enable-proxy-protocol-on-ingress-controller" tabindex="-1">Enable PROXY Protocol on Ingress Controller <a class="header-anchor" href="#enable-proxy-protocol-on-ingress-controller">#</a></h3>
+<p>Helm values.yaml</p>
+<pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">controller</span><span class="token punctuation">:</span>
+  <span class="token key atrule">service</span><span class="token punctuation">:</span>
+    <span class="token key atrule">externalTrafficPolicy</span><span class="token punctuation">:</span> Local
+    <span class="token key atrule">annotations</span><span class="token punctuation">:</span>
+      <span class="token key atrule">service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol</span><span class="token punctuation">:</span> <span class="token string">"true"</span></code></pre>
+<h3 id="x-forwarded-proto-and-x-forwarded-for-for-armadietto" tabindex="-1"><code>X-Forwarded-Proto</code> and <code>X-Forwarded-For</code> for Armadietto <a class="header-anchor" href="#x-forwarded-proto-and-x-forwarded-for-for-armadietto">#</a></h3>
+<p>HAProxy Ingress Controller adds automatically!</p>
+<h2 id="hostname-in-request" tabindex="-1">Hostname in request <a class="header-anchor" href="#hostname-in-request">#</a></h2>
+<p>Armadietto requires you to configure the <code>hostIdentity</code>, at which it must be reachable, but doesn't actually check the <code>Host</code> header.</p>
+<p>For your combination of backend server, Ingress Controller and load balancer, you might need to ensure the <code>X-Forwarded-Host</code> header is set.</p>
+<h2 id="session-non-session-traffic" tabindex="-1">session / non-session traffic <a class="header-anchor" href="#session-non-session-traffic">#</a></h2>
+<p>HAProxy Ingress Controller appears to assume traffic to a single service via different Ingresses can be treated the same, though persistent sessions are configured per-Ingress.
+So there are two internal Services for Armadietto that differ only in name. :-S</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/tech-personal-growth/gemini-android-xr/">Gemini will determine the success of Android XR</a></li>
+</ul>
+
+<div class="flex-center-center">
+	<a href="/feed/feed.json"><img src="/img/json-feed-icon.svg" width="36" height="36" alt="JSON for feed readers"></a>
+	&nbsp;
+	<a href="/feed/feed.xml"><img src="/img/atom-feed-icon.svg" width="36" height="36" alt="Atom XML for feed readers"></a>
+</div>
+
+		</main>
+
+		<footer></footer>
+
+		
+	</body>
+</html>
