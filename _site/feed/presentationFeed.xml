@@ -392,23 +392,23 @@
 	
 	<entry>
 		<title>Join the Cool Kids — If You&#39;re Allowed! — The Web Share APIs</title>
-		<link href="https://hominidsoftware.com/presentations/Web%20Share%20APIs/"/>
+		<link href="https://hominidsoftware.com/presentations/Web-Share-APIs/"/>
 		<published>2024-03-06T00:00:00Z</published>
-		<updated>2024-08-21T23:57:12Z</updated>
+		<updated>2024-03-06T00:00:00Z</updated>
 		<summary>The Web Share API and Web Share Target API allow your web app to send and receive content from native apps, like the big social networking apps.</summary>
-		<id>https://hominidsoftware.com/presentations/Web%20Share%20APIs/</id>
+		<id>https://hominidsoftware.com/presentations/Web-Share-APIs/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://www.meetup.com/columbusjs/events/299341757/&quot;&gt;March 2024&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;bio&quot; tabindex=&quot;-1&quot;&gt;Bio &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;bio&quot; tabindex=&quot;-1&quot;&gt;Bio &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Doug Reeder has been programming professionally for a quarter century on a wide range of technologies, at organizations large and small. Today he does full-stack web development, consults on WebXR, and pushes back on gatekeepers.&lt;/p&gt;
-&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;1974-gui-copy-and-paste&quot; tabindex=&quot;-1&quot;&gt;1974: GUI Copy &amp;amp; Paste &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;1974-gui-copy-and-paste&quot; tabindex=&quot;-1&quot;&gt;1974: GUI Copy &amp;amp; Paste &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Larry Tesler &amp;amp; Tim Mott @ Xerox PARC&lt;/li&gt;
 &lt;li&gt;App to App within device, only&lt;/li&gt;
 &lt;li&gt;Text, later other data types&lt;/li&gt;
 &lt;li&gt;later: Drag &amp;amp; Drop&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;1996-palm-os-sharing&quot; tabindex=&quot;-1&quot;&gt;1996: Palm OS Sharing &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;1996-palm-os-sharing&quot; tabindex=&quot;-1&quot;&gt;1996: Palm OS Sharing &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Few people had direct Internet access; PDAs didn&#39;t have IP networking&lt;/li&gt;
 &lt;li&gt;Exchange Manager; originated Gavin Peacock
@@ -433,13 +433,13 @@
 &lt;li&gt;Non-enthusiasts didn&#39;t use Beaming — unclear why.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Video of IR beaming [if time]&lt;/p&gt;
-&lt;h3 id=&quot;2009-palm-webos-touch-to-share&quot; tabindex=&quot;-1&quot;&gt;2009: Palm webOS Touch-to-share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;2009-palm-webos-touch-to-share&quot; tabindex=&quot;-1&quot;&gt;2009: Palm webOS Touch-to-share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;devices exchange URLs&lt;/li&gt;
 &lt;li&gt;paradigm is &amp;quot;share what&#39;s on the screen&amp;quot;&lt;/li&gt;
 &lt;li&gt;video of Zap Photoshare: &lt;a href=&quot;https://www.youtube.com/watch?v=2oLfKqpUJT4&quot;&gt;https://www.youtube.com/watch?v=2oLfKqpUJT4&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;now-social-media-is-king&quot; tabindex=&quot;-1&quot;&gt;Now: Social Media is king &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;now-social-media-is-king&quot; tabindex=&quot;-1&quot;&gt;Now: Social Media is king &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Big demand to share URLs from and to Social Media&lt;/li&gt;
 &lt;li&gt;Selecting content on handhelds is tricky, so copy-and-paste is high-friction. ⇒ demand for sharing &lt;em&gt;within&lt;/em&gt; device&lt;/li&gt;
@@ -458,7 +458,7 @@
 &lt;li&gt;Android offers to Share anything copied to the clipboard&lt;/li&gt;
 &lt;li&gt;A number of browsers accept shared text, and do a web search with it&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;enter-the-web-share-api-send&quot; tabindex=&quot;-1&quot;&gt;Enter the Web Share API (send) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;enter-the-web-share-api-send&quot; tabindex=&quot;-1&quot;&gt;Enter the Web Share API (send) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;original: asynchronous &lt;code&gt;navigator.share() &lt;/code&gt;
 &lt;ul&gt;
@@ -485,7 +485,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;small-signature-complicated-use&quot; tabindex=&quot;-1&quot;&gt;Small signature, complicated use &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;small-signature-complicated-use&quot; tabindex=&quot;-1&quot;&gt;Small signature, complicated use &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;url &amp;gt; text, file &amp;gt; text; safest to not send url &amp;amp; files; may need to offer more than one Share option&lt;/p&gt;
@@ -512,14 +512,14 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;file-types-chromium-on-android-will-share&quot; tabindex=&quot;-1&quot;&gt;File types Chromium on Android will share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;file-types-chromium-on-android-will-share&quot; tabindex=&quot;-1&quot;&gt;File types Chromium on Android will share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;text/plain&lt;/li&gt;
 &lt;li&gt;text/html&lt;/li&gt;
 &lt;li&gt;text/csv&lt;/li&gt;
 &lt;li&gt;text/css — &lt;em&gt;why?&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;file-types-chromium-on-android-won-t-share&quot; tabindex=&quot;-1&quot;&gt;File types Chromium on Android won&#39;t share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;file-types-chromium-on-android-won-t-share&quot; tabindex=&quot;-1&quot;&gt;File types Chromium on Android won&#39;t share &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;text/tab-separated-values&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;text/calendar&lt;/strong&gt;&lt;/li&gt;
@@ -532,14 +532,14 @@
 &lt;li&gt;text/uri .uri&lt;/li&gt;
 &lt;li&gt;text/gltf&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;web-share-demo-apps&quot; tabindex=&quot;-1&quot;&gt;Web Share demo apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;web-share-demo-apps&quot; tabindex=&quot;-1&quot;&gt;Web Share demo apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Title, text, url, files:
 &lt;a href=&quot;https://w3c.github.io/web-share/demos/share-files.html&quot;&gt;https://w3c.github.io/web-share/demos/share-files.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Files:
 &lt;a href=&quot;https://scrapbook-pwa.web.app/&quot;&gt;https://scrapbook-pwa.web.app/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;web-share-target-api-receive&quot; tabindex=&quot;-1&quot;&gt;Web Share &lt;em&gt;Target&lt;/em&gt; API (receive) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;web-share-target-api-receive&quot; tabindex=&quot;-1&quot;&gt;Web Share &lt;em&gt;Target&lt;/em&gt; API (receive) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;installed PWA (requires Web App Manifest &amp;amp; Service Worker)&lt;/li&gt;
 &lt;li&gt;browser &amp;amp; OS that supports&lt;/li&gt;
@@ -561,7 +561,7 @@
 &lt;ul&gt;
 &lt;li&gt;route can be handled by web server or Service Worker&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;quick-review-of-coding-service-workers&quot; tabindex=&quot;-1&quot;&gt;Quick review of coding Service Workers &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;quick-review-of-coding-service-workers&quot; tabindex=&quot;-1&quot;&gt;Quick review of coding Service Workers &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;available APIs differ from window
 &lt;ul&gt;
@@ -577,14 +577,14 @@
 &lt;li&gt;testing is tricky — unit tests help, but important parts are inherently outside the browser&lt;/li&gt;
 &lt;li&gt;handler should return quickly with redirect to an appropriate path — can continue to process in the background&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;web-share-target-demo-apps&quot; tabindex=&quot;-1&quot;&gt;Web Share Target demo apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;web-share-target-demo-apps&quot; tabindex=&quot;-1&quot;&gt;Web Share Target demo apps &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Title, text &amp;amp; url:
 &lt;a href=&quot;https://w3c.github.io/web-share-target/demos/sharetarget.html&quot;&gt;https://w3c.github.io/web-share-target/demos/sharetarget.html&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;File, or link and file:
 &lt;a href=&quot;https://scrapbook-pwa.web.app/&quot;&gt;https://scrapbook-pwa.web.app/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;can-t-access-full-native-sharing-api&quot; tabindex=&quot;-1&quot;&gt;Can&#39;t access full native Sharing API &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;can-t-access-full-native-sharing-api&quot; tabindex=&quot;-1&quot;&gt;Can&#39;t access full native Sharing API &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Can’t share rich text/HTML message&lt;/p&gt;
@@ -606,10 +606,10 @@
 &lt;p&gt;Don&#39;t hold your breath for more implementations&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;app-that-uses-web-share-apis-with-fallbacks&quot; tabindex=&quot;-1&quot;&gt;App that uses Web Share APIs with fallbacks &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;app-that-uses-web-share-apis-with-fallbacks&quot; tabindex=&quot;-1&quot;&gt;App that uses Web Share APIs with fallbacks &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;Long-press on summary in list to share&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://notestogether.hominidsoftware.com&quot;&gt;Notes Together&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web%20Share%20APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;summary&quot; tabindex=&quot;-1&quot;&gt;Summary &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Web-Share-APIs/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Can be on level playing field with native app, but...&lt;/li&gt;
 &lt;li&gt;Uneven implementation mean it can&#39;t be an essential part of using your webapp&lt;/li&gt;
@@ -619,16 +619,16 @@
 	</entry>
 	
 	<entry>
-		<title>Gestures in WebXR — Barrier Mage</title>
-		<link href="https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/"/>
+		<title>Gestures-in-WebXR — Barrier Mage</title>
+		<link href="https://hominidsoftware.com/presentations/Gestures-in-WebXR/"/>
 		<published>2021-09-25T00:00:00Z</published>
-		<updated>2024-08-22T04:23:05Z</updated>
+		<updated>2021-09-25T00:00:00Z</updated>
 		<summary>Reliable gesture recognition enhances immersion.</summary>
-		<id>https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/</id>
-		<content type="html">&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/Gestures%20in%20WebXR/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&quot;drawing-a-symbol&quot; tabindex=&quot;-1&quot;&gt;Drawing a symbol &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<id>https://hominidsoftware.com/presentations/Gestures-in-WebXR/</id>
+		<content type="html">&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/Gestures%20in%20WebXR/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures-in-WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;drawing-a-symbol&quot; tabindex=&quot;-1&quot;&gt;Drawing a symbol &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures-in-WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.avif 750w, https://hominidsoftware.com/img/pentacle-ViolentCloud-1500w.avif 1500w&quot; sizes=&quot;100vw&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.webp 750w, https://hominidsoftware.com/img/pentacle-ViolentCloud-1500w.webp 1500w&quot; sizes=&quot;100vw&quot;&gt;&lt;img alt=&quot;drawing pentacle to protect from The Violent Cloud&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.jpeg&quot; width=&quot;1500&quot; height=&quot;1000&quot; srcset=&quot;https://hominidsoftware.com/img/pentacle-ViolentCloud-750w.jpeg 750w, https://hominidsoftware.com/img/pentacle-ViolentCloud-1500w.jpeg 1500w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h2 id=&quot;root-mean-square&quot; tabindex=&quot;-1&quot;&gt;Root-mean-square &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;root-mean-square&quot; tabindex=&quot;-1&quot;&gt;Root-mean-square &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures-in-WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;math display=&quot;block&quot; class=&quot;tml-display&quot; style=&quot;display:block math;&quot;&gt;
   &lt;msqrt&gt;
     &lt;mfrac&gt;
@@ -683,7 +683,7 @@
   &lt;/msqrt&gt;
 &lt;/math&gt;
 &lt;p&gt;used to calculate difference between drawn endpoints &amp;amp; template endpoints&lt;/p&gt;
-&lt;h2 id=&quot;barrier-mage-basic-play&quot; tabindex=&quot;-1&quot;&gt;Barrier Mage basic play &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures%20in%20WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;barrier-mage-basic-play&quot; tabindex=&quot;-1&quot;&gt;Barrier Mage basic play &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Gestures-in-WebXR/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;video class=&quot;square&quot; controls=&quot;&quot; playsinline=&quot;&quot; preload=&quot;metadata&quot;&gt;
 	&lt;source src=&quot;https://hominidsoftware.com/no-multiviews/barrier-mage-basic-play-4.mp4&quot; type=&quot;video/mp4&quot;&gt;
 	Download the &lt;a href=&quot;https://hominidsoftware.com/no-multiviews/barrier-mage-basic-play-4.mp4&quot;&gt;MP4&lt;/a&gt; video.
@@ -693,13 +693,13 @@
 	
 	<entry>
 		<title>The ELK Stack</title>
-		<link href="https://hominidsoftware.com/presentations/ELK%20stack/"/>
+		<link href="https://hominidsoftware.com/presentations/ELK-stack/"/>
 		<published>2020-01-02T00:00:00Z</published>
-		<updated>2024-08-10T22:15:20Z</updated>
+		<updated>2020-01-02T00:00:00Z</updated>
 		<summary>Elasticsearch, Logstash &amp; Kibana together enable powerful monitoring and data transformations.</summary>
-		<id>https://hominidsoftware.com/presentations/ELK%20stack/</id>
+		<id>https://hominidsoftware.com/presentations/ELK-stack/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;talks delivered to technical &amp;amp; non-technical audiences at &lt;a href=&quot;https://www.nchannel.com/&quot;&gt;nChannel&lt;/a&gt; in January 2020&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&quot;technical-talk-on-elk-stack&quot; tabindex=&quot;-1&quot;&gt;technical talk on ELK stack &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/ELK%20stack/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;technical-talk-on-elk-stack&quot; tabindex=&quot;-1&quot;&gt;technical talk on ELK stack &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/ELK-stack/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;A RESTful API on top of the powerful Lucene search engine&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;document-based search engine (store denormalized data)&lt;/li&gt;
@@ -742,7 +742,7 @@
 &lt;li&gt;Beats&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;use HTTP Service Action to interface with Symphony&lt;/p&gt;
-&lt;h1 id=&quot;non-technical-talk-on-elk-stack&quot; tabindex=&quot;-1&quot;&gt;non-technical talk on ELK stack &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/ELK%20stack/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;non-technical-talk-on-elk-stack&quot; tabindex=&quot;-1&quot;&gt;non-technical talk on ELK stack &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/ELK-stack/&quot;&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;relational DB&lt;/strong&gt;: (for example, Oracle or MySQL)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;schemas must be rigid&lt;/li&gt;
@@ -812,19 +812,19 @@
 	
 	<entry>
 		<title>JavaScript Service Worker Design Patterns for Better UX</title>
-		<link href="https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/"/>
+		<link href="https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/"/>
 		<published>2017-09-20T00:00:00Z</published>
-		<updated>2024-08-22T04:23:05Z</updated>
+		<updated>2017-09-20T00:00:00Z</updated>
 		<summary>Service Workers improve the user experience by insulating the webapp from the vagaries of the network.</summary>
-		<id>https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/</id>
+		<id>https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://columbusjs.org/09-20-2017/doug-reeder-service-workers.html&quot;&gt;September 2017&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/JavaScript%20Service%20Worker%20Design%20Patterns%20for%20Better%20UX/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h2 id=&quot;web-pages-used-in-talk&quot; tabindex=&quot;-1&quot;&gt;Web pages used in talk &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;slides&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;https://hominidsoftware.com/keynote/JavaScript%20Service%20Worker%20Design%20Patterns%20for%20Better%20UX/&quot;&gt;Slides&lt;/a&gt; &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;web-pages-used-in-talk&quot; tabindex=&quot;-1&quot;&gt;Web pages used in talk &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;offline app: https://serenenotes.hominidsoftware.com (sucessor at &lt;a href=&quot;https://notestogether.hominidsoftware.com/&quot;&gt;Notes Together&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jakearchibald.github.io/isserviceworkerready/&quot;&gt;Is Service Worker Ready&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;other-resources&quot; tabindex=&quot;-1&quot;&gt;Other resources &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript%20Service%20Worker%20Design%20Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;other-resources&quot; tabindex=&quot;-1&quot;&gt;Other resources &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/JavaScript-Service-Worker-Design-Patterns/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers&quot;&gt;Using Service Workers&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;tooling: &lt;a href=&quot;https://developer.chrome.com/docs/workbox/&quot;&gt;Workbox&lt;/a&gt;&lt;/li&gt;
@@ -834,13 +834,13 @@
 	
 	<entry>
 		<title>“Second Screen” apps with the Connect SDK</title>
-		<link href="https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/"/>
+		<link href="https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/"/>
 		<published>2014-09-17T00:00:00Z</published>
-		<updated>2024-08-21T23:57:12Z</updated>
+		<updated>2014-09-17T00:00:00Z</updated>
 		<summary>Throwing content from a phone  to a smart TV enables new interactions.</summary>
-		<id>https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/</id>
+		<id>https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;Delivered to &lt;a href=&quot;https://columbusjs.org/&quot;&gt;ColumbusJS&lt;/a&gt; in &lt;a href=&quot;https://columbusjs.org/09-17-2014/javascript-hardware-night.html&quot;&gt;September 2014&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;motivation&quot; tabindex=&quot;-1&quot;&gt;Motivation &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;motivation&quot; tabindex=&quot;-1&quot;&gt;Motivation &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;“Smart TVs” much less interactive than computers
 &lt;ul&gt;
@@ -852,21 +852,21 @@
 &lt;li&gt;“Smart TV” interfaces are clunky at best&lt;/li&gt;
 &lt;li&gt;Most people in front of a TV have a mobile device nearby&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;what-it-s-not&quot; tabindex=&quot;-1&quot;&gt;What it’s not &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;what-it-s-not&quot; tabindex=&quot;-1&quot;&gt;What it’s not &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Screen mirroring (ala AirPlay Mirroring or Chromecast tab mirroring)&lt;/li&gt;
 &lt;li&gt;Additional display over Wi-Fi&lt;/li&gt;
 &lt;li&gt;Local Media Streaming (ala Play on Roku or AirPlay streaming)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;development-and-testing&quot; tabindex=&quot;-1&quot;&gt;Development &amp;amp; Testing &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;development-and-testing&quot; tabindex=&quot;-1&quot;&gt;Development &amp;amp; Testing &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Half a dozen Android or iOS libraries required&lt;/p&gt;
 &lt;p&gt;Setup takes a day, not an hour, unless you’re already familiar with Android development / iOS development.&lt;/p&gt;
 &lt;p&gt;Testing: buy hardware for any platform you really care about.
 Only emulator is webOS TV, and that appears to be buggy.&lt;/p&gt;
-&lt;h3 id=&quot;compatibility-mobile-os&quot; tabindex=&quot;-1&quot;&gt;Compatibility - Mobile OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;compatibility-mobile-os&quot; tabindex=&quot;-1&quot;&gt;Compatibility - Mobile OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;iOS, Android, or Cordova for both.&lt;/p&gt;
 &lt;p&gt;No announced plan for Windows Phone nor web app (Firefox OS, ChromeOS)&lt;/p&gt;
-&lt;h3 id=&quot;compatibility-tv-os&quot; tabindex=&quot;-1&quot;&gt;Compatibility - TV OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;compatibility-tv-os&quot; tabindex=&quot;-1&quot;&gt;Compatibility - TV OS &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;8 platforms:
 LG webOS,
 Chromecast,
@@ -892,17 +892,17 @@ TV Controls&lt;/p&gt;
 &lt;li&gt;Throw URL to browser?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Other features may not be available on users&#39; devices.&lt;/p&gt;
-&lt;h3 id=&quot;demonstrate-connect-sdk-api-sampler&quot; tabindex=&quot;-1&quot;&gt;Demonstrate Connect SDK API Sampler &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;media-tab&quot; tabindex=&quot;-1&quot;&gt;Media tab &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;demonstrate-connect-sdk-api-sampler&quot; tabindex=&quot;-1&quot;&gt;Demonstrate Connect SDK API Sampler &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;media-tab&quot; tabindex=&quot;-1&quot;&gt;Media tab &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Throw photo&lt;/li&gt;
 &lt;li&gt;Throw audio&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;apps-tab&quot; tabindex=&quot;-1&quot;&gt;Apps tab &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;apps-tab&quot; tabindex=&quot;-1&quot;&gt;Apps tab &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Launch Enyo 2 Sampler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;use-cases&quot; tabindex=&quot;-1&quot;&gt;Use Cases &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;use-cases&quot; tabindex=&quot;-1&quot;&gt;Use Cases &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Game using mobile as tilt controller, e.g. Wii game (TV-centric)&lt;/li&gt;
 &lt;li&gt;Progress through sequence of videos on tablet, optionally displaying on TV e.g. Reading Bear (mobile-centric)&lt;/li&gt;
@@ -910,25 +910,25 @@ TV Controls&lt;/p&gt;
 &lt;li&gt;Multiplayer real-time strategy, displaying player-private info on mobile (joint)&lt;/li&gt;
 &lt;li&gt;Collaborative editing, e.g. Subethaedit, Etherpad (joint)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;ux-positives&quot; tabindex=&quot;-1&quot;&gt;UX Positives &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;ux-positives&quot; tabindex=&quot;-1&quot;&gt;UX Positives &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;TV apps needn’t depend on awkward TV UI.&lt;/p&gt;
 &lt;p&gt;Don’t need a large phone to view photos or videos, if you can throw them up on a large display.&lt;/p&gt;
 &lt;p&gt;Avoid logging in to TV&lt;/p&gt;
-&lt;h3 id=&quot;ux-gotchas&quot; tabindex=&quot;-1&quot;&gt;UX Gotchas &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;ux-gotchas&quot; tabindex=&quot;-1&quot;&gt;UX Gotchas &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;UI can be good while UX is poor.&lt;/p&gt;
 &lt;p&gt;[ask who’s on local Wi-Fi]
 Must be on same Wi-Fi network: Ok for home, work, close friends. Poor for Meetup, meeting at clients.&lt;/p&gt;
 &lt;p&gt;FireTV &amp;amp; DIAL TVs can only “Launch My app” &amp;amp; beam YouTube.
 Easy to exclude from list, but leaves user frustrated.&lt;/p&gt;
 &lt;p&gt;Some games are much easier if you can always glance at the map&lt;/p&gt;
-&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;conclusion&quot; tabindex=&quot;-1&quot;&gt;Conclusion &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;This might be the tipping point where users expect devices to work together (like VCRs and TVs did)&lt;/li&gt;
 &lt;li&gt;Or maybe it won’t catch on, and companies will re-impose their walled gardens&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;a href=&quot;https://connectsdk.com/&quot;&gt;Connect SDK website&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;underlying-technologies&quot; tabindex=&quot;-1&quot;&gt;Underlying Technologies &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second%20Screen%20Apps%20with%20the%20Connect%20SDK/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;underlying-technologies&quot; tabindex=&quot;-1&quot;&gt;Underlying Technologies &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Second-Screen-Apps-with-the-Connect-SDK/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;mDNS&lt;/li&gt;
 &lt;li&gt;WebSockets&lt;/li&gt;
@@ -940,13 +940,13 @@ Easy to exclude from list, but leaves user frustrated.&lt;/p&gt;
 	
 	<entry>
 		<title>Enyo: Yet Another Framework or The Next Step Beyond Dojo?</title>
-		<link href="https://hominidsoftware.com/presentations/Enyo%20framework/"/>
+		<link href="https://hominidsoftware.com/presentations/Enyo-framework/"/>
 		<published>2012-02-16T00:00:00Z</published>
-		<updated>2024-08-16T23:26:01Z</updated>
+		<updated>2012-02-16T00:00:00Z</updated>
 		<summary>Web apps on mobile require a new framework</summary>
-		<id>https://hominidsoftware.com/presentations/Enyo%20framework/</id>
+		<id>https://hominidsoftware.com/presentations/Enyo-framework/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;talk delivered at CAS, the Chemical Abstracts Service of the American Chemical Society&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Enyo%20framework/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;outline&quot; tabindex=&quot;-1&quot;&gt;Outline &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/presentations/Enyo-framework/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Who&#39;s it from?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Palm/HP: needed an HTML5 rival to iPad &amp;amp; desktop apps&lt;/li&gt;

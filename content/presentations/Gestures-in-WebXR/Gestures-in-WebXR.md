@@ -1,5 +1,5 @@
 ---
-title: Gestures in WebXR — Barrier Mage
+title: Gestures-in-WebXR — Barrier Mage
 description: Reliable gesture recognition enhances immersion.
 date: 2021-09-25
 tags:

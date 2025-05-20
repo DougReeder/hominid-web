@@ -23,8 +23,8 @@ Thus, a calculation is spoken as the phrases
 "two times", "three plus", "four equals ten", rather than the natural "two times three", "plus four", "equals ten". While an interesting user interface experiment, I judged this to not be useful for end users.
 
 <div class="center-horizontal">
-	<video controls width="320" height="404" src="/no-multiviews/PopupCalc speech 3.mp4" poster="/img/popupcalc.webp" playsinline preload="metadata">
-			Download the <a href="/no-multiviews/PopupCalc speech 3.mp4">PopupCalc with speech</a> MP4 video.
+	<video controls width="320" height="404" src="/no-multiviews/PopupCalc-speech-3.mp4" poster="/img/popupcalc.webp" playsinline preload="metadata">
+			Download the <a href="/no-multiviews/PopupCalc-speech-3.mp4">PopupCalc with speech</a> MP4 video.
 	</video>
 </div>
 

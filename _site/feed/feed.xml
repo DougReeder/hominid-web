@@ -16,7 +16,7 @@
 		<title>Gemini will determine the success of Android XR</title>
 		<link href="https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/"/>
 		<published>2024-12-14T00:00:00Z</published>
-		<updated>2025-01-30T19:35:00Z</updated>
+		<updated>2025-05-20T03:46:55Z</updated>
 		<summary>Android XR will struggle to establish an ecosystem; practical real-world uses for Gemini in the headset form-factor will be key.</summary>
 		<id>https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/</id>
 		<content type="html">&lt;h2 id=&quot;the-new-entrant&quot; tabindex=&quot;-1&quot;&gt;The new entrant &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/gemini-android-xr/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -407,7 +407,7 @@ It also creates the &lt;code&gt;pgsql&lt;/code&gt; volume with accessMode &lt;co
 		<title>The Mess That Is Installing a WebApp</title>
 		<link href="https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/"/>
 		<published>2023-12-06T00:00:00Z</published>
-		<updated>2024-08-11T03:10:34Z</updated>
+		<updated>2025-05-20T03:46:55Z</updated>
 		<summary>Almost all platforms support installing a PWA, but prompting the user is still fragmented.</summary>
 		<id>https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/</id>
 		<content type="html">&lt;h2 id=&quot;progressive-web-apps-pwas&quot; tabindex=&quot;-1&quot;&gt;Progressive Web Apps (PWAs) &lt;a class=&quot;header-anchor&quot; href=&quot;https://hominidsoftware.com/tech-personal-growth/webapp-install-mess/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -598,7 +598,7 @@ Ease of use turned out to be more important than the &amp;quot;correct&amp;quot;
 		<title>Multiuser WebXR using Croquet OS &amp; A-Frame</title>
 		<link href="https://hominidsoftware.com/tech-personal-growth/croquet-os-and-aframe/"/>
 		<published>2023-04-25T00:00:00Z</published>
-		<updated>2024-08-21T23:57:12Z</updated>
+		<updated>2025-05-20T03:46:55Z</updated>
 		<summary>There&#39;s a new network option for A-Frame</summary>
 		<id>https://hominidsoftware.com/tech-personal-growth/croquet-os-and-aframe/</id>
 		<content type="html">&lt;p&gt;&lt;a href=&quot;https://croquet.io/croquet-os/&quot;&gt;&lt;em&gt;Croquet OS&lt;/em&gt;&lt;/a&gt; is real-time synchronization-as-a-service (and not restricted to WebXR). You don&#39;t run your own synchronization server; large traffic volumes require payment.&lt;/p&gt;
@@ -863,8 +863,8 @@ Documentation&lt;/p&gt;
 &lt;p&gt;Thus, a calculation is spoken as the phrases
 &amp;quot;two times&amp;quot;, &amp;quot;three plus&amp;quot;, &amp;quot;four equals ten&amp;quot;, rather than the natural &amp;quot;two times three&amp;quot;, &amp;quot;plus four&amp;quot;, &amp;quot;equals ten&amp;quot;. While an interesting user interface experiment, I judged this to not be useful for end users.&lt;/p&gt;
 &lt;div class=&quot;center-horizontal&quot;&gt;
-	&lt;video controls=&quot;&quot; width=&quot;320&quot; height=&quot;404&quot; src=&quot;https://hominidsoftware.com/no-multiviews/PopupCalc%20speech%203.mp4&quot; poster=&quot;https://hominidsoftware.com/img/popupcalc.webp&quot; playsinline=&quot;&quot; preload=&quot;metadata&quot;&gt;
-			Download the &lt;a href=&quot;https://hominidsoftware.com/no-multiviews/PopupCalc%20speech%203.mp4&quot;&gt;PopupCalc with speech&lt;/a&gt; MP4 video.
+	&lt;video controls=&quot;&quot; width=&quot;320&quot; height=&quot;404&quot; src=&quot;https://hominidsoftware.com/no-multiviews/PopupCalc-speech-3.mp4&quot; poster=&quot;https://hominidsoftware.com/img/popupcalc.webp&quot; playsinline=&quot;&quot; preload=&quot;metadata&quot;&gt;
+			Download the &lt;a href=&quot;https://hominidsoftware.com/no-multiviews/PopupCalc-speech-3.mp4&quot;&gt;PopupCalc with speech&lt;/a&gt; MP4 video.
 	&lt;/video&gt;
 &lt;/div&gt;
 &lt;p&gt;Speaking the result of a calculation is another approach.
@@ -1139,11 +1139,11 @@ would only get used at feasts, and would need to be stored in-between times.&lt;
 	
 	<entry>
 		<title>Late Viking Age Ship Terminology</title>
-		<link href="https://hominidsoftware.com/tech-personal-growth/Late%20Viking%20Age%20Ship%20Terminology/"/>
+		<link href="https://hominidsoftware.com/tech-personal-growth/Late-Viking-Age-Ship-Terminology/"/>
 		<published>2002-02-15T00:00:00Z</published>
-		<updated>2024-08-21T23:57:12Z</updated>
+		<updated>2002-02-15T00:00:00Z</updated>
 		<summary>Runestones &amp; skaldic poetry help us understand how vikings described their ships and crews.</summary>
-		<id>https://hominidsoftware.com/tech-personal-growth/Late%20Viking%20Age%20Ship%20Terminology/</id>
+		<id>https://hominidsoftware.com/tech-personal-growth/Late-Viking-Age-Ship-Terminology/</id>
 		<content type="html">&lt;p&gt;&lt;em&gt;originally posted to the Viking Age Vessels email group&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;From &lt;em&gt;Ships &amp;amp; Men in the Late Viking Age&lt;/em&gt;, by Judith Jesch, a book which studies the runestone corpus and skaldic verse from the latter half of the Viking age (there’s not much earlier material), to determine what terminology was actually used then.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Skip&lt;/strong&gt; and &lt;strong&gt;skeið&lt;/strong&gt; are the most common terms for ship, skip being used in many contexts showing it did not refer to any particular type or use of ship. Skeið, on the other hand, is almost always used of a ship “either on the way to or in the thick of battle and clearly connotes a warship”. Langskip (longship), despite its common use in the sagas written down post-Viking-age, means any ship that is long, i.e. not not necessarily a warship and “is not a technical term”. “The most common compound with skip is herskip ‘warship’”&lt;/p&gt;
