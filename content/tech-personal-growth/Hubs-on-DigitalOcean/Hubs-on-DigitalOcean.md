@@ -14,7 +14,7 @@ previewImage:
   height: 1061
 ---
 
-[skip to solution](#my-final-configuration)
+[skip to solution](#my-final-configuration-but-see-my-next-post)
 
 *Content warning: extremely technical — may cause drowsiness — do not read while operating heavy machinery*
 
@@ -49,7 +49,7 @@ That’s the Achilles’ Heel of Community Edition: it’s not configured for pr
 ## Persistent storage
 
 Unfortunately, there isn’t yet any proper documentation on persistent storage for Hubs.
-The [System Overview](https://github.com/Hubs-Foundation/hubs-docs/blob/2f23837be9a94d2f431f960637dca3e58351e649/docs/dev-system-overview.md?plain=1#L4) just notes there’s "a postgresql database behind reticulum and a file store".
+The [System Overview](https://docs.hubsfoundation.org/system-overview.html#postgres-db) just notes there’s "a postgresql database behind reticulum and a file store".
 There is a YouTube video: [Persistent Volumes and External Database - Community Edition Setup Session - April 24, 2024](https://www.youtube.com/watch?v=ShQqXGjB0qo).
 After an hour of unrelated stuff, you find out the file storage can be Google Cloud Persistent Volumes exposed as NFS.
 It was not immediately clear to me why a StorageClass of `nfs` was chosen over `standard-rwo`

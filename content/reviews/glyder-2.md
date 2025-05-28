@@ -24,7 +24,7 @@ The improved graphics of the "HD" version for the HP Touchpad tablet make it eve
 Ported from iOS, where its predecessor _Glyder_ is also available.
 
 <div class="center-horizontal">
-<img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Glyder_2_logo.png" width="316" height="316">
+<img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Glyder_2_logo.png" width="316" height="316" alt="Glyder 2 title image">
 </div>
 
 [entry in the webOS App Museum](https://appcatalog.webosarchive.org/showMuseumDetails.php?search=glyder&safe=on&app=1112)

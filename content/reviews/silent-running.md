@@ -25,5 +25,5 @@ The later challenge of saving the dying plants is dumbed down for the audience s
 Reviewers at the time (1972) gave it as many good reviews as bad. I can only guess that Hollywood, having just discovered environmentalism, lauded the first project coming down the road.
 
 <div class="center-horizontal">
-<img src="https://upload.wikimedia.org/wikipedia/en/4/46/Silent_running.jpg" width="267" height="373">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/46/Silent_running.jpg" width="267" height="373" alt="poster for Silent Running">
 </div>

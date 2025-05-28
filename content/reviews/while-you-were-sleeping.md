@@ -24,5 +24,5 @@ It would also have been nice if the fiancee wasn't disposable, that is, an unlik
 The decoy hero makes an unlikely break from his past. I'll allow that under the circumstances, he might well have honestly intended to. My fanon says the change doesn't last.
 
 <div class="center-horizontal">
-<img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Whilesleepingposter.jpg" width="258" height="386">
+<img src="https://upload.wikimedia.org/wikipedia/en/e/e6/Whilesleepingposter.jpg" width="258" height="386" alt="poster for While You Were Sleeping">
 </div>
