@@ -3,10 +3,6 @@
 title: "About Doug Reeder",
 description: "about the website author",
 layout: "layouts/person.njk",
-eleventyNavigation: {
-  key: "About Me",
-  order: 6
-},
 tags: [],
 eleventyComputed: {
   linkedData: function(data) {

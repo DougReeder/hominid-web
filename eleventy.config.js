@@ -127,7 +127,14 @@ module.exports = function(eleventyConfig) {
 	<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
 </svg>`;
 	});
-
+	eleventyConfig.addShortcode("footer", function() {
+		return `
+<footer class="flex-evenly">
+	<a href="/about/">About Me</a>
+	<a href="/policies/terms-of-use/">Terms of Use</a>
+</footer>
+`;
+	});
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line

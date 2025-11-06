@@ -70,6 +70,14 @@ body {
 
 .center-horizontal {display: flex; justify-content: center;}
 
+.flex-evenly {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1em;
+}
+
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
