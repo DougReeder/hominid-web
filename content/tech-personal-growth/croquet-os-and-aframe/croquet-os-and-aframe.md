@@ -10,9 +10,9 @@ previewImage:
   width: 747
   height: 513
 ---
-[_Croquet OS_] is real-time synchronization-as-a-service (and not restricted to WebXR). You don't run your own synchronization server; large traffic volumes require payment.
+_Croquet OS_ (now [_Multisynq_]) is real-time synchronization-as-a-service (and not restricted to WebXR). You don't run your own synchronization server; large traffic volumes require payment.
 
-[_Croquet OS_]: https://croquet.io/croquet-os/
+[_Multisynq_]: https://multisynq.io/
 
 It's designed around keeping state in its own Model objects, which have a number of restrictions so each client maintains a bit-identical simulation.
 Web apps which keep all state and modeling in Croquet Models avoid the who-grabbed-it-first problem.
