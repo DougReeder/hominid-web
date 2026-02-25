@@ -255,7 +255,7 @@ _Delivered to [VRColumbus](https://www.meetup.com/vr-columbus/) in [May 2024](ht
 * [VRPlanets](https://travisbarrydick.github.io/vr-planets/dist/): learn orbital mechanics
 * [3DStreet](https://3dstreet.app/): urban planning
 * [Moonrider](https://moonrider.xyz/): Beat Saber clone
-* [Project Flowerbed](https://flowerbed.metademolab.com/): interactions
+* [Project Flowerbed](https://github.com/meta-quest/ProjectFlowerbed): interactions
 
 ## Live-coding
 * [code repo](https://github.com/DougReeder/live-coding-world)
