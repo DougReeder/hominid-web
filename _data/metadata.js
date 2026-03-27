@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	title: "Hominid Software",
 	blogTitle: "Tech for Personal Growth",
 	reviewTitle: "Reviews by Doug Reeder",

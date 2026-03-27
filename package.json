@@ -1,6 +1,7 @@
 {
 	"name": "hominid-web",
 	"version": "9.0.0",
+	"type": "module",
 	"description": "Hominid Software website",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
@@ -26,17 +27,16 @@
 	},
 	"homepage": "https://github.com/DougReeder/hominid-web#readme",
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"@11ty/eleventy-img": "^4.0.2",
-		"@11ty/eleventy-navigation": "^0.3.5",
-		"@11ty/eleventy-plugin-bundle": "^1.0.4",
-		"@11ty/eleventy-plugin-rss": "^1.2.0",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"@11ty/eleventy": "^3.1.5",
+		"@11ty/eleventy-img": "^5.0.0",
+		"@11ty/eleventy-navigation": "^1.0.5",
+		"@11ty/eleventy-plugin-rss": "^3.0.0",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
 		"@aloskutov/eleventy-plugin-external-links": "^2.1.1",
 		"@web-alchemy/eleventy-plugin-content-dates": "^1.0.4",
 		"eleventy-plugin-broken-links": "^2.2.1",
 		"eleventy-plugin-reading-time": "^0.0.1",
-		"luxon": "^3.3.0",
-		"markdown-it-anchor": "^8.6.7"
+		"luxon": "^3.7.2",
+		"markdown-it-anchor": "^9.2.0"
 	}
 }

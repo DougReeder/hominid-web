@@ -7,14 +7,14 @@ tags:
   - science fiction
   - Iain M. Banks
 itemReviewed:
-	"@type": Book
-	name: The Algebraist
-	author: { "@type": "Person", "familyName": "Banks", "givenName": "Iain", "additionalName": "M." }
-	publisher: { "@type": "Organization", "name": "Hachette Book Group" }
-	copyrightYear: 2004
-	numberOfPages: 591
-	isbn: ISBN 9780316565585
-	genre: SF
+  "@type": Book
+  name: The Algebraist
+  author: { "@type": "Person", "familyName": "Banks", "givenName": "Iain", "additionalName": "M." }
+  publisher: { "@type": "Organization", "name": "Hachette Book Group" }
+  copyrightYear: 2004
+  numberOfPages: 591
+  isbn: ISBN 9780316565585
+  genre: SF
 ---
 
 review by P. Douglas Reeder

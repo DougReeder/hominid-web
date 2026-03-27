@@ -1,20 +1,20 @@
-const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
+import { DateTime } from "luxon";
+import markdownItAnchor from "markdown-it-anchor";
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin, EleventyI18nPlugin } = require("@11ty/eleventy");
-const readingTime = require('eleventy-plugin-reading-time');
-const brokenLinksPlugin = require("eleventy-plugin-broken-links");
-const externalLinks = require("@aloskutov/eleventy-plugin-external-links");
-const { eleventyPluginContentDates } = require('@web-alchemy/eleventy-plugin-content-dates');
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginBundle from "@11ty/eleventy-plugin-bundle";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import { EleventyHtmlBasePlugin, EleventyI18nPlugin } from "@11ty/eleventy";
+import readingTime from 'eleventy-plugin-reading-time';
+import brokenLinksPlugin from "eleventy-plugin-broken-links";
+import externalLinks from "@aloskutov/eleventy-plugin-external-links";
+import { eleventyPluginContentDates } from '@web-alchemy/eleventy-plugin-content-dates';
 
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const pluginImages = require("./eleventy.config.images.js");
+import pluginDrafts from "./eleventy.config.drafts.js";
+import pluginImages from "./eleventy.config.images.js";
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({

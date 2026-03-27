@@ -6,21 +6,21 @@ layout: "layouts/person.njk",
 tags: [],
 eleventyComputed: {
   linkedData: function(data) {
-		return {
-			"@context": "https://schema.org/",
-			"@type": "ProfilePage",
-			description: data.description,
-			url: data.metadata.origin + data.page.url,
-			dateCreated: "2023-04-18T12:00Z",
-			dateModified: data.dateLastModified,
-			mainEntity: Object.assign({
-				givenName: "Doug",
-				familyName: "Reeder",
-				description: "I am a full-stack web developer, WebXR consultant, VR enthusiast, and sometime viking. I push back against gatekeepers and work to give users a “bicycle for the mind”",
-				jobTitle: "WebXR Consultant & Full-stack Developer"
-				}, data.metadata.author),
-			mainContentOfPage: {"@type": "WebPageElement", "cssSelector": "main"}
-		};
+    return {
+      "@context": "https://schema.org/",
+      "@type": "ProfilePage",
+      description: data.description,
+      url: data.metadata.origin + data.page.url,
+      dateCreated: "2023-04-18T12:00Z",
+      dateModified: data.dateLastModified,
+      mainEntity: Object.assign({
+        givenName: "Doug",
+        familyName: "Reeder",
+        description: "I am a full-stack web developer, WebXR consultant, VR enthusiast, and sometime viking. I push back against gatekeepers and work to give users a “bicycle for the mind”",
+        jobTitle: "WebXR Consultant & Full-stack Developer"
+        }, data.metadata.author),
+      mainContentOfPage: {"@type": "WebPageElement", "cssSelector": "main"}
+    };
   },
 },
 }

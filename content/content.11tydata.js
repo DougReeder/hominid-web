@@ -1,6 +1,6 @@
-const { TIMESTAMPS, MODE, computeDate } = require('@web-alchemy/eleventy-plugin-content-dates');
+import { TIMESTAMPS, MODE, computeDate } from '@web-alchemy/eleventy-plugin-content-dates';
 
-module.exports = {
+export default {
 	eleventyComputed: {
 		dateLastModified: async function(data) {
 			try {
