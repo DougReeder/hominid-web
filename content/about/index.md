@@ -37,3 +37,5 @@ On your mobile device or in VR, try [Elfland Glider](https://dougreeder.github.i
 
 My gender pronouns are: he, him, his.
 
+My [LinkedIn profile](https://www.linkedin.com/in/pdouglasreeder/)
+
