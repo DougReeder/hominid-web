@@ -50,11 +50,4 @@ If you're experiencing a problem using *Notes Together*:
 This will create a new e-mail, where you can describe the problem.
 Configuration info will be included, helping solve your problem.
 
-## Privacy Policy
-
-Your data is accessible to anyone who uses the same account as you on a computer.
-If you designate a third-party server, your data will also be stored there.
-Check with your provider for their privacy policy.
-
-*Notes Together* does not collect nor transmit user data to its own server.
-Nor does it collect or transmit data to third-parties that you haven't designated.
+*The [privacy policy](/notes-together/privacy-policy) details how the data you enter in Notes Together is (minimally) available to various parties*
