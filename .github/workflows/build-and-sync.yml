@@ -1,5 +1,6 @@
 name: build-and-sync
 on: [push, pull_request]
+permissions: {}
 jobs:
   build:
     name: build & sync - node.js
@@ -11,6 +12,8 @@ jobs:
         node-version: ['22']
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -20,7 +23,7 @@ jobs:
       - name: 11ty build
         run: npm run build
       - name: sync archive to S3
-        uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@be0c4ab89158cac4278689ebedd8407dd5f35a83
         if: ${{ github.ref == 'refs/heads/main' && github.repository == 'DougReeder/hominid-web' }}
         with:
           args: --follow-symlinks --delete
