@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f6f6f6" media="(prefers-color-scheme: light)" />
+	<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)" />
 	<title>{{ title + " — " + metadata.title if title else metadata.title }}</title>
 	{% if description or metadata.description -%}
 	<meta name="description" property="og:description" content="{{ description or metadata.description }}" />

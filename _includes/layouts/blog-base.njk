@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="#f6f6f6" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#171717" media="(prefers-color-scheme: dark)" />
 		<title>{{ title + " — " + metadata.blogTitle if title else metadata.blogTitle }}</title>
 		<meta name="author" content="{{ author.name or metadata.author.name }}" />
 		{% if description or metadata.blogDescription %}

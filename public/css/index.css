@@ -10,7 +10,7 @@
 	--color-gray-50: #C0C0C0;
 	--color-gray-90: #333;
 
-	--background-color: #fff;
+	--background-color: #f6f6f6; /* background color of background-image */
 	--background-image: url("../img/TexturesCom_Wood_BarkBirch3_0.9x1.8_512_albedo_light.webp");
 
 	--text-color: var(--color-gray-90);
@@ -32,7 +32,7 @@
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
-		--background-color: #15202b;
+		--background-color: #171717; /* background color of background-image */
 		--background-image: url("../img/TexturesCom_Wood_BarkBirch3_0.9x1.8_512_albedo_dark.webp");
 	}
 }
